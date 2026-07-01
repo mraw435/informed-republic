@@ -149,6 +149,14 @@
           <button class="btn-secondary mt-8" onclick="saveSettings()">Save preferences</button>
         </div>
         <div class="settings-section">
+          <h3>GitHub token</h3>
+          <p class="settings-note" style="margin-bottom:10px">Required for publishing briefs to GitHub. Paste your Personal Access Token below — it is stored only in your browser and never sent anywhere except GitHub's API.</p>
+          <div class="gen-option-row">
+            <input type="password" id="githubToken" class="admin-input" placeholder="Paste your GitHub token here" />
+            <button class="btn-secondary" onclick="saveSettings()">Save</button>
+          </div>
+        </div>
+        <div class="settings-section">
           <h3>Admin password</h3>
           <div class="gen-option-row">
             <input type="password" id="newPassword" class="admin-input" placeholder="New password" />
