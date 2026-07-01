@@ -1,0 +1,285 @@
+{
+  "_meta": {
+    "description": "Informed Republic \u2014 Cabinet directory",
+    "last_updated": "2026-06-30",
+    "source": "whitehouse.gov, official department websites, congress.gov confirmation records",
+    "notes": "President record is type 'president' and always renders at top. All 15 Cabinet departments follow alphabetically by department_name. Contact URLs link to each department's official public contact page. Photo paths are relative to /assets/photos/cabinet/."
+  },
+  "cabinet": [
+    {
+      "id": "POTUS",
+      "type": "president",
+      "title": "President of the United States",
+      "first_name": "Donald",
+      "last_name": "Trump",
+      "display_name": "Donald J. Trump",
+      "photo": null,
+      "official_url": "https://www.whitehouse.gov",
+      "contact_url": "https://www.whitehouse.gov/contact/",
+      "profile": {
+        "bio": "Donald J. Trump is the 47th President of the United States, having assumed office on January 20, 2025. He previously served as the 45th President from 2017 to 2021.",
+        "notes": ""
+      },
+      "photo_url": "https://www.whitehouse.gov/wp-content/uploads/2025/06/President-Donald-Trump-Official-Presidential-Portrait.png?resize=2048,1152"
+    },
+    {
+      "id": "USDA",
+      "type": "cabinet",
+      "department_name": "Department of Agriculture",
+      "title": "Secretary of Agriculture",
+      "first_name": "Brooke",
+      "last_name": "Rollins",
+      "display_name": "Brooke Rollins",
+      "photo": null,
+      "official_url": "https://www.usda.gov",
+      "contact_url": "https://www.usda.gov/contact-us",
+      "profile": {
+        "bio": "Brooke Rollins was confirmed as the 33rd Secretary of Agriculture on February 13, 2025. She previously served as Director of the Domestic Policy Council in the first Trump administration.",
+        "notes": ""
+      },
+      "photo_url": "https://www.usda.gov/sites/default/files/styles/bio_image_382x500/public/usda-secretary-brooke-rollins-2_0.jpg?h=716f6799&itok=-rZ6hkqX"
+    },
+    {
+      "id": "DOC",
+      "type": "cabinet",
+      "department_name": "Department of Commerce",
+      "title": "Secretary of Commerce",
+      "first_name": "Howard",
+      "last_name": "Lutnick",
+      "display_name": "Howard Lutnick",
+      "photo": null,
+      "official_url": "https://www.commerce.gov",
+      "contact_url": "https://www.commerce.gov/contact-us",
+      "profile": {
+        "bio": "Howard Lutnick was confirmed as Secretary of Commerce on February 18, 2025. He previously served as CEO of Cantor Fitzgerald and co-led President Trump's transition team.",
+        "notes": ""
+      },
+      "photo_url": "https://www.whitehouse.gov/wp-content/uploads/2026/02/Howard-Lutnick.jpeg?resize=464,600"
+    },
+    {
+      "id": "DOD",
+      "type": "cabinet",
+      "department_name": "Department of Defense",
+      "department_name_note": "Also referred to as the 'Department of War' under a 2025 executive order. The statutory name remains Department of Defense; a permanent rename is pending in Congress.",
+      "title": "Secretary of Defense",
+      "title_note": "Also referred to as 'Secretary of War' under the same executive order.",
+      "first_name": "Pete",
+      "last_name": "Hegseth",
+      "display_name": "Pete Hegseth",
+      "photo": null,
+      "official_url": "https://www.defense.gov",
+      "contact_url": "https://www.defense.gov/Contact/",
+      "profile": {
+        "bio": "Pete Hegseth was confirmed as Secretary of Defense on January 24, 2025, with Vice President JD Vance casting the tie-breaking vote. He previously served as a Fox News host and is a U.S. Army National Guard veteran.",
+        "notes": ""
+      },
+      "photo_url": "https://media.defense.gov/2025/Jan/28/2003633313/825/780/0/250127-D-TT977-1051.JPG"
+    },
+    {
+      "id": "DOE-ED",
+      "type": "cabinet",
+      "department_name": "Department of Education",
+      "title": "Secretary of Education",
+      "first_name": "Linda",
+      "last_name": "McMahon",
+      "display_name": "Linda McMahon",
+      "photo": null,
+      "official_url": "https://www.ed.gov",
+      "contact_url": "https://www.ed.gov/contact",
+      "profile": {
+        "bio": "Linda McMahon was confirmed as Secretary of Education on March 3, 2025. She previously served as Administrator of the Small Business Administration during the first Trump administration and as co-founder of World Wrestling Entertainment (WWE).",
+        "notes": ""
+      },
+      "photo_url": "https://www.ed.gov/sites/ed/files/styles/ed_bio_photo/public/2025-03/Secretary%20Linda%20E.%20McMahon%20Biography%20%281%29.png.webp?itok=8wnrT7xA"
+    },
+    {
+      "id": "DOE-EN",
+      "type": "cabinet",
+      "department_name": "Department of Energy",
+      "title": "Secretary of Energy",
+      "first_name": "Chris",
+      "last_name": "Wright",
+      "display_name": "Chris Wright",
+      "photo": null,
+      "official_url": "https://www.energy.gov",
+      "contact_url": "https://www.energy.gov/contact-us",
+      "profile": {
+        "bio": "Chris Wright was confirmed as Secretary of Energy on February 3, 2025. He previously served as CEO of Liberty Energy, a Denver-based oilfield services company.",
+        "notes": ""
+      },
+      "photo_url": "https://www.energy.gov/sites/default/files/styles/full_article_width/public/2025-02/CHRIS_WRIGHT_OFFICIAL_PORTRAIT.png?itok=raJ9Zt5u"
+    },
+    {
+      "id": "HHS",
+      "type": "cabinet",
+      "department_name": "Department of Health and Human Services",
+      "title": "Secretary of Health and Human Services",
+      "first_name": "Robert F.",
+      "last_name": "Kennedy Jr.",
+      "display_name": "Robert F. Kennedy Jr.",
+      "photo": null,
+      "official_url": "https://www.hhs.gov",
+      "contact_url": "https://www.hhs.gov/about/contact-us/index.html",
+      "profile": {
+        "bio": "Robert F. Kennedy Jr. was confirmed as the 26th Secretary of Health and Human Services on February 13, 2025, in a 52\u201348 Senate vote. He is the son of Senator Robert F. Kennedy and nephew of President John F. Kennedy, and previously founded the nonprofit Children's Health Defense.",
+        "notes": ""
+      },
+      "photo_url": "https://www.hhs.gov/sites/default/files/styles/bio_575x575/public/bio-robert-kennedy.png?itok=W1Gqw-Ez"
+    },
+    {
+      "id": "DHS",
+      "type": "cabinet",
+      "department_name": "Department of Homeland Security",
+      "title": "Secretary of Homeland Security",
+      "first_name": "Markwayne",
+      "last_name": "Mullin",
+      "display_name": "Markwayne Mullin",
+      "photo": null,
+      "official_url": "https://www.dhs.gov",
+      "contact_url": "https://www.dhs.gov/contact-us",
+      "profile": {
+        "bio": "Markwayne Mullin was confirmed as the 9th Secretary of Homeland Security on March 24, 2026, in a 54\u201345 vote. He previously represented Oklahoma in the U.S. House (2013\u20132023) and Senate (2023\u20132026), and is a member of the Cherokee Nation and former professional MMA fighter.",
+        "notes": "Mullin replaced Kristi Noem, who served as the first DHS Secretary of this administration."
+      },
+      "photo_url": "https://www.dhs.gov/sites/default/files/styles/large/public/externals/7dfd14eed9bb575c86c9a0e5867c6da4.jpg.webp?itok=M7wpO4M2"
+    },
+    {
+      "id": "HUD",
+      "type": "cabinet",
+      "department_name": "Department of Housing and Urban Development",
+      "title": "Secretary of Housing and Urban Development",
+      "first_name": "Eric",
+      "last_name": "Turner",
+      "display_name": "Eric Turner",
+      "photo": null,
+      "official_url": "https://www.hud.gov",
+      "contact_url": "https://www.hud.gov/contact",
+      "profile": {
+        "bio": "Eric Scott Turner was confirmed as Secretary of Housing and Urban Development on February 5, 2025. He previously served in a White House policy role during the first Trump administration.",
+        "notes": ""
+      },
+      "photo_url": "https://www.hud.gov/sites/dfiles/Main/images/Secretary-Turner-Head-Shot.jpg"
+    },
+    {
+      "id": "DOI",
+      "type": "cabinet",
+      "department_name": "Department of the Interior",
+      "title": "Secretary of the Interior",
+      "first_name": "Doug",
+      "last_name": "Burgum",
+      "display_name": "Doug Burgum",
+      "photo": null,
+      "official_url": "https://www.doi.gov",
+      "contact_url": "https://www.doi.gov/contact-us",
+      "profile": {
+        "bio": "Doug Burgum was confirmed as Secretary of the Interior on January 30, 2025, in a 79\u201318 Senate vote. He previously served as Governor of North Dakota from 2016 to 2024 and was a candidate for the 2024 Republican presidential nomination.",
+        "notes": ""
+      },
+      "photo_url": "https://www.doi.gov/sites/default/files/styles/medium_1_1/public/images/2025-11/cropped_sdbheadshot_final.jpg?itok=desXGrLo"
+    },
+    {
+      "id": "DOJ",
+      "type": "cabinet",
+      "department_name": "Department of Justice",
+      "title": "Attorney General",
+      "first_name": "Todd",
+      "last_name": "Blanche",
+      "display_name": "Todd Blanche (Acting)",
+      "photo": null,
+      "official_url": "https://www.justice.gov",
+      "contact_url": "https://www.justice.gov/contact-us",
+      "profile": {
+        "bio": "Todd Blanche is serving as Acting Attorney General following the resignation of Pamela Bondi. He previously served as a federal prosecutor and was President Trump's personal defense attorney during the 2024 election.",
+        "notes": "Pamela Bondi served as the confirmed Attorney General from January 2025 until her resignation. Todd Blanche is serving in an acting capacity pending a new nomination."
+      },
+      "acting": true,
+      "photo_url": "https://www.justice.gov/d9/styles/staff_profile_portrait_300h/public/2025-03/DAG%20DAG%20Todd%20Blanche%20Official%20Port.jpg?itok=MQzsgJGO"
+    },
+    {
+      "id": "DOL",
+      "type": "cabinet",
+      "department_name": "Department of Labor",
+      "title": "Secretary of Labor",
+      "first_name": "Keith",
+      "last_name": "Sonderling",
+      "display_name": "Keith Sonderling (Acting)",
+      "photo": null,
+      "official_url": "https://www.dol.gov",
+      "contact_url": "https://www.dol.gov/general/contact",
+      "profile": {
+        "bio": "Keith Sonderling is serving as Acting Secretary of Labor following the resignation of Lori Chavez-DeRemer. He previously served as a Commissioner and Acting Chair of the Equal Employment Opportunity Commission (EEOC).",
+        "notes": "Lori Chavez-DeRemer served as the confirmed Secretary of Labor until her resignation. Keith Sonderling is serving in an acting capacity pending a new nomination."
+      },
+      "acting": true,
+      "photo_url": "https://www.dol.gov/sites/dolgov/files/general/images/Keith-Sonderling.jpg"
+    },
+    {
+      "id": "DOS",
+      "type": "cabinet",
+      "department_name": "Department of State",
+      "title": "Secretary of State",
+      "first_name": "Marco",
+      "last_name": "Rubio",
+      "display_name": "Marco Rubio",
+      "photo": null,
+      "official_url": "https://www.state.gov",
+      "contact_url": "https://www.state.gov/contact-us/",
+      "profile": {
+        "bio": "Marco Rubio was confirmed as Secretary of State on January 20, 2025, in a 99\u20130 Senate vote \u2014 the first Cabinet confirmation of the Trump administration. He previously represented Florida in the U.S. Senate from 2011 to 2025.",
+        "notes": ""
+      },
+      "photo_url": "https://www.state.gov/wp-content/uploads/2025/01/Marco-Rubio-745x1024.jpg"
+    },
+    {
+      "id": "DOT",
+      "type": "cabinet",
+      "department_name": "Department of Transportation",
+      "title": "Secretary of Transportation",
+      "first_name": "Sean",
+      "last_name": "Duffy",
+      "display_name": "Sean Duffy",
+      "photo": null,
+      "official_url": "https://www.transportation.gov",
+      "contact_url": "https://www.transportation.gov/contact-us",
+      "profile": {
+        "bio": "Sean Duffy was confirmed as Secretary of Transportation in 2025. He previously represented Wisconsin's 7th Congressional District in the U.S. House from 2011 to 2019.",
+        "notes": ""
+      },
+      "photo_url": "https://www.transportation.gov/sites/dot.gov/files/inline-images/S1_Portrait_FINAL_Compressed_0.jpg"
+    },
+    {
+      "id": "TREAS",
+      "type": "cabinet",
+      "department_name": "Department of the Treasury",
+      "title": "Secretary of the Treasury",
+      "first_name": "Scott",
+      "last_name": "Bessent",
+      "display_name": "Scott Bessent",
+      "photo": null,
+      "official_url": "https://home.treasury.gov",
+      "contact_url": "https://home.treasury.gov/utility/contact",
+      "profile": {
+        "bio": "Scott Bessent was confirmed as Secretary of the Treasury in January 2025. He previously founded Key Square Group, a global macro investment firm, and served as Chief Investment Officer at Soros Fund Management.",
+        "notes": ""
+      },
+      "photo_url": "https://home.treasury.gov/system/files/136/Secretary_Bessent.jpg"
+    },
+    {
+      "id": "VA-D",
+      "type": "cabinet",
+      "department_name": "Department of Veterans Affairs",
+      "title": "Secretary of Veterans Affairs",
+      "first_name": "Doug",
+      "last_name": "Collins",
+      "display_name": "Doug Collins",
+      "photo": null,
+      "official_url": "https://www.va.gov",
+      "contact_url": "https://www.va.gov/contact-us/",
+      "profile": {
+        "bio": "Doug Collins was confirmed as Secretary of Veterans Affairs in 2025. He previously represented Georgia's 9th Congressional District in the U.S. House from 2013 to 2021 and is a U.S. Air Force Reserve chaplain.",
+        "notes": ""
+      },
+      "photo_url": "https://department.va.gov/wp-content/uploads/2025/02/collins.jpg"
+    }
+  ]
+}

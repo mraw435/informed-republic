@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin — Informed Republic</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Inter:wght@300;400;500;600&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="admin.css" />
+</head>
+<body class="admin-body">
+
+  <!-- ADMIN TOPBAR -->
+  <div class="admin-topbar">
+    <a href="index.html" class="admin-back">← Back to site</a>
+    <span class="admin-brand">Informed Republic <span class="admin-badge">Editorial</span></span>
+    <span class="admin-status-dot" id="statusDot"></span>
+  </div>
+
+  <!-- GATE (password prompt) -->
+  <div class="gate" id="gate">
+    <div class="gate-card">
+      <div class="gate-logo">Informed Republic</div>
+      <p class="gate-sub">Editorial Access</p>
+      <div class="gate-field">
+        <label>Password</label>
+        <input type="password" id="gatePassword" placeholder="Enter admin password" />
+      </div>
+      <button class="btn-primary full-width" onclick="checkGate()">Enter</button>
+      <p class="gate-hint" id="gateHint"></p>
+    </div>
+  </div>
+
+  <!-- ADMIN CONTENT -->
+  <div class="admin-wrap" id="adminWrap" style="display:none">
+
+    <aside class="admin-sidebar">
+      <div class="sidebar-section">
+        <p class="sidebar-label">Daily Brief</p>
+        <button class="sidebar-btn active" onclick="showPanel('generate')">⚡ Generate Brief</button>
+        <button class="sidebar-btn" onclick="showPanel('queue')">📋 Review Queue</button>
+        <button class="sidebar-btn" onclick="showPanel('archive')">🗂 Archive</button>
+      </div>
+      <div class="sidebar-section">
+        <p class="sidebar-label">Site</p>
+        <button class="sidebar-btn" onclick="showPanel('settings')">⚙️ Settings</button>
+      </div>
+      <div class="sidebar-footer">
+        <p>Logged in as <strong>Editor</strong></p>
+        <button onclick="logout()" class="logout-btn">Log out</button>
+      </div>
+    </aside>
+
+    <main class="admin-main">
+
+      <!-- ── GENERATE PANEL ── -->
+      <div class="panel" id="panel-generate">
+        <div class="panel-header">
+          <h2>Generate Daily Brief</h2>
+          <p>The AI will search for today's top Washington D.C. political news and draft a brief for your review.</p>
+        </div>
+
+        <div class="gen-options">
+          <div class="gen-option-row">
+            <label>Date</label>
+            <input type="date" id="genDate" class="admin-input" />
+          </div>
+          <div class="gen-option-row">
+            <label>Focus areas (optional)</label>
+            <input type="text" id="genFocus" class="admin-input" placeholder="e.g. defense, appropriations, Senate" />
+          </div>
+          <div class="gen-option-row">
+            <label>Tone guidance (optional)</label>
+            <input type="text" id="genTone" class="admin-input" placeholder="e.g. concise, nonpartisan, factual" />
+          </div>
+        </div>
+
+        <div class="gen-actions">
+          <button class="btn-primary" id="generateBtn" onclick="generateBrief()">
+            ⚡ Generate Brief
+          </button>
+          <span class="gen-note" id="existingNote"></span>
+        </div>
+
+        <div class="gen-progress" id="genProgress" style="display:none">
+          <div class="progress-steps">
+            <div class="step" id="step1">🔍 Searching for today's news…</div>
+            <div class="step" id="step2">📰 Reading top stories…</div>
+            <div class="step" id="step3">✍️ Drafting brief…</div>
+            <div class="step" id="step4">✅ Complete — ready for review</div>
+          </div>
+        </div>
+
+        <div class="draft-area" id="draftArea" style="display:none">
+          <div class="draft-header">
+            <span class="draft-label">DRAFT BRIEF</span>
+            <span class="draft-date" id="draftDateLabel"></span>
+          </div>
+          <div class="draft-editor" id="draftEditor" contenteditable="true"></div>
+          <div class="draft-feedback">
+            <label>Your notes / feedback for this brief</label>
+            <textarea id="feedbackBox" class="admin-textarea" placeholder="Add any notes, corrections, or guidance here before approving or sending back for revision…"></textarea>
+          </div>
+          <div class="draft-actions">
+            <button class="btn-danger" onclick="rejectDraft()">✕ Send Back for Revision</button>
+            <button class="btn-secondary" onclick="saveDraft()">💾 Save Draft</button>
+            <button class="btn-success" onclick="publishBrief()">✓ Approve & Publish</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── QUEUE PANEL ── -->
+      <div class="panel" id="panel-queue" style="display:none">
+        <div class="panel-header">
+          <h2>Review Queue</h2>
+          <p>Briefs waiting for your approval before they go live.</p>
+        </div>
+        <div id="queueList"></div>
+      </div>
+
+      <!-- ── ARCHIVE PANEL ── -->
+      <div class="panel" id="panel-archive" style="display:none">
+        <div class="panel-header">
+          <h2>Brief Archive</h2>
+          <p>All published briefs.</p>
+        </div>
+        <div id="archiveList"></div>
+      </div>
+
+      <!-- ── SETTINGS PANEL ── -->
+      <div class="panel" id="panel-settings" style="display:none">
+        <div class="panel-header">
+          <h2>Settings</h2>
+          <p>Configure editorial preferences.</p>
+        </div>
+        <div class="settings-section">
+          <h3>Auto-publish</h3>
+          <label class="toggle-label">
+            <input type="checkbox" id="autoPublishToggle" onchange="saveSettings()" />
+            <span>Automatically publish briefs without manual review</span>
+          </label>
+          <p class="settings-note">Recommended: keep this off for the first several briefs while you calibrate tone and style.</p>
+        </div>
+        <div class="settings-section">
+          <h3>Preferred voice / style</h3>
+          <textarea class="admin-textarea" id="styleGuidance" placeholder="Describe your preferred tone, format, and what you want emphasized in each brief. This is fed into the AI prompt each time." rows="5"></textarea>
+          <button class="btn-secondary mt-8" onclick="saveSettings()">Save preferences</button>
+        </div>
+        <div class="settings-section">
+          <h3>Admin password</h3>
+          <div class="gen-option-row">
+            <input type="password" id="newPassword" class="admin-input" placeholder="New password" />
+            <button class="btn-secondary" onclick="changePassword()">Update</button>
+          </div>
+        </div>
+      </div>
+
+    </main>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="admin.js"></script>
+</body>
+</html>

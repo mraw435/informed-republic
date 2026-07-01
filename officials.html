@@ -1,0 +1,1058 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Officials Directory — Informed Republic</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Inter:wght@300;400;500;600&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+
+    /* ── Page header ──────────────────────────────────────────────── */
+    .page-hero {
+      background: var(--bg-white);
+      border-bottom: 1px solid var(--rule);
+      padding: 48px 24px 40px;
+    }
+    .page-hero-inner {
+      max-width: var(--max-w);
+      margin: 0 auto;
+    }
+    .page-hero h1 {
+      font-family: var(--display);
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 900;
+      color: var(--ink);
+      line-height: 1.1;
+      margin-bottom: 10px;
+    }
+    .page-hero p {
+      color: var(--ink-light);
+      font-size: 15px;
+      max-width: 600px;
+      line-height: 1.65;
+    }
+
+    /* ── Tab switcher ─────────────────────────────────────────────── */
+    .dir-tabs {
+      background: var(--bg-white);
+      border-bottom: 1px solid var(--rule);
+      position: sticky;
+      top: 0;
+      z-index: 90;
+    }
+    .dir-tabs-inner {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 0 24px;
+      display: flex;
+      gap: 0;
+    }
+    .dir-tab {
+      padding: 14px 22px;
+      font-family: var(--body);
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: var(--ink-muted);
+      border-bottom: 2px solid transparent;
+      cursor: pointer;
+      background: none;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      transition: color var(--transition), border-color var(--transition);
+    }
+    .dir-tab:hover { color: var(--ink); }
+    .dir-tab.active { color: var(--accent); border-bottom-color: var(--accent); font-weight: 600; }
+
+    /* ── Shared section wrapper ───────────────────────────────────── */
+    .dir-section {
+      padding: 40px 24px 64px;
+    }
+    .dir-section-inner {
+      max-width: var(--max-w);
+      margin: 0 auto;
+    }
+
+    /* ── ZIP lookup widget ────────────────────────────────────────── */
+    .zip-lookup {
+      background: var(--bg-white);
+      border: 1px solid var(--rule);
+      border-left: 3px solid var(--accent);
+      border-radius: var(--radius);
+      padding: 24px 28px;
+      margin-bottom: 36px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-end;
+      gap: 16px;
+    }
+    .zip-lookup-text { flex: 1; min-width: 200px; }
+    .zip-lookup-text h3 {
+      font-family: var(--display);
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: 4px;
+    }
+    .zip-lookup-text p {
+      font-size: 13px;
+      color: var(--ink-muted);
+    }
+    .zip-lookup-form {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .zip-lookup-form input {
+      border: 1px solid var(--rule);
+      border-radius: var(--radius);
+      padding: 9px 13px;
+      font-size: 14px;
+      font-family: var(--body);
+      outline: none;
+      width: 130px;
+      background: var(--bg);
+      transition: border-color var(--transition);
+    }
+    .zip-lookup-form input:focus { border-color: var(--accent); }
+    .zip-lookup-form button {
+      background: var(--accent);
+      color: #fff;
+      border: none;
+      border-radius: var(--radius);
+      padding: 9px 18px;
+      font-size: 13px;
+      font-family: var(--body);
+      font-weight: 600;
+      cursor: pointer;
+      letter-spacing: 0.04em;
+      transition: background var(--transition);
+    }
+    .zip-lookup-form button:hover { background: var(--accent-light); }
+    .zip-result {
+      margin-top: 14px;
+      font-size: 13px;
+      color: var(--ink-light);
+      font-family: var(--mono);
+      letter-spacing: 0.03em;
+      min-height: 18px;
+      width: 100%;
+    }
+    .zip-result a { color: var(--accent); border-bottom: 1px solid currentColor; }
+
+    /* ── Filter bar ───────────────────────────────────────────────── */
+    .filter-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 28px;
+      align-items: center;
+    }
+    .filter-bar select,
+    .filter-bar input[type="text"] {
+      border: 1px solid var(--rule);
+      border-radius: var(--radius);
+      padding: 9px 13px;
+      font-size: 13px;
+      font-family: var(--body);
+      background: var(--bg-white);
+      color: var(--ink);
+      outline: none;
+      transition: border-color var(--transition);
+      cursor: pointer;
+    }
+    .filter-bar select:focus,
+    .filter-bar input[type="text"]:focus { border-color: var(--accent); }
+    .filter-bar input[type="text"] { flex: 1; min-width: 180px; }
+    .filter-count {
+      font-family: var(--mono);
+      font-size: 11px;
+      color: var(--ink-muted);
+      letter-spacing: 0.06em;
+      margin-left: auto;
+    }
+
+    /* ── Member cards grid ────────────────────────────────────────── */
+    .member-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 14px;
+    }
+    .member-card {
+      background: var(--bg-white);
+      border: 1px solid var(--rule);
+      border-radius: var(--radius);
+      padding: 18px 20px;
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+      cursor: pointer;
+      transition: border-color var(--transition), box-shadow var(--transition), transform var(--transition);
+      text-decoration: none;
+      color: inherit;
+    }
+    .member-card:hover {
+      border-color: var(--accent);
+      box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+      transform: translateY(-1px);
+    }
+    .member-photo {
+      width: 60px;
+      height: 60px;
+      border-radius: var(--radius);
+      background: var(--bg);
+      border: 1px solid var(--rule);
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    .member-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .member-photo-placeholder {
+      font-size: 24px;
+      line-height: 1;
+      color: var(--ink-muted);
+      opacity: 0.4;
+    }
+    .member-info { flex: 1; min-width: 0; }
+    .member-name {
+      font-family: var(--display);
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: 2px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .member-meta {
+      font-size: 12px;
+      color: var(--ink-muted);
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+    .party-dot {
+      display: inline-block;
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+    .party-dot.Democrat  { background: #1a4a8a; }
+    .party-dot.Republican{ background: #8b1a1a; }
+    .party-dot.Independent{ background: #5a7a5a; }
+    .member-details {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .member-detail {
+      font-family: var(--mono);
+      font-size: 11px;
+      color: var(--ink-light);
+      letter-spacing: 0.03em;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .detail-icon { color: var(--ink-muted); font-size: 12px; }
+    .member-arrow {
+      font-size: 16px;
+      color: var(--rule);
+      align-self: center;
+      flex-shrink: 0;
+      transition: color var(--transition);
+    }
+    .member-card:hover .member-arrow { color: var(--accent); }
+
+    /* ── Empty / loading states ───────────────────────────────────── */
+    .dir-loading, .dir-empty {
+      text-align: center;
+      padding: 64px 24px;
+      font-family: var(--mono);
+      font-size: 13px;
+      color: var(--ink-muted);
+      letter-spacing: 0.05em;
+      border: 1px dashed var(--rule);
+      border-radius: var(--radius);
+    }
+    .dir-loading .spinner {
+      width: 28px;
+      height: 28px;
+      border: 2px solid var(--rule);
+      border-top-color: var(--accent);
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+      margin: 0 auto 12px;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    /* ── Cabinet section ──────────────────────────────────────────── */
+    .cabinet-president-wrap {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 28px;
+    }
+    .cabinet-president {
+      background: var(--bg-white);
+      border: 1px solid var(--rule);
+      border-top: 3px solid var(--accent);
+      border-radius: var(--radius);
+      padding: 20px 28px;
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      width: 100%;
+      max-width: 480px;
+      cursor: pointer;
+      transition: box-shadow var(--transition);
+      text-decoration: none;
+      color: inherit;
+    }
+    .cabinet-president:hover { box-shadow: 0 4px 20px rgba(0,0,0,0.09); }
+    .cabinet-president .member-photo { width: 72px; height: 72px; }
+    .cabinet-president .member-name { font-size: 1.15rem; }
+    .cabinet-title-label {
+      font-family: var(--mono);
+      font-size: 10px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 4px;
+    }
+    .cabinet-connector {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    .cabinet-connector-line {
+      width: 1px;
+      height: 28px;
+      background: var(--rule);
+    }
+    .cabinet-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 12px;
+    }
+    .cabinet-card {
+      background: var(--bg-white);
+      border: 1px solid var(--rule);
+      border-radius: var(--radius);
+      padding: 16px 18px;
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+      cursor: pointer;
+      transition: border-color var(--transition), box-shadow var(--transition), transform var(--transition);
+      text-decoration: none;
+      color: inherit;
+    }
+    .cabinet-card:hover {
+      border-color: var(--accent);
+      box-shadow: 0 3px 12px rgba(0,0,0,0.07);
+      transform: translateY(-1px);
+    }
+    .cabinet-photo {
+      width: 52px;
+      height: 52px;
+      border-radius: var(--radius);
+      background: var(--bg);
+      border: 1px solid var(--rule);
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    .cabinet-photo img { width: 100%; height: 100%; object-fit: cover; }
+    .cabinet-photo-placeholder { font-size: 20px; color: var(--ink-muted); opacity: 0.4; }
+    .cabinet-info { flex: 1; min-width: 0; }
+    .cabinet-dept {
+      font-family: var(--mono);
+      font-size: 10px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 3px;
+    }
+    .cabinet-name {
+      font-family: var(--display);
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: 2px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .cabinet-role {
+      font-size: 12px;
+      color: var(--ink-muted);
+      margin-bottom: 8px;
+    }
+    .cabinet-contact-link {
+      font-family: var(--mono);
+      font-size: 11px;
+      color: var(--accent);
+      letter-spacing: 0.04em;
+      border-bottom: 1px solid transparent;
+      transition: border-color var(--transition);
+    }
+    .cabinet-contact-link:hover { border-bottom-color: var(--accent); }
+    .cabinet-note {
+      font-size: 11px;
+      color: var(--ink-muted);
+      font-style: italic;
+      margin-top: 4px;
+      line-height: 1.4;
+    }
+
+    /* ── Member profile modal ─────────────────────────────────────── */
+    .modal-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(28, 33, 48, 0.6);
+      z-index: 400;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      padding: 40px 16px;
+      overflow-y: auto;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.2s ease;
+    }
+    .modal-overlay.open { opacity: 1; pointer-events: all; }
+    .modal {
+      background: var(--bg-white);
+      border-radius: var(--radius);
+      border-top: 3px solid var(--accent);
+      width: 100%;
+      max-width: 640px;
+      box-shadow: 0 24px 64px rgba(0,0,0,0.25);
+      transform: translateY(16px);
+      transition: transform 0.25s ease;
+      flex-shrink: 0;
+    }
+    .modal-overlay.open .modal { transform: translateY(0); }
+    .modal-header {
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+      padding: 28px 28px 20px;
+      border-bottom: 1px solid var(--rule);
+    }
+    .modal-photo {
+      width: 80px;
+      height: 80px;
+      border-radius: var(--radius);
+      background: var(--bg);
+      border: 1px solid var(--rule);
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    .modal-photo img { width: 100%; height: 100%; object-fit: cover; }
+    .modal-photo-placeholder { font-size: 32px; color: var(--ink-muted); opacity: 0.35; }
+    .modal-title { flex: 1; }
+    .modal-name {
+      font-family: var(--display);
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: 4px;
+    }
+    .modal-subtitle {
+      font-size: 13px;
+      color: var(--ink-muted);
+      margin-bottom: 12px;
+    }
+    .modal-chips { display: flex; gap: 6px; flex-wrap: wrap; }
+    .modal-chip {
+      font-family: var(--mono);
+      font-size: 10px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 3px 8px;
+      border-radius: 2px;
+      border: 1px solid var(--rule);
+      color: var(--ink-muted);
+    }
+    .modal-close {
+      background: none;
+      border: none;
+      font-size: 22px;
+      color: var(--ink-muted);
+      cursor: pointer;
+      padding: 4px;
+      line-height: 1;
+      transition: color var(--transition);
+      flex-shrink: 0;
+    }
+    .modal-close:hover { color: var(--ink); }
+    .modal-body { padding: 24px 28px; }
+    .modal-section { margin-bottom: 24px; }
+    .modal-section:last-child { margin-bottom: 0; }
+    .modal-section-label {
+      font-family: var(--mono);
+      font-size: 10px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .modal-section-label::before {
+      content: '';
+      display: inline-block;
+      width: 16px;
+      height: 1px;
+      background: var(--accent);
+    }
+    .modal-contact-row {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .modal-contact-item {
+      font-family: var(--mono);
+      font-size: 12px;
+      color: var(--ink-light);
+      letter-spacing: 0.03em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .modal-contact-item a { color: var(--accent); }
+    .modal-bio-text {
+      font-size: 14px;
+      color: var(--ink-light);
+      line-height: 1.7;
+    }
+    .modal-committees {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .modal-committee {
+      font-size: 13px;
+      color: var(--ink-light);
+      padding: 6px 10px;
+      background: var(--bg);
+      border-radius: var(--radius);
+      border: 1px solid var(--rule);
+    }
+    .modal-footer {
+      padding: 16px 28px;
+      border-top: 1px solid var(--rule);
+      background: var(--bg);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .modal-official-link {
+      font-family: var(--mono);
+      font-size: 11px;
+      color: var(--accent);
+      letter-spacing: 0.06em;
+      border-bottom: 1px solid transparent;
+      transition: border-color var(--transition);
+    }
+    .modal-official-link:hover { border-bottom-color: var(--accent); }
+    .modal-years {
+      font-family: var(--mono);
+      font-size: 11px;
+      color: var(--ink-muted);
+      letter-spacing: 0.05em;
+    }
+
+    /* ── Responsive ───────────────────────────────────────────────── */
+    @media (max-width: 640px) {
+      .zip-lookup { flex-direction: column; align-items: flex-start; }
+      .filter-bar select { width: 100%; }
+      .member-grid, .cabinet-grid { grid-template-columns: 1fr; }
+      .cabinet-president { max-width: 100%; }
+      .modal-overlay { padding: 0; align-items: flex-end; }
+      .modal { border-radius: var(--radius) var(--radius) 0 0; max-width: 100%; }
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <div class="topbar">
+    <span class="topbar-date" id="topbarDate"></span>
+    <span class="topbar-tagline">Politics · Policy · Procedure</span>
+    <a href="admin.html" class="topbar-admin">Admin ›</a>
+  </div>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="masthead">
+        <p class="masthead-eyebrow">Est. 2024</p>
+        <h1 class="masthead-title">Informed Republic</h1>
+        <p class="masthead-sub">A comprehensive resource for an informed America</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- NAV -->
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="index.html#briefs" class="nav-link">Daily Brief</a>
+      <a href="index.html#news" class="nav-link">In the News</a>
+      <a href="index.html#education" class="nav-link">Learn</a>
+      <a href="index.html#elections" class="nav-link">Elections</a>
+      <a href="officials.html" class="nav-link active">Officials</a>
+      <a href="index.html#about" class="nav-link">About</a>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="page-hero-inner">
+      <div class="section-label">Directory</div>
+      <h1>Your Elected Officials</h1>
+      <p>Find your Member of Congress, both U.S. Senators from your state, and the President's Cabinet — with direct contact information for every office.</p>
+    </div>
+  </div>
+
+  <!-- TAB SWITCHER -->
+  <div class="dir-tabs">
+    <div class="dir-tabs-inner">
+      <button class="dir-tab active" onclick="switchTab('congress')">🏛 Congress</button>
+      <button class="dir-tab" onclick="switchTab('cabinet')">🇺🇸 Cabinet</button>
+    </div>
+  </div>
+
+  <!-- ── CONGRESS SECTION ── -->
+  <div id="section-congress" class="dir-section">
+    <div class="dir-section-inner">
+
+      <!-- ZIP lookup -->
+      <div class="zip-lookup">
+        <div class="zip-lookup-text">
+          <h3>Find your representative</h3>
+          <p>Enter your ZIP code to locate your House member and Senators.</p>
+        </div>
+        <div style="flex-shrink:0">
+          <div class="zip-lookup-form">
+            <input type="text" id="zipInput" maxlength="5" placeholder="ZIP code" inputmode="numeric" pattern="[0-9]*" />
+            <input type="text" id="streetInput" placeholder="Street address" style="display:none; width:200px" />
+            <button onclick="lookupZip()">Find my rep</button>
+          </div>
+          <p class="zip-result" id="zipResult"></p>
+        </div>
+      </div>
+
+      <!-- Filters -->
+      <div class="filter-bar">
+        <select id="filterChamber" onchange="applyFilters()">
+          <option value="">Chamber: All</option>
+          <option value="House">House</option>
+          <option value="Senate">Senate</option>
+        </select>
+        <select id="filterState" onchange="applyFilters()">
+          <option value="">State: All</option>
+        </select>
+        <select id="filterParty" onchange="applyFilters()">
+          <option value="">Party: All</option>
+          <option value="Democrat">Democrat</option>
+          <option value="Republican">Republican</option>
+          <option value="Independent">Independent</option>
+        </select>
+        <input type="text" id="filterSearch" placeholder="Search by name…" oninput="applyFilters()" />
+        <span class="filter-count" id="filterCount"></span>
+      </div>
+
+      <!-- Results -->
+      <div class="member-grid" id="memberGrid">
+        <div class="dir-loading">
+          <div class="spinner"></div>
+          Loading members…
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ── CABINET SECTION ── -->
+  <div id="section-cabinet" class="dir-section" style="display:none">
+    <div class="dir-section-inner">
+
+      <!-- President -->
+      <div class="cabinet-president-wrap">
+        <div id="cabinetPresident" class="cabinet-president">
+          <div class="member-photo cabinet-photo">
+            <span class="member-photo-placeholder">🇺🇸</span>
+          </div>
+          <div>
+            <p class="cabinet-title-label">President of the United States</p>
+            <p class="member-name" id="presidentName">Loading…</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Connector line -->
+      <div class="cabinet-connector">
+        <div class="cabinet-connector-line"></div>
+      </div>
+
+      <!-- Cabinet grid -->
+      <div class="cabinet-grid" id="cabinetGrid">
+        <div class="dir-loading">
+          <div class="spinner"></div>
+          Loading cabinet…
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ── PROFILE MODAL ── -->
+  <div class="modal-overlay" id="modalOverlay" onclick="closeModal(event)">
+    <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalNameEl">
+      <div class="modal-header">
+        <div class="modal-photo" id="modalPhoto">
+          <span class="modal-photo-placeholder">👤</span>
+        </div>
+        <div class="modal-title">
+          <p class="modal-name" id="modalNameEl"></p>
+          <p class="modal-subtitle" id="modalSubtitle"></p>
+          <div class="modal-chips" id="modalChips"></div>
+        </div>
+        <button class="modal-close" onclick="closeModalDirect()" aria-label="Close">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-section">
+          <p class="modal-section-label">Contact</p>
+          <div class="modal-contact-row" id="modalContact"></div>
+        </div>
+        <div class="modal-section" id="modalBioSection">
+          <p class="modal-section-label">Biography</p>
+          <p class="modal-bio-text" id="modalBio"></p>
+        </div>
+        <div class="modal-section" id="modalCommitteeSection">
+          <p class="modal-section-label">Committee Assignments</p>
+          <div class="modal-committees" id="modalCommittees"></div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a class="modal-official-link" id="modalOfficialLink" target="_blank" rel="noopener">
+          Official website ↗
+        </a>
+        <span class="modal-years" id="modalYears"></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <script>
+  // ── Data ──────────────────────────────────────────────────────────
+  // In production these come from fetch('members.json') and fetch('cabinet.json').
+  // For local preview, sample data is inlined here.
+  const SAMPLE_MEMBERS = [
+    { id:"VA-H-08", chamber:"House", first_name:"Don", last_name:"Beyer", display_name:"Rep. Don Beyer", party:"Democrat", state:"Virginia", state_abbr:"VA", district:8, phone:"(202) 225-4376", office_room:"1119 Longworth", photo:null, official_url:"https://beyer.house.gov", profile:{ bio:"Don Beyer represents Virginia's 8th Congressional District. He previously served as Virginia's Lieutenant Governor and U.S. Ambassador to Switzerland and Liechtenstein.", committees:["Joint Economic Committee","Ways and Means Committee"], years_served:2015 }},
+    { id:"VA-S-01", chamber:"Senate", first_name:"Mark", last_name:"Warner", display_name:"Sen. Mark Warner", party:"Democrat", state:"Virginia", state_abbr:"VA", district:null, phone:"(202) 224-2023", office_room:"703 Hart", photo:null, official_url:"https://www.warner.senate.gov", profile:{ bio:"Mark Warner has served Virginia in the U.S. Senate since 2009. He is the Chair of the Senate Select Committee on Intelligence and previously served as Governor of Virginia.", committees:["Select Committee on Intelligence","Finance Committee","Banking Committee"], years_served:2009 }},
+    { id:"VA-S-02", chamber:"Senate", first_name:"Tim", last_name:"Kaine", display_name:"Sen. Tim Kaine", party:"Democrat", state:"Virginia", state_abbr:"VA", district:null, phone:"(202) 224-4024", office_room:"231 Russell", photo:null, official_url:"https://www.kaine.senate.gov", profile:{ bio:"Tim Kaine has represented Virginia in the Senate since 2013. He serves on the Armed Services, Foreign Relations, and Budget Committees, and was the Democratic vice-presidential nominee in 2016.", committees:["Armed Services Committee","Foreign Relations Committee","Budget Committee"], years_served:2013 }}
+  ];
+
+  const SAMPLE_CABINET = [
+    { id:"POTUS", type:"president", title:"President of the United States", display_name:"[Name]", photo:null, official_url:"https://www.whitehouse.gov", contact_url:"https://www.whitehouse.gov/contact/", profile:{ bio:"" }},
+    { id:"USDA", type:"cabinet", department_name:"Department of Agriculture", title:"Secretary of Agriculture", display_name:"[Name]", photo:null, official_url:"https://www.usda.gov", contact_url:"https://www.usda.gov/contact-us", profile:{ bio:"" }},
+    { id:"DOC",  type:"cabinet", department_name:"Department of Commerce", title:"Secretary of Commerce", display_name:"[Name]", photo:null, official_url:"https://www.commerce.gov", contact_url:"https://www.commerce.gov/contact-us", profile:{ bio:"" }},
+    { id:"DOD",  type:"cabinet", department_name:"Department of Defense", department_name_note:"Also referred to as 'Department of War' under a 2025 executive order. The statutory name remains Department of Defense; a permanent rename is pending in Congress.", title:"Secretary of Defense", display_name:"[Name]", photo:null, official_url:"https://www.defense.gov", contact_url:"https://www.defense.gov/Contact/", profile:{ bio:"" }},
+    { id:"DOE-ED", type:"cabinet", department_name:"Department of Education", title:"Secretary of Education", display_name:"[Name]", photo:null, official_url:"https://www.ed.gov", contact_url:"https://www.ed.gov/contact", profile:{ bio:"" }},
+    { id:"DOE-EN", type:"cabinet", department_name:"Department of Energy", title:"Secretary of Energy", display_name:"[Name]", photo:null, official_url:"https://www.energy.gov", contact_url:"https://www.energy.gov/contact-us", profile:{ bio:"" }},
+    { id:"HHS",  type:"cabinet", department_name:"Department of Health and Human Services", title:"Secretary of Health and Human Services", display_name:"[Name]", photo:null, official_url:"https://www.hhs.gov", contact_url:"https://www.hhs.gov/about/contact-us/index.html", profile:{ bio:"" }},
+    { id:"DHS",  type:"cabinet", department_name:"Department of Homeland Security", title:"Secretary of Homeland Security", display_name:"[Name]", photo:null, official_url:"https://www.dhs.gov", contact_url:"https://www.dhs.gov/contact-us", profile:{ bio:"" }},
+    { id:"HUD",  type:"cabinet", department_name:"Department of Housing and Urban Development", title:"Secretary of Housing and Urban Development", display_name:"[Name]", photo:null, official_url:"https://www.hud.gov", contact_url:"https://www.hud.gov/contact", profile:{ bio:"" }},
+    { id:"DOI",  type:"cabinet", department_name:"Department of the Interior", title:"Secretary of the Interior", display_name:"[Name]", photo:null, official_url:"https://www.doi.gov", contact_url:"https://www.doi.gov/contact-us", profile:{ bio:"" }},
+    { id:"DOJ",  type:"cabinet", department_name:"Department of Justice", title:"Attorney General", display_name:"[Name]", photo:null, official_url:"https://www.justice.gov", contact_url:"https://www.justice.gov/contact-us", profile:{ bio:"" }},
+    { id:"DOL",  type:"cabinet", department_name:"Department of Labor", title:"Secretary of Labor", display_name:"[Name]", photo:null, official_url:"https://www.dol.gov", contact_url:"https://www.dol.gov/general/contact", profile:{ bio:"" }},
+    { id:"DOS",  type:"cabinet", department_name:"Department of State", title:"Secretary of State", display_name:"[Name]", photo:null, official_url:"https://www.state.gov", contact_url:"https://www.state.gov/contact-us/", profile:{ bio:"" }},
+    { id:"DOT",  type:"cabinet", department_name:"Department of Transportation", title:"Secretary of Transportation", display_name:"[Name]", photo:null, official_url:"https://www.transportation.gov", contact_url:"https://www.transportation.gov/contact-us", profile:{ bio:"" }},
+    { id:"TREAS",type:"cabinet", department_name:"Department of the Treasury", title:"Secretary of the Treasury", display_name:"[Name]", photo:null, official_url:"https://home.treasury.gov", contact_url:"https://home.treasury.gov/utility/contact", profile:{ bio:"" }},
+    { id:"VA-D", type:"cabinet", department_name:"Department of Veterans Affairs", title:"Secretary of Veterans Affairs", display_name:"[Name]", photo:null, official_url:"https://www.va.gov", contact_url:"https://www.va.gov/contact-us/", profile:{ bio:"" }}
+  ];
+
+  // ── State ─────────────────────────────────────────────────────────
+  let allMembers = [];
+  let allCabinet = [];
+  let activeTab  = 'congress';
+  let openRecord = null;
+
+  // ── Init ──────────────────────────────────────────────────────────
+  document.addEventListener('DOMContentLoaded', () => {
+    setTopbarDate();
+    loadData();
+  });
+
+  function setTopbarDate() {
+    const el = document.getElementById('topbarDate');
+    if (el) el.textContent = new Date().toLocaleDateString('en-US', { weekday:'short', month:'short', day:'numeric', year:'numeric' });
+  }
+
+  async function loadData() {
+    // Try fetching real JSON files; fall back to sample data for preview
+    try {
+      const [mRes, cRes] = await Promise.all([fetch('members.json'), fetch('cabinet.json')]);
+      allMembers = mRes.ok ? (await mRes.json()).members : SAMPLE_MEMBERS;
+      allCabinet = cRes.ok ? (await cRes.json()).cabinet : SAMPLE_CABINET;
+    } catch {
+      allMembers = SAMPLE_MEMBERS;
+      allCabinet = SAMPLE_CABINET;
+    }
+    populateStateFilter();
+    renderMembers(allMembers);
+    renderCabinet(allCabinet);
+  }
+
+  // ── Tab switching ─────────────────────────────────────────────────
+  function switchTab(tab) {
+    activeTab = tab;
+    document.getElementById('section-congress').style.display = tab === 'congress' ? 'block' : 'none';
+    document.getElementById('section-cabinet').style.display  = tab === 'cabinet'  ? 'block' : 'none';
+    document.querySelectorAll('.dir-tab').forEach(b => b.classList.remove('active'));
+    event.target.classList.add('active');
+  }
+
+  // ── State filter population ───────────────────────────────────────
+  function populateStateFilter() {
+    const states = [...new Set(allMembers.map(m => m.state))].sort();
+    const sel = document.getElementById('filterState');
+    states.forEach(s => {
+      const o = document.createElement('option');
+      o.value = s; o.textContent = s;
+      sel.appendChild(o);
+    });
+  }
+
+  // ── Filters ───────────────────────────────────────────────────────
+  function applyFilters() {
+    const chamber = document.getElementById('filterChamber').value;
+    const state   = document.getElementById('filterState').value;
+    const party   = document.getElementById('filterParty').value;
+    const search  = document.getElementById('filterSearch').value.toLowerCase().trim();
+    const filtered = allMembers.filter(m => {
+      if (chamber && m.chamber !== chamber) return false;
+      if (state   && m.state   !== state)   return false;
+      if (party   && m.party   !== party)   return false;
+      if (search  && !`${m.first_name} ${m.last_name}`.toLowerCase().includes(search)) return false;
+      return true;
+    });
+    renderMembers(filtered);
+  }
+
+  // ── Render members ────────────────────────────────────────────────
+  function renderMembers(members) {
+    const grid = document.getElementById('memberGrid');
+    const count = document.getElementById('filterCount');
+    count.textContent = `${members.length} member${members.length !== 1 ? 's' : ''}`;
+    if (!members.length) {
+      grid.innerHTML = '<div class="dir-empty">No members match your filters.</div>';
+      return;
+    }
+    grid.innerHTML = members.map(m => `
+      <div class="member-card" onclick="openMemberModal('${m.id}')" tabindex="0" role="button" aria-label="View profile for ${m.display_name}">
+        <div class="member-photo">
+          <img src="${m.photo_url || `https://unitedstates.github.io/images/congress/225x275/${m.bioguide_id}.jpg`}"
+               alt="${m.display_name}"
+               loading="lazy"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+          <span class="member-photo-placeholder" style="display:none">👤</span>
+        </div>
+        <div class="member-info">
+          <p class="member-name">${m.display_name}</p>
+          <p class="member-meta">
+            <span class="party-dot ${m.party}"></span>
+            ${m.party} · ${m.chamber}
+          </p>
+          <div class="member-details">
+            <span class="member-detail">
+              <span class="detail-icon">📍</span>
+              ${m.state}${m.district ? `, District ${m.district}` : ''}
+            </span>
+            <span class="member-detail">
+              <span class="detail-icon">📞</span>
+              ${m.phone}
+            </span>
+            <span class="member-detail">
+              <span class="detail-icon">🚪</span>
+              ${m.office_room}
+            </span>
+          </div>
+        </div>
+        <span class="member-arrow" aria-hidden="true">›</span>
+      </div>
+    `).join('');
+  }
+
+  // ── Render cabinet ────────────────────────────────────────────────
+  function renderCabinet(cabinet) {
+    const president = cabinet.find(c => c.type === 'president');
+    const depts     = cabinet.filter(c => c.type === 'cabinet');
+
+    if (president) {
+      document.getElementById('presidentName').textContent = president.display_name || '—';
+      document.getElementById('cabinetPresident').onclick = () => openCabinetModal(president.id);
+    }
+
+    const grid = document.getElementById('cabinetGrid');
+    grid.innerHTML = depts.map(d => `
+      <div class="cabinet-card" onclick="openCabinetModal('${d.id}')" tabindex="0" role="button" aria-label="View profile for ${d.title}">
+        <div class="cabinet-photo">
+          ${d.photo_url
+            ? `<img src="${d.photo_url}" alt="${d.display_name}" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" /><span class="cabinet-photo-placeholder" style="display:none">🏛️</span>`
+            : d.photo
+              ? `<img src="assets/photos/cabinet/${d.photo}" alt="${d.display_name}" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" /><span class="cabinet-photo-placeholder" style="display:none">🏛️</span>`
+              : `<span class="cabinet-photo-placeholder">🏛️</span>`}
+        </div>
+        <div class="cabinet-info">
+          <p class="cabinet-dept">${d.department_name}</p>
+          <p class="cabinet-name">${d.display_name || '—'}</p>
+          <p class="cabinet-role">${d.title}</p>
+          <a class="cabinet-contact-link" href="${d.contact_url}" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+            Contact information ↗
+          </a>
+          ${d.department_name_note
+            ? `<p class="cabinet-note">ⓘ ${d.department_name_note}</p>`
+            : ''}
+        </div>
+      </div>
+    `).join('');
+  }
+
+  // ── Member modal ──────────────────────────────────────────────────
+  function openMemberModal(id) {
+    const m = allMembers.find(x => x.id === id);
+    if (!m) return;
+    openRecord = m;
+
+    document.getElementById('modalPhoto').innerHTML = `
+      <img src="https://unitedstates.github.io/images/congress/225x275/${m.bioguide_id}.jpg"
+           alt="${m.display_name}"
+           style="width:100%;height:100%;object-fit:cover"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+      <span class="modal-photo-placeholder" style="display:none">👤</span>`;
+    document.getElementById('modalNameEl').textContent  = m.display_name;
+    document.getElementById('modalSubtitle').textContent = `${m.state}${m.district ? `, District ${m.district}` : ''} · ${m.chamber}`;
+    document.getElementById('modalChips').innerHTML =
+      `<span class="modal-chip">${m.party}</span>
+       <span class="modal-chip">${m.chamber}</span>`;
+
+    document.getElementById('modalContact').innerHTML = `
+      <span class="modal-contact-item">📞 ${m.phone}</span>
+      <span class="modal-contact-item">🚪 ${m.office_room}</span>
+    `;
+
+    const bio = m.profile?.bio || '';
+    document.getElementById('modalBio').textContent = bio || 'Biography coming soon.';
+
+    const committees = m.profile?.committees || [];
+    const commSection = document.getElementById('modalCommitteeSection');
+    if (committees.length) {
+      document.getElementById('modalCommittees').innerHTML = committees.map(c =>
+        `<div class="modal-committee">${c}</div>`).join('');
+      commSection.style.display = 'block';
+    } else {
+      commSection.style.display = 'none';
+    }
+
+    const yrs = m.profile?.years_served;
+    document.getElementById('modalYears').textContent = yrs
+      ? `In office since ${yrs} · ${new Date().getFullYear() - yrs} years`
+      : '';
+    document.getElementById('modalOfficialLink').href = m.official_url || '#';
+
+    document.getElementById('modalOverlay').classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function openCabinetModal(id) {
+    const d = allCabinet.find(x => x.id === id);
+    if (!d) return;
+    openRecord = d;
+
+    const photoSrc = d.photo_url || (d.photo ? `assets/photos/cabinet/${d.photo}` : null);
+    const photoEmoji = d.type === 'president' ? '🇺🇸' : '🏛️';
+    document.getElementById('modalPhoto').innerHTML = photoSrc
+      ? `<img src="${photoSrc}" alt="${d.display_name}" style="width:100%;height:100%;object-fit:cover" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" /><span class="modal-photo-placeholder" style="display:none">${photoEmoji}</span>`
+      : `<span class="modal-photo-placeholder">${photoEmoji}</span>`;
+    document.getElementById('modalNameEl').textContent  = d.display_name || '—';
+    document.getElementById('modalSubtitle').textContent = d.title;
+    document.getElementById('modalChips').innerHTML =
+      d.department_name ? `<span class="modal-chip">${d.department_name}</span>` : '';
+
+    document.getElementById('modalContact').innerHTML = `
+      <span class="modal-contact-item">
+        🌐 <a href="${d.contact_url}" target="_blank" rel="noopener">Department contact page ↗</a>
+      </span>
+    `;
+
+    const bio = d.profile?.bio || '';
+    document.getElementById('modalBio').textContent = bio || 'Biography coming soon.';
+    document.getElementById('modalCommitteeSection').style.display = 'none';
+    document.getElementById('modalYears').textContent = '';
+    document.getElementById('modalOfficialLink').href = d.official_url || '#';
+
+    document.getElementById('modalOverlay').classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeModal(e) {
+    if (e.target === document.getElementById('modalOverlay')) closeModalDirect();
+  }
+  function closeModalDirect() {
+    document.getElementById('modalOverlay').classList.remove('open');
+    document.body.style.overflow = '';
+    openRecord = null;
+  }
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') closeModalDirect();
+  });
+
+  // ── ZIP lookup (stub — Census API wired in later) ─────────────────
+  function lookupZip() {
+    const zip = document.getElementById('zipInput').value.trim();
+    const result = document.getElementById('zipResult');
+    if (!/^\d{5}$/.test(zip)) {
+      result.textContent = 'Please enter a valid 5-digit ZIP code.';
+      return;
+    }
+    result.textContent = 'Address-to-district lookup coming soon — for now, use the State filter above or visit house.gov to find your representative.';
+  }
+
+  // ── Toast ─────────────────────────────────────────────────────────
+  function showToast(msg) {
+    const t = document.getElementById('toast');
+    t.textContent = msg;
+    t.classList.add('show');
+    setTimeout(() => t.classList.remove('show'), 3500);
+  }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Informed Republic</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Inter:wght@300;400;500;600&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <div class="topbar">
+    <span class="topbar-date" id="topbarDate"></span>
+    <span class="topbar-tagline">Politics · Policy · Procedure</span>
+    <a href="admin.html" class="topbar-admin">Admin ›</a>
+  </div>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="masthead">
+        <p class="masthead-eyebrow">Est. 2024</p>
+        <h1 class="masthead-title">Informed Republic</h1>
+        <p class="masthead-sub">A comprehensive resource for an informed America</p>
+      </div>
+      <div class="header-subscribe">
+        <p>Get the Daily Brief in your inbox</p>
+        <form class="subscribe-form" onsubmit="handleSubscribe(event)">
+          <input type="email" placeholder="your@email.com" required />
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </header>
+
+  <!-- NAV -->
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-link active">Home</a>
+      <a href="#briefs" class="nav-link">Daily Brief</a>
+      <a href="#news" class="nav-link">In the News</a>
+      <a href="#education" class="nav-link">Learn</a>
+      <a href="#elections" class="nav-link">Elections</a>
+      <a href="officials.html" class="nav-link">Officials</a>
+      <a href="#about" class="nav-link">About</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-quote-block">
+        <blockquote class="hero-quote">
+          "Wherever the people are well informed they can be trusted with their own government."
+        </blockquote>
+        <cite class="hero-cite">— Thomas Jefferson, 1789</cite>
+      </div>
+      <div class="hero-mission">
+        <h2>Why Informed Republic exists</h2>
+        <p>American democracy depends on citizens who understand how their government works — who their representatives are, how laws are made, and what's happening in Washington today. We cut through the noise to give you exactly that: clear, nonpartisan, and substantive.</p>
+        <div class="hero-pillars">
+          <div class="pillar">
+            <span class="pillar-icon">⚖️</span>
+            <strong>Nonpartisan</strong>
+            <p>Multiple sources, your conclusions</p>
+          </div>
+          <div class="pillar">
+            <span class="pillar-icon">📋</span>
+            <strong>Comprehensive</strong>
+            <p>From civics basics to daily news</p>
+          </div>
+          <div class="pillar">
+            <span class="pillar-icon">📬</span>
+            <strong>Accessible</strong>
+            <p>Plain language, no jargon</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DAILY BRIEF FEATURE -->
+  <section class="brief-feature" id="briefs">
+    <div class="section-inner">
+      <div class="section-label">Daily Brief</div>
+      <h2 class="section-title">Today's Washington</h2>
+      <p class="section-sub">A morning summary of what's happening on Capitol Hill and across the federal government.</p>
+
+      <div class="brief-card" id="briefCard">
+        <div class="brief-loading" id="briefLoading">
+          <div class="spinner"></div>
+          <p>Generating today's brief…</p>
+        </div>
+        <div class="brief-content" id="briefContent" style="display:none">
+          <div class="brief-header">
+            <span class="brief-label">DAILY BRIEF</span>
+            <span class="brief-date" id="briefDate"></span>
+          </div>
+          <div class="brief-body" id="briefBody"></div>
+          <div class="brief-footer">
+            <span class="brief-note">✦ This brief is reviewed and approved before publication.</span>
+            <a href="briefs.html" class="brief-archive-link">View all briefs →</a>
+          </div>
+        </div>
+        <div class="brief-pending" id="briefPending" style="display:none">
+          <div class="brief-header">
+            <span class="brief-label">DAILY BRIEF</span>
+            <span class="brief-date" id="briefPendingDate"></span>
+          </div>
+          <p class="pending-msg">Today's brief is being reviewed and will be published shortly. Check back soon or <a href="#">subscribe</a> to receive it by email.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- IN THE NEWS GRID -->
+  <section class="news-section" id="news">
+    <div class="section-inner">
+      <div class="section-label">In the News</div>
+      <h2 class="section-title">By Policy Area</h2>
+      <p class="section-sub">Top stories organized by issue — multiple sources, no editorial filter.</p>
+      <div class="topic-grid">
+        <div class="topic-card">🛡️ Defense</div>
+        <div class="topic-card">💊 Healthcare</div>
+        <div class="topic-card">🏛️ Appropriations</div>
+        <div class="topic-card">🌍 Foreign Policy</div>
+        <div class="topic-card">⚡ Energy</div>
+        <div class="topic-card">🎓 Education</div>
+        <div class="topic-card">🚔 Criminal Justice</div>
+        <div class="topic-card">🌐 Immigration</div>
+        <div class="topic-card">💰 Tax & Finance</div>
+        <div class="topic-card">🗳️ Elections</div>
+        <div class="topic-card">🚂 Transportation</div>
+        <div class="topic-card">🌾 Agriculture</div>
+      </div>
+      <p class="coming-soon-note">Full news feed coming soon. Subscribe to the Daily Brief in the meantime.</p>
+    </div>
+  </section>
+
+  <!-- LEARN SECTION -->
+  <section class="learn-section" id="education">
+    <div class="section-inner">
+      <div class="section-label">Learn</div>
+      <h2 class="section-title">Understand Your Government</h2>
+      <p class="section-sub">From the three branches to how a bill becomes law — everything you need to be an informed citizen.</p>
+      <div class="learn-grid">
+        <a href="#" class="learn-card">
+          <div class="learn-card-icon">🏛️</div>
+          <h3>Three Branches of Government</h3>
+          <p>How the executive, legislative, and judicial branches operate and check each other.</p>
+          <span class="learn-link">Explore →</span>
+        </a>
+        <a href="#" class="learn-card">
+          <div class="learn-card-icon">📜</div>
+          <h3>How Legislation Passes</h3>
+          <p>From an idea in a congressional office to a bill signed by the President.</p>
+          <span class="learn-link">Explore →</span>
+        </a>
+        <a href="#" class="learn-card">
+          <div class="learn-card-icon">🗳️</div>
+          <h3>The Election Process</h3>
+          <p>Primaries, the Electoral College, caucuses, and how to get involved.</p>
+          <span class="learn-link">Explore →</span>
+        </a>
+        <a href="#" class="learn-card">
+          <div class="learn-card-icon">⚖️</div>
+          <h3>Landmark Supreme Court Cases</h3>
+          <p>The decisions that shaped American law and society from 1803 to today.</p>
+          <span class="learn-link">Explore →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT STRIP -->
+  <section class="about-strip" id="about">
+    <div class="section-inner about-inner">
+      <div class="about-text">
+        <div class="section-label light">About</div>
+        <h2>Built for an informed citizenry</h2>
+        <p>Informed Republic was created to provide a comprehensive, nonpartisan resource for understanding the United States federal government. We believe every American deserves access to clear, accurate information about how their government works and what it is doing.</p>
+        <p>Our goal is simple: help every reader understand (1) how government operates, (2) who their elected officials are, and (3) what's happening in Washington — every single day.</p>
+      </div>
+      <div class="about-quote-side">
+        <div class="sidebar-quote">
+          <p>"The most important office…is that of private citizen."</p>
+          <cite>— Justice Louis Brandeis</cite>
+        </div>
+        <div class="sidebar-quote">
+          <p>"The price of liberty is eternal vigilance."</p>
+          <cite>— Wendell Phillips, 1852</cite>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER BOTTOM CTA -->
+  <section class="newsletter-cta">
+    <div class="section-inner cta-inner">
+      <div class="cta-text">
+        <h2>The Daily Brief, delivered.</h2>
+        <p>Washington moves fast. Every morning, we break down what happened and what it means — reviewed by a human editor before it reaches you.</p>
+      </div>
+      <form class="subscribe-form-large" onsubmit="handleSubscribe(event)">
+        <input type="email" placeholder="Enter your email address" required />
+        <button type="submit">Get the Brief</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="footer-title">Informed Republic</span>
+        <p>Politics · Policy · Procedure</p>
+      </div>
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms</a>
+        <a href="#">Disclaimer</a>
+        <a href="#">Contact</a>
+      </div>
+      <div class="footer-social">
+        <a href="#">Twitter / X</a>
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="footerYear"></span> Informed Republic. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast">✓ You're subscribed! Check your inbox.</div>
+
+  <script src="app.js"></script>
+</body>
+</html>
