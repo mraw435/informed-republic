@@ -8,6 +8,62 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Inter:wght@300;400;500;600&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .member-link {
+      color: #8b1a1a;
+      border-bottom: 1px dotted currentColor;
+      cursor: pointer;
+      text-decoration: none;
+      transition: opacity 0.15s;
+    }
+    .member-link:hover { opacity: 0.75; }
+    .member-modal-overlay {
+      position: fixed; inset: 0;
+      background: rgba(28,33,48,0.6);
+      z-index: 500;
+      display: flex; align-items: flex-start; justify-content: center;
+      padding: 40px 16px; overflow-y: auto;
+      opacity: 0; pointer-events: none;
+      transition: opacity 0.2s ease;
+    }
+    .member-modal-overlay.open { opacity: 1; pointer-events: all; }
+    .member-modal {
+      background: #fff; border-radius: 4px;
+      border-top: 3px solid #8b1a1a;
+      width: 100%; max-width: 600px;
+      box-shadow: 0 24px 64px rgba(0,0,0,0.25);
+      transform: translateY(16px);
+      transition: transform 0.25s ease;
+      flex-shrink: 0;
+    }
+    .member-modal-overlay.open .member-modal { transform: translateY(0); }
+    .mm-header { display: flex; gap: 20px; align-items: flex-start; padding: 24px 24px 18px; border-bottom: 1px solid #d8d2c8; }
+    .mm-photo { width: 72px; height: 72px; border-radius: 4px; background: #f8f6f2; border: 1px solid #d8d2c8; flex-shrink: 0; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+    .mm-title { flex: 1; }
+    .mm-name { font-family: "Playfair Display", serif; font-size: 1.3rem; font-weight: 700; color: #1a1a1a; margin-bottom: 3px; }
+    .mm-subtitle { font-size: 13px; color: #7a7a7a; margin-bottom: 10px; }
+    .mm-chips { display: flex; gap: 6px; flex-wrap: wrap; }
+    .mm-chip { font-family: "Roboto Mono", monospace; font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; padding: 3px 8px; border-radius: 2px; border: 1px solid #d8d2c8; color: #7a7a7a; }
+    .mm-close { background: none; border: none; font-size: 22px; color: #7a7a7a; cursor: pointer; padding: 4px; line-height: 1; flex-shrink: 0; }
+    .mm-body { padding: 20px 24px; }
+    .mm-section { margin-bottom: 20px; }
+    .mm-section:last-child { margin-bottom: 0; }
+    .mm-section-label { font-family: "Roboto Mono", monospace; font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: #8b1a1a; margin-bottom: 8px; display: flex; align-items: center; gap: 8px; }
+    .mm-section-label::before { content: ""; display: inline-block; width: 16px; height: 1px; background: #8b1a1a; }
+    .mm-contact-row { display: flex; flex-direction: column; gap: 5px; }
+    .mm-contact-item { font-family: "Roboto Mono", monospace; font-size: 12px; color: #4a4a4a; display: flex; align-items: center; gap: 8px; }
+    .mm-bio-text { font-size: 14px; color: #4a4a4a; line-height: 1.7; }
+    .mm-committees { display: flex; flex-direction: column; gap: 5px; }
+    .mm-committee { font-size: 13px; color: #4a4a4a; padding: 5px 10px; background: #f8f6f2; border-radius: 2px; border: 1px solid #d8d2c8; }
+    .mm-footer { padding: 14px 24px; border-top: 1px solid #d8d2c8; background: #f8f6f2; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+    .mm-official-link, .mm-full-profile-link { font-family: "Roboto Mono", monospace; font-size: 11px; color: #8b1a1a; letter-spacing: 0.06em; text-decoration: none; border-bottom: 1px solid transparent; }
+    .mm-official-link:hover, .mm-full-profile-link:hover { border-bottom-color: #8b1a1a; }
+    .mm-years { font-family: "Roboto Mono", monospace; font-size: 11px; color: #7a7a7a; }
+    @media (max-width: 640px) {
+      .member-modal-overlay { padding: 0; align-items: flex-end; }
+      .member-modal { border-radius: 4px 4px 0 0; max-width: 100%; }
+    }
+  </style>
 </head>
 <body>
 
@@ -236,8 +292,42 @@
     </div>
   </footer>
 
+  <!-- MEMBER MODAL (for brief name links) -->
+  <div class="member-modal-overlay" id="memberModalOverlay" onclick="closeMemberModal(event)">
+    <div class="member-modal" role="dialog" aria-modal="true">
+      <div class="mm-header">
+        <div class="mm-photo" id="mmPhoto"><span style="font-size:28px;opacity:0.3">👤</span></div>
+        <div class="mm-title">
+          <p class="mm-name" id="mmName"></p>
+          <p class="mm-subtitle" id="mmSubtitle"></p>
+          <div class="mm-chips" id="mmChips"></div>
+        </div>
+        <button class="mm-close" onclick="closeMemberModalDirect()" aria-label="Close">✕</button>
+      </div>
+      <div class="mm-body">
+        <div class="mm-section">
+          <p class="mm-section-label">Contact</p>
+          <div class="mm-contact-row" id="mmContact"></div>
+        </div>
+        <div class="mm-section">
+          <p class="mm-section-label">Biography</p>
+          <p class="mm-bio-text" id="mmBio"></p>
+        </div>
+        <div class="mm-section" id="mmCommitteeSection">
+          <p class="mm-section-label">Committee Assignments</p>
+          <div class="mm-committees" id="mmCommittees"></div>
+        </div>
+      </div>
+      <div class="mm-footer">
+        <a class="mm-official-link" id="mmOfficialLink" target="_blank" rel="noopener">Official website ↗</a>
+        <span class="mm-years" id="mmYears"></span>
+        <a class="mm-full-profile-link" id="mmFullProfileLink">View full profile →</a>
+      </div>
+    </div>
+  </div>
+
   <div class="toast" id="toast">✓ You're subscribed! Check your inbox.</div>
 
-  <script src="app.js"></script>
+  <script src="app.js?v=2"></script>
 </body>
 </html>
