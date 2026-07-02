@@ -332,7 +332,84 @@ function rejectDraft() {
   checkExistingDraft();
 }
 
-async function publishBrief() {
+async function reviseDraft() {
+  if (!currentDraftDate) return;
+  const feedback = document.getElementById('feedbackBox').value.trim();
+  if (!feedback) {
+    showToast('Add feedback in the notes box first so the AI knows what to change.');
+    return;
+  }
+
+  const currentHTML = document.getElementById('draftEditor').innerHTML;
+  const btn = document.querySelector('.btn-secondary[onclick="reviseDraft()"]');
+  btn.disabled = true;
+  btn.textContent = '⏳ Revising…';
+
+  const settings = getSettings();
+  const styleGuidance = settings.styleGuidance || 'Nonpartisan, clear, factual. Written for an educated general audience interested in how Washington works.';
+  const displayDate = formatDisplayDate(currentDraftDate);
+
+  const systemPrompt = `You are the editorial AI for Informed Republic, a nonpartisan civic news site.
+Style guidance: ${styleGuidance}
+Format the brief in clean HTML using only: <h3>, <p>, <ul>, <li>, <strong>, <em>. No divs, no classes, no inline styles.
+Return only the revised HTML content of the brief body (no surrounding tags, no markdown fences).`;
+
+  const userPrompt = `You wrote the following Daily Brief for ${displayDate}:
+
+--- CURRENT DRAFT ---
+${currentHTML}
+--- END DRAFT ---
+
+The editor has reviewed it and provided this feedback:
+"${feedback}"
+
+Please revise the brief incorporating this feedback. Keep it ~400-550 words, nonpartisan, and specific.`;
+
+  try {
+    const response = await fetch('/api/generate-brief', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        model: 'claude-sonnet-4-6',
+        max_tokens: 1000,
+        system: systemPrompt,
+        messages: [{ role: 'user', content: userPrompt }]
+      })
+    });
+
+    const data = await response.json();
+    const html = data.content
+      .filter(b => b.type === 'text')
+      .map(b => b.text)
+      .join('')
+      .trim()
+      .replace(/^```html?\n?/, '')
+      .replace(/\n?```$/, '');
+
+    document.getElementById('draftEditor').innerHTML = html;
+    document.getElementById('feedbackBox').value = '';
+
+    const drafts = getDrafts();
+    drafts[currentDraftDate] = {
+      ...drafts[currentDraftDate],
+      status: 'draft',
+      html,
+      revisedAt: new Date().toISOString()
+    };
+    saveDrafts(drafts);
+
+    showToast('✎ Brief revised — review the updated draft.', '#b8860b');
+
+  } catch (err) {
+    console.error(err);
+    showToast('Error revising brief. Check console.');
+  } finally {
+    btn.disabled = false;
+    btn.textContent = '✎ Revise with Feedback';
+  }
+}
+
+
   if (!currentDraftDate) return;
   const html = document.getElementById('draftEditor').innerHTML;
   const feedback = document.getElementById('feedbackBox').value;
@@ -492,5 +569,5 @@ function stripHTML(html) {
 
 // ── Init ──────────────────────────────────────────────────────────────
 document.addEventListener('DOMContentLoaded', () => {
-  document.getElementById('gateHint').textContent = 'Default: republic2024';
+  document.getElementById('gateHint').textContent = '';
 });
