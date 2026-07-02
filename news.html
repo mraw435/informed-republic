@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>In the News — Informed Republic</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Inter:wght@300;400;500;600&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* ── Page hero ── */
+    .news-hero { background: var(--bg-white); border-bottom: 1px solid var(--rule); padding: 44px 24px 36px; }
+    .news-hero-inner { max-width: var(--max-w); margin: 0 auto; display: flex; align-items: flex-end; justify-content: space-between; gap: 24px; flex-wrap: wrap; }
+    .news-hero h1 { font-family: var(--display); font-size: clamp(1.8rem,4vw,2.8rem); font-weight: 900; color: var(--ink); margin-bottom: 6px; }
+    .news-hero p { color: var(--ink-light); font-size: 15px; max-width: 520px; }
+    .news-updated { font-family: var(--mono); font-size: 11px; color: var(--ink-muted); letter-spacing: 0.08em; text-align: right; }
+
+    /* ── Filter bar ── */
+    .news-filter-wrap { background: var(--bg-white); border-bottom: 1px solid var(--rule); position: sticky; top: 0; z-index: 90; }
+    .news-filter-inner { max-width: var(--max-w); margin: 0 auto; padding: 0 24px; display: flex; gap: 0; overflow-x: auto; scrollbar-width: none; }
+    .news-filter-inner::-webkit-scrollbar { display: none; }
+    .filter-btn { flex-shrink: 0; padding: 13px 16px; font-family: var(--body); font-size: 12px; font-weight: 500; letter-spacing: 0.04em; color: var(--ink-muted); border: none; border-bottom: 2px solid transparent; background: none; cursor: pointer; white-space: nowrap; transition: color var(--transition), border-color var(--transition); }
+    .filter-btn:hover { color: var(--ink); }
+    .filter-btn.active { color: var(--accent); border-bottom-color: var(--accent); font-weight: 600; }
+
+    /* ── News body ── */
+    .news-body { max-width: var(--max-w); margin: 0 auto; padding: 36px 24px 80px; }
+
+    /* ── Topic sections ── */
+    .topic-section { margin-bottom: 48px; }
+    .topic-section[data-hidden="true"] { display: none; }
+    .topic-heading { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; padding-bottom: 10px; border-bottom: 1px solid var(--rule); }
+    .topic-heading h2 { font-family: var(--display); font-size: 1.15rem; font-weight: 700; color: var(--ink); }
+    .topic-count { font-family: var(--mono); font-size: 10px; color: var(--ink-muted); letter-spacing: 0.1em; }
+
+    /* ── Story cards ── */
+    .story-list { display: flex; flex-direction: column; gap: 1px; }
+    .story-card { background: var(--bg-white); border: 1px solid var(--rule); border-radius: var(--radius); padding: 16px 18px; display: grid; grid-template-columns: 1fr auto; gap: 8px; align-items: start; transition: border-color var(--transition), box-shadow var(--transition); text-decoration: none; color: inherit; }
+    .story-card:hover { border-color: var(--accent); box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
+    .story-card + .story-card { margin-top: 8px; }
+    .story-main { flex: 1; min-width: 0; }
+    .story-meta { display: flex; align-items: center; gap: 8px; margin-bottom: 5px; flex-wrap: wrap; }
+    .story-source { font-family: var(--mono); font-size: 10px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); }
+    .story-date { font-family: var(--mono); font-size: 10px; color: var(--ink-muted); letter-spacing: 0.05em; }
+    .story-paywall { font-size: 11px; color: var(--ink-muted); }
+    .story-title { font-size: 14px; font-weight: 600; color: var(--ink); line-height: 1.4; margin-bottom: 6px; }
+    .story-summary { font-size: 13px; color: var(--ink-light); line-height: 1.55; }
+    .story-arrow { color: var(--rule); font-size: 16px; align-self: center; flex-shrink: 0; transition: color var(--transition); }
+    .story-card:hover .story-arrow { color: var(--accent); }
+
+    /* ── States ── */
+    .news-loading { text-align: center; padding: 80px 24px; }
+    .news-loading .spinner { width: 28px; height: 28px; border: 2px solid var(--rule); border-top-color: var(--accent); border-radius: 50%; animation: spin 0.8s linear infinite; margin: 0 auto 14px; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .news-loading p { font-family: var(--mono); font-size: 13px; color: var(--ink-muted); letter-spacing: 0.05em; }
+    .news-empty { text-align: center; padding: 48px 24px; font-family: var(--mono); font-size: 13px; color: var(--ink-muted); letter-spacing: 0.05em; border: 1px dashed var(--rule); border-radius: var(--radius); }
+
+    @media (max-width: 640px) {
+      .story-card { grid-template-columns: 1fr; }
+      .story-arrow { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="topbar">
+    <span class="topbar-date" id="topbarDate"></span>
+    <span class="topbar-tagline">Politics · Policy · Procedure</span>
+    <a href="admin.html" class="topbar-admin">Admin ›</a>
+  </div>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="masthead">
+        <p class="masthead-eyebrow">Est. 2024</p>
+        <h1 class="masthead-title"><a href="index.html">Informed Republic</a></h1>
+        <p class="masthead-sub">A comprehensive resource for an informed America</p>
+      </div>
+    </div>
+  </header>
+
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="index.html#briefs" class="nav-link">Daily Brief</a>
+      <a href="news.html" class="nav-link active">In the News</a>
+      <a href="index.html#education" class="nav-link">Learn</a>
+      <a href="officials.html" class="nav-link">Officials</a>
+      <a href="index.html#about" class="nav-link">About</a>
+    </div>
+  </nav>
+
+  <div class="news-hero">
+    <div class="news-hero-inner">
+      <div>
+        <div class="section-label">In the News</div>
+        <h1>By Policy Area</h1>
+        <p>Top stories from across the political spectrum, organized by issue. No editorial filter — multiple sources, your conclusions.</p>
+      </div>
+      <div class="news-updated" id="newsUpdated"></div>
+    </div>
+  </div>
+
+  <!-- FILTER BAR -->
+  <div class="news-filter-wrap">
+    <div class="news-filter-inner" id="filterBar">
+      <button class="filter-btn active" data-topic="All" onclick="filterTopic('All', this)">All</button>
+    </div>
+  </div>
+
+  <!-- NEWS BODY -->
+  <div class="news-body" id="newsBody">
+    <div class="news-loading" id="newsLoading">
+      <div class="spinner"></div>
+      <p>Loading latest stories…</p>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="footer-title">Informed Republic</span>
+        <p>Politics · Policy · Procedure</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms</a>
+        <a href="disclaimer.html">Disclaimer</a>
+        <a href="mailto:contact@informedrepublic.ecarndt.tech">Contact</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="footerYear"></span> Informed Republic. All rights reserved. Story links open original sources — Informed Republic is not responsible for third-party content.</p>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast"></div>
+
+  <script>
+  const NEWS_URL = 'https://raw.githubusercontent.com/mraw435/informed-republic/main/news.json';
+
+  const TOPIC_ICONS = {
+    'Defense': '🛡️', 'Healthcare': '💊', 'Appropriations': '🏛️',
+    'Foreign Policy': '🌍', 'Energy': '⚡', 'Education': '🎓',
+    'Criminal Justice': '🚔', 'Immigration': '🌐', 'Tax & Finance': '💰',
+    'Elections': '🗳️', 'Transportation': '🚂', 'Agriculture': '🌾',
+    'Cybersecurity': '🔐', 'Technology': '💻'
+  };
+
+  let allStories = [];
+  let activeTopics = new Set();
+
+  function setTopbarDate() {
+    const el = document.getElementById('topbarDate');
+    if (el) el.textContent = new Date().toLocaleDateString('en-US', {
+      weekday: 'short', month: 'short', day: 'numeric', year: 'numeric'
+    });
+  }
+
+  function formatDate(isoStr) {
+    if (!isoStr) return '';
+    try {
+      return new Date(isoStr).toLocaleDateString('en-US', {
+        month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit'
+      });
+    } catch { return ''; }
+  }
+
+  async function loadNews() {
+    try {
+      const res = await fetch(NEWS_URL + '?t=' + Date.now());
+      if (!res.ok) throw new Error('Could not load news');
+      const data = await res.json();
+      allStories = data.stories || [];
+
+      // Update timestamp
+      const updEl = document.getElementById('newsUpdated');
+      if (data.last_updated && updEl) {
+        updEl.innerHTML = `Last updated<br>${formatDate(data.last_updated)}`;
+      }
+
+      // Get unique topics in order
+      const topicOrder = [
+        'Defense','Healthcare','Appropriations','Foreign Policy','Energy',
+        'Education','Criminal Justice','Immigration','Tax & Finance',
+        'Elections','Transportation','Agriculture','Cybersecurity','Technology'
+      ];
+      const presentTopics = topicOrder.filter(t =>
+        allStories.some(s => s.topic === t)
+      );
+
+      // Build filter buttons
+      const bar = document.getElementById('filterBar');
+      presentTopics.forEach(topic => {
+        const btn = document.createElement('button');
+        btn.className = 'filter-btn';
+        btn.dataset.topic = topic;
+        btn.textContent = `${TOPIC_ICONS[topic] || ''} ${topic}`;
+        btn.onclick = () => filterTopic(topic, btn);
+        bar.appendChild(btn);
+        activeTopics.add(topic);
+      });
+
+      renderAllTopics(presentTopics);
+
+    } catch (err) {
+      document.getElementById('newsLoading').innerHTML =
+        '<p class="news-empty">Unable to load news at this time. Please check back shortly.</p>';
+    }
+  }
+
+  function renderAllTopics(topics) {
+    const body = document.getElementById('newsBody');
+    body.innerHTML = '';
+
+    topics.forEach(topic => {
+      const stories = allStories.filter(s => s.topic === topic);
+      if (!stories.length) return;
+
+      const section = document.createElement('div');
+      section.className = 'topic-section';
+      section.dataset.topic = topic;
+
+      section.innerHTML = `
+        <div class="topic-heading">
+          <h2>${TOPIC_ICONS[topic] || ''} ${topic}</h2>
+          <span class="topic-count">${stories.length} stories</span>
+        </div>
+        <div class="story-list">
+          ${stories.map(s => storyCard(s)).join('')}
+        </div>
+      `;
+      body.appendChild(section);
+    });
+  }
+
+  function storyCard(s) {
+    const paywall = s.paywalled ? '<span class="story-paywall">🔒</span>' : '';
+    const bluf = s.bluf ? `<p class="story-summary">${escapeHtml(s.bluf)}</p>` : '';
+    return `
+      <a class="story-card" href="${escapeHtml(s.url)}" target="_blank" rel="noopener noreferrer">
+        <div class="story-main">
+          <div class="story-meta">
+            <span class="story-source">${escapeHtml(s.source)}</span>
+            ${paywall}
+          </div>
+          <p class="story-title">${escapeHtml(s.title)}</p>
+          ${bluf}
+        </div>
+        <span class="story-arrow" aria-hidden="true">›</span>
+      </a>`;
+  }
+
+  function filterTopic(topic, btn) {
+    // Update active button
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+
+    // Show/hide sections
+    document.querySelectorAll('.topic-section').forEach(section => {
+      if (topic === 'All' || section.dataset.topic === topic) {
+        section.dataset.hidden = 'false';
+        section.style.display = 'block';
+      } else {
+        section.dataset.hidden = 'true';
+        section.style.display = 'none';
+      }
+    });
+
+    // Scroll to top of news body
+    document.getElementById('newsBody').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  function escapeHtml(str) {
+    if (!str) return '';
+    return str.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    setTopbarDate();
+    document.getElementById('footerYear').textContent = new Date().getFullYear();
+    loadNews();
+  });
+  </script>
+
+</body>
+</html>
