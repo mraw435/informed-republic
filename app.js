@@ -30,31 +30,24 @@ async function loadMembers() {
 function linkMemberNames(html) {
   if (!allMembers.length) return html;
 
-  // Build name map: "First Last" -> member, sorted longest first to avoid partial matches
+  // FULL NAMES ONLY — no last-name-only matching
+  // Prevents false positives like "Justice" -> "Jim Justice"
   const nameMap = [];
   allMembers.forEach(m => {
-    // Full name variants to match
-    const names = [
-      `${m.first_name} ${m.last_name}`,
-      m.last_name.length > 4 ? m.last_name : null, // only last name if >4 chars to avoid false matches
-    ].filter(Boolean);
-
-    names.forEach(name => {
-      nameMap.push({ name, member: m });
-    });
+    if (!m.first_name || !m.last_name) return;
+    const fullName = `${m.first_name} ${m.last_name}`;
+    if (fullName.length < 8) return;
+    nameMap.push({ name: fullName, member: m });
   });
 
-  // Sort by length descending so "Mark Warner" matches before "Warner"
+  // Sort longest first so longer names match before subsets
   nameMap.sort((a, b) => b.name.length - a.name.length);
 
-  // Parse HTML safely using a temporary element
   const div = document.createElement('div');
   div.innerHTML = html;
 
-  // Walk text nodes only (don't touch existing links/tags)
   const walker = document.createTreeWalker(div, NodeFilter.SHOW_TEXT, {
     acceptNode: node => {
-      // Skip if inside an anchor tag already
       let parent = node.parentElement;
       while (parent) {
         if (parent.tagName === 'A') return NodeFilter.FILTER_REJECT;
@@ -74,10 +67,12 @@ function linkMemberNames(html) {
     let matched = false;
 
     nameMap.forEach(({ name, member }) => {
-      if (!text.includes(name)) return;
+      const escaped = name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+      const regex = new RegExp(`\\b${escaped}\\b`, 'g');
+      if (!regex.test(text)) return;
       matched = true;
-      // Replace name with a linked version
-      text = text.split(name).join(
+      text = text.replace(
+        new RegExp(`\\b${escaped}\\b`, 'g'),
         `<MEMBERLINK bioguide="${member.bioguide_id}" id="${member.id}">${name}</MEMBERLINK>`
       );
     });
