@@ -228,7 +228,7 @@ Return only the HTML content of the brief body (no surrounding tags, no markdown
     await delay(600); setStep(1);
     await delay(400); setStep(2);
 
-    const response = await fetch('https://api.anthropic.com/v1/messages', {
+    const response = await fetch('/api/generate-brief', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
