@@ -410,6 +410,7 @@ Please revise the brief incorporating this feedback. Keep it ~400-550 words, non
 }
 
 
+async function publishBrief() {
   if (!currentDraftDate) return;
   const html = document.getElementById('draftEditor').innerHTML;
   const feedback = document.getElementById('feedbackBox').value;
