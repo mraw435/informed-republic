@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2026 Elections — Informed Republic</title>
+  <meta name="description" content="2026 midterm election coverage — Senate and House candidates by state, with links to campaign websites and polling data." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Inter:wght@300;400;500;600&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .elec-hero { background: var(--bg-white); border-bottom: 1px solid var(--rule); padding: 48px 24px 40px; }
+    .elec-hero-inner { max-width: var(--max-w); margin: 0 auto; display: flex; align-items: flex-end; justify-content: space-between; gap: 24px; flex-wrap: wrap; }
+    .elec-hero h1 { font-family: var(--display); font-size: clamp(1.8rem,4vw,2.8rem); font-weight: 900; color: var(--ink); margin-bottom: 8px; }
+    .elec-hero p { color: var(--ink-light); font-size: 15px; max-width: 540px; line-height: 1.65; }
+    .elec-countdown { text-align: right; flex-shrink: 0; }
+    .elec-countdown-num { font-family: var(--display); font-size: 2.4rem; font-weight: 900; color: var(--accent); line-height: 1; }
+    .elec-countdown-label { font-family: var(--mono); font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--ink-muted); }
+
+    .elec-stats { background: var(--bg); border-bottom: 1px solid var(--rule); padding: 20px 24px; }
+    .elec-stats-inner { max-width: var(--max-w); margin: 0 auto; display: flex; gap: 32px; flex-wrap: wrap; }
+    .elec-stat { display: flex; flex-direction: column; }
+    .elec-stat-num { font-family: var(--display); font-size: 1.6rem; font-weight: 900; color: var(--ink); }
+    .elec-stat-label { font-family: var(--mono); font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-muted); }
+
+    .elec-filter-wrap { background: var(--bg-white); border-bottom: 1px solid var(--rule); position: sticky; top: 0; z-index: 90; }
+    .elec-filter-inner { max-width: var(--max-w); margin: 0 auto; padding: 12px 24px; display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+    .elec-filter-inner select, .elec-filter-inner input { border: 1px solid var(--rule); border-radius: var(--radius); padding: 8px 12px; font-size: 13px; font-family: var(--body); background: var(--bg); color: var(--ink); outline: none; transition: border-color var(--transition); cursor: pointer; }
+    .elec-filter-inner select:focus, .elec-filter-inner input:focus { border-color: var(--accent); }
+    .elec-filter-inner input { flex: 1; min-width: 160px; }
+    .elec-filter-count { font-family: var(--mono); font-size: 11px; color: var(--ink-muted); letter-spacing: 0.06em; margin-left: auto; }
+
+    .elec-body { max-width: var(--max-w); margin: 0 auto; padding: 32px 24px 80px; }
+
+    .race-group { margin-bottom: 40px; }
+    .race-group-header { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; padding-bottom: 10px; border-bottom: 1px solid var(--rule); }
+    .race-group-header h2 { font-family: var(--display); font-size: 1.2rem; font-weight: 700; color: var(--ink); }
+    .race-group-count { font-family: var(--mono); font-size: 10px; color: var(--ink-muted); letter-spacing: 0.1em; }
+
+    .candidate-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 12px; }
+    .candidate-card { background: var(--bg-white); border: 1px solid var(--rule); border-radius: var(--radius); padding: 16px 18px; border-left: 3px solid var(--rule); transition: box-shadow var(--transition), transform var(--transition); }
+    .candidate-card:hover { box-shadow: 0 3px 12px rgba(0,0,0,0.07); transform: translateY(-1px); }
+    .candidate-card.Democrat { border-left-color: #1a4a8a; }
+    .candidate-card.Republican { border-left-color: #8b1a1a; }
+    .candidate-card.Independent { border-left-color: #2d6a2d; }
+    .candidate-card.Libertarian { border-left-color: #b8860b; }
+
+    .candidate-name { font-family: var(--display); font-size: 1rem; font-weight: 700; color: var(--ink); margin-bottom: 3px; }
+    .candidate-meta { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; flex-wrap: wrap; }
+    .party-dot { display: inline-block; width: 7px; height: 7px; border-radius: 50%; flex-shrink: 0; }
+    .party-dot.Democrat { background: #1a4a8a; }
+    .party-dot.Republican { background: #8b1a1a; }
+    .party-dot.Independent { background: #2d6a2d; }
+    .party-dot.Libertarian { background: #b8860b; }
+    .candidate-party { font-size: 12px; color: var(--ink-muted); }
+    .incumbent-badge { font-family: var(--mono); font-size: 9px; letter-spacing: 0.1em; text-transform: uppercase; padding: 2px 6px; background: var(--bg); border: 1px solid var(--rule); border-radius: 2px; color: var(--ink-muted); }
+    .candidate-links { display: flex; gap: 8px; flex-wrap: wrap; }
+    .candidate-link { font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; color: var(--accent); border: 1px solid var(--rule); border-radius: 2px; padding: 4px 8px; text-decoration: none; transition: background var(--transition), border-color var(--transition); }
+    .candidate-link:hover { background: var(--bg); border-color: var(--accent); }
+    .candidate-notes { font-size: 12px; color: var(--ink-muted); margin-top: 8px; line-height: 1.5; font-style: italic; }
+
+    .between-cycles { text-align: center; padding: 80px 24px; max-width: 600px; margin: 0 auto; }
+    .between-cycles h2 { font-family: var(--display); font-size: 1.8rem; font-weight: 700; color: var(--ink); margin-bottom: 12px; }
+    .between-cycles p { color: var(--ink-light); font-size: 15px; line-height: 1.7; margin-bottom: 20px; }
+
+    .elec-loading { text-align: center; padding: 80px 24px; }
+    .elec-loading .spinner { width: 28px; height: 28px; border: 2px solid var(--rule); border-top-color: var(--accent); border-radius: 50%; animation: spin 0.8s linear infinite; margin: 0 auto 14px; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .elec-loading p { font-family: var(--mono); font-size: 13px; color: var(--ink-muted); letter-spacing: 0.05em; }
+    .elec-empty { text-align: center; padding: 48px 24px; font-family: var(--mono); font-size: 13px; color: var(--ink-muted); border: 1px dashed var(--rule); border-radius: var(--radius); }
+
+    .map-placeholder { background: var(--bg-white); border: 1px solid var(--rule); border-radius: var(--radius); padding: 32px 24px; text-align: center; margin-bottom: 32px; }
+    .map-placeholder h3 { font-family: var(--display); font-size: 1.1rem; font-weight: 700; color: var(--ink); margin-bottom: 6px; }
+    .map-placeholder p { font-size: 13px; color: var(--ink-muted); margin-bottom: 16px; }
+    .map-placeholder-img { background: var(--bg); border-radius: var(--radius); height: 180px; display: flex; align-items: center; justify-content: center; font-family: var(--mono); font-size: 12px; color: var(--ink-muted); letter-spacing: 0.08em; }
+
+    @media (max-width: 640px) {
+      .candidate-grid { grid-template-columns: 1fr; }
+      .elec-hero-inner { flex-direction: column; }
+      .elec-countdown { text-align: left; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="topbar">
+    <span class="topbar-date" id="topbarDate"></span>
+    <span class="topbar-tagline">Politics · Policy · Procedure</span>
+    <a href="admin.html" class="topbar-admin">Admin ›</a>
+  </div>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="masthead">
+        <p class="masthead-eyebrow">Est. 2024</p>
+        <h1 class="masthead-title"><a href="index.html" style="color:inherit">Informed Republic</a></h1>
+        <p class="masthead-sub">A comprehensive resource for an informed America</p>
+      </div>
+    </div>
+  </header>
+
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="index.html#briefs" class="nav-link">Daily Brief</a>
+      <a href="news.html" class="nav-link">In the News</a>
+      <a href="learn.html" class="nav-link">Learn</a>
+      <a href="elections.html" class="nav-link active">Elections</a>
+      <a href="officials.html" class="nav-link">Officials</a>
+      <a href="index.html#about" class="nav-link">About</a>
+    </div>
+  </nav>
+
+  <div class="elec-hero">
+    <div class="elec-hero-inner">
+      <div>
+        <div class="section-label">Elections</div>
+        <h1 id="elecTitle">2026 Midterm Elections</h1>
+        <p id="elecDesc">Senate and House candidates across all 50 states — with links to campaign websites and polling data for competitive races. Sourced from FEC filings.</p>
+      </div>
+      <div class="elec-countdown" id="elecCountdown"></div>
+    </div>
+  </div>
+
+  <div class="elec-stats" id="elecStats" style="display:none">
+    <div class="elec-stats-inner">
+      <div class="elec-stat">
+        <span class="elec-stat-num" id="statTotal">—</span>
+        <span class="elec-stat-label">Total candidates</span>
+      </div>
+      <div class="elec-stat">
+        <span class="elec-stat-num" id="statSenate">—</span>
+        <span class="elec-stat-label">Senate races</span>
+      </div>
+      <div class="elec-stat">
+        <span class="elec-stat-num" id="statHouse">—</span>
+        <span class="elec-stat-label">House races</span>
+      </div>
+      <div class="elec-stat">
+        <span class="elec-stat-num" id="statIncumbents">—</span>
+        <span class="elec-stat-label">Incumbents running</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="elec-filter-wrap" id="elecFilterWrap" style="display:none">
+    <div class="elec-filter-inner">
+      <select id="filterRace" onchange="applyFilters()">
+        <option value="">Race: All</option>
+        <option value="Senate">Senate</option>
+        <option value="House">House</option>
+      </select>
+      <select id="filterState" onchange="applyFilters()">
+        <option value="">State: All</option>
+      </select>
+      <select id="filterParty" onchange="applyFilters()">
+        <option value="">Party: All</option>
+        <option value="Democrat">Democrat</option>
+        <option value="Republican">Republican</option>
+        <option value="Independent">Independent</option>
+        <option value="Libertarian">Libertarian</option>
+        <option value="Other">Other</option>
+      </select>
+      <select id="filterIncumbent" onchange="applyFilters()">
+        <option value="">All candidates</option>
+        <option value="true">Incumbents only</option>
+        <option value="false">Challengers only</option>
+      </select>
+      <input type="text" id="filterSearch" placeholder="Search by name…" oninput="applyFilters()" />
+      <span class="elec-filter-count" id="filterCount"></span>
+    </div>
+  </div>
+
+  <div class="elec-body" id="elecBody">
+    <div class="elec-loading" id="elecLoading">
+      <div class="spinner"></div>
+      <p>Loading candidates…</p>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="footer-title">Informed Republic</span>
+        <p>Politics · Policy · Procedure</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms</a>
+        <a href="disclaimer.html">Disclaimer</a>
+        <a href="mailto:contact@informedrepublic.ecarndt.tech">Contact</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="footerYear"></span> Informed Republic. Candidate data sourced from the Federal Election Commission (FEC). Campaign links and polling references are provided for informational purposes only.</p>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast"></div>
+
+  <script>
+  const CANDIDATES_URL = 'https://raw.githubusercontent.com/mraw435/informed-republic/main/candidates.json';
+
+  let allCandidates = [];
+  let cycleStatus = {};
+
+  function setTopbarDate() {
+    const el = document.getElementById('topbarDate');
+    if (el) el.textContent = new Date().toLocaleDateString('en-US', {
+      weekday: 'short', month: 'short', day: 'numeric', year: 'numeric'
+    });
+  }
+
+  function setCountdown(electionDay) {
+    const el = document.getElementById('elecCountdown');
+    if (!el || !electionDay) return;
+    const now = new Date();
+    const target = new Date(electionDay + 'T00:00:00');
+    const diff = target - now;
+    if (diff <= 0) {
+      el.innerHTML = `<div class="elec-countdown-num">Done</div><div class="elec-countdown-label">Election concluded</div>`;
+      return;
+    }
+    const days = Math.ceil(diff / (1000 * 60 * 60 * 24));
+    el.innerHTML = `<div class="elec-countdown-num">${days}</div><div class="elec-countdown-label">Days until election</div>`;
+  }
+
+  async function loadCandidates() {
+    try {
+      const res = await fetch(CANDIDATES_URL + '?t=' + Date.now());
+      if (!res.ok) throw new Error('Could not load candidates');
+      const data = await res.json();
+      allCandidates = data.candidates || [];
+      cycleStatus = data.cycle_status || {};
+
+      // Check if between cycles
+      if (cycleStatus.status === 'between_cycles') {
+        showBetweenCycles();
+        return;
+      }
+
+      // Update hero
+      if (cycleStatus.label) document.getElementById('elecTitle').textContent = cycleStatus.label;
+      if (cycleStatus.description) document.getElementById('elecDesc').textContent = cycleStatus.description;
+      setCountdown(cycleStatus.election_day);
+
+      // Stats
+      const senate = allCandidates.filter(c => c.race_type === 'Senate');
+      const house = allCandidates.filter(c => c.race_type === 'House');
+      const incumbents = allCandidates.filter(c => c.incumbent);
+      document.getElementById('statTotal').textContent = allCandidates.length.toLocaleString();
+      document.getElementById('statSenate').textContent = senate.length;
+      document.getElementById('statHouse').textContent = house.length;
+      document.getElementById('statIncumbents').textContent = incumbents.length;
+      document.getElementById('elecStats').style.display = 'block';
+      document.getElementById('elecFilterWrap').style.display = 'block';
+
+      // Populate state filter
+      const states = [...new Set(allCandidates.map(c => c.state))].sort();
+      const sel = document.getElementById('filterState');
+      states.forEach(s => {
+        const o = document.createElement('option');
+        o.value = s; o.textContent = s;
+        sel.appendChild(o);
+      });
+
+      renderCandidates(allCandidates);
+
+    } catch (err) {
+      document.getElementById('elecLoading').innerHTML =
+        '<p class="elec-empty">Candidate data is being prepared. Check back soon.</p>';
+    }
+  }
+
+  function showBetweenCycles() {
+    document.getElementById('elecLoading').style.display = 'none';
+    document.getElementById('elecBody').innerHTML = `
+      <div class="between-cycles">
+        <div class="section-label">Elections</div>
+        <h2>${cycleStatus.label || 'Election Coverage'}</h2>
+        <p>${cycleStatus.between_cycles_message || 'The 2026 midterm elections have concluded. We are preparing coverage for the next election cycle.'}</p>
+        <p>In the meantime, visit the <a href="officials.html" style="color:var(--accent);border-bottom:1px solid currentColor">Officials Directory</a> to see newly elected members, or check the <a href="index.html#briefs" style="color:var(--accent);border-bottom:1px solid currentColor">Daily Brief</a> for the latest from Washington.</p>
+      </div>`;
+  }
+
+  function applyFilters() {
+    const race = document.getElementById('filterRace').value;
+    const state = document.getElementById('filterState').value;
+    const party = document.getElementById('filterParty').value;
+    const incumbent = document.getElementById('filterIncumbent').value;
+    const search = document.getElementById('filterSearch').value.toLowerCase().trim();
+
+    const filtered = allCandidates.filter(c => {
+      if (race && c.race_type !== race) return false;
+      if (state && c.state !== state) return false;
+      if (party && c.party !== party) return false;
+      if (incumbent === 'true' && !c.incumbent) return false;
+      if (incumbent === 'false' && c.incumbent) return false;
+      if (search && !c.name.toLowerCase().includes(search)) return false;
+      return true;
+    });
+
+    renderCandidates(filtered);
+  }
+
+  function renderCandidates(candidates) {
+    const body = document.getElementById('elecBody');
+    const count = document.getElementById('filterCount');
+    if (count) count.textContent = `${candidates.length.toLocaleString()} candidate${candidates.length !== 1 ? 's' : ''}`;
+
+    if (!candidates.length) {
+      body.innerHTML = '<div class="elec-empty">No candidates match your filters.</div>';
+      return;
+    }
+
+    // Group by state + race type
+    const groups = {};
+    candidates.forEach(c => {
+      const key = `${c.state}||${c.race_type}`;
+      if (!groups[key]) groups[key] = { state: c.state, race_type: c.race_type, candidates: [] };
+      groups[key].candidates.push(c);
+    });
+
+    const sorted = Object.values(groups).sort((a, b) => {
+      if (a.race_type !== b.race_type) return a.race_type === 'Senate' ? -1 : 1;
+      return a.state.localeCompare(b.state);
+    });
+
+    body.innerHTML = sorted.map(group => `
+      <div class="race-group">
+        <div class="race-group-header">
+          <h2>${group.state} — ${group.race_type}</h2>
+          <span class="race-group-count">${group.candidates.length} candidate${group.candidates.length !== 1 ? 's' : ''}</span>
+        </div>
+        <div class="candidate-grid">
+          ${group.candidates.map(c => candidateCard(c)).join('')}
+        </div>
+      </div>
+    `).join('');
+  }
+
+  function candidateCard(c) {
+    const partyClass = ['Democrat','Republican','Independent','Libertarian'].includes(c.party) ? c.party : '';
+    const district = c.race_type === 'House' && c.district ? ` · District ${c.district}` : '';
+    const incumbentBadge = c.incumbent ? '<span class="incumbent-badge">Incumbent</span>' : '';
+
+    const links = [];
+    if (c.campaign_url) links.push(`<a href="${c.campaign_url}" class="candidate-link" target="_blank" rel="noopener">Campaign site ↗</a>`);
+    if (c.polling_url) links.push(`<a href="${c.polling_url}" class="candidate-link" target="_blank" rel="noopener">Polling ↗</a>`);
+    if (c.fec_id) links.push(`<a href="https://www.fec.gov/data/candidate/${c.fec_id}/" class="candidate-link" target="_blank" rel="noopener">FEC filing ↗</a>`);
+
+    return `
+      <div class="candidate-card ${partyClass}">
+        <p class="candidate-name">${escHtml(c.name)}</p>
+        <div class="candidate-meta">
+          <span class="party-dot ${partyClass}"></span>
+          <span class="candidate-party">${escHtml(c.party)}${district}</span>
+          ${incumbentBadge}
+        </div>
+        ${links.length ? `<div class="candidate-links">${links.join('')}</div>` : ''}
+        ${c.notes ? `<p class="candidate-notes">${escHtml(c.notes)}</p>` : ''}
+      </div>`;
+  }
+
+  function escHtml(str) {
+    if (!str) return '';
+    return str.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    setTopbarDate();
+    document.getElementById('footerYear').textContent = new Date().getFullYear();
+    loadCandidates();
+  });
+  </script>
+
+</body>
+</html>

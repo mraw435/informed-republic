@@ -1,0 +1,20 @@
+{
+  "_meta": {
+    "description": "Informed Republic — 2026 Election candidates",
+    "last_updated": "",
+    "election_year": 2026,
+    "source": "Federal Election Commission public API (api.open.fec.gov)",
+    "total_candidates": 0,
+    "senate_candidates": 0,
+    "house_candidates": 0,
+    "notes": "Run fetch_candidates.py to populate. Then manually add campaign_url, polling_url, and notes for notable races."
+  },
+  "cycle_status": {
+    "status": "active",
+    "label": "2026 Midterm Elections",
+    "description": "Senate and House candidates across all 50 states — sourced from FEC filings, with campaign links for notable races.",
+    "election_day": "2026-11-03",
+    "between_cycles_message": ""
+  },
+  "candidates": []
+}
