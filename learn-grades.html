@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Civics for Grades 6–12 — Informed Republic</title>
+  <meta name="description" content="In-depth civics education for middle and high school students. Learn about the legislative process, elections, the Supreme Court, and the Constitution." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Inter:wght@300;400;500;600&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .page-hero { background: var(--bg-white); border-bottom: 1px solid var(--rule); padding: 48px 24px 40px; }
+    .page-hero-inner { max-width: 860px; margin: 0 auto; }
+    .page-hero h1 { font-family: var(--display); font-size: clamp(1.8rem,4vw,2.6rem); font-weight: 900; color: var(--ink); margin-bottom: 10px; }
+    .page-hero p { color: var(--ink-light); font-size: 15px; line-height: 1.65; max-width: 580px; }
+    .page-back { font-family: var(--mono); font-size: 11px; color: var(--ink-muted); letter-spacing: 0.08em; margin-bottom: 14px; display: block; }
+    .page-back:hover { color: var(--accent); }
+    .page-body { max-width: 860px; margin: 0 auto; padding: 48px 24px 80px; }
+    .coming-soon { text-align: center; padding: 64px 24px; border: 1px dashed var(--rule); border-radius: var(--radius); }
+    .coming-soon h2 { font-family: var(--display); font-size: 1.4rem; font-weight: 700; color: var(--ink); margin-bottom: 10px; }
+    .coming-soon p { color: var(--ink-light); font-size: 15px; max-width: 480px; margin: 0 auto 24px; line-height: 1.65; }
+    .coming-soon .badge { font-family: var(--mono); font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--accent); display: block; margin-bottom: 8px; }
+    .lesson-preview { background: var(--bg-white); border: 1px solid var(--rule); border-radius: var(--radius); padding: 22px; margin-bottom: 14px; opacity: 0.6; }
+    .lesson-preview h3 { font-family: var(--display); font-size: 1.05rem; font-weight: 700; color: var(--ink); margin-bottom: 6px; }
+    .lesson-preview p { font-size: 13px; color: var(--ink-muted); margin: 0; }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <span class="topbar-tagline">Politics · Policy · Procedure</span>
+  </div>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="masthead">
+        <p class="masthead-eyebrow">Est. 2024</p>
+        <h1 class="masthead-title"><a href="index.html" style="color:inherit">Informed Republic</a></h1>
+        <p class="masthead-sub">A comprehensive resource for an informed America</p>
+      </div>
+    </div>
+  </header>
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="learn.html" class="nav-link active">Learn</a>
+      <a href="officials.html" class="nav-link">Officials</a>
+      <a href="news.html" class="nav-link">In the News</a>
+    </div>
+  </nav>
+  <div class="page-hero">
+    <div class="page-hero-inner">
+      <a href="learn.html" class="page-back">← Back to all lessons</a>
+      <div class="section-label">Grades 6–12</div>
+      <h1>Civics for Middle and High School</h1>
+      <p>In-depth civics lessons covering the legislative process, elections, the Supreme Court, and the Constitution — with the detail you need for civics class, AP Government, and beyond.</p>
+    </div>
+  </div>
+  <div class="page-body">
+    <div class="coming-soon">
+      <span class="badge">Coming Soon</span>
+      <h2>Lessons launching soon</h2>
+      <p>We're building out full lessons for grades 6–12. Here's a preview of what's coming — check back soon or subscribe to the Daily Brief to be notified when new content launches.</p>
+    </div>
+    <div style="margin-top:32px">
+      <div class="lesson-preview" id="branches">
+        <h3>🏛️ The Three Branches: Powers and Checks</h3>
+        <p>How the executive, legislative, and judicial branches balance each other through checks and balances — and what happens when they conflict.</p>
+      </div>
+      <div class="lesson-preview" id="legislation">
+        <h3>📜 How Legislation Passes</h3>
+        <p>From committee markup to floor votes, conference committees, and presidential action — the full legislative process in detail.</p>
+      </div>
+      <div class="lesson-preview" id="elections">
+        <h3>🗳️ The Election Process</h3>
+        <p>Primaries, caucuses, the Electoral College, debates, and how candidates go from announcement to inauguration.</p>
+      </div>
+      <div class="lesson-preview" id="scotus">
+        <h3>⚖️ Landmark Supreme Court Cases</h3>
+        <p>The decisions that shaped American law — from Marbury v. Madison (1803) to the present day.</p>
+      </div>
+    </div>
+  </div>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand"><span class="footer-title">Informed Republic</span><p>Politics · Policy · Procedure</p></div>
+      <div class="footer-links"><a href="learn.html">All Lessons</a><a href="index.html">Home</a><a href="privacy.html">Privacy Policy</a></div>
+    </div>
+    <div class="footer-bottom"><p>© <span id="footerYear"></span> Informed Republic. All rights reserved.</p></div>
+  </footer>
+  <script>document.getElementById('footerYear').textContent = new Date().getFullYear();</script>
+</body>
+</html>

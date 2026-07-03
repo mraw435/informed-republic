@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Civics for Kids — Informed Republic</title>
+  <meta name="description" content="Fun, simple civics lessons for elementary school kids. Learn about the three branches of government, how laws are made, and how elections work." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Inter:wght@300;400;500;600&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .kids-body { background: #f4fbf4; }
+    .kids-hero { background: #e8f5e8; border-bottom: 2px solid #c0e0c0; padding: 44px 24px 36px; }
+    .kids-hero-inner { max-width: 860px; margin: 0 auto; display: flex; align-items: center; gap: 24px; }
+    .kids-hero-icon { font-size: 60px; flex-shrink: 0; }
+    .kids-hero h1 { font-family: var(--display); font-size: clamp(1.8rem,4vw,2.6rem); font-weight: 900; color: #1a4a1a; margin-bottom: 8px; }
+    .kids-hero p { color: #2d6a2d; font-size: 16px; line-height: 1.65; }
+    .kids-back { font-family: var(--mono); font-size: 11px; color: #2d6a2d; letter-spacing: 0.08em; margin-bottom: 14px; display: block; }
+    .kids-back:hover { color: #1a4a1a; }
+
+    .kids-content { max-width: 860px; margin: 0 auto; padding: 48px 24px 80px; }
+
+    .lesson-block { background: #fff; border: 1px solid #c8e0c8; border-radius: 8px; padding: 32px 36px; margin-bottom: 32px; scroll-margin-top: 80px; }
+    .lesson-block h2 { font-family: var(--display); font-size: 1.5rem; font-weight: 900; color: #1a4a1a; margin-bottom: 6px; display: flex; align-items: center; gap: 10px; }
+    .lesson-block .lesson-label { font-family: var(--mono); font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; color: #5a9a5a; margin-bottom: 12px; }
+    .lesson-block p { color: #3a5a3a; font-size: 15px; line-height: 1.75; margin-bottom: 14px; }
+    .lesson-block p:last-child { margin-bottom: 0; }
+    .lesson-block strong { color: #1a4a1a; }
+
+    .kids-callout { background: #f0faf0; border-left: 4px solid #5a9a5a; padding: 16px 20px; margin: 18px 0; border-radius: 0 6px 6px 0; }
+    .kids-callout p { color: #2d6a2d; font-size: 14px; margin: 0; }
+    .kids-callout strong { color: #1a4a1a; display: block; margin-bottom: 4px; font-size: 15px; }
+
+    .branch-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin: 20px 0; }
+    .branch-card { background: #f4fbf4; border: 1px solid #c0e0c0; border-radius: 8px; padding: 18px 14px; text-align: center; }
+    .branch-card .icon { font-size: 32px; margin-bottom: 8px; display: block; }
+    .branch-card h3 { font-family: var(--display); font-size: 0.95rem; font-weight: 700; color: #1a4a1a; margin-bottom: 6px; }
+    .branch-card p { font-size: 12px; color: #5a7a5a; line-height: 1.5; margin: 0; }
+
+    .steps-list { counter-reset: step; list-style: none; padding: 0; margin: 16px 0; }
+    .steps-list li { counter-increment: step; display: flex; gap: 14px; align-items: flex-start; margin-bottom: 14px; font-size: 15px; color: #3a5a3a; line-height: 1.6; }
+    .steps-list li::before { content: counter(step); display: inline-flex; align-items: center; justify-content: center; min-width: 28px; width: 28px; height: 28px; background: #5a9a5a; color: #fff; border-radius: 50%; font-size: 13px; font-weight: 700; flex-shrink: 0; margin-top: 2px; }
+    .steps-list li > span { display: block; }
+
+    .fun-fact { background: #fffbe8; border: 1px solid #f0d878; border-radius: 8px; padding: 16px 20px; margin: 18px 0; display: flex; gap: 12px; align-items: flex-start; }
+    .fun-fact-icon { font-size: 22px; flex-shrink: 0; }
+    .fun-fact p { font-size: 14px; color: #4a3800; margin: 0; line-height: 1.6; }
+    .fun-fact strong { display: block; color: #3a2800; margin-bottom: 3px; }
+
+    .quiz-section { background: #fffbe8; border: 2px solid #f0d878; border-radius: 8px; padding: 28px 32px; margin-top: 32px; }
+    .quiz-section h2 { font-family: var(--display); font-size: 1.4rem; font-weight: 900; color: #3a2800; margin-bottom: 6px; }
+    .quiz-section p { color: #5a4a00; font-size: 14px; margin-bottom: 20px; }
+    .quiz-q { margin-bottom: 24px; }
+    .quiz-q p { font-size: 15px; font-weight: 600; color: #3a2800; margin-bottom: 10px; }
+    .quiz-options { display: flex; flex-direction: column; gap: 8px; }
+    .quiz-option { background: #fff; border: 1px solid #e0c870; border-radius: 6px; padding: 10px 14px; font-size: 14px; color: #4a3800; cursor: pointer; transition: background 0.15s, border-color 0.15s; text-align: left; font-family: var(--body); }
+    .quiz-option:hover { background: #f0e8b0; border-color: #c0a800; }
+    .quiz-option.correct { background: #d8f0d8; border-color: #5a9a5a; color: #1a4a1a; }
+    .quiz-option.wrong { background: #f8d8d8; border-color: #c05050; color: #4a1a1a; }
+    .quiz-feedback { font-size: 13px; margin-top: 8px; font-weight: 600; display: none; }
+    .quiz-score { font-family: var(--display); font-size: 1.2rem; font-weight: 700; color: #1a4a1a; text-align: center; padding: 16px; background: #d8f0d8; border-radius: 6px; display: none; margin-top: 16px; }
+    .quiz-btn-submit { background: #5a9a5a; color: #fff; border: none; padding: 11px 24px; font-size: 14px; font-weight: 600; border-radius: 6px; cursor: pointer; font-family: var(--body); margin-top: 8px; }
+    .quiz-btn-submit:hover { background: #3a7a3a; }
+
+    @media (max-width: 600px) {
+      .branch-grid { grid-template-columns: 1fr; }
+      .lesson-block { padding: 22px 18px; }
+    }
+  </style>
+</head>
+<body class="kids-body">
+
+  <div class="topbar" style="background:#1a4a1a">
+    <span class="topbar-tagline" style="color:#9ac89a">Civics for Kids · Informed Republic</span>
+  </div>
+
+  <div class="kids-hero">
+    <div class="kids-hero-inner">
+      <span class="kids-hero-icon" aria-hidden="true">🏛️</span>
+      <div>
+        <a href="learn.html" class="kids-back">← Back to all lessons</a>
+        <h1>Civics for Kids</h1>
+        <p>Learn how the United States government works — in plain, simple English. Perfect for grades K–5!</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="kids-content">
+
+    <!-- LESSON 1: THREE BRANCHES -->
+    <div class="lesson-block" id="branches">
+      <p class="lesson-label">Lesson 1 of 4</p>
+      <h2>🏛️ The Three Branches of Government</h2>
+      <p>The United States government is split into <strong>three parts</strong>, called branches. Each branch has a different job, and they all keep an eye on each other so that no single person or group gets too much power. This is called <strong>checks and balances</strong>.</p>
+
+      <div class="branch-grid">
+        <div class="branch-card">
+          <span class="icon">📜</span>
+          <h3>Legislative Branch</h3>
+          <p><strong>Congress</strong> — the Senate and the House of Representatives. They <em>make the laws</em>.</p>
+        </div>
+        <div class="branch-card">
+          <span class="icon">🦅</span>
+          <h3>Executive Branch</h3>
+          <p><strong>The President</strong> and the Cabinet. They <em>carry out the laws</em> and run the country day to day.</p>
+        </div>
+        <div class="branch-card">
+          <span class="icon">⚖️</span>
+          <h3>Judicial Branch</h3>
+          <p><strong>The Supreme Court</strong> and other courts. They <em>decide what the laws mean</em> and whether they're fair.</p>
+        </div>
+      </div>
+
+      <div class="kids-callout">
+        <p><strong>Why three branches?</strong> The Founders of the United States didn't want any one person to have all the power — like a king. So they split the government into three parts that each watch over the others. If one branch tries to do something wrong, the others can stop it!</p>
+      </div>
+
+      <div class="fun-fact">
+        <span class="fun-fact-icon">💡</span>
+        <p><strong>Fun fact!</strong> The United States Capitol building in Washington D.C. — where Congress meets — has 541 rooms, 850 doorways, and 300 skylights. It took over 30 years to build!</p>
+      </div>
+    </div>
+
+    <!-- LESSON 2: HOW A BILL BECOMES A LAW -->
+    <div class="lesson-block" id="bill">
+      <p class="lesson-label">Lesson 2 of 4</p>
+      <h2>📜 How a Bill Becomes a Law</h2>
+      <p>A <strong>law</strong> is a rule that everyone in the country must follow. But before something becomes a law, it starts as an <strong>idea</strong> — and it has to go on a long journey!</p>
+
+      <ol class="steps-list">
+        <li><span><strong>Someone has an idea.</strong> A member of Congress — a Senator or a Representative — comes up with an idea for a new law. This could be anyone's idea: a student, a teacher, a business owner, or even you!</span></li>
+        <li><span><strong>The idea becomes a bill.</strong> The idea is written down as a bill — a formal document that explains the new law.</span></li>
+        <li><span><strong>A committee studies it.</strong> A small group of Congress members (called a committee) reads the bill carefully and decides if it's a good idea.</span></li>
+        <li><span><strong>The full Congress votes.</strong> First the House of Representatives votes. If it passes, the Senate votes. Both must say yes!</span></li>
+        <li><span><strong>The President decides.</strong> If Congress says yes, the bill goes to the President. The President can <strong>sign it</strong> (and it becomes a law!) or <strong>veto it</strong> (say no).</span></li>
+        <li><span><strong>It becomes a law!</strong> Once signed, the bill is now a law that everyone must follow.</span></li>
+      </ol>
+
+      <div class="fun-fact">
+        <span class="fun-fact-icon">💡</span>
+        <p><strong>Fun fact!</strong> Most bills never become laws! Out of thousands of bills introduced in Congress each year, only a small number make it all the way through the process.</p>
+      </div>
+    </div>
+
+    <!-- LESSON 3: ELECTIONS -->
+    <div class="lesson-block" id="elections">
+      <p class="lesson-label">Lesson 3 of 4</p>
+      <h2>🗳️ How Elections Work</h2>
+      <p>In the United States, <strong>citizens vote</strong> to choose their leaders. This is what makes America a <strong>democracy</strong> — the people decide who is in charge!</p>
+
+      <div class="kids-callout">
+        <p><strong>Who can vote?</strong> United States citizens who are 18 years old or older can vote. That means someday, you'll be able to help choose the President, your Senators, and your Representative!</p>
+      </div>
+
+      <p>The biggest election in the United States is the <strong>Presidential Election</strong>, held every four years. Here's how it works:</p>
+      <ol class="steps-list">
+        <li><span>People from each political party vote in <strong>primary elections</strong> to pick who they want as their candidate.</span></li>
+        <li><span>Each party picks their candidate at a big meeting called a <strong>convention</strong>.</span></li>
+        <li><span>The candidates travel around the country, giving speeches and debating each other.</span></li>
+        <li><span>On Election Day (the first Tuesday after November 1st), citizens vote!</span></li>
+        <li><span>The winner is determined by the <strong>Electoral College</strong> — a special system where each state has a certain number of votes based on its population.</span></li>
+      </ol>
+
+      <div class="fun-fact">
+        <span class="fun-fact-icon">💡</span>
+        <p><strong>Fun fact!</strong> The youngest person ever elected President was John F. Kennedy, who was 43 years old. You have to be at least 35 years old to run for President!</p>
+      </div>
+    </div>
+
+    <!-- LESSON 4: CONSTITUTION -->
+    <div class="lesson-block" id="constitution">
+      <p class="lesson-label">Lesson 4 of 4</p>
+      <h2>📋 What Is the Constitution?</h2>
+      <p>The <strong>Constitution</strong> is the most important document in the United States. Think of it as the <strong>rulebook for the entire government</strong>. It was written in 1787 — more than 235 years ago — and it still guides our country today!</p>
+
+      <p>The Constitution does three big things:</p>
+      <ol class="steps-list">
+        <li><span>It <strong>creates the three branches</strong> of government and explains what each one can do.</span></li>
+        <li><span>It <strong>protects your rights</strong>. The first ten additions to the Constitution are called the <strong>Bill of Rights</strong>, and they guarantee things like freedom of speech, freedom of religion, and the right to a fair trial.</span></li>
+        <li><span>It <strong>sets the rules</strong> for how new laws can be made and how the Constitution itself can be changed (called an <em>amendment</em>).</span></li>
+      </ol>
+
+      <div class="kids-callout">
+        <p><strong>The Bill of Rights</strong> — The first ten amendments to the Constitution protect the rights of every American. They include the right to say what you think, the right to practice any religion, and the right to a fair trial if you're ever accused of something wrong.</p>
+      </div>
+
+      <div class="fun-fact">
+        <span class="fun-fact-icon">💡</span>
+        <p><strong>Fun fact!</strong> The original Constitution is kept at the National Archives building in Washington D.C. The document is stored in a special case filled with argon gas to keep it from deteriorating — you can go see it in person!</p>
+      </div>
+    </div>
+
+    <!-- QUIZ -->
+    <div class="quiz-section" id="quiz">
+      <h2>⭐ Quiz Time!</h2>
+      <p>Let's see what you learned! Answer all 5 questions and check your score.</p>
+
+      <div class="quiz-q" id="q1">
+        <p>1. How many branches does the United States government have?</p>
+        <div class="quiz-options">
+          <button class="quiz-option" onclick="answer(this,'q1',false)">Two</button>
+          <button class="quiz-option" onclick="answer(this,'q1',true)">Three</button>
+          <button class="quiz-option" onclick="answer(this,'q1',false)">Four</button>
+          <button class="quiz-option" onclick="answer(this,'q1',false)">Five</button>
+        </div>
+        <p class="quiz-feedback" id="q1-fb"></p>
+      </div>
+
+      <div class="quiz-q" id="q2">
+        <p>2. Which branch of government makes the laws?</p>
+        <div class="quiz-options">
+          <button class="quiz-option" onclick="answer(this,'q2',false)">The President</button>
+          <button class="quiz-option" onclick="answer(this,'q2',false)">The Supreme Court</button>
+          <button class="quiz-option" onclick="answer(this,'q2',true)">Congress</button>
+          <button class="quiz-option" onclick="answer(this,'q2',false)">The Cabinet</button>
+        </div>
+        <p class="quiz-feedback" id="q2-fb"></p>
+      </div>
+
+      <div class="quiz-q" id="q3">
+        <p>3. What do we call it when the President says "no" to a bill?</p>
+        <div class="quiz-options">
+          <button class="quiz-option" onclick="answer(this,'q3',false)">A filibuster</button>
+          <button class="quiz-option" onclick="answer(this,'q3',true)">A veto</button>
+          <button class="quiz-option" onclick="answer(this,'q3',false)">An amendment</button>
+          <button class="quiz-option" onclick="answer(this,'q3',false)">A primary</button>
+        </div>
+        <p class="quiz-feedback" id="q3-fb"></p>
+      </div>
+
+      <div class="quiz-q" id="q4">
+        <p>4. How old do you have to be to vote in the United States?</p>
+        <div class="quiz-options">
+          <button class="quiz-option" onclick="answer(this,'q4',false)">16</button>
+          <button class="quiz-option" onclick="answer(this,'q4',false)">21</button>
+          <button class="quiz-option" onclick="answer(this,'q4',true)">18</button>
+          <button class="quiz-option" onclick="answer(this,'q4',false)">25</button>
+        </div>
+        <p class="quiz-feedback" id="q4-fb"></p>
+      </div>
+
+      <div class="quiz-q" id="q5">
+        <p>5. What is the name of the first ten amendments to the Constitution?</p>
+        <div class="quiz-options">
+          <button class="quiz-option" onclick="answer(this,'q5',false)">The Declaration of Independence</button>
+          <button class="quiz-option" onclick="answer(this,'q5',false)">The Electoral College</button>
+          <button class="quiz-option" onclick="answer(this,'q5',true)">The Bill of Rights</button>
+          <button class="quiz-option" onclick="answer(this,'q5',false)">The Amendments Act</button>
+        </div>
+        <p class="quiz-feedback" id="q5-fb"></p>
+      </div>
+
+      <button class="quiz-btn-submit" onclick="submitQuiz()">Check my answers!</button>
+      <div class="quiz-score" id="quizScore"></div>
+    </div>
+
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="footer-title">Informed Republic</span>
+        <p>Politics · Policy · Procedure</p>
+      </div>
+      <div class="footer-links">
+        <a href="learn.html">All Lessons</a>
+        <a href="index.html">Home</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="footerYear"></span> Informed Republic. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('footerYear').textContent = new Date().getFullYear();
+
+    const answers = {};
+
+    function answer(btn, qid, correct) {
+      const q = document.getElementById(qid);
+      if (q.dataset.answered) return;
+      q.dataset.answered = 'true';
+      answers[qid] = correct;
+      const opts = q.querySelectorAll('.quiz-option');
+      opts.forEach(o => {
+        o.disabled = true;
+        if (o === btn) o.classList.add(correct ? 'correct' : 'wrong');
+      });
+      if (!correct) {
+        opts.forEach(o => {
+          if (o.onclick && o.onclick.toString().includes('true')) o.classList.add('correct');
+        });
+      }
+    }
+
+    function submitQuiz() {
+      ['q1','q2','q3','q4','q5'].forEach(qid => {
+        const q = document.getElementById(qid);
+        if (!q.dataset.answered) {
+          const fb = document.getElementById(qid + '-fb');
+          fb.style.display = 'block';
+          fb.style.color = '#c05050';
+          fb.textContent = 'You skipped this one!';
+        }
+      });
+      const score = Object.values(answers).filter(Boolean).length;
+      const scoreEl = document.getElementById('quizScore');
+      scoreEl.style.display = 'block';
+      const msgs = ['Keep studying — you\'ll get it! 📚', 'Good try! Review the lessons and try again. 📖', 'Not bad! A little more practice and you\'ll nail it. 👍', 'Great job! You know your civics! 🌟', 'Perfect score! You\'re a civics superstar! ⭐'];
+      scoreEl.textContent = `You got ${score} out of 5 correct! ${msgs[Math.min(score, msgs.length - 1)]}`;
+    }
+  </script>
+</body>
+</html>

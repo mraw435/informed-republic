@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Deep Dive — Informed Republic</title>
+  <meta name="description" content="Advanced civics content for college students, researchers, and professionals. In-depth analysis of how Washington works, from Capitol Hill to the Pentagon." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Inter:wght@300;400;500;600&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body { background: var(--bg-dark); }
+    .deep-topbar { background: #111827; }
+    .deep-hero { background: #111827; border-bottom: 1px solid #2a3448; padding: 52px 24px 44px; }
+    .deep-hero-inner { max-width: 860px; margin: 0 auto; }
+    .deep-hero h1 { font-family: var(--display); font-size: clamp(1.8rem,4vw,2.6rem); font-weight: 900; color: #f0ece6; margin-bottom: 10px; }
+    .deep-hero p { color: #9a9690; font-size: 16px; line-height: 1.65; max-width: 580px; }
+    .deep-back { font-family: var(--mono); font-size: 11px; color: #666; letter-spacing: 0.08em; margin-bottom: 14px; display: block; }
+    .deep-back:hover { color: #aaa; }
+    .deep-body { max-width: 860px; margin: 0 auto; padding: 48px 24px 80px; }
+    .deep-coming { text-align: center; padding: 64px 24px; border: 1px dashed #3a4560; border-radius: var(--radius); }
+    .deep-coming h2 { font-family: var(--display); font-size: 1.4rem; font-weight: 700; color: #f0ece6; margin-bottom: 10px; }
+    .deep-coming p { color: #9a9690; font-size: 15px; max-width: 480px; margin: 0 auto 24px; line-height: 1.65; }
+    .deep-coming .badge { font-family: var(--mono); font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--accent); display: block; margin-bottom: 8px; }
+    .deep-preview { background: #1c2130; border: 1px solid #2a3448; border-radius: var(--radius); padding: 22px; margin-bottom: 12px; opacity: 0.7; }
+    .deep-preview h3 { font-family: var(--display); font-size: 1.05rem; font-weight: 700; color: #f0ece6; margin-bottom: 6px; }
+    .deep-preview p { font-size: 13px; color: #7a7a7a; margin: 0; }
+    .deep-footer { background: #111827; border-top: 1px solid #2a3448; }
+  </style>
+</head>
+<body>
+  <div class="topbar deep-topbar">
+    <span class="topbar-tagline" style="color:#666">Deep Dive · Informed Republic</span>
+  </div>
+  <header class="site-header" style="background:#111827;border-bottom:1px solid #2a3448">
+    <div class="header-inner">
+      <div class="masthead">
+        <p class="masthead-eyebrow" style="color:#666">Est. 2024</p>
+        <h1 class="masthead-title" style="color:#f0ece6"><a href="index.html" style="color:inherit">Informed Republic</a></h1>
+        <p class="masthead-sub" style="color:#666">A comprehensive resource for an informed America</p>
+      </div>
+    </div>
+  </header>
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="learn.html" class="nav-link active">Learn</a>
+      <a href="officials.html" class="nav-link">Officials</a>
+      <a href="news.html" class="nav-link">In the News</a>
+    </div>
+  </nav>
+  <div class="deep-hero">
+    <div class="deep-hero-inner">
+      <a href="learn.html" class="deep-back">← Back to all lessons</a>
+      <div class="section-label" style="color:var(--accent)">Deep Dive</div>
+      <h1>For College Students, Researchers, and Professionals</h1>
+      <p>In-depth analysis of how Washington actually works — drawing on firsthand experience from Capitol Hill and the Pentagon. For those who want to go beyond the textbook.</p>
+    </div>
+  </div>
+  <div class="deep-body">
+    <div class="deep-coming">
+      <span class="badge">Coming Soon</span>
+      <h2>Deep dives launching soon</h2>
+      <p>We're writing in-depth content based on real experience inside Congress and the Pentagon. Here's what's coming — subscribe to the Daily Brief to be notified when content launches.</p>
+    </div>
+    <div style="margin-top:32px">
+      <div class="deep-preview" id="congressional-process">
+        <h3>🏛️ How Congress Really Works</h3>
+        <p>The informal rules, leadership dynamics, and behind-the-scenes processes that determine what actually passes — and what doesn't.</p>
+      </div>
+      <div class="deep-preview" id="appropriations">
+        <h3>💰 The Appropriations Process Explained</h3>
+        <p>How the federal government funds itself — authorizations vs. appropriations, continuing resolutions, and why shutdowns happen.</p>
+      </div>
+      <div class="deep-preview" id="defense-budget">
+        <h3>🛡️ The Defense Budget: How It Works</h3>
+        <p>From the President's budget request to the NDAA — how the Pentagon gets funded and what happens when it doesn't.</p>
+      </div>
+      <div class="deep-preview" id="careers">
+        <h3>💼 Careers in Government and Policy</h3>
+        <p>How to get a job on Capitol Hill, in a federal agency, or as a defense contractor — from someone who has done all three.</p>
+      </div>
+    </div>
+  </div>
+  <footer class="site-footer deep-footer">
+    <div class="footer-inner">
+      <div class="footer-brand"><span class="footer-title">Informed Republic</span><p>Politics · Policy · Procedure</p></div>
+      <div class="footer-links"><a href="learn.html">All Lessons</a><a href="index.html">Home</a><a href="privacy.html">Privacy Policy</a></div>
+    </div>
+    <div class="footer-bottom"><p>© <span id="footerYear"></span> Informed Republic. All rights reserved.</p></div>
+  </footer>
+  <script>document.getElementById('footerYear').textContent = new Date().getFullYear();</script>
+</body>
+</html>

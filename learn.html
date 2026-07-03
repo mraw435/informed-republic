@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Learn Civics — Informed Republic</title>
+  <meta name="description" content="Free civics education for all ages — from elementary school kids to college students and beyond. Learn how the U.S. government works, how laws are made, and how elections work." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Inter:wght@300;400;500;600&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .learn-hero { background: var(--bg-white); border-bottom: 1px solid var(--rule); padding: 52px 24px 44px; }
+    .learn-hero-inner { max-width: var(--max-w); margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; }
+    .learn-hero h1 { font-family: var(--display); font-size: clamp(2rem,4vw,2.8rem); font-weight: 900; color: var(--ink); margin-bottom: 12px; }
+    .learn-hero p { color: var(--ink-light); font-size: 16px; line-height: 1.7; }
+    .learn-hero-quote { background: var(--bg); border-left: 3px solid var(--accent); padding: 22px 24px; }
+    .learn-hero-quote blockquote { font-family: var(--display); font-style: italic; font-size: 1.05rem; color: var(--ink); line-height: 1.6; margin-bottom: 10px; }
+    .learn-hero-quote cite { font-family: var(--mono); font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-muted); }
+
+    .track-section { padding: 56px 24px; }
+    .track-section:nth-child(even) { background: var(--bg-white); }
+    .track-section:nth-child(odd) { background: var(--bg); }
+    .track-inner { max-width: var(--max-w); margin: 0 auto; }
+    .track-header { display: flex; align-items: flex-start; justify-content: space-between; gap: 24px; margin-bottom: 32px; flex-wrap: wrap; }
+    .track-header-text { flex: 1; }
+    .track-badge { display: inline-block; font-family: var(--mono); font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; padding: 4px 10px; border-radius: var(--radius); margin-bottom: 10px; }
+    .badge-kids { background: #e8f4e8; color: #2d6a2d; border: 1px solid #b8d8b8; }
+    .badge-middle { background: #e8eef8; color: #1a3a6b; border: 1px solid #b8c8e8; }
+    .badge-deep { background: #15304f; color: #b8a898; border: 1px solid #333; }
+    .track-header h2 { font-family: var(--display); font-size: clamp(1.4rem,3vw,2rem); font-weight: 700; color: var(--ink); margin-bottom: 8px; }
+    .track-header p { color: var(--ink-light); font-size: 15px; line-height: 1.65; max-width: 500px; }
+    .track-cta { flex-shrink: 0; align-self: flex-end; }
+    .track-cta a { display: inline-block; background: var(--accent); color: #fff; padding: 11px 22px; font-size: 14px; font-family: var(--body); font-weight: 600; letter-spacing: 0.04em; border-radius: var(--radius); transition: background var(--transition); }
+    .track-cta a:hover { background: var(--accent-light); }
+
+    .lesson-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 14px; }
+    .lesson-card { background: var(--bg-white); border: 1px solid var(--rule); border-radius: var(--radius); padding: 20px; display: flex; flex-direction: column; gap: 8px; text-decoration: none; color: inherit; transition: border-color var(--transition), box-shadow var(--transition), transform var(--transition); }
+    .lesson-card:hover { border-color: var(--accent); box-shadow: 0 3px 14px rgba(0,0,0,0.07); transform: translateY(-1px); }
+    .lesson-icon { font-size: 26px; margin-bottom: 2px; }
+    .lesson-title { font-family: var(--display); font-size: 1rem; font-weight: 700; color: var(--ink); line-height: 1.3; }
+    .lesson-desc { font-size: 13px; color: var(--ink-light); line-height: 1.55; flex: 1; }
+    .lesson-meta { display: flex; align-items: center; justify-content: space-between; margin-top: 4px; }
+    .lesson-tag { font-family: var(--mono); font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-muted); }
+    .lesson-arrow { color: var(--rule); font-size: 14px; transition: color var(--transition); }
+    .lesson-card:hover .lesson-arrow { color: var(--accent); }
+
+    .kids-lesson-card { background: var(--bg-white); border: 1px solid #c8e0c8; border-radius: 8px; padding: 20px; display: flex; flex-direction: column; gap: 8px; text-decoration: none; color: inherit; transition: border-color var(--transition), box-shadow var(--transition), transform var(--transition); }
+    .kids-lesson-card:hover { border-color: #5a9a5a; box-shadow: 0 3px 14px rgba(0,0,0,0.07); transform: translateY(-1px); }
+
+    .deep-lesson-card { background: #15304f; border: 1px solid #333; border-radius: var(--radius); padding: 20px; display: flex; flex-direction: column; gap: 8px; text-decoration: none; color: #f0ece6; transition: border-color var(--transition), box-shadow var(--transition); }
+    .deep-lesson-card:hover { border-color: var(--accent); box-shadow: 0 3px 14px rgba(0,0,0,0.2); }
+    .deep-lesson-card .lesson-title { color: #f0ece6; }
+    .deep-lesson-card .lesson-desc { color: #9a9690; }
+    .deep-lesson-card .lesson-tag { color: #666; }
+    .deep-lesson-card .lesson-arrow { color: #444; }
+    .deep-lesson-card:hover .lesson-arrow { color: var(--accent); }
+
+    .quiz-strip { border-radius: var(--radius); padding: 20px 24px; display: flex; align-items: center; gap: 16px; margin-top: 24px; }
+    .quiz-strip-kids { background: #fef8e8; border: 1px solid #f0d878; }
+    .quiz-strip-mid { background: #eef2fc; border: 1px solid #c0cce8; }
+    .quiz-strip-deep { background: #15304f; border: 1px solid #3a4560; }
+    .quiz-icon { font-size: 28px; flex-shrink: 0; }
+    .quiz-text { flex: 1; }
+    .quiz-text strong { display: block; font-size: 15px; font-weight: 600; margin-bottom: 2px; color: var(--ink); }
+    .quiz-strip-deep .quiz-text strong { color: #f0ece6; }
+    .quiz-text p { font-size: 13px; color: var(--ink-muted); margin: 0; }
+    .quiz-strip-deep .quiz-text p { color: #7a7a7a; }
+    .quiz-btn { flex-shrink: 0; padding: 9px 18px; font-size: 13px; font-weight: 600; border: none; border-radius: var(--radius); cursor: pointer; letter-spacing: 0.04em; font-family: var(--body); }
+    .quiz-btn-kids { background: #e8c020; color: #4a3800; }
+    .quiz-btn-mid { background: #3060b8; color: #fff; }
+    .quiz-btn-deep { background: var(--accent); color: #fff; }
+
+    .coming-soon-card { background: var(--bg-white); border: 1px dashed var(--rule); border-radius: var(--radius); padding: 24px; text-align: center; }
+    .coming-soon-card p { font-family: var(--mono); font-size: 12px; color: var(--ink-muted); letter-spacing: 0.06em; margin-bottom: 6px; }
+    .coming-soon-card h3 { font-family: var(--display); font-size: 1.1rem; font-weight: 700; color: var(--ink); margin-bottom: 6px; }
+    .coming-soon-card span { font-size: 13px; color: var(--ink-muted); }
+
+    @media (max-width: 768px) {
+      .learn-hero-inner { grid-template-columns: 1fr; }
+      .track-header { flex-direction: column; }
+      .track-cta { align-self: flex-start; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="topbar">
+    <span class="topbar-date" id="topbarDate"></span>
+    <span class="topbar-tagline">Politics · Policy · Procedure</span>
+    <a href="admin.html" class="topbar-admin">Admin ›</a>
+  </div>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="masthead">
+        <p class="masthead-eyebrow">Est. 2024</p>
+        <h1 class="masthead-title"><a href="index.html" style="color:inherit">Informed Republic</a></h1>
+        <p class="masthead-sub">A comprehensive resource for an informed America</p>
+      </div>
+    </div>
+  </header>
+
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="index.html#briefs" class="nav-link">Daily Brief</a>
+      <a href="news.html" class="nav-link">In the News</a>
+      <a href="learn.html" class="nav-link active">Learn</a>
+      <a href="officials.html" class="nav-link">Officials</a>
+      <a href="index.html#about" class="nav-link">About</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <div class="learn-hero">
+    <div class="learn-hero-inner">
+      <div>
+        <div class="section-label">Civic Education</div>
+        <h1>Understand Your Government</h1>
+        <p>From elementary school to graduate research — free civics education for every level. Pick your track below and start learning how American democracy actually works.</p>
+      </div>
+      <div class="learn-hero-quote">
+        <blockquote>"An educated citizenry is a vital requisite for our survival as a free people."</blockquote>
+        <cite>— Thomas Jefferson</cite>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── KIDS TRACK ── -->
+  <section class="track-section">
+    <div class="track-inner">
+      <div class="track-header">
+        <div class="track-header-text">
+          <span class="track-badge badge-kids">Kids · K–5</span>
+          <h2>Civics for Kids</h2>
+          <p>Big ideas about government explained in plain English — perfect for elementary school students, parents, and teachers looking for a simple starting point.</p>
+        </div>
+        <div class="track-cta">
+          <a href="learn-kids.html">Explore kids lessons →</a>
+        </div>
+      </div>
+      <div class="lesson-grid">
+        <a href="learn-kids.html#branches" class="kids-lesson-card">
+          <span class="lesson-icon">🏛️</span>
+          <p class="lesson-title">The Three Branches of Government</p>
+          <p class="lesson-desc">Who makes the rules, who carries them out, and who decides if they're fair?</p>
+          <div class="lesson-meta">
+            <span class="lesson-tag">Free · 5 min</span>
+            <span class="lesson-arrow">›</span>
+          </div>
+        </a>
+        <a href="learn-kids.html#bill" class="kids-lesson-card">
+          <span class="lesson-icon">📜</span>
+          <p class="lesson-title">How a Bill Becomes a Law</p>
+          <p class="lesson-desc">Follow an idea all the way from a senator's desk to the President's pen.</p>
+          <div class="lesson-meta">
+            <span class="lesson-tag">Free · 5 min</span>
+            <span class="lesson-arrow">›</span>
+          </div>
+        </a>
+        <a href="learn-kids.html#elections" class="kids-lesson-card">
+          <span class="lesson-icon">🗳️</span>
+          <p class="lesson-title">How Elections Work</p>
+          <p class="lesson-desc">Why we vote, how votes are counted, and why every one matters.</p>
+          <div class="lesson-meta">
+            <span class="lesson-tag">Free · 5 min</span>
+            <span class="lesson-arrow">›</span>
+          </div>
+        </a>
+        <a href="learn-kids.html#constitution" class="kids-lesson-card">
+          <span class="lesson-icon">📋</span>
+          <p class="lesson-title">What Is the Constitution?</p>
+          <p class="lesson-desc">The rulebook for the entire United States government — and why it matters for you.</p>
+          <div class="lesson-meta">
+            <span class="lesson-tag">Free · 5 min</span>
+            <span class="lesson-arrow">›</span>
+          </div>
+        </a>
+      </div>
+      <div class="quiz-strip quiz-strip-kids">
+        <span class="quiz-icon">⭐</span>
+        <div class="quiz-text">
+          <strong>Test your knowledge</strong>
+          <p>Quick quiz — 5 questions about the three branches. See how much you know!</p>
+        </div>
+        <button class="quiz-btn quiz-btn-kids" onclick="alert('Quiz coming soon!')">Take the quiz</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── GRADES 6-12 TRACK ── -->
+  <section class="track-section">
+    <div class="track-inner">
+      <div class="track-header">
+        <div class="track-header-text">
+          <span class="track-badge badge-middle">Grades 6–12</span>
+          <h2>Civics for Middle and High School</h2>
+          <p>A deeper look at how American government works — covering the legislative process, elections, the Supreme Court, and more, with the level of detail you need for civics class and beyond.</p>
+        </div>
+        <div class="track-cta">
+          <a href="learn-grades.html">Explore lessons →</a>
+        </div>
+      </div>
+      <div class="lesson-grid">
+        <a href="learn-grades.html#branches" class="lesson-card">
+          <span class="lesson-icon">🏛️</span>
+          <p class="lesson-title">The Three Branches: Powers and Checks</p>
+          <p class="lesson-desc">How the executive, legislative, and judicial branches balance each other through the system of checks and balances.</p>
+          <div class="lesson-meta">
+            <span class="lesson-tag">Free · 10 min</span>
+            <span class="lesson-arrow">›</span>
+          </div>
+        </a>
+        <a href="learn-grades.html#legislation" class="lesson-card">
+          <span class="lesson-icon">📜</span>
+          <p class="lesson-title">How Legislation Passes</p>
+          <p class="lesson-desc">From committee markup to floor votes, conference committees, and presidential action — the full legislative process.</p>
+          <div class="lesson-meta">
+            <span class="lesson-tag">Free · 12 min</span>
+            <span class="lesson-arrow">›</span>
+          </div>
+        </a>
+        <a href="learn-grades.html#elections" class="lesson-card">
+          <span class="lesson-icon">🗳️</span>
+          <p class="lesson-title">The Election Process</p>
+          <p class="lesson-desc">Primaries, caucuses, the Electoral College, and how candidates go from announcement to inauguration.</p>
+          <div class="lesson-meta">
+            <span class="lesson-tag">Free · 12 min</span>
+            <span class="lesson-arrow">›</span>
+          </div>
+        </a>
+        <a href="learn-grades.html#scotus" class="lesson-card">
+          <span class="lesson-icon">⚖️</span>
+          <p class="lesson-title">Landmark Supreme Court Cases</p>
+          <p class="lesson-desc">The decisions that shaped American law — from Marbury v. Madison to recent rulings.</p>
+          <div class="lesson-meta">
+            <span class="lesson-tag">Free · 15 min</span>
+            <span class="lesson-arrow">›</span>
+          </div>
+        </a>
+      </div>
+      <div class="quiz-strip quiz-strip-mid">
+        <span class="quiz-icon">📝</span>
+        <div class="quiz-text">
+          <strong>Test your civics knowledge</strong>
+          <p>10 questions covering the Constitution, Congress, and the courts — good AP Government prep.</p>
+        </div>
+        <button class="quiz-btn quiz-btn-mid" onclick="alert('Quiz coming soon!')">Take the quiz</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── DEEP DIVE TRACK ── -->
+  <section class="track-section" style="background: #1e3a5f;">
+    <div class="track-inner">
+      <div class="track-header">
+        <div class="track-header-text">
+          <span class="track-badge badge-deep">Deep Dive</span>
+          <h2 style="color:#f0ece6">For College Students, Researchers, and Professionals</h2>
+          <p style="color:#9a9690">In-depth analysis of how Washington actually works — drawing on firsthand experience from Capitol Hill and the Pentagon. Designed for those who want to go beyond the textbook.</p>
+        </div>
+        <div class="track-cta">
+          <a href="learn-deep.html">Explore deep dives →</a>
+        </div>
+      </div>
+      <div class="lesson-grid">
+        <a href="learn-deep.html#congressional-process" class="deep-lesson-card">
+          <span class="lesson-icon">🏛️</span>
+          <p class="lesson-title">How Congress Really Works</p>
+          <p class="lesson-desc">The informal rules, leadership dynamics, and behind-the-scenes processes that determine what actually passes — and what doesn't.</p>
+          <div class="lesson-meta">
+            <span class="lesson-tag">Deep Dive · 25 min</span>
+            <span class="lesson-arrow">›</span>
+          </div>
+        </a>
+        <a href="learn-deep.html#appropriations" class="deep-lesson-card">
+          <span class="lesson-icon">💰</span>
+          <p class="lesson-title">The Appropriations Process Explained</p>
+          <p class="lesson-desc">How the federal government funds itself — authorizations vs. appropriations, continuing resolutions, and why shutdowns happen.</p>
+          <div class="lesson-meta">
+            <span class="lesson-tag">Deep Dive · 20 min</span>
+            <span class="lesson-arrow">›</span>
+          </div>
+        </a>
+        <a href="learn-deep.html#defense-budget" class="deep-lesson-card">
+          <span class="lesson-icon">🛡️</span>
+          <p class="lesson-title">The Defense Budget: How It Works</p>
+          <p class="lesson-desc">From the President's budget request to the NDAA — how the Pentagon gets funded and what happens when it doesn't.</p>
+          <div class="lesson-meta">
+            <span class="lesson-tag">Deep Dive · 25 min</span>
+            <span class="lesson-arrow">›</span>
+          </div>
+        </a>
+        <a href="learn-deep.html#careers" class="deep-lesson-card">
+          <span class="lesson-icon">💼</span>
+          <p class="lesson-title">Careers in Government and Policy</p>
+          <p class="lesson-desc">How to get a job on Capitol Hill, in a federal agency, or as a defense contractor — from someone who has done all three.</p>
+          <div class="lesson-meta">
+            <span class="lesson-tag">Deep Dive · 30 min</span>
+            <span class="lesson-arrow">›</span>
+          </div>
+        </a>
+      </div>
+      <div class="quiz-strip quiz-strip-deep" style="margin-top:24px">
+        <span class="quiz-icon">🎯</span>
+        <div class="quiz-text">
+          <strong>Challenge yourself</strong>
+          <p>Advanced questions on congressional procedure, defense policy, and the federal budget process.</p>
+        </div>
+        <button class="quiz-btn quiz-btn-deep" onclick="alert('Quiz coming soon!')">Take the quiz</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="footer-title">Informed Republic</span>
+        <p>Politics · Policy · Procedure</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms</a>
+        <a href="disclaimer.html">Disclaimer</a>
+        <a href="mailto:contact@informedrepublic.ecarndt.tech">Contact</a>
+      </div>
+      <div class="footer-social">
+        <a href="#">Twitter / X</a>
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="footerYear"></span> Informed Republic. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('topbarDate').textContent = new Date().toLocaleDateString('en-US', {
+      weekday: 'short', month: 'short', day: 'numeric', year: 'numeric'
+    });
+    document.getElementById('footerYear').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

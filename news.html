@@ -18,9 +18,9 @@
 
     /* ── Filter bar ── */
     .news-filter-wrap { background: var(--bg-white); border-bottom: 1px solid var(--rule); position: sticky; top: 0; z-index: 90; }
-    .news-filter-inner { max-width: var(--max-w); margin: 0 auto; padding: 0 24px; display: flex; gap: 0; overflow-x: auto; scrollbar-width: none; }
-    .news-filter-inner::-webkit-scrollbar { display: none; }
-    .filter-btn { flex-shrink: 0; padding: 13px 16px; font-family: var(--body); font-size: 12px; font-weight: 500; letter-spacing: 0.04em; color: var(--ink-muted); border: none; border-bottom: 2px solid transparent; background: none; cursor: pointer; white-space: nowrap; transition: color var(--transition), border-color var(--transition); }
+    .news-filter-inner { max-width: var(--max-w); margin: 0 auto; padding: 4px 24px 0; display: flex; flex-wrap: wrap; gap: 0; justify-content: center; }
+    .filter-row-break { flex-basis: 100%; height: 0; }
+    .filter-btn { flex-shrink: 0; padding: 10px 14px; font-family: var(--body); font-size: 12px; font-weight: 500; letter-spacing: 0.04em; color: var(--ink-muted); border: none; border-bottom: 2px solid transparent; background: none; cursor: pointer; white-space: nowrap; transition: color var(--transition), border-color var(--transition); }
     .filter-btn:hover { color: var(--ink); }
     .filter-btn.active { color: var(--accent); border-bottom-color: var(--accent); font-weight: 600; }
 
@@ -193,11 +193,18 @@
 
       // Build filter buttons
       const bar = document.getElementById('filterBar');
-      presentTopics.forEach(topic => {
+      presentTopics.forEach((topic, index) => {
+        // Insert row break after 6th topic (index 5) to create 7/7 split
+        // "All" button is already added, so topics 0-5 = row 1, topics 6-13 = row 2
+        if (index === 6) {
+          const br = document.createElement('div');
+          br.className = 'filter-row-break';
+          bar.appendChild(br);
+        }
         const btn = document.createElement('button');
         btn.className = 'filter-btn';
         btn.dataset.topic = topic;
-        btn.textContent = `${TOPIC_ICONS[topic] || ''} ${topic}`;
+        btn.textContent = topic;
         btn.onclick = () => filterTopic(topic, btn);
         bar.appendChild(btn);
         activeTopics.add(topic);
@@ -225,7 +232,7 @@
 
       section.innerHTML = `
         <div class="topic-heading">
-          <h2>${TOPIC_ICONS[topic] || ''} ${topic}</h2>
+          <h2>${topic}</h2>
           <span class="topic-count">${stories.length} stories</span>
         </div>
         <div class="story-list">
@@ -238,7 +245,7 @@
 
   function storyCard(s) {
     const paywall = s.paywalled ? '<span class="story-paywall">🔒</span>' : '';
-    const bluf = s.bluf ? `<p class="story-summary">${escapeHtml(s.bluf)}</p>` : '';
+    const summary = s.summary ? `<p class="story-summary">${escapeHtml(s.summary)}</p>` : '';
     return `
       <a class="story-card" href="${escapeHtml(s.url)}" target="_blank" rel="noopener noreferrer">
         <div class="story-main">
@@ -247,7 +254,7 @@
             ${paywall}
           </div>
           <p class="story-title">${escapeHtml(s.title)}</p>
-          ${bluf}
+          ${summary}
         </div>
         <span class="story-arrow" aria-hidden="true">›</span>
       </a>`;
@@ -270,7 +277,7 @@
     });
 
     // Scroll to top of news body
-    document.getElementById('newsBody').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    // no scroll — let the user navigate freely
   }
 
   function escapeHtml(str) {
