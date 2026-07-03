@@ -86,8 +86,8 @@ def fetch_senate_candidates():
             continue
         candidates.append({
             'fec_id': c.get('candidate_id', ''),
-            'name': c.get('name', '').title(),
-            'party': normalize_party(c.get('party', '')),
+            'name': (c.get('name') or '').title(),
+            'party': normalize_party(c.get('party') or ''),
             'race_type': 'Senate',
             'state': STATE_NAMES.get(state, state),
             'state_abbr': state,
@@ -149,8 +149,8 @@ def fetch_house_candidates():
 
         all_candidates.append({
             'fec_id': c.get('candidate_id', ''),
-            'name': c.get('name', '').title(),
-            'party': normalize_party(c.get('party', '')),
+            'name': (c.get('name') or '').title(),
+            'party': normalize_party(c.get('party') or ''),
             'race_type': 'House',
             'state': STATE_NAMES.get(state, state),
             'state_abbr': state,
@@ -179,6 +179,7 @@ def normalize_party(code):
         'UNK': 'Unknown',
         'W':   'Write-in',
     }
+    if not code: return 'Unknown'
     return mapping.get(code.upper(), code)
 
 def main():
