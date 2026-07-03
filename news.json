@@ -1,7 +1,37 @@
 {
-  "last_updated": "2026-07-02T23:45:27Z",
-  "story_count": 35,
+  "last_updated": "2026-07-03T11:01:00Z",
+  "story_count": 50,
   "stories": [
+    {
+      "title": "GenAI.mil records almost 1.7M users, plans new model additions",
+      "url": "https://www.defenseone.com/technology/2026/07/genaimil-records-almost-17m-users-plans-new-model-additions/414569/",
+      "source": "defenseone.com",
+      "paywalled": false,
+      "topic": "Defense",
+      "published": "2026-07-02T09:00:00-04:00",
+      "is_today": true,
+      "summary": "GenAI.mil military AI platform reaches 1.7 million users and plans to add new generative models for defense operations."
+    },
+    {
+      "title": "Trump says Pulte can declassify \u2018whatever\u2019 he wants, sparking fears of exposing intelligence secrets",
+      "url": "https://www.defenseone.com/policy/2026/07/trump-says-pulte-can-declassify-whatever-he-wants-sparking-fears-exposing-intelligence-secrets/414577/",
+      "source": "defenseone.com",
+      "paywalled": false,
+      "topic": "Defense",
+      "published": "2026-07-02T10:00:00-04:00",
+      "is_today": true,
+      "summary": "Trump's statement authorizing Pulte to declassify material without restrictions raises concerns about potential exposure of classified intelligence."
+    },
+    {
+      "title": "Russia launches major attack on Kyiv after Zelensky warning",
+      "url": "https://thehill.com/policy/international/5950964-russia-ukraine-deadly-attack-kyiv-zelensky-warning/",
+      "source": "thehill.com",
+      "paywalled": false,
+      "topic": "Defense",
+      "published": "2026-07-02T12:03:14+00:00",
+      "is_today": true,
+      "summary": "Russia launches major military attack on Kyiv following a warning by President Zelensky, resulting in casualties."
+    },
     {
       "title": "Transgender troops granted class action lawsuit against government",
       "url": "https://www.militarytimes.com/news/your-military/2026/07/02/transgender-troops-granted-class-action-lawsuit-against-government/",
@@ -13,16 +43,6 @@
       "summary": "A federal court approved a class action lawsuit by transgender service members challenging government policies affecting their military service."
     },
     {
-      "title": "Russia launches major attack on Kyiv after Zelensky warning",
-      "url": "https://thehill.com/policy/international/5950964-russia-ukraine-deadly-attack-kyiv-zelensky-warning/",
-      "source": "thehill.com",
-      "paywalled": false,
-      "topic": "Defense",
-      "published": "2026-07-02T12:03:14+00:00",
-      "is_today": true,
-      "summary": "Russia conducted a major military attack on Kyiv following President Zelensky's earlier warning of increased Russian aggression."
-    },
-    {
       "title": "Iran warns of 'forceful response' if tankers don't use approved Strait of Hormuz routes",
       "url": "https://thehill.com/policy/international/5950982-iran-warning-strait-of-hormuz-routes/",
       "source": "thehill.com",
@@ -31,6 +51,36 @@
       "published": "2026-07-02T13:16:02+00:00",
       "is_today": true,
       "summary": "Iran warned of military retaliation against ships not using designated shipping routes through the Strait of Hormuz."
+    },
+    {
+      "title": "Potato chip recall elevated to FDA's highest risk level",
+      "url": "https://thehill.com/policy/healthcare/5951086-zapps-dirty-chips-recall-fda/",
+      "source": "thehill.com",
+      "paywalled": false,
+      "topic": "Healthcare",
+      "published": "2026-07-02T13:18:38+00:00",
+      "is_today": true,
+      "summary": "FDA elevated a potato chip recall to its highest risk category due to potential contamination concerns affecting consumer safety."
+    },
+    {
+      "title": "DEA moves to ban opioid-like kratom compound 7-OH",
+      "url": "https://thehill.com/policy/healthcare/5951668-dea-temporarily-bans-synthetic-kratom/",
+      "source": "thehill.com",
+      "paywalled": false,
+      "topic": "Healthcare",
+      "published": "2026-07-02T17:20:54+00:00",
+      "is_today": true,
+      "summary": "The DEA moved to ban 7-hydroxymitragynine, a kratom-derived compound, citing opioid-like effects and public health risks."
+    },
+    {
+      "title": "Democrats demand HHS reinstate canceled teen pregnancy prevention grants",
+      "url": "https://thehill.com/policy/healthcare/5951898-democrats-demand-hhs-reinstate-teen-pregnancy-grants/",
+      "source": "thehill.com",
+      "paywalled": false,
+      "topic": "Healthcare",
+      "published": "2026-07-02T19:13:48+00:00",
+      "is_today": true,
+      "summary": "Democrats called on HHS to restore cancelled federal teen pregnancy prevention grants, disagreeing with the administration's decision."
     },
     {
       "title": "A Mom Said Infant Formula Killed Her Baby. The Manufacturer Closed the File.",
@@ -70,27 +120,57 @@
       "topic": "Appropriations",
       "published": "2026-07-02T11:51:36+00:00",
       "is_today": true,
-      "summary": "President Trump shifts focus to 250th anniversary celebration despite recent House floor conflict."
+      "summary": "President Trump's focus shifts toward the nation's 250th anniversary despite recent House floor conflict."
     },
     {
-      "title": "America at 250: What the Census reveals about our journey",
-      "url": "https://www.govexec.com/technology/2026/07/america-250-what-census-reveals-about-our-journey/414513/",
+      "title": "Inside the competing federal efforts behind America\u2019s 250th anniversary plans",
+      "url": "https://www.govexec.com/management/2026/07/inside-competing-federal-efforts-behind-americas-250th-anniversary-plans/414449/",
       "source": "govexec.com",
       "paywalled": false,
       "topic": "Appropriations",
-      "published": "2026-07-01T06:00:00-04:00",
+      "published": "2026-07-01T08:00:00-04:00",
       "is_today": false,
-      "summary": "Census data reveals demographic changes and trends relevant to America's 250th anniversary planning."
+      "summary": "Multiple federal agencies pursue competing initiatives for America's 250th anniversary planning and coordination."
     },
     {
-      "title": "Slaughter and the expansion of presidential power",
-      "url": "https://www.govexec.com/management/2026/07/slaughter-expansion-presidential-power/414522/",
+      "title": "Some TSP funds faltered in June",
+      "url": "https://www.govexec.com/pay-benefits/2026/07/some-tsp-funds-faltered-june/414565/",
       "source": "govexec.com",
       "paywalled": false,
       "topic": "Appropriations",
-      "published": "2026-07-01T07:00:00-04:00",
+      "published": "2026-07-01T12:31:20-04:00",
       "is_today": false,
-      "summary": "Legal expert examines how presidential power has expanded over time in federal governance."
+      "summary": "Several Thrift Savings Plan investment funds experienced declines in June 2026."
+    },
+    {
+      "title": "Trump denies conflict of interest over crypto. And, Vatican excommunicates rebel group",
+      "url": "https://www.npr.org/2026/07/02/g-s1-131702/up-first-newsletter-trump-crypto-earnings-society-pope-pius-venezuela-world-cup",
+      "source": "feeds.npr.org",
+      "paywalled": false,
+      "topic": "Foreign Policy",
+      "published": "2026-07-02T07:23:10-04:00",
+      "is_today": true,
+      "summary": "Trump denied conflicts of interest regarding cryptocurrency holdings while the Vatican excommunicated a rebel group."
+    },
+    {
+      "title": "The Hypocrisy That Shields Erdogan From Global Criticism",
+      "url": "https://foreignpolicy.com/2026/07/02/turkey-erdogan-trump-human-rights-kavala-imamoglu/",
+      "source": "foreignpolicy.com",
+      "paywalled": false,
+      "topic": "Foreign Policy",
+      "published": "2026-07-02T11:00:53+00:00",
+      "is_today": true,
+      "summary": "Turkey faces criticism for inconsistent application of human rights standards under President Erdogan's governance."
+    },
+    {
+      "title": "Russia launches major attack on Kyiv after Zelensky warning",
+      "url": "https://thehill.com/policy/international/5950964-russia-ukraine-deadly-attack-kyiv-zelensky-warning/",
+      "source": "thehill.com",
+      "paywalled": false,
+      "topic": "Foreign Policy",
+      "published": "2026-07-02T12:03:14+00:00",
+      "is_today": true,
+      "summary": "Russia conducted major attacks on Kyiv following President Zelensky's warning of potential military escalation."
     },
     {
       "title": "A major Russian attack kills 17 in Kyiv as Ukraine keeps striking Moscow's oil sector",
@@ -130,7 +210,7 @@
       "topic": "Energy",
       "published": "2026-07-02T09:04:17-04:00",
       "is_today": true,
-      "summary": "Gas plant construction costs exceed sticker prices due to pipeline infrastructure requirements, affecting utility investment decisions and grid planning."
+      "summary": "Hidden infrastructure costs make new natural gas plants significantly more expensive than initial price estimates, affecting utility planning and grid investment decisions."
     },
     {
       "title": "PJM stakeholders advance data center backstop procurement plan",
@@ -140,7 +220,7 @@
       "topic": "Energy",
       "published": "2026-07-02T09:19:31-04:00",
       "is_today": true,
-      "summary": "PJM stakeholders approved a procurement mechanism to manage data center power demand and ensure grid reliability in the regional transmission organization."
+      "summary": "PJM stakeholders developed a procurement mechanism to manage data center electricity demand and ensure grid reliability amid rapid data center growth."
     },
     {
       "title": "PJM anticipates new peak demand record as heat wave tests power grid",
@@ -150,7 +230,47 @@
       "topic": "Energy",
       "published": "2026-07-02T10:04:39-04:00",
       "is_today": true,
-      "summary": "Heat wave conditions drove PJM to forecast new peak electricity demand records, testing grid capacity and reliability across the region."
+      "summary": "A heat wave is expected to push PJM's power demand to record levels, testing grid capacity and highlighting infrastructure adequacy concerns."
+    },
+    {
+      "title": "A hot summer trend in the sharing economy? Rental swimming pools",
+      "url": "https://www.npr.org/2026/07/03/nx-s1-5876505/swimming-pool-rental-sharing-economy-swimply",
+      "source": "feeds.npr.org",
+      "paywalled": false,
+      "topic": "Criminal Justice",
+      "published": "2026-07-03T05:00:00-04:00",
+      "is_today": true,
+      "summary": "Homeowners are renting private swimming pools through sharing economy platforms, raising questions about liability, insurance, and local zoning regulations."
+    },
+    {
+      "title": "The Continental Congress wrote the Declaration. Is its modern descendent living up?",
+      "url": "https://www.npr.org/2026/07/02/nx-s1-5871170/the-continental-congress-wrote-the-declaration-is-its-modern-descendent-living-up",
+      "source": "feeds.npr.org",
+      "paywalled": false,
+      "topic": "Immigration",
+      "published": "2026-07-02T16:42:19-04:00",
+      "is_today": true,
+      "summary": "Congress examines whether modern legislative branch upholds principles established by the Continental Congress and Declaration of Independence."
+    },
+    {
+      "title": "House Democrats accuse Trump of 'hijacking' America's 250th birthday for his own gain",
+      "url": "https://www.npr.org/2026/07/02/nx-s1-5879162/freedom-250-report-house-democrats-controversy",
+      "source": "feeds.npr.org",
+      "paywalled": false,
+      "topic": "Immigration",
+      "published": "2026-07-02T17:47:30-04:00",
+      "is_today": true,
+      "summary": "House Democrats criticize Trump for using America's 250th birthday celebration for political purposes."
+    },
+    {
+      "title": "Hakeem Jeffries on Democratic Party's midterm future",
+      "url": "https://www.npr.org/2026/07/03/nx-s1-5879082/hakeem-jeffries-on-democratic-partys-midterm-future",
+      "source": "feeds.npr.org",
+      "paywalled": false,
+      "topic": "Immigration",
+      "published": "2026-07-03T04:15:00-04:00",
+      "is_today": true,
+      "summary": "Democratic House Minority Leader Hakeem Jeffries discusses party strategy for upcoming midterm elections."
     },
     {
       "title": "How was the new Air Force One prepared for flight?",
@@ -183,26 +303,6 @@
       "summary": "Democratic socialists are gaining influence within the Democratic Party, affecting its political direction and platform."
     },
     {
-      "title": "America at 250: What the Census reveals about our journey",
-      "url": "https://www.govexec.com/technology/2026/07/america-250-what-census-reveals-about-our-journey/414513/",
-      "source": "govexec.com",
-      "paywalled": false,
-      "topic": "Tax & Finance",
-      "published": "2026-07-01T06:00:00-04:00",
-      "is_today": false,
-      "summary": "Census data reveals demographic trends and population shifts relevant to federal policy planning for the nation's 250th anniversary."
-    },
-    {
-      "title": "Slaughter and the expansion of presidential power",
-      "url": "https://www.govexec.com/management/2026/07/slaughter-expansion-presidential-power/414522/",
-      "source": "govexec.com",
-      "paywalled": false,
-      "topic": "Tax & Finance",
-      "published": "2026-07-01T07:00:00-04:00",
-      "is_today": false,
-      "summary": "Analysis examines how presidential power has expanded, raising questions about executive authority and constitutional limits on federal leadership."
-    },
-    {
       "title": "Inside the competing federal efforts behind America\u2019s 250th anniversary plans",
       "url": "https://www.govexec.com/management/2026/07/inside-competing-federal-efforts-behind-americas-250th-anniversary-plans/414449/",
       "source": "govexec.com",
@@ -210,7 +310,57 @@
       "topic": "Tax & Finance",
       "published": "2026-07-01T08:00:00-04:00",
       "is_today": false,
-      "summary": "Multiple federal agencies coordinate planning for America's 250th anniversary commemoration, balancing competing priorities and resources."
+      "summary": "Multiple federal agencies are developing competing plans for the U.S. 250th anniversary celebration, raising coordination questions for 2026 commemorative efforts."
+    },
+    {
+      "title": "Some TSP funds faltered in June",
+      "url": "https://www.govexec.com/pay-benefits/2026/07/some-tsp-funds-faltered-june/414565/",
+      "source": "govexec.com",
+      "paywalled": false,
+      "topic": "Tax & Finance",
+      "published": "2026-07-01T12:31:20-04:00",
+      "is_today": false,
+      "summary": "Several Thrift Savings Plan investment funds experienced performance declines in June, affecting federal employee retirement savings."
+    },
+    {
+      "title": "Union accuses Treasury and HHS of neglecting telework requests from employees with disabilities",
+      "url": "https://www.govexec.com/workforce/2026/07/union-accuses-treasury-hhs-neglecting-telework-requests-employees-disabilities/414573/",
+      "source": "govexec.com",
+      "paywalled": false,
+      "topic": "Tax & Finance",
+      "published": "2026-07-01T14:46:17-04:00",
+      "is_today": false,
+      "summary": "A union filed complaints alleging Treasury and HHS improperly denied telework accommodations for employees with disabilities."
+    },
+    {
+      "title": "AOC endorses El-Sayed in Michigan Senate race",
+      "url": "https://www.politico.com/live-updates/2026/07/02/congress/alexandria-ocasio-cortez-michigan-senate-endorsement-00985388",
+      "source": "rss.politico.com",
+      "paywalled": false,
+      "topic": "Elections",
+      "published": "2026-07-02T07:58:49-04:00",
+      "is_today": true,
+      "summary": "Rep. Alexandria Ocasio-Cortez endorsed El-Sayed in the Michigan Senate race."
+    },
+    {
+      "title": "House Ethics says it doesn\u2019t have information to share on lawmaker sexual misconduct settlements",
+      "url": "https://www.politico.com/live-updates/2026/07/02/congress/new-house-ethics-statement-00985864",
+      "source": "rss.politico.com",
+      "paywalled": false,
+      "topic": "Elections",
+      "published": "2026-07-02T10:31:41-04:00",
+      "is_today": true,
+      "summary": "The House Ethics Committee stated it lacks information regarding lawmaker sexual misconduct settlements."
+    },
+    {
+      "title": "Trump ethics disclosure throws curveball at Senate crypto talks",
+      "url": "https://rollcall.com/2026/07/02/trump-ethics-disclosure-throws-curveball-at-senate-crypto-talks/",
+      "source": "rollcall.com",
+      "paywalled": false,
+      "topic": "Elections",
+      "published": "2026-07-02T11:20:14+00:00",
+      "is_today": true,
+      "summary": "Trump's ethics disclosure complicates ongoing Senate negotiations on cryptocurrency regulation."
     },
     {
       "title": "The GOP\u2019s dirty little secret about the SAVE America Act",
@@ -260,7 +410,7 @@
       "topic": "Transportation",
       "published": "2026-07-01T12:48:28+00:00",
       "is_today": false,
-      "summary": "FAA data shows increasing near-collision incidents between aircraft and drones at airports, raising safety concerns."
+      "summary": "FAA data shows increasing near-collision incidents between aircraft and drones, raising aviation safety concerns."
     },
     {
       "title": "Trump traveling to North Dakota on Qatari-gifted Air Force One maiden flight",
@@ -270,7 +420,7 @@
       "topic": "Transportation",
       "published": "2026-07-01T13:47:49+00:00",
       "is_today": false,
-      "summary": "Trump travels to North Dakota on Qatar-gifted aircraft in Air Force One's maiden flight."
+      "summary": "President Trump will travel to North Dakota on Air Force One using a Qatar-gifted aircraft for its maiden flight."
     },
     {
       "title": "US Won\u2019t Renew USMCA, Seeks Improvements in Yearly Reviews",
@@ -280,7 +430,7 @@
       "topic": "Agriculture",
       "published": "2026-07-02T11:53:32+00:00",
       "is_today": true,
-      "summary": "The U.S. will not renew USMCA but will conduct yearly reviews to seek trade agreement improvements."
+      "summary": "The U.S. will not renew USMCA but instead pursue yearly reviews to negotiate improvements to the North American trade agreement."
     },
     {
       "title": "Bayer Seeks Glyphosate Import Duties, Angering Farmers",
@@ -290,7 +440,7 @@
       "topic": "Agriculture",
       "published": "2026-07-01T11:52:37+00:00",
       "is_today": false,
-      "summary": "Bayer requested import duties on glyphosate, creating tension with farmers who depend on affordable herbicide access."
+      "summary": "Bayer requested import duties on glyphosate, creating conflict with farmers who rely on affordable herbicide costs for agricultural production."
     },
     {
       "title": "Alleged longstanding member of Scattered Spider extradited to US",
@@ -300,7 +450,7 @@
       "topic": "Cybersecurity",
       "published": "2026-07-02T15:28:25+00:00",
       "is_today": true,
-      "summary": "Alleged Scattered Spider member extradited to US to face charges related to the cybercriminal group's activities."
+      "summary": "Alleged Scattered Spider member was extradited to the US to face cybercrime charges related to the hacking group's operations."
     },
     {
       "title": "FBI Seizes NetNut Proxy Platform, Popa Botnet",
@@ -310,17 +460,17 @@
       "topic": "Cybersecurity",
       "published": "2026-07-02T19:27:33+00:00",
       "is_today": true,
-      "summary": "FBI seized NetNut proxy platform and Popa botnet used for cybercrimes, disrupting infrastructure supporting malicious activities."
+      "summary": "FBI seized NetNut proxy platform and Popa botnet infrastructure used for facilitating cyberattacks and unauthorized network access."
     },
     {
-      "title": "This phishing kit looks more like BEC-as-a-service",
-      "url": "https://cyberscoop.com/artoken-bec-platform-cisco-talos/",
+      "title": "Someone infected a spyware probe overseer with spyware",
+      "url": "https://cyberscoop.com/pegasus-spyware-pega-committee-member-targeted/",
       "source": "cyberscoop.com",
       "paywalled": false,
       "topic": "Cybersecurity",
-      "published": "2026-07-01T10:00:00+00:00",
-      "is_today": false,
-      "summary": "Researchers identified phishing kit operating as business email compromise service, enabling cybercriminals to conduct mass fraudulent attacks."
+      "published": "2026-07-03T05:00:00+00:00",
+      "is_today": true,
+      "summary": "A member overseeing spyware research for the EU Parliament was infected with Pegasus spyware, raising counterintelligence concerns."
     },
     {
       "title": "Google loses long-running appeal of record EU fine, will have to cough up $4.7 billion",
@@ -330,7 +480,7 @@
       "topic": "Technology",
       "published": "2026-07-02T16:15:41+00:00",
       "is_today": true,
-      "summary": "Google lost its appeal and must pay a $4.7 billion fine to the EU for antitrust violations related to shopping search practices."
+      "summary": "Google's appeal of a $4.7 billion EU antitrust fine was rejected, requiring the company to pay the penalty for alleged anticompetitive practices."
     },
     {
       "title": "Plex debuts 5-year membership pass for $250",
@@ -340,7 +490,7 @@
       "topic": "Technology",
       "published": "2026-07-02T16:35:59+00:00",
       "is_today": true,
-      "summary": "Plex changed its membership model, replacing lifetime passes with a $250 five-year subscription option."
+      "summary": "Plex changed its membership model, replacing a lifetime pass option with a five-year subscription priced at $250."
     },
     {
       "title": "Wall Street Journal: Trump family 'cashing in on the presidency in big and sketchy ways'",
@@ -350,7 +500,7 @@
       "topic": "Technology",
       "published": "2026-07-02T16:52:00+00:00",
       "is_today": true,
-      "summary": "The Wall Street Journal reported Trump family members are monetizing their proximity to the presidency through various business dealings."
+      "summary": "The Wall Street Journal reported that Trump family members are monetizing the presidency through business dealings."
     }
   ]
 }
