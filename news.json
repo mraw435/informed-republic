@@ -1,26 +1,36 @@
 {
-  "last_updated": "2026-07-03T11:01:00Z",
-  "story_count": 50,
+  "last_updated": "2026-07-04T11:00:50Z",
+  "story_count": 36,
   "stories": [
     {
-      "title": "GenAI.mil records almost 1.7M users, plans new model additions",
-      "url": "https://www.defenseone.com/technology/2026/07/genaimil-records-almost-17m-users-plans-new-model-additions/414569/",
+      "title": "These light-weight power cells run on nuclear waste and could power next-gen drones",
+      "url": "https://www.defenseone.com/technology/2026/07/these-light-weight-power-cells-run-nuclear-waste-and-could-power-next-gen-drones/414585/",
       "source": "defenseone.com",
       "paywalled": false,
       "topic": "Defense",
-      "published": "2026-07-02T09:00:00-04:00",
+      "published": "2026-07-03T08:00:00-04:00",
       "is_today": true,
-      "summary": "GenAI.mil military AI platform reaches 1.7 million users and plans to add new generative models for defense operations."
+      "summary": "Developers created lightweight nuclear waste-powered cells for military drones, potentially extending flight duration and reducing logistical requirements."
     },
     {
-      "title": "Trump says Pulte can declassify \u2018whatever\u2019 he wants, sparking fears of exposing intelligence secrets",
-      "url": "https://www.defenseone.com/policy/2026/07/trump-says-pulte-can-declassify-whatever-he-wants-sparking-fears-exposing-intelligence-secrets/414577/",
-      "source": "defenseone.com",
+      "title": "Iran threatens response without 'full implementation' of US deal",
+      "url": "https://thehill.com/policy/international/5952638-iran-us-israel-mou-ghalibaf/",
+      "source": "thehill.com",
       "paywalled": false,
       "topic": "Defense",
-      "published": "2026-07-02T10:00:00-04:00",
+      "published": "2026-07-03T12:28:21+00:00",
       "is_today": true,
-      "summary": "Trump's statement authorizing Pulte to declassify material without restrictions raises concerns about potential exposure of classified intelligence."
+      "summary": "Iran threatened retaliation unless the US fully implements the nuclear agreement, citing concerns over compliance."
+    },
+    {
+      "title": "Taiwan needs a \u2018hornet\u2019s nest\u2019 of drones to deter conflict, US diplomat says",
+      "url": "https://www.defensenews.com/industry/techwatch/2026/07/03/taiwan-needs-a-hornets-nest-of-drones-to-deter-conflict-us-diplomat-says/",
+      "source": "defensenews.com",
+      "paywalled": false,
+      "topic": "Defense",
+      "published": "2026-07-03T12:30:00+00:00",
+      "is_today": true,
+      "summary": "A US diplomat recommended Taiwan deploy numerous drones as a deterrent strategy against potential military aggression."
     },
     {
       "title": "Russia launches major attack on Kyiv after Zelensky warning",
@@ -33,16 +43,6 @@
       "summary": "Russia launches major military attack on Kyiv following a warning by President Zelensky, resulting in casualties."
     },
     {
-      "title": "Transgender troops granted class action lawsuit against government",
-      "url": "https://www.militarytimes.com/news/your-military/2026/07/02/transgender-troops-granted-class-action-lawsuit-against-government/",
-      "source": "militarytimes.com",
-      "paywalled": false,
-      "topic": "Defense",
-      "published": "2026-07-02T00:20:26+00:00",
-      "is_today": true,
-      "summary": "A federal court approved a class action lawsuit by transgender service members challenging government policies affecting their military service."
-    },
-    {
       "title": "Iran warns of 'forceful response' if tankers don't use approved Strait of Hormuz routes",
       "url": "https://thehill.com/policy/international/5950982-iran-warning-strait-of-hormuz-routes/",
       "source": "thehill.com",
@@ -53,14 +53,24 @@
       "summary": "Iran warned of military retaliation against ships not using designated shipping routes through the Strait of Hormuz."
     },
     {
+      "title": "Kean's depression disclosure prompts questions about mental health stigma",
+      "url": "https://thehill.com/policy/healthcare/5950576-rep-tom-kean-jr-depression-disclosure/",
+      "source": "thehill.com",
+      "paywalled": false,
+      "topic": "Healthcare",
+      "published": "2026-07-04T10:00:00+00:00",
+      "is_today": true,
+      "summary": "Rep. Tom Kean Jr.'s public disclosure of depression raises questions about mental health stigma in federal policy and leadership."
+    },
+    {
       "title": "Potato chip recall elevated to FDA's highest risk level",
       "url": "https://thehill.com/policy/healthcare/5951086-zapps-dirty-chips-recall-fda/",
       "source": "thehill.com",
       "paywalled": false,
       "topic": "Healthcare",
       "published": "2026-07-02T13:18:38+00:00",
-      "is_today": true,
-      "summary": "FDA elevated a potato chip recall to its highest risk category due to potential contamination concerns affecting consumer safety."
+      "is_today": false,
+      "summary": "FDA elevated a potato chip recall to its highest risk category, raising food safety enforcement concerns."
     },
     {
       "title": "DEA moves to ban opioid-like kratom compound 7-OH",
@@ -69,8 +79,8 @@
       "paywalled": false,
       "topic": "Healthcare",
       "published": "2026-07-02T17:20:54+00:00",
-      "is_today": true,
-      "summary": "The DEA moved to ban 7-hydroxymitragynine, a kratom-derived compound, citing opioid-like effects and public health risks."
+      "is_today": false,
+      "summary": "DEA moves to temporarily ban 7-OH, a kratom-derived compound, affecting opioid alternative regulations."
     },
     {
       "title": "Democrats demand HHS reinstate canceled teen pregnancy prevention grants",
@@ -83,74 +93,44 @@
       "summary": "Democrats called on HHS to restore cancelled federal teen pregnancy prevention grants, disagreeing with the administration's decision."
     },
     {
-      "title": "A Mom Said Infant Formula Killed Her Baby. The Manufacturer Closed the File.",
-      "url": "https://kffhealthnews.org/health-industry/infant-formula-adverse-events-nec-baby-deaths-fda-reporting/",
-      "source": "kffhealthnews.org",
-      "paywalled": false,
-      "topic": "Healthcare",
-      "published": "2026-07-02T09:00:00+00:00",
-      "is_today": true,
-      "summary": "A manufacturer closed an adverse event file after a mother reported her infant's death potentially linked to formula, raising FDA reporting transparency concerns."
-    },
-    {
-      "title": "HealthQ Special: Caregiving in the Sandwich Generation",
-      "url": "https://kffhealthnews.org/aging/healthq-special-sandwich-generation-caregiving-fmla-early-onset-cancer/",
-      "source": "kffhealthnews.org",
-      "paywalled": false,
-      "topic": "Healthcare",
-      "published": "2026-07-02T09:00:00+00:00",
-      "is_today": true,
-      "summary": "Middle-aged adults simultaneously caring for aging parents and young children face financial and health challenges with limited workplace support policies."
-    },
-    {
-      "title": "New Disease Threats Follow Trump Administration\u2019s Health Program Cuts",
-      "url": "https://kffhealthnews.org/public-health/new-disease-threats-follow-trump-administrations-health-program-cuts/",
-      "source": "kffhealthnews.org",
-      "paywalled": false,
-      "topic": "Healthcare",
-      "published": "2026-07-02T09:00:00+00:00",
-      "is_today": true,
-      "summary": "Trump administration health program cuts have reduced disease surveillance and prevention capacity, increasing vulnerability to emerging health threats."
-    },
-    {
       "title": "Trump\u2019s attention drifts to 250th even after House floor meltdown",
       "url": "https://rollcall.com/2026/07/02/trumps-attention-drifts-to-250th-even-after-house-floor-meltdown/",
       "source": "rollcall.com",
       "paywalled": false,
       "topic": "Appropriations",
       "published": "2026-07-02T11:51:36+00:00",
-      "is_today": true,
-      "summary": "President Trump's focus shifts toward the nation's 250th anniversary despite recent House floor conflict."
-    },
-    {
-      "title": "Inside the competing federal efforts behind America\u2019s 250th anniversary plans",
-      "url": "https://www.govexec.com/management/2026/07/inside-competing-federal-efforts-behind-americas-250th-anniversary-plans/414449/",
-      "source": "govexec.com",
-      "paywalled": false,
-      "topic": "Appropriations",
-      "published": "2026-07-01T08:00:00-04:00",
       "is_today": false,
-      "summary": "Multiple federal agencies pursue competing initiatives for America's 250th anniversary planning and coordination."
+      "summary": "Trump focused on planning a 250th anniversary celebration despite recent House floor confrontation, potentially affecting legislative priorities."
     },
     {
-      "title": "Some TSP funds faltered in June",
-      "url": "https://www.govexec.com/pay-benefits/2026/07/some-tsp-funds-faltered-june/414565/",
-      "source": "govexec.com",
-      "paywalled": false,
-      "topic": "Appropriations",
-      "published": "2026-07-01T12:31:20-04:00",
-      "is_today": false,
-      "summary": "Several Thrift Savings Plan investment funds experienced declines in June 2026."
-    },
-    {
-      "title": "Trump denies conflict of interest over crypto. And, Vatican excommunicates rebel group",
-      "url": "https://www.npr.org/2026/07/02/g-s1-131702/up-first-newsletter-trump-crypto-earnings-society-pope-pius-venezuela-world-cup",
+      "title": "July 4th events threatened by heat wave. And, Russia strikes on Ukraine's capital",
+      "url": "https://www.npr.org/2026/07/03/g-s1-131920/up-first-newsletter-america-250-heat-wave-ukraine-russia-democratic-party",
       "source": "feeds.npr.org",
       "paywalled": false,
       "topic": "Foreign Policy",
-      "published": "2026-07-02T07:23:10-04:00",
+      "published": "2026-07-03T07:39:07-04:00",
       "is_today": true,
-      "summary": "Trump denied conflicts of interest regarding cryptocurrency holdings while the Vatican excommunicated a rebel group."
+      "summary": "Extreme heat threatens July 4th celebrations across America while Russia continues military strikes on Ukraine's capital."
+    },
+    {
+      "title": "Venezuela\u2019s Bungled Earthquake Response",
+      "url": "https://foreignpolicy.com/2026/07/03/venezuela-earthquakes-rodriguez-machado-politics/",
+      "source": "foreignpolicy.com",
+      "paywalled": false,
+      "topic": "Foreign Policy",
+      "published": "2026-07-03T12:00:53+00:00",
+      "is_today": true,
+      "summary": "Venezuela's government faced criticism for inadequate earthquake response and disaster management."
+    },
+    {
+      "title": "Iran threatens response without 'full implementation' of US deal",
+      "url": "https://thehill.com/policy/international/5952638-iran-us-israel-mou-ghalibaf/",
+      "source": "thehill.com",
+      "paywalled": false,
+      "topic": "Foreign Policy",
+      "published": "2026-07-03T12:28:21+00:00",
+      "is_today": true,
+      "summary": "Iran warns it will retaliate unless the United States fully implements the nuclear agreement."
     },
     {
       "title": "The Hypocrisy That Shields Erdogan From Global Criticism",
@@ -173,34 +153,24 @@
       "summary": "Russia conducted major attacks on Kyiv following President Zelensky's warning of potential military escalation."
     },
     {
-      "title": "A major Russian attack kills 17 in Kyiv as Ukraine keeps striking Moscow's oil sector",
-      "url": "https://www.npr.org/2026/07/02/g-s1-131681/russian-attack-ukraine",
-      "source": "feeds.npr.org",
+      "title": "How extreme heat is changing DC's July Fourth weekend event plans",
+      "url": "https://thehill.com/homenews/state-watch/5952009-extreme-heat-washington-dc-july-fourth-events-impact/",
+      "source": "thehill.com",
       "paywalled": false,
-      "topic": "Foreign Policy",
-      "published": "2026-07-02T01:47:53-04:00",
+      "topic": "Energy",
+      "published": "2026-07-03T18:10:57+00:00",
       "is_today": true,
-      "summary": "Russia launched a major attack on Kyiv killing 17 people as Ukraine continues striking Russian oil infrastructure."
+      "summary": "Extreme heat is forcing Washington, DC to modify July Fourth weekend event plans due to dangerous temperatures."
     },
     {
-      "title": "U.S. and Iran hold separate meetings in Qatar and agree to continue discussions",
-      "url": "https://www.npr.org/2026/07/02/nx-s1-5878887/us-iran-meetings-qatar",
-      "source": "feeds.npr.org",
+      "title": "Justice Department urges states to probe possible gas price gouging",
+      "url": "https://thehill.com/homenews/administration/5953013-justice-dept-urges-gas-price-probe/",
+      "source": "thehill.com",
       "paywalled": false,
-      "topic": "Foreign Policy",
-      "published": "2026-07-02T01:57:33-04:00",
+      "topic": "Energy",
+      "published": "2026-07-03T19:36:14+00:00",
       "is_today": true,
-      "summary": "U.S. and Iran held separate meetings in Qatar and agreed to continue diplomatic discussions."
-    },
-    {
-      "title": "Russia hits Ukraine's capital with a massive drone and missile attack, killing at least 18",
-      "url": "https://www.npr.org/2026/07/02/nx-s1-5878894/russia-attacks-ukraines-capital-killing-more-than-a-dozen-people",
-      "source": "feeds.npr.org",
-      "paywalled": false,
-      "topic": "Foreign Policy",
-      "published": "2026-07-02T04:47:15-04:00",
-      "is_today": true,
-      "summary": "Russia conducted a massive drone and missile attack on Ukraine's capital Kyiv, killing at least 18 people."
+      "summary": "The Justice Department is urging states to investigate potential gas price gouging by retailers."
     },
     {
       "title": "Why the true cost of new gas plants is much higher than the sticker price",
@@ -209,28 +179,8 @@
       "paywalled": false,
       "topic": "Energy",
       "published": "2026-07-02T09:04:17-04:00",
-      "is_today": true,
-      "summary": "Hidden infrastructure costs make new natural gas plants significantly more expensive than initial price estimates, affecting utility planning and grid investment decisions."
-    },
-    {
-      "title": "PJM stakeholders advance data center backstop procurement plan",
-      "url": "https://www.utilitydive.com/news/pjm-backstop-procurement-connect-manage-data-centers/824317/",
-      "source": "utilitydive.com",
-      "paywalled": false,
-      "topic": "Energy",
-      "published": "2026-07-02T09:19:31-04:00",
-      "is_today": true,
-      "summary": "PJM stakeholders developed a procurement mechanism to manage data center electricity demand and ensure grid reliability amid rapid data center growth."
-    },
-    {
-      "title": "PJM anticipates new peak demand record as heat wave tests power grid",
-      "url": "https://www.utilitydive.com/news/heat-wave-tests-power-grid-pjm-anticipates-new-record/824329/",
-      "source": "utilitydive.com",
-      "paywalled": false,
-      "topic": "Energy",
-      "published": "2026-07-02T10:04:39-04:00",
-      "is_today": true,
-      "summary": "A heat wave is expected to push PJM's power demand to record levels, testing grid capacity and highlighting infrastructure adequacy concerns."
+      "is_today": false,
+      "summary": "New natural gas power plants cost significantly more than advertised prices when including pipeline infrastructure expenses."
     },
     {
       "title": "A hot summer trend in the sharing economy? Rental swimming pools",
@@ -239,8 +189,38 @@
       "paywalled": false,
       "topic": "Criminal Justice",
       "published": "2026-07-03T05:00:00-04:00",
+      "is_today": false,
+      "summary": "Private pool owners increasingly rent their swimming pools through sharing economy platforms, raising questions about liability, zoning regulations, and local government oversight."
+    },
+    {
+      "title": "Federal Court Delivers Major Blow to Trump Detention Policy of Jailing Immigrants With No Hearing, No Explanation",
+      "url": "https://www.americanimmigrationcouncil.org/press-release/federal-court-blocks-trump-immigration-detention-policy-fifth-circuit/",
+      "source": "immigrationimpact.com",
+      "paywalled": false,
+      "topic": "Immigration",
+      "published": "2026-07-03T12:16:29+00:00",
       "is_today": true,
-      "summary": "Homeowners are renting private swimming pools through sharing economy platforms, raising questions about liability, insurance, and local zoning regulations."
+      "summary": "A federal court blocked a Trump administration policy allowing immigrant detention without hearings or explanations, affecting immigration enforcement procedures."
+    },
+    {
+      "title": "'Cautiously optimistic':  Swing voters describe their view of America at 250",
+      "url": "https://www.npr.org/2026/07/04/nx-s1-5877727/swing-voters-america-250-midterms",
+      "source": "feeds.npr.org",
+      "paywalled": false,
+      "topic": "Immigration",
+      "published": "2026-07-04T05:00:00-04:00",
+      "is_today": true,
+      "summary": "Swing voters express cautious optimism about America's future as the nation approaches its 250th anniversary."
+    },
+    {
+      "title": "The Second Continental Congress wrote the Declaration. Is Congress today living up?",
+      "url": "https://www.npr.org/2026/07/02/nx-s1-5871170/america-250-congress",
+      "source": "feeds.npr.org",
+      "paywalled": false,
+      "topic": "Immigration",
+      "published": "2026-07-02T16:42:19-04:00",
+      "is_today": false,
+      "summary": "Congress faces questions about whether it upholds the principles established by the Second Continental Congress and Declaration of Independence."
     },
     {
       "title": "The Continental Congress wrote the Declaration. Is its modern descendent living up?",
@@ -273,84 +253,34 @@
       "summary": "Democratic House Minority Leader Hakeem Jeffries discusses party strategy for upcoming midterm elections."
     },
     {
-      "title": "How was the new Air Force One prepared for flight?",
-      "url": "https://www.npr.org/2026/07/02/nx-s1-5877490/how-was-the-new-air-force-one-prepared-for-flight",
-      "source": "feeds.npr.org",
-      "paywalled": false,
-      "topic": "Immigration",
-      "published": "2026-07-02T04:47:19-04:00",
-      "is_today": true,
-      "summary": "The Air Force completed preparations for the new Air Force One aircraft through maintenance and testing procedures."
-    },
-    {
-      "title": "Trump takes first flight on new Air Force One gifted by the Qatari government",
-      "url": "https://www.npr.org/2026/07/02/nx-s1-5877618/trump-takes-first-flight-on-new-air-force-one-gifted-by-the-qatari-government",
-      "source": "feeds.npr.org",
-      "paywalled": false,
-      "topic": "Immigration",
-      "published": "2026-07-02T04:47:26-04:00",
-      "is_today": true,
-      "summary": "President Trump flew on a new Air Force One aircraft reportedly gifted by Qatar's government."
-    },
-    {
-      "title": "The rise of democratic socialists and what it means for the party",
-      "url": "https://www.npr.org/2026/07/02/nx-s1-5877489/the-rise-of-democratic-socialists-and-what-it-means-for-the-party",
-      "source": "feeds.npr.org",
-      "paywalled": false,
-      "topic": "Immigration",
-      "published": "2026-07-02T04:47:53-04:00",
-      "is_today": true,
-      "summary": "Democratic socialists are gaining influence within the Democratic Party, affecting its political direction and platform."
-    },
-    {
-      "title": "Inside the competing federal efforts behind America\u2019s 250th anniversary plans",
-      "url": "https://www.govexec.com/management/2026/07/inside-competing-federal-efforts-behind-americas-250th-anniversary-plans/414449/",
-      "source": "govexec.com",
-      "paywalled": false,
-      "topic": "Tax & Finance",
-      "published": "2026-07-01T08:00:00-04:00",
-      "is_today": false,
-      "summary": "Multiple federal agencies are developing competing plans for the U.S. 250th anniversary celebration, raising coordination questions for 2026 commemorative efforts."
-    },
-    {
-      "title": "Some TSP funds faltered in June",
-      "url": "https://www.govexec.com/pay-benefits/2026/07/some-tsp-funds-faltered-june/414565/",
-      "source": "govexec.com",
-      "paywalled": false,
-      "topic": "Tax & Finance",
-      "published": "2026-07-01T12:31:20-04:00",
-      "is_today": false,
-      "summary": "Several Thrift Savings Plan investment funds experienced performance declines in June, affecting federal employee retirement savings."
-    },
-    {
-      "title": "Union accuses Treasury and HHS of neglecting telework requests from employees with disabilities",
-      "url": "https://www.govexec.com/workforce/2026/07/union-accuses-treasury-hhs-neglecting-telework-requests-employees-disabilities/414573/",
-      "source": "govexec.com",
-      "paywalled": false,
-      "topic": "Tax & Finance",
-      "published": "2026-07-01T14:46:17-04:00",
-      "is_today": false,
-      "summary": "A union filed complaints alleging Treasury and HHS improperly denied telework accommodations for employees with disabilities."
-    },
-    {
-      "title": "AOC endorses El-Sayed in Michigan Senate race",
-      "url": "https://www.politico.com/live-updates/2026/07/02/congress/alexandria-ocasio-cortez-michigan-senate-endorsement-00985388",
-      "source": "rss.politico.com",
+      "title": "Christie: GOP headed for 'monumental defeat' in midterms",
+      "url": "https://thehill.com/homenews/campaign/5952716-chris-christie-midterm-elections-republicans-defeat/",
+      "source": "thehill.com",
       "paywalled": false,
       "topic": "Elections",
-      "published": "2026-07-02T07:58:49-04:00",
+      "published": "2026-07-03T14:39:18+00:00",
       "is_today": true,
-      "summary": "Rep. Alexandria Ocasio-Cortez endorsed El-Sayed in the Michigan Senate race."
+      "summary": "Former Gov. Christie warns Republicans face significant midterm losses, raising concerns about GOP electoral prospects."
     },
     {
-      "title": "House Ethics says it doesn\u2019t have information to share on lawmaker sexual misconduct settlements",
-      "url": "https://www.politico.com/live-updates/2026/07/02/congress/new-house-ethics-statement-00985864",
-      "source": "rss.politico.com",
+      "title": "Wes Moore on democratic socialist gains: Voters want 'someone who is going to fight for them'",
+      "url": "https://thehill.com/homenews/campaign/5952990-wes-moore-on-democratic-socialist-gains-voters-want-someone-who-is-going-to-fight-for-them/",
+      "source": "thehill.com",
       "paywalled": false,
       "topic": "Elections",
-      "published": "2026-07-02T10:31:41-04:00",
+      "published": "2026-07-03T19:14:12+00:00",
       "is_today": true,
-      "summary": "The House Ethics Committee stated it lacks information regarding lawmaker sexual misconduct settlements."
+      "summary": "Gov. Moore attributes democratic socialist primary victories to voter demand for aggressive representation on economic issues."
+    },
+    {
+      "title": "FOR INSIDERS | Democrats grapple with left-wing primary wins",
+      "url": "https://thehill.com/homenews/campaign/5952255-democratic-party-dsa-midterm-primaries/",
+      "source": "thehill.com",
+      "paywalled": false,
+      "topic": "Elections",
+      "published": "2026-07-04T10:00:00+00:00",
+      "is_today": true,
+      "summary": "Democratic Party leadership confronts strategic implications of leftist candidates winning primary elections nationwide."
     },
     {
       "title": "Trump ethics disclosure throws curveball at Senate crypto talks",
@@ -363,84 +293,14 @@
       "summary": "Trump's ethics disclosure complicates ongoing Senate negotiations on cryptocurrency regulation."
     },
     {
-      "title": "The GOP\u2019s dirty little secret about the SAVE America Act",
-      "url": "https://www.politico.com/news/2026/07/02/save-america-act-mail-voting-00985315",
-      "source": "rss.politico.com",
-      "paywalled": false,
-      "topic": "Elections",
-      "published": "2026-07-02T03:45:00-04:00",
-      "is_today": true,
-      "summary": "Republicans debate mail voting provisions in the SAVE America Act, revealing internal disagreement on election policy."
-    },
-    {
-      "title": "Congressional Republicans confront a lost summer",
-      "url": "https://www.politico.com/news/2026/07/01/congress-do-nothing-summer-00985289",
-      "source": "rss.politico.com",
-      "paywalled": false,
-      "topic": "Elections",
-      "published": "2026-07-02T03:45:00-04:00",
-      "is_today": true,
-      "summary": "Congressional Republicans face criticism for limited legislative productivity during summer 2026 session."
-    },
-    {
-      "title": "America\u2019s July 2 birthday, Philadelphia style",
-      "url": "https://rollcall.com/2026/07/02/america-july-2-birthday-philadelphia-style/",
-      "source": "rollcall.com",
-      "paywalled": false,
-      "topic": "Elections",
-      "published": "2026-07-02T05:00:00+00:00",
-      "is_today": true,
-      "summary": "Philadelphia commemorates July 2 as America's birthday, marking the Continental Congress independence vote."
-    },
-    {
-      "title": "Whatever happened to Sean Duffy\u2019s road trip series?",
-      "url": "https://www.politico.com/news/2026/07/01/duffy-road-trip-where-00982277",
-      "source": "rss.politico.com",
-      "paywalled": false,
-      "topic": "Transportation",
-      "published": "2026-07-01T09:00:00-04:00",
-      "is_today": false,
-      "summary": "Sean Duffy's road trip series status remains unclear."
-    },
-    {
-      "title": "Concerns rise over rise of near collisions between planes, drones",
-      "url": "https://thehill.com/policy/transportation/5948765-drone-sightings-airports-concerning-faa-data-shows/",
-      "source": "thehill.com",
-      "paywalled": false,
-      "topic": "Transportation",
-      "published": "2026-07-01T12:48:28+00:00",
-      "is_today": false,
-      "summary": "FAA data shows increasing near-collision incidents between aircraft and drones, raising aviation safety concerns."
-    },
-    {
-      "title": "Trump traveling to North Dakota on Qatari-gifted Air Force One maiden flight",
-      "url": "https://thehill.com/homenews/administration/5949199-donald-trump-qatari-jet-air-force-one-north-dakota-trip/",
-      "source": "thehill.com",
-      "paywalled": false,
-      "topic": "Transportation",
-      "published": "2026-07-01T13:47:49+00:00",
-      "is_today": false,
-      "summary": "President Trump will travel to North Dakota on Air Force One using a Qatar-gifted aircraft for its maiden flight."
-    },
-    {
       "title": "US Won\u2019t Renew USMCA, Seeks Improvements in Yearly Reviews",
       "url": "https://farmpolicynews.illinois.edu/2026/07/us-wont-renew-usmca-seeks-improvements-in-yearly-reviews/",
       "source": "farmpolicynews.illinois.edu",
       "paywalled": false,
       "topic": "Agriculture",
       "published": "2026-07-02T11:53:32+00:00",
-      "is_today": true,
-      "summary": "The U.S. will not renew USMCA but instead pursue yearly reviews to negotiate improvements to the North American trade agreement."
-    },
-    {
-      "title": "Bayer Seeks Glyphosate Import Duties, Angering Farmers",
-      "url": "https://farmpolicynews.illinois.edu/2026/07/bayer-seeks-glyphosate-import-duties-angering-farmers/",
-      "source": "farmpolicynews.illinois.edu",
-      "paywalled": false,
-      "topic": "Agriculture",
-      "published": "2026-07-01T11:52:37+00:00",
       "is_today": false,
-      "summary": "Bayer requested import duties on glyphosate, creating conflict with farmers who rely on affordable herbicide costs for agricultural production."
+      "summary": "The U.S. will not renew USMCA but will seek improvements through annual reviews rather than renegotiation."
     },
     {
       "title": "Alleged longstanding member of Scattered Spider extradited to US",
@@ -449,8 +309,8 @@
       "paywalled": false,
       "topic": "Cybersecurity",
       "published": "2026-07-02T15:28:25+00:00",
-      "is_today": true,
-      "summary": "Alleged Scattered Spider member was extradited to the US to face cybercrime charges related to the hacking group's operations."
+      "is_today": false,
+      "summary": "An alleged long-standing member of the Scattered Spider cybercriminal group was extradited to the United States for prosecution."
     },
     {
       "title": "FBI Seizes NetNut Proxy Platform, Popa Botnet",
@@ -459,8 +319,8 @@
       "paywalled": false,
       "topic": "Cybersecurity",
       "published": "2026-07-02T19:27:33+00:00",
-      "is_today": true,
-      "summary": "FBI seized NetNut proxy platform and Popa botnet infrastructure used for facilitating cyberattacks and unauthorized network access."
+      "is_today": false,
+      "summary": "The FBI seized the NetNut proxy platform and Popa botnet used for unauthorized network access and cybercriminal activities."
     },
     {
       "title": "Someone infected a spyware probe overseer with spyware",
@@ -469,8 +329,8 @@
       "paywalled": false,
       "topic": "Cybersecurity",
       "published": "2026-07-03T05:00:00+00:00",
-      "is_today": true,
-      "summary": "A member overseeing spyware research for the EU Parliament was infected with Pegasus spyware, raising counterintelligence concerns."
+      "is_today": false,
+      "summary": "A member of a spyware oversight committee was targeted with Pegasus spyware, highlighting vulnerabilities in surveillance accountability mechanisms."
     },
     {
       "title": "Google loses long-running appeal of record EU fine, will have to cough up $4.7 billion",
@@ -479,8 +339,8 @@
       "paywalled": false,
       "topic": "Technology",
       "published": "2026-07-02T16:15:41+00:00",
-      "is_today": true,
-      "summary": "Google's appeal of a $4.7 billion EU antitrust fine was rejected, requiring the company to pay the penalty for alleged anticompetitive practices."
+      "is_today": false,
+      "summary": "Google lost its appeal of a \u20ac4.7 billion EU antitrust fine, requiring payment and signaling potential implications for US tech regulation policy."
     },
     {
       "title": "Plex debuts 5-year membership pass for $250",
@@ -489,8 +349,8 @@
       "paywalled": false,
       "topic": "Technology",
       "published": "2026-07-02T16:35:59+00:00",
-      "is_today": true,
-      "summary": "Plex changed its membership model, replacing a lifetime pass option with a five-year subscription priced at $250."
+      "is_today": false,
+      "summary": "Plex changed its membership model from lifetime access to a five-year subscription pass for $250, affecting subscriber commitments."
     },
     {
       "title": "Wall Street Journal: Trump family 'cashing in on the presidency in big and sketchy ways'",
@@ -499,8 +359,8 @@
       "paywalled": false,
       "topic": "Technology",
       "published": "2026-07-02T16:52:00+00:00",
-      "is_today": true,
-      "summary": "The Wall Street Journal reported that Trump family members are monetizing the presidency through business dealings."
+      "is_today": false,
+      "summary": "Wall Street Journal reported Trump family members engaged in questionable business dealings while profiting from the presidency."
     }
   ]
 }
