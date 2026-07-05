@@ -1,16 +1,36 @@
 {
-  "last_updated": "2026-07-04T11:00:50Z",
-  "story_count": 36,
+  "last_updated": "2026-07-05T11:00:55Z",
+  "story_count": 30,
   "stories": [
     {
-      "title": "These light-weight power cells run on nuclear waste and could power next-gen drones",
-      "url": "https://www.defenseone.com/technology/2026/07/these-light-weight-power-cells-run-nuclear-waste-and-could-power-next-gen-drones/414585/",
-      "source": "defenseone.com",
+      "title": "Iran's new leader remains unseen as nation mourns Khamenei",
+      "url": "https://thehill.com/policy/international/5953355-motjaba-khamenei-iran-funeral-ayatollah-us-strikes/",
+      "source": "thehill.com",
       "paywalled": false,
       "topic": "Defense",
-      "published": "2026-07-03T08:00:00-04:00",
+      "published": "2026-07-04T13:44:42+00:00",
       "is_today": true,
-      "summary": "Developers created lightweight nuclear waste-powered cells for military drones, potentially extending flight duration and reducing logistical requirements."
+      "summary": "Iran's new leader remains unidentified as the nation mourns Supreme Leader Khamenei's death, affecting U.S. foreign policy strategy."
+    },
+    {
+      "title": "Trump battles time in bid to boost weapons stockpiles",
+      "url": "https://thehill.com/policy/defense/5948623-trump-munitions-stockpiles-hurdles-time-congress/",
+      "source": "thehill.com",
+      "paywalled": false,
+      "topic": "Defense",
+      "published": "2026-07-04T16:00:00+00:00",
+      "is_today": true,
+      "summary": "Trump administration works to increase U.S. weapons stockpiles but faces time constraints and congressional approval challenges."
+    },
+    {
+      "title": "President, Vice President Address Nation in Celebration of America's 250th Birthday",
+      "url": "https://www.war.gov/News/News-Stories/Article/Article/4533279/president-vice-president-address-nation-in-celebration-of-americas-250th-birthd/",
+      "source": "defense.gov",
+      "paywalled": false,
+      "topic": "Defense",
+      "published": "2026-07-05T05:41:00+00:00",
+      "is_today": true,
+      "summary": "President and Vice President address nation celebrating America's 250th birthday anniversary."
     },
     {
       "title": "Iran threatens response without 'full implementation' of US deal",
@@ -33,24 +53,14 @@
       "summary": "A US diplomat recommended Taiwan deploy numerous drones as a deterrent strategy against potential military aggression."
     },
     {
-      "title": "Russia launches major attack on Kyiv after Zelensky warning",
-      "url": "https://thehill.com/policy/international/5950964-russia-ukraine-deadly-attack-kyiv-zelensky-warning/",
-      "source": "thehill.com",
+      "title": "Conservatives rage over re-funding of Planned Parenthood",
+      "url": "https://www.politico.com/news/2026/07/04/planned-parenthood-abortion-medicaid-congress-00985879",
+      "source": "rss.politico.com",
       "paywalled": false,
-      "topic": "Defense",
-      "published": "2026-07-02T12:03:14+00:00",
+      "topic": "Healthcare",
+      "published": "2026-07-04T13:00:00-04:00",
       "is_today": true,
-      "summary": "Russia launches major military attack on Kyiv following a warning by President Zelensky, resulting in casualties."
-    },
-    {
-      "title": "Iran warns of 'forceful response' if tankers don't use approved Strait of Hormuz routes",
-      "url": "https://thehill.com/policy/international/5950982-iran-warning-strait-of-hormuz-routes/",
-      "source": "thehill.com",
-      "paywalled": false,
-      "topic": "Defense",
-      "published": "2026-07-02T13:16:02+00:00",
-      "is_today": true,
-      "summary": "Iran warned of military retaliation against ships not using designated shipping routes through the Strait of Hormuz."
+      "summary": "Congress re-funded Planned Parenthood through Medicaid, drawing criticism from conservative lawmakers over the organization's abortion services."
     },
     {
       "title": "Kean's depression disclosure prompts questions about mental health stigma",
@@ -59,58 +69,38 @@
       "paywalled": false,
       "topic": "Healthcare",
       "published": "2026-07-04T10:00:00+00:00",
-      "is_today": true,
-      "summary": "Rep. Tom Kean Jr.'s public disclosure of depression raises questions about mental health stigma in federal policy and leadership."
-    },
-    {
-      "title": "Potato chip recall elevated to FDA's highest risk level",
-      "url": "https://thehill.com/policy/healthcare/5951086-zapps-dirty-chips-recall-fda/",
-      "source": "thehill.com",
-      "paywalled": false,
-      "topic": "Healthcare",
-      "published": "2026-07-02T13:18:38+00:00",
       "is_today": false,
-      "summary": "FDA elevated a potato chip recall to its highest risk category, raising food safety enforcement concerns."
+      "summary": "Rep. Tom Kean Jr.'s public disclosure of depression raises questions about mental health stigma in politics and policy discussions."
     },
     {
-      "title": "DEA moves to ban opioid-like kratom compound 7-OH",
-      "url": "https://thehill.com/policy/healthcare/5951668-dea-temporarily-bans-synthetic-kratom/",
-      "source": "thehill.com",
-      "paywalled": false,
-      "topic": "Healthcare",
-      "published": "2026-07-02T17:20:54+00:00",
-      "is_today": false,
-      "summary": "DEA moves to temporarily ban 7-OH, a kratom-derived compound, affecting opioid alternative regulations."
-    },
-    {
-      "title": "Democrats demand HHS reinstate canceled teen pregnancy prevention grants",
-      "url": "https://thehill.com/policy/healthcare/5951898-democrats-demand-hhs-reinstate-teen-pregnancy-grants/",
-      "source": "thehill.com",
-      "paywalled": false,
-      "topic": "Healthcare",
-      "published": "2026-07-02T19:13:48+00:00",
-      "is_today": true,
-      "summary": "Democrats called on HHS to restore cancelled federal teen pregnancy prevention grants, disagreeing with the administration's decision."
-    },
-    {
-      "title": "Trump\u2019s attention drifts to 250th even after House floor meltdown",
-      "url": "https://rollcall.com/2026/07/02/trumps-attention-drifts-to-250th-even-after-house-floor-meltdown/",
-      "source": "rollcall.com",
-      "paywalled": false,
-      "topic": "Appropriations",
-      "published": "2026-07-02T11:51:36+00:00",
-      "is_today": false,
-      "summary": "Trump focused on planning a 250th anniversary celebration despite recent House floor confrontation, potentially affecting legislative priorities."
-    },
-    {
-      "title": "July 4th events threatened by heat wave. And, Russia strikes on Ukraine's capital",
-      "url": "https://www.npr.org/2026/07/03/g-s1-131920/up-first-newsletter-america-250-heat-wave-ukraine-russia-democratic-party",
+      "title": "China's military promotes 2 new generals after anti-corruption purge thins ranks",
+      "url": "https://www.npr.org/2026/07/04/g-s1-131994/chinas-military-promotes-2-new-generals-after-anti-corruption-purge-thins-ranks",
       "source": "feeds.npr.org",
       "paywalled": false,
       "topic": "Foreign Policy",
-      "published": "2026-07-03T07:39:07-04:00",
+      "published": "2026-07-04T10:07:57-04:00",
       "is_today": true,
-      "summary": "Extreme heat threatens July 4th celebrations across America while Russia continues military strikes on Ukraine's capital."
+      "summary": "China promoted two new generals following an anti-corruption purge that reduced military leadership ranks."
+    },
+    {
+      "title": "Iran's new leader remains unseen as nation mourns Khamenei",
+      "url": "https://thehill.com/policy/international/5953355-motjaba-khamenei-iran-funeral-ayatollah-us-strikes/",
+      "source": "thehill.com",
+      "paywalled": false,
+      "topic": "Foreign Policy",
+      "published": "2026-07-04T13:44:42+00:00",
+      "is_today": true,
+      "summary": "Iran's new leader remains publicly unseen while the nation mourns Khamenei's death."
+    },
+    {
+      "title": "World leaders toast America on its 250th birthday",
+      "url": "https://thehill.com/policy/international/5953385-world-leaders-america-250-messages/",
+      "source": "thehill.com",
+      "paywalled": false,
+      "topic": "Foreign Policy",
+      "published": "2026-07-04T14:46:37+00:00",
+      "is_today": true,
+      "summary": "World leaders celebrated America's 250th birthday with international messages and toasts."
     },
     {
       "title": "Venezuela\u2019s Bungled Earthquake Response",
@@ -133,24 +123,14 @@
       "summary": "Iran warns it will retaliate unless the United States fully implements the nuclear agreement."
     },
     {
-      "title": "The Hypocrisy That Shields Erdogan From Global Criticism",
-      "url": "https://foreignpolicy.com/2026/07/02/turkey-erdogan-trump-human-rights-kavala-imamoglu/",
-      "source": "foreignpolicy.com",
-      "paywalled": false,
-      "topic": "Foreign Policy",
-      "published": "2026-07-02T11:00:53+00:00",
-      "is_today": true,
-      "summary": "Turkey faces criticism for inconsistent application of human rights standards under President Erdogan's governance."
-    },
-    {
-      "title": "Russia launches major attack on Kyiv after Zelensky warning",
-      "url": "https://thehill.com/policy/international/5950964-russia-ukraine-deadly-attack-kyiv-zelensky-warning/",
+      "title": "Live updates: Trump delivers speech marking America's 250th anniversary after weather delay",
+      "url": "https://thehill.com/homenews/administration/5953320-live-updates-washington-dc-july-4-heat-trump-speech/",
       "source": "thehill.com",
       "paywalled": false,
-      "topic": "Foreign Policy",
-      "published": "2026-07-02T12:03:14+00:00",
+      "topic": "Energy",
+      "published": "2026-07-04T17:36:41+00:00",
       "is_today": true,
-      "summary": "Russia conducted major attacks on Kyiv following President Zelensky's warning of potential military escalation."
+      "summary": "President Trump delivered a speech marking America's 250th anniversary after weather delays on July Fourth."
     },
     {
       "title": "How extreme heat is changing DC's July Fourth weekend event plans",
@@ -159,8 +139,8 @@
       "paywalled": false,
       "topic": "Energy",
       "published": "2026-07-03T18:10:57+00:00",
-      "is_today": true,
-      "summary": "Extreme heat is forcing Washington, DC to modify July Fourth weekend event plans due to dangerous temperatures."
+      "is_today": false,
+      "summary": "Extreme heat forced changes to Washington, DC's July Fourth weekend event plans."
     },
     {
       "title": "Justice Department urges states to probe possible gas price gouging",
@@ -169,28 +149,48 @@
       "paywalled": false,
       "topic": "Energy",
       "published": "2026-07-03T19:36:14+00:00",
-      "is_today": true,
-      "summary": "The Justice Department is urging states to investigate potential gas price gouging by retailers."
-    },
-    {
-      "title": "Why the true cost of new gas plants is much higher than the sticker price",
-      "url": "https://www.utilitydive.com/news/sticker-shock-gas-power-plants-pipeline-gridlab/824061/",
-      "source": "utilitydive.com",
-      "paywalled": false,
-      "topic": "Energy",
-      "published": "2026-07-02T09:04:17-04:00",
       "is_today": false,
-      "summary": "New natural gas power plants cost significantly more than advertised prices when including pipeline infrastructure expenses."
+      "summary": "The Justice Department urged states to investigate potential gas price gouging by retailers."
     },
     {
-      "title": "A hot summer trend in the sharing economy? Rental swimming pools",
-      "url": "https://www.npr.org/2026/07/03/nx-s1-5876505/swimming-pool-rental-sharing-economy-swimply",
+      "title": "Threats of more closings have colleges and students worrying about how to save themselves",
+      "url": "https://hechingerreport.org/threats-of-more-closings-have-colleges-and-students-worrying-about-how-to-save-themselves/",
+      "source": "hechingerreport.org",
+      "paywalled": false,
+      "topic": "Education",
+      "published": "2026-07-05T05:00:00+00:00",
+      "is_today": true,
+      "summary": "Colleges face potential closures, raising concerns about student outcomes and federal oversight of higher education institutions' financial stability."
+    },
+    {
+      "title": "Week in Politics: U.S. turns 250 under record heat; worries over the future",
+      "url": "https://www.npr.org/2026/07/04/nx-s1-5879352/week-in-politics-u-s-turns-250-under-record-heat-worries-over-the-future",
       "source": "feeds.npr.org",
       "paywalled": false,
-      "topic": "Criminal Justice",
-      "published": "2026-07-03T05:00:00-04:00",
-      "is_today": false,
-      "summary": "Private pool owners increasingly rent their swimming pools through sharing economy platforms, raising questions about liability, zoning regulations, and local government oversight."
+      "topic": "Immigration",
+      "published": "2026-07-04T07:43:48-04:00",
+      "is_today": true,
+      "summary": "The U.S. celebrated its 250th anniversary amid record heat, raising concerns about climate impacts on the nation's future."
+    },
+    {
+      "title": "In Mount Rushmore speech, Trump veers from U.S. exceptionalism to warnings about communism",
+      "url": "https://www.npr.org/2026/07/04/g-s1-132025/mount-rushmore-speech-trump-july-4-250",
+      "source": "feeds.npr.org",
+      "paywalled": false,
+      "topic": "Immigration",
+      "published": "2026-07-04T16:34:31-04:00",
+      "is_today": true,
+      "summary": "Trump delivered a July 4th speech at Mount Rushmore emphasizing American exceptionalism while warning against communism."
+    },
+    {
+      "title": "Paul Pelosi in hit-and-run in California, car left with major damage, authorities say",
+      "url": "https://www.npr.org/2026/07/05/g-s1-132046/paul-pelosi-hit-and-run-california-car-damage",
+      "source": "feeds.npr.org",
+      "paywalled": false,
+      "topic": "Immigration",
+      "published": "2026-07-05T06:28:42-04:00",
+      "is_today": true,
+      "summary": "Paul Pelosi was involved in a hit-and-run accident in California that left his vehicle significantly damaged."
     },
     {
       "title": "Federal Court Delivers Major Blow to Trump Detention Policy of Jailing Immigrants With No Hearing, No Explanation",
@@ -213,44 +213,34 @@
       "summary": "Swing voters express cautious optimism about America's future as the nation approaches its 250th anniversary."
     },
     {
-      "title": "The Second Continental Congress wrote the Declaration. Is Congress today living up?",
-      "url": "https://www.npr.org/2026/07/02/nx-s1-5871170/america-250-congress",
-      "source": "feeds.npr.org",
+      "title": "5 governor\u2019s seats most likely to flip",
+      "url": "https://thehill.com/homenews/campaign/5952091-governor-races-battleground-states/",
+      "source": "thehill.com",
       "paywalled": false,
-      "topic": "Immigration",
-      "published": "2026-07-02T16:42:19-04:00",
-      "is_today": false,
-      "summary": "Congress faces questions about whether it upholds the principles established by the Second Continental Congress and Declaration of Independence."
+      "topic": "Elections",
+      "published": "2026-07-04T21:00:00+00:00",
+      "is_today": true,
+      "summary": "Five governor's seats in battleground states are identified as most likely to change party control in upcoming elections."
     },
     {
-      "title": "The Continental Congress wrote the Declaration. Is its modern descendent living up?",
-      "url": "https://www.npr.org/2026/07/02/nx-s1-5871170/the-continental-congress-wrote-the-declaration-is-its-modern-descendent-living-up",
-      "source": "feeds.npr.org",
+      "title": "Wins by the far-left set up challenge for Hakeem Jeffries",
+      "url": "https://thehill.com/homenews/house/5952236-democratic-socialists-challenge-jeffries/",
+      "source": "thehill.com",
       "paywalled": false,
-      "topic": "Immigration",
-      "published": "2026-07-02T16:42:19-04:00",
+      "topic": "Elections",
+      "published": "2026-07-05T10:00:00+00:00",
       "is_today": true,
-      "summary": "Congress examines whether modern legislative branch upholds principles established by the Continental Congress and Declaration of Independence."
+      "summary": "Democratic Socialist primary victories create challenges for House Democratic Leader Hakeem Jeffries's party unity."
     },
     {
-      "title": "House Democrats accuse Trump of 'hijacking' America's 250th birthday for his own gain",
-      "url": "https://www.npr.org/2026/07/02/nx-s1-5879162/freedom-250-report-house-democrats-controversy",
-      "source": "feeds.npr.org",
+      "title": "Manchin blames Democratic divisions on 'void of leadership'",
+      "url": "https://thehill.com/homenews/campaign/5953621-manchin-blames-democratic-splits/",
+      "source": "thehill.com",
       "paywalled": false,
-      "topic": "Immigration",
-      "published": "2026-07-02T17:47:30-04:00",
+      "topic": "Elections",
+      "published": "2026-07-05T11:00:00+00:00",
       "is_today": true,
-      "summary": "House Democrats criticize Trump for using America's 250th birthday celebration for political purposes."
-    },
-    {
-      "title": "Hakeem Jeffries on Democratic Party's midterm future",
-      "url": "https://www.npr.org/2026/07/03/nx-s1-5879082/hakeem-jeffries-on-democratic-partys-midterm-future",
-      "source": "feeds.npr.org",
-      "paywalled": false,
-      "topic": "Immigration",
-      "published": "2026-07-03T04:15:00-04:00",
-      "is_today": true,
-      "summary": "Democratic House Minority Leader Hakeem Jeffries discusses party strategy for upcoming midterm elections."
+      "summary": "Senator Joe Manchin attributes Democratic divisions to a lack of party leadership."
     },
     {
       "title": "Christie: GOP headed for 'monumental defeat' in midterms",
@@ -283,84 +273,34 @@
       "summary": "Democratic Party leadership confronts strategic implications of leftist candidates winning primary elections nationwide."
     },
     {
-      "title": "Trump ethics disclosure throws curveball at Senate crypto talks",
-      "url": "https://rollcall.com/2026/07/02/trump-ethics-disclosure-throws-curveball-at-senate-crypto-talks/",
-      "source": "rollcall.com",
+      "title": "What to know about DCA flights and July 4th ground stops",
+      "url": "https://thehill.com/policy/transportation/5953325-dca-flights-grounded-july-4-what-to-know/",
+      "source": "thehill.com",
       "paywalled": false,
-      "topic": "Elections",
-      "published": "2026-07-02T11:20:14+00:00",
+      "topic": "Transportation",
+      "published": "2026-07-04T12:46:53+00:00",
       "is_today": true,
-      "summary": "Trump's ethics disclosure complicates ongoing Senate negotiations on cryptocurrency regulation."
+      "summary": "Reagan National Airport implemented ground stops on July 4th due to airspace congestion from holiday travel, affecting flight operations at the major Washington hub."
     },
     {
-      "title": "US Won\u2019t Renew USMCA, Seeks Improvements in Yearly Reviews",
-      "url": "https://farmpolicynews.illinois.edu/2026/07/us-wont-renew-usmca-seeks-improvements-in-yearly-reviews/",
-      "source": "farmpolicynews.illinois.edu",
-      "paywalled": false,
-      "topic": "Agriculture",
-      "published": "2026-07-02T11:53:32+00:00",
-      "is_today": false,
-      "summary": "The U.S. will not renew USMCA but will seek improvements through annual reviews rather than renegotiation."
-    },
-    {
-      "title": "Alleged longstanding member of Scattered Spider extradited to US",
-      "url": "https://cyberscoop.com/scattered-spider-peter-stokes-cybercrime-extradition/",
-      "source": "cyberscoop.com",
-      "paywalled": false,
-      "topic": "Cybersecurity",
-      "published": "2026-07-02T15:28:25+00:00",
-      "is_today": false,
-      "summary": "An alleged long-standing member of the Scattered Spider cybercriminal group was extradited to the United States for prosecution."
-    },
-    {
-      "title": "FBI Seizes NetNut Proxy Platform, Popa Botnet",
-      "url": "https://krebsonsecurity.com/2026/07/fbi-seizes-netnut-proxy-platform-popa-botnet/",
-      "source": "krebsonsecurity.com",
-      "paywalled": false,
-      "topic": "Cybersecurity",
-      "published": "2026-07-02T19:27:33+00:00",
-      "is_today": false,
-      "summary": "The FBI seized the NetNut proxy platform and Popa botnet used for unauthorized network access and cybercriminal activities."
-    },
-    {
-      "title": "Someone infected a spyware probe overseer with spyware",
-      "url": "https://cyberscoop.com/pegasus-spyware-pega-committee-member-targeted/",
-      "source": "cyberscoop.com",
-      "paywalled": false,
-      "topic": "Cybersecurity",
-      "published": "2026-07-03T05:00:00+00:00",
-      "is_today": false,
-      "summary": "A member of a spyware oversight committee was targeted with Pegasus spyware, highlighting vulnerabilities in surveillance accountability mechanisms."
-    },
-    {
-      "title": "Google loses long-running appeal of record EU fine, will have to cough up $4.7 billion",
-      "url": "https://arstechnica.com/gadgets/2026/07/google-loses-long-running-appeal-of-record-eu-fine-will-have-to-cough-up-4-7-billion/",
-      "source": "arstechnica.com",
+      "title": "Bipartisan coalition of state AGs take on tech over age verification",
+      "url": "https://www.politico.com/news/2026/07/04/bipartisan-coalition-of-state-ags-take-on-tech-over-age-verification-00986548",
+      "source": "rss.politico.com",
       "paywalled": false,
       "topic": "Technology",
-      "published": "2026-07-02T16:15:41+00:00",
-      "is_today": false,
-      "summary": "Google lost its appeal of a \u20ac4.7 billion EU antitrust fine, requiring payment and signaling potential implications for US tech regulation policy."
+      "published": "2026-07-04T11:00:00-04:00",
+      "is_today": true,
+      "summary": "State attorneys general from both parties are pressuring technology companies to implement age verification systems, raising federal policy questions about online user protections."
     },
     {
-      "title": "Plex debuts 5-year membership pass for $250",
-      "url": "https://arstechnica.com/gadgets/2026/07/250-used-to-get-you-a-lifetime-plex-pass-now-you-get-a-five-year-subscription/",
-      "source": "arstechnica.com",
-      "paywalled": false,
-      "topic": "Technology",
-      "published": "2026-07-02T16:35:59+00:00",
-      "is_today": false,
-      "summary": "Plex changed its membership model from lifetime access to a five-year subscription pass for $250, affecting subscriber commitments."
-    },
-    {
-      "title": "Wall Street Journal: Trump family 'cashing in on the presidency in big and sketchy ways'",
-      "url": "https://thehill.com/homenews/media/5951517-wall-street-journal-trump-family/",
+      "title": "Shapiro: Trump \u2018corruption has been enabled\u2019 by Supreme Court",
+      "url": "https://thehill.com/homenews/administration/5953375-josh-shapiro-donald-trump-supreme-court-presidential-immunity-profits/",
       "source": "thehill.com",
       "paywalled": false,
       "topic": "Technology",
-      "published": "2026-07-02T16:52:00+00:00",
-      "is_today": false,
-      "summary": "Wall Street Journal reported Trump family members engaged in questionable business dealings while profiting from the presidency."
+      "published": "2026-07-04T14:36:02+00:00",
+      "is_today": true,
+      "summary": "Governor Shapiro argues the Supreme Court's presidential immunity ruling has enabled corruption, highlighting ongoing debate over executive power limitations in federal policy."
     }
   ]
 }
