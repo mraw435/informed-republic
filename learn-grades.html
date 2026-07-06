@@ -59,6 +59,7 @@
     .timeline-content { flex: 1; }
     .timeline-content strong { display: block; font-size: 14px; color: var(--ink); margin-bottom: 3px; }
     .timeline-content p { font-size: 13px; color: var(--ink-light); line-height: 1.6; margin: 0; }
+    .timeline-content p strong { display: inline; font-size: 13px; }
 
     .scotus-case { background: var(--bg-white); border: 1px solid var(--rule); border-left: 3px solid var(--accent); border-radius: var(--radius); padding: 18px 20px; margin-bottom: 16px; }
     .scotus-case-name { font-family: var(--display); font-size: 1rem; font-weight: 700; color: var(--ink); margin-bottom: 3px; }
@@ -369,6 +370,14 @@
 
         <h3>Additional Senate Procedural Constraints</h3>
         <p>Once cloture is invoked, additional restrictions apply to what senators can do during the 30-hour post-cloture period:</p>
+        <h3>En Bloc Nominations (2025)</h3>
+        <p>In 2025, the Senate adopted a new procedure allowing <strong>en bloc consideration</strong> of executive nominations — meaning the Senate can vote on a package of multiple nominees at once rather than holding a separate vote for each. This change was designed to speed up the confirmation process for lower-level executive branch positions that had previously faced individual holds and delays. Under the new process, nominees can be grouped together and confirmed in a single vote, though any senator can still pull an individual nominee out of the package and force a separate vote. The change applies primarily to sub-Cabinet and agency positions rather than Cabinet secretaries or federal judges, which still receive individual consideration.</p>
+
+        <div class="callout">
+          <p class="callout-label">Context</p>
+          <p>The en bloc change reflects the broader tension over Senate confirmation procedure. The backlog of unconfirmed executive nominees had grown significantly in recent Congresses, with individual holds and procedural objections slowing the process considerably. Supporters argued the change was necessary for efficient government; critics argued it reduced scrutiny of individual nominees.</p>
+        </div>
+
         <p><strong>The two-speech rule</strong> — Under Senate rules, each senator is limited to two speeches per legislative day on any given measure. This rule technically exists even without cloture but is rarely enforced. After cloture, it becomes meaningful because amendments and debate time are limited.</p>
         <p><strong>Amendment germaneness</strong> — After cloture is invoked, all amendments must be <strong>germane</strong> — directly relevant to the bill being considered. This prevents senators from attaching unrelated provisions (called "riders") to slow down the process.</p>
         <p><strong>Quorum calls</strong> — Senators can request a quorum call (a roll call to verify that enough senators are present to conduct business) as a procedural delay tactic. These eat into post-cloture time and can be used strategically.</p>
@@ -821,7 +830,7 @@
       document.querySelectorAll('.lesson-nav-btn').forEach((b, i) => {
         b.classList.toggle('active', i === index);
       });
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+      // no scroll — let user stay in place
     }
 
     function showLessonByIndex(index) {
