@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Civics for Grades 6–12 — Informed Republic</title>
-  <meta name="description" content="In-depth civics education for middle and high school students. Learn about the legislative process, elections, the Supreme Court, and the Constitution." />
+  <title>Civics for Grades 6–12 — Capitol Source</title>
+  <meta name="description" content="In-depth civics education for middle and high school students. Learn about the three branches, how legislation passes, elections, and landmark Supreme Court cases." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Inter:wght@300;400;500;600&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet" />
@@ -14,79 +14,860 @@
     .page-hero-inner { max-width: 860px; margin: 0 auto; }
     .page-hero h1 { font-family: var(--display); font-size: clamp(1.8rem,4vw,2.6rem); font-weight: 900; color: var(--ink); margin-bottom: 10px; }
     .page-hero p { color: var(--ink-light); font-size: 15px; line-height: 1.65; max-width: 580px; }
-    .page-back { font-family: var(--mono); font-size: 11px; color: var(--ink-muted); letter-spacing: 0.08em; margin-bottom: 14px; display: block; }
+    .page-back { font-family: var(--mono); font-size: 11px; color: var(--ink-muted); letter-spacing: 0.08em; margin-bottom: 14px; display: block; text-decoration: none; }
     .page-back:hover { color: var(--accent); }
-    .page-body { max-width: 860px; margin: 0 auto; padding: 48px 24px 80px; }
-    .coming-soon { text-align: center; padding: 64px 24px; border: 1px dashed var(--rule); border-radius: var(--radius); }
-    .coming-soon h2 { font-family: var(--display); font-size: 1.4rem; font-weight: 700; color: var(--ink); margin-bottom: 10px; }
-    .coming-soon p { color: var(--ink-light); font-size: 15px; max-width: 480px; margin: 0 auto 24px; line-height: 1.65; }
-    .coming-soon .badge { font-family: var(--mono); font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--accent); display: block; margin-bottom: 8px; }
-    .lesson-preview { background: var(--bg-white); border: 1px solid var(--rule); border-radius: var(--radius); padding: 22px; margin-bottom: 14px; opacity: 0.6; }
-    .lesson-preview h3 { font-family: var(--display); font-size: 1.05rem; font-weight: 700; color: var(--ink); margin-bottom: 6px; }
-    .lesson-preview p { font-size: 13px; color: var(--ink-muted); margin: 0; }
+
+    .lesson-nav { background: var(--bg-white); border-bottom: 1px solid var(--rule); position: sticky; top: 0; z-index: 90; }
+    .lesson-nav-inner { max-width: 860px; margin: 0 auto; padding: 0 24px; display: flex; gap: 0; overflow-x: auto; scrollbar-width: none; }
+    .lesson-nav-inner::-webkit-scrollbar { display: none; }
+    .lesson-nav-btn { flex-shrink: 0; padding: 12px 16px; font-size: 12px; font-weight: 500; letter-spacing: 0.04em; color: var(--ink-muted); border: none; border-bottom: 2px solid transparent; background: none; cursor: pointer; white-space: nowrap; font-family: var(--body); transition: color var(--transition), border-color var(--transition); }
+    .lesson-nav-btn:hover { color: var(--ink); }
+    .lesson-nav-btn.active { color: var(--accent); border-bottom-color: var(--accent); font-weight: 600; }
+
+    .lessons-body { max-width: 860px; margin: 0 auto; padding: 48px 24px 80px; }
+
+    .lesson-block { display: none; }
+    .lesson-block.active { display: block; }
+
+    .lesson-header { margin-bottom: 32px; padding-bottom: 20px; border-bottom: 1px solid var(--rule); }
+    .lesson-number { font-family: var(--mono); font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent); margin-bottom: 8px; }
+    .lesson-header h2 { font-family: var(--display); font-size: clamp(1.5rem,3vw,2.1rem); font-weight: 900; color: var(--ink); margin-bottom: 10px; }
+    .lesson-header p { color: var(--ink-light); font-size: 15px; line-height: 1.65; }
+
+    .lesson-body h3 { font-family: var(--display); font-size: 1.15rem; font-weight: 700; color: var(--ink); margin: 32px 0 12px; }
+    .lesson-body p { color: var(--ink-light); font-size: 15px; line-height: 1.75; margin-bottom: 16px; }
+    .lesson-body strong { color: var(--ink); }
+
+    .callout { background: var(--bg); border-left: 3px solid var(--accent); padding: 18px 22px; margin: 22px 0; border-radius: 0 var(--radius) var(--radius) 0; }
+    .callout-label { font-family: var(--mono); font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--accent); margin-bottom: 6px; }
+    .callout p { color: var(--ink-light); font-size: 14px; line-height: 1.7; margin: 0; }
+    .callout strong { color: var(--ink); }
+
+    .example-box { background: var(--bg-white); border: 1px solid var(--rule); border-radius: var(--radius); padding: 20px 22px; margin: 22px 0; }
+    .example-label { font-family: var(--mono); font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gold); margin-bottom: 8px; }
+    .example-box p { color: var(--ink-light); font-size: 14px; line-height: 1.7; margin: 0; }
+
+    .comparison-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 22px 0; }
+    .comparison-card { background: var(--bg-white); border: 1px solid var(--rule); border-radius: var(--radius); padding: 18px; }
+    .comparison-card h4 { font-family: var(--display); font-size: 0.95rem; font-weight: 700; color: var(--ink); margin-bottom: 10px; padding-bottom: 8px; border-bottom: 1px solid var(--rule); }
+    .comparison-card ul { margin: 0; padding-left: 18px; }
+    .comparison-card li { font-size: 13px; color: var(--ink-light); line-height: 1.65; margin-bottom: 6px; }
+
+    .timeline { margin: 22px 0; }
+    .timeline-item { display: flex; gap: 16px; margin-bottom: 16px; }
+    .timeline-num { width: 28px; height: 28px; border-radius: 50%; background: var(--accent); color: #fff; font-size: 12px; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; }
+    .timeline-content { flex: 1; }
+    .timeline-content strong { display: block; font-size: 14px; color: var(--ink); margin-bottom: 3px; }
+    .timeline-content p { font-size: 13px; color: var(--ink-light); line-height: 1.6; margin: 0; }
+
+    .scotus-case { background: var(--bg-white); border: 1px solid var(--rule); border-left: 3px solid var(--accent); border-radius: var(--radius); padding: 18px 20px; margin-bottom: 16px; }
+    .scotus-case-name { font-family: var(--display); font-size: 1rem; font-weight: 700; color: var(--ink); margin-bottom: 3px; }
+    .scotus-case-year { font-family: var(--mono); font-size: 10px; letter-spacing: 0.1em; color: var(--accent); margin-bottom: 8px; }
+    .scotus-case p { font-size: 14px; color: var(--ink-light); line-height: 1.65; margin: 0; }
+    .scotus-case-significance { font-size: 12px; font-style: italic; color: var(--ink-muted); margin-top: 6px; }
+
+    /* Quiz styles */
+    .quiz-section { background: var(--bg); border: 1px solid var(--rule); border-radius: var(--radius); padding: 28px 32px; margin-top: 40px; }
+    .quiz-section h3 { font-family: var(--display); font-size: 1.3rem; font-weight: 700; color: var(--ink); margin-bottom: 6px; }
+    .quiz-section > p { color: var(--ink-light); font-size: 14px; margin-bottom: 24px; }
+    .quiz-q { margin-bottom: 24px; }
+    .quiz-q p { font-size: 15px; font-weight: 600; color: var(--ink); margin-bottom: 10px; }
+    .quiz-options { display: flex; flex-direction: column; gap: 8px; }
+    .quiz-option { background: var(--bg-white); border: 1px solid var(--rule); border-radius: var(--radius); padding: 10px 14px; font-size: 14px; color: var(--ink); cursor: pointer; transition: background var(--transition), border-color var(--transition); text-align: left; font-family: var(--body); }
+    .quiz-option:hover:not(:disabled) { background: var(--bg); border-color: var(--accent); }
+    .quiz-option.correct { background: #e8f5e8; border-color: #5a9a5a; color: #1a4a1a; }
+    .quiz-option.wrong { background: #f8e8e8; border-color: #c05050; color: #4a1a1a; }
+    .quiz-option:disabled { cursor: default; }
+    .quiz-score { font-family: var(--display); font-size: 1.1rem; font-weight: 700; color: var(--ink); text-align: center; padding: 16px; background: var(--bg-white); border: 1px solid var(--rule); border-radius: var(--radius); display: none; margin-top: 16px; }
+    .quiz-btn { background: var(--accent); color: #fff; border: none; padding: 11px 24px; font-size: 14px; font-weight: 600; border-radius: var(--radius); cursor: pointer; font-family: var(--body); margin-top: 8px; letter-spacing: 0.04em; }
+    .quiz-btn:hover { background: var(--accent-light); }
+
+    .lesson-nav-arrows { display: flex; justify-content: space-between; margin-top: 40px; padding-top: 24px; border-top: 1px solid var(--rule); }
+    .lesson-arrow-btn { font-family: var(--mono); font-size: 12px; letter-spacing: 0.06em; color: var(--accent); border: 1px solid var(--rule); border-radius: var(--radius); padding: 10px 18px; background: var(--bg-white); cursor: pointer; transition: border-color var(--transition), background var(--transition); }
+    .lesson-arrow-btn:hover { border-color: var(--accent); background: var(--bg); }
+    .lesson-arrow-btn:disabled { color: var(--ink-muted); cursor: default; border-color: var(--rule); background: var(--bg); }
+
+    @media (max-width: 640px) {
+      .comparison-grid { grid-template-columns: 1fr; }
+      .quiz-section { padding: 20px 16px; }
+    }
   </style>
 </head>
 <body>
+
   <div class="topbar">
     <span class="topbar-tagline">Politics · Policy · Procedure</span>
   </div>
+
   <header class="site-header">
     <div class="header-inner">
       <div class="masthead">
         <p class="masthead-eyebrow">Est. 2024</p>
-        <h1 class="masthead-title"><a href="index.html" style="color:inherit">Informed Republic</a></h1>
+        <h1 class="masthead-title"><a href="index.html" style="color:inherit">Capitol Source</a></h1>
         <p class="masthead-sub">A comprehensive resource for an informed America</p>
       </div>
     </div>
   </header>
+
   <nav class="site-nav">
     <div class="nav-inner">
       <a href="index.html" class="nav-link">Home</a>
       <a href="learn.html" class="nav-link active">Learn</a>
       <a href="officials.html" class="nav-link">Officials</a>
       <a href="news.html" class="nav-link">In the News</a>
+      <a href="elections.html" class="nav-link">Elections</a>
     </div>
   </nav>
+
   <div class="page-hero">
     <div class="page-hero-inner">
       <a href="learn.html" class="page-back">← Back to all lessons</a>
       <div class="section-label">Grades 6–12</div>
       <h1>Civics for Middle and High School</h1>
-      <p>In-depth civics lessons covering the legislative process, elections, the Supreme Court, and the Constitution — with the detail you need for civics class, AP Government, and beyond.</p>
+      <p>Four in-depth lessons on how American government actually works — from the constitutional framework to the hidden complexity of Senate procedure. Written for students who want more than just the basics.</p>
     </div>
   </div>
-  <div class="page-body">
-    <div class="coming-soon">
-      <span class="badge">Coming Soon</span>
-      <h2>Lessons launching soon</h2>
-      <p>We're building out full lessons for grades 6–12. Here's a preview of what's coming — check back soon or subscribe to the Daily Brief to be notified when new content launches.</p>
-    </div>
-    <div style="margin-top:32px">
-      <div class="lesson-preview" id="branches">
-        <h3>🏛️ The Three Branches: Powers and Checks</h3>
-        <p>How the executive, legislative, and judicial branches balance each other through checks and balances — and what happens when they conflict.</p>
-      </div>
-      <div class="lesson-preview" id="legislation">
-        <h3>📜 How Legislation Passes</h3>
-        <p>From committee markup to floor votes, conference committees, and presidential action — the full legislative process in detail.</p>
-      </div>
-      <div class="lesson-preview" id="elections">
-        <h3>🗳️ The Election Process</h3>
-        <p>Primaries, caucuses, the Electoral College, debates, and how candidates go from announcement to inauguration.</p>
-      </div>
-      <div class="lesson-preview" id="scotus">
-        <h3>⚖️ Landmark Supreme Court Cases</h3>
-        <p>The decisions that shaped American law — from Marbury v. Madison (1803) to the present day.</p>
-      </div>
+
+  <!-- LESSON NAV -->
+  <div class="lesson-nav">
+    <div class="lesson-nav-inner">
+      <button class="lesson-nav-btn active" onclick="showLesson(0, this)">1. Three Branches</button>
+      <button class="lesson-nav-btn" onclick="showLesson(1, this)">2. How Legislation Passes</button>
+      <button class="lesson-nav-btn" onclick="showLesson(2, this)">3. The Election Process</button>
+      <button class="lesson-nav-btn" onclick="showLesson(3, this)">4. Landmark Court Cases</button>
     </div>
   </div>
+
+  <div class="lessons-body">
+
+    <!-- ── LESSON 1: THREE BRANCHES ── -->
+    <div class="lesson-block active" id="lesson-0">
+      <div class="lesson-header">
+        <p class="lesson-number">Lesson 1 of 4</p>
+        <h2>The Three Branches: Powers and Checks</h2>
+        <p>The Constitution didn't just create a government — it created a government designed to limit itself. Understanding how the three branches check each other is the foundation of understanding everything else in American politics.</p>
+      </div>
+      <div class="lesson-body">
+
+        <h3>Why Three Branches?</h3>
+        <p>The framers of the Constitution had just fought a revolution against a king who concentrated power in one person. Their solution was to split governmental power into three distinct branches — legislative, executive, and judicial — and give each branch tools to limit the others. This system is called <strong>separation of powers</strong>, and the specific tools each branch uses to restrain the others are called <strong>checks and balances</strong>.</p>
+
+        <div class="callout">
+          <p class="callout-label">Key Principle</p>
+          <p><strong>Ambition must be made to counteract ambition.</strong> — James Madison, Federalist No. 51. The framers didn't assume government officials would always act virtuously. They designed a system where self-interest would keep power in check.</p>
+        </div>
+
+        <h3>The Legislative Branch: Congress</h3>
+        <p>Article I of the Constitution creates Congress — the legislative branch — and gives it the power to make federal law. Congress is <strong>bicameral</strong>, meaning it has two chambers: the House of Representatives and the Senate. This wasn't accidental. The two-chamber structure was itself a compromise between large and small states at the Constitutional Convention.</p>
+
+        <div class="comparison-grid">
+          <div class="comparison-card">
+            <h4>🏛️ House of Representatives</h4>
+            <ul>
+              <li>435 members, allocated by state population</li>
+              <li>2-year terms — all seats up every election</li>
+              <li>Must be 25 years old, 7 years a citizen</li>
+              <li>Originates all revenue (tax) bills</li>
+              <li>Sole power to impeach federal officials</li>
+              <li>Elects the President if Electoral College ties</li>
+              <li>More rules-bound, majority controls floor</li>
+            </ul>
+          </div>
+          <div class="comparison-card">
+            <h4>🏛️ Senate</h4>
+            <ul>
+              <li>100 members, 2 per state regardless of population</li>
+              <li>6-year terms, staggered (1/3 up every 2 years)</li>
+              <li>Must be 30 years old, 9 years a citizen</li>
+              <li>Confirms presidential nominees (judges, Cabinet)</li>
+              <li>Ratifies treaties (2/3 majority required)</li>
+              <li>Tries impeachments from the House</li>
+              <li>Minority has significant procedural power</li>
+            </ul>
+          </div>
+        </div>
+
+        <h3>The Executive Branch: The President</h3>
+        <p>Article II creates the executive branch and vests its power in a single President. The President's core constitutional duties are to enforce federal law, serve as Commander in Chief of the armed forces, conduct foreign policy, and nominate federal judges and executive officers.</p>
+        <p>The President's most important check on Congress is the <strong>veto</strong> — the power to reject legislation passed by Congress. Congress can override a veto, but only with a two-thirds majority in both chambers, which is intentionally difficult to achieve. This means the President has significant leverage over legislation even without the power to write laws.</p>
+
+        <div class="example-box">
+          <p class="example-label">Real Example</p>
+          <p>President Gerald Ford vetoed 66 bills during his brief presidency (1974–1977), more than any president in a comparable period. Congress overrode 12 of those vetoes — roughly 18%. The rest stood. This illustrates how the veto gives even an unpopular president substantial legislative power.</p>
+        </div>
+
+        <h3>The Judicial Branch: The Courts</h3>
+        <p>Article III creates the Supreme Court and authorizes Congress to establish lower federal courts. Unlike the other branches, federal judges are appointed for life — specifically "during good behavior" — which insulates them from political pressure and electoral cycles.</p>
+        <p>The Constitution doesn't explicitly give the Supreme Court the power to strike down laws as unconstitutional. That power — <strong>judicial review</strong> — was established by the Court itself in the landmark 1803 case <em>Marbury v. Madison</em>, which we'll cover in Lesson 4. Today it's one of the most powerful tools in American government.</p>
+
+        <h3>How the Checks Actually Work</h3>
+        <p>The system of checks and balances isn't just theoretical — it plays out in real political conflicts constantly. Here are the major checks each branch holds over the others:</p>
+
+        <div class="callout">
+          <p class="callout-label">Congress checks the President by:</p>
+          <p>Overriding vetoes (2/3 majority) · Controlling the budget (power of the purse) · Confirming or rejecting nominees · Declaring war · Impeaching and removing the President</p>
+        </div>
+        <div class="callout">
+          <p class="callout-label">The President checks Congress by:</p>
+          <p>Vetoing legislation · Calling Congress into special session · Refusing to enforce laws (controversial) · Using executive orders within existing law</p>
+        </div>
+        <div class="callout">
+          <p class="callout-label">The Courts check both by:</p>
+          <p>Striking down unconstitutional laws · Ruling executive actions illegal · Interpreting ambiguous statutes · Issuing injunctions to halt government action</p>
+        </div>
+
+        <h3>Why This Matters Today</h3>
+        <p>The tension between the branches is not a bug in American government — it's the feature. When you see the President and Congress fight over spending, or the Supreme Court strike down a law, or the Senate refuse to confirm a nominee, you're watching the system work exactly as designed. The framers would not be surprised by gridlock. They built it in deliberately.</p>
+
+      </div>
+
+      <!-- QUIZ 1 -->
+      <div class="quiz-section">
+        <h3>📝 Quiz — The Three Branches</h3>
+        <p>Five questions to test your understanding. Choose the best answer for each.</p>
+
+        <div class="quiz-q" id="l1q1">
+          <p>1. Which branch of government has the sole power to impeach federal officials?</p>
+          <div class="quiz-options">
+            <button class="quiz-option" onclick="answer('l1q1',this,false)">The Senate</button>
+            <button class="quiz-option" onclick="answer('l1q1',this,true)">The House of Representatives</button>
+            <button class="quiz-option" onclick="answer('l1q1',this,false)">The Supreme Court</button>
+            <button class="quiz-option" onclick="answer('l1q1',this,false)">The President</button>
+          </div>
+        </div>
+
+        <div class="quiz-q" id="l1q2">
+          <p>2. How many votes in Congress are needed to override a presidential veto?</p>
+          <div class="quiz-options">
+            <button class="quiz-option" onclick="answer('l1q2',this,false)">A simple majority (51%)</button>
+            <button class="quiz-option" onclick="answer('l1q2',this,false)">Three-quarters of both chambers</button>
+            <button class="quiz-option" onclick="answer('l1q2',this,true)">Two-thirds of both chambers</button>
+            <button class="quiz-option" onclick="answer('l1q2',this,false)">A unanimous vote of the Senate</button>
+          </div>
+        </div>
+
+        <div class="quiz-q" id="l1q3">
+          <p>3. Which case established the Supreme Court's power of judicial review?</p>
+          <div class="quiz-options">
+            <button class="quiz-option" onclick="answer('l1q3',this,false)">McCulloch v. Maryland</button>
+            <button class="quiz-option" onclick="answer('l1q3',this,false)">Brown v. Board of Education</button>
+            <button class="quiz-option" onclick="answer('l1q3',this,true)">Marbury v. Madison</button>
+            <button class="quiz-option" onclick="answer('l1q3',this,false)">United States v. Nixon</button>
+          </div>
+        </div>
+
+        <div class="quiz-q" id="l1q4">
+          <p>4. How long are federal judges appointed to serve?</p>
+          <div class="quiz-options">
+            <button class="quiz-option" onclick="answer('l1q4',this,false)">10-year renewable terms</button>
+            <button class="quiz-option" onclick="answer('l1q4',this,false)">6-year terms</button>
+            <button class="quiz-option" onclick="answer('l1q4',this,true)">Life, during good behavior</button>
+            <button class="quiz-option" onclick="answer('l1q4',this,false)">4-year terms matching the President</button>
+          </div>
+        </div>
+
+        <div class="quiz-q" id="l1q5">
+          <p>5. Which chamber of Congress must originate all revenue (tax) bills?</p>
+          <div class="quiz-options">
+            <button class="quiz-option" onclick="answer('l1q5',this,false)">The Senate</button>
+            <button class="quiz-option" onclick="answer('l1q5',this,true)">The House of Representatives</button>
+            <button class="quiz-option" onclick="answer('l1q5',this,false)">Either chamber can originate tax bills</button>
+            <button class="quiz-option" onclick="answer('l1q5',this,false)">The Treasury Department</button>
+          </div>
+        </div>
+
+        <button class="quiz-btn" onclick="submitQuiz('l1', ['l1q1','l1q2','l1q3','l1q4','l1q5'])">Check my answers</button>
+        <div class="quiz-score" id="l1-score"></div>
+      </div>
+
+      <div class="lesson-nav-arrows">
+        <button class="lesson-arrow-btn" disabled>← Previous</button>
+        <button class="lesson-arrow-btn" onclick="showLessonByIndex(1)">Next lesson →</button>
+      </div>
+    </div>
+
+    <!-- ── LESSON 2: HOW LEGISLATION PASSES ── -->
+    <div class="lesson-block" id="lesson-1">
+      <div class="lesson-header">
+        <p class="lesson-number">Lesson 2 of 4</p>
+        <h2>How Legislation Passes</h2>
+        <p>Most bills die. Of the thousands introduced in every Congress, only a small fraction become law. Understanding why requires understanding not just the formal process, but the procedural rules — especially in the Senate — that give the minority significant power to slow or stop legislation.</p>
+      </div>
+      <div class="lesson-body">
+
+        <h3>Introduction: Where Bills Come From</h3>
+        <p>Any member of Congress can introduce a bill. Ideas come from everywhere — constituents, lobbyists, advocacy groups, the President, or the member's own staff. In the House, a member drops the bill in a physical box called "the hopper." In the Senate, a bill is introduced from the floor. From that moment, most bills face an uphill battle.</p>
+
+        <div class="callout">
+          <p class="callout-label">By the Numbers</p>
+          <p>In the 118th Congress (2023–2024), approximately <strong>19,000 bills</strong> were introduced. Fewer than <strong>500</strong> became law — roughly 2.6%. Most never make it out of committee.</p>
+        </div>
+
+        <h3>The Committee Stage</h3>
+        <p>Every bill is referred to one or more committees with jurisdiction over its subject matter. This is where most legislation dies quietly — committees can simply choose not to act, and without committee approval, a bill almost never reaches the floor for a vote.</p>
+        <p>In committee, members hold <strong>hearings</strong> to gather testimony from experts and stakeholders, then go through <strong>markup</strong> — a line-by-line review where members propose amendments and vote on the final text. If a bill passes committee, it's reported to the full chamber for consideration.</p>
+
+        <h3>House Floor Procedure</h3>
+        <p>The House is a majority-rules institution. The majority party controls what comes to the floor and when. Most significant legislation comes to the floor under a <strong>rule</strong> — a resolution from the Rules Committee that sets the terms of debate: how long, what amendments are allowed, and whether the bill can be modified.</p>
+        <p>Because of its size (435 members), the House operates with strict time limits. Debate is typically limited to a few hours total, divided equally between the majority and minority. Members rarely speak for more than a few minutes each. The majority can — and regularly does — use rules to block amendments they don't like.</p>
+
+        <h3>Senate Floor Procedure: Where It Gets Complex</h3>
+        <p>The Senate operates very differently from the House — and understanding why requires understanding the <strong>filibuster</strong>, one of the most consequential and controversial tools in American government.</p>
+
+        <p>In the Senate, any senator can object to proceeding to a bill. Without <strong>unanimous consent</strong> — agreement from all 100 senators — the majority must file a procedural motion called <strong>cloture</strong> to limit debate and force a vote. This is where Senate procedure becomes genuinely complex.</p>
+
+        <div class="callout">
+          <p class="callout-label">The Filibuster Explained</p>
+          <p>A filibuster is the use of extended debate or procedural obstruction to delay or block a Senate vote. Unlike the movies, modern filibusters don't require senators to stand and talk for hours — a senator simply signals their intent to object, and the burden shifts to the majority to get 60 votes to end debate.</p>
+        </div>
+
+        <h3>Cloture: The Key to Senate Action</h3>
+        <p>To end a filibuster and force a final vote, the Senate must invoke <strong>cloture</strong> under Rule XXII of the Standing Rules of the Senate. Here's exactly how it works:</p>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-num">1</div>
+            <div class="timeline-content">
+              <strong>Filing the cloture motion</strong>
+              <p>Sixteen senators must sign a cloture petition and file it with the Senate clerk. This can happen at any time while the bill is being considered.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-num">2</div>
+            <div class="timeline-content">
+              <strong>The intervening day requirement</strong>
+              <p>After cloture is filed, the Senate must wait one full calendar day (the "intervening day") before the cloture vote can occur. This means if cloture is filed on a Monday, the vote cannot happen until Wednesday at the earliest.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-num">3</div>
+            <div class="timeline-content">
+              <strong>The cloture vote</strong>
+              <p>The Senate votes on whether to invoke cloture — to cut off debate. This requires <strong>60 votes</strong> (three-fifths of the Senate) for most legislation. For nominations to executive positions and most judicial positions, the threshold was lowered to 51 votes in 2013 and 2017 respectively.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-num">4</div>
+            <div class="timeline-content">
+              <strong>30 hours of post-cloture debate</strong>
+              <p>If cloture is invoked, debate is not over. The Senate enters a <strong>30-hour post-cloture debate period</strong> — time that can be used by any senator for debate, amendments, or procedural motions. The majority leader can ask for unanimous consent to waive this time, but any senator can object and force all 30 hours to run.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-num">5</div>
+            <div class="timeline-content">
+              <strong>Final passage vote</strong>
+              <p>Only after cloture is invoked and the 30-hour period expires (or is waived) can the Senate hold a final vote on passage. Final passage requires only a simple majority — 51 votes. So a bill can clear the 60-vote cloture threshold and still fail final passage if some senators switch their vote.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="callout">
+          <p class="callout-label">Why This Matters</p>
+          <p>Because of the 60-vote cloture threshold, the Senate minority has enormous leverage. A unified minority of 41 senators can block any legislation indefinitely — even if 59 senators support it. This is why you often hear "the bill needed 60 votes" — that's shorthand for "the bill needed to clear cloture." The final passage threshold is always just 51.</p>
+        </div>
+
+        <h3>Additional Senate Procedural Constraints</h3>
+        <p>Once cloture is invoked, additional restrictions apply to what senators can do during the 30-hour post-cloture period:</p>
+        <p><strong>The two-speech rule</strong> — Under Senate rules, each senator is limited to two speeches per legislative day on any given measure. This rule technically exists even without cloture but is rarely enforced. After cloture, it becomes meaningful because amendments and debate time are limited.</p>
+        <p><strong>Amendment germaneness</strong> — After cloture is invoked, all amendments must be <strong>germane</strong> — directly relevant to the bill being considered. This prevents senators from attaching unrelated provisions (called "riders") to slow down the process.</p>
+        <p><strong>Quorum calls</strong> — Senators can request a quorum call (a roll call to verify that enough senators are present to conduct business) as a procedural delay tactic. These eat into post-cloture time and can be used strategically.</p>
+
+        <h3>Reconciliation: The 51-Vote Path</h3>
+        <p>There is one major exception to the 60-vote cloture requirement: the <strong>budget reconciliation process</strong>. Under the Congressional Budget Act of 1974, certain budget-related legislation can be considered under reconciliation rules, which limit debate to 20 hours total and require only 51 votes to pass. This is why major fiscal legislation — including the 2017 Tax Cuts and Jobs Act and the 2022 Inflation Reduction Act — was passed through reconciliation rather than the regular process. However, reconciliation has strict limitations on what it can include, enforced by the Senate parliamentarian under rules known as the Byrd Rule.</p>
+
+        <h3>Conference Committees and Resolving Differences</h3>
+        <p>For a bill to become law, both chambers must pass <strong>identical text</strong>. Because the House and Senate almost always pass different versions of the same bill, they must reconcile the differences. This happens in two ways: the chambers can "ping-pong" the bill back and forth with amendments, or they can form a <strong>conference committee</strong> — a joint group of House and Senate members who negotiate a single final version. The conference report must then be approved by both chambers without further amendment before going to the President.</p>
+
+        <h3>Presidential Action</h3>
+        <p>Once Congress passes a bill, the President has several options. The President can <strong>sign</strong> the bill into law, <strong>veto</strong> it and return it to Congress with objections, or do nothing. If the President does nothing for 10 days while Congress is in session, the bill becomes law automatically. If Congress adjourns within those 10 days and the President does nothing, the bill dies — this is called a <strong>pocket veto</strong>, and it cannot be overridden.</p>
+
+      </div>
+
+      <!-- QUIZ 2 -->
+      <div class="quiz-section">
+        <h3>📝 Quiz — How Legislation Passes</h3>
+        <p>Five questions on the legislative process, including Senate procedure.</p>
+
+        <div class="quiz-q" id="l2q1">
+          <p>1. How many votes are required to invoke cloture on most Senate legislation?</p>
+          <div class="quiz-options">
+            <button class="quiz-option" onclick="answer('l2q1',this,false)">51 votes</button>
+            <button class="quiz-option" onclick="answer('l2q1',this,false)">55 votes</button>
+            <button class="quiz-option" onclick="answer('l2q1',this,true)">60 votes</button>
+            <button class="quiz-option" onclick="answer('l2q1',this,false)">67 votes</button>
+          </div>
+        </div>
+
+        <div class="quiz-q" id="l2q2">
+          <p>2. After cloture is invoked in the Senate, how many hours of debate are still permitted?</p>
+          <div class="quiz-options">
+            <button class="quiz-option" onclick="answer('l2q2',this,false)">No further debate is permitted</button>
+            <button class="quiz-option" onclick="answer('l2q2',this,false)">10 hours</button>
+            <button class="quiz-option" onclick="answer('l2q2',this,true)">30 hours</button>
+            <button class="quiz-option" onclick="answer('l2q2',this,false)">48 hours</button>
+          </div>
+        </div>
+
+        <div class="quiz-q" id="l2q3">
+          <p>3. What is a "pocket veto"?</p>
+          <div class="quiz-options">
+            <button class="quiz-option" onclick="answer('l2q3',this,false)">When the President secretly signs a bill without announcement</button>
+            <button class="quiz-option" onclick="answer('l2q3',this,true)">When Congress adjourns within 10 days of passing a bill and the President takes no action, killing it</button>
+            <button class="quiz-option" onclick="answer('l2q3',this,false)">When the President vetoes a bill without sending it back to Congress</button>
+            <button class="quiz-option" onclick="answer('l2q3',this,false)">When a senator holds a bill in committee indefinitely</button>
+          </div>
+        </div>
+
+        <div class="quiz-q" id="l2q4">
+          <p>4. What is the budget reconciliation process primarily used for?</p>
+          <div class="quiz-options">
+            <button class="quiz-option" onclick="answer('l2q4',this,false)">Resolving differences between House and Senate versions of a bill</button>
+            <button class="quiz-option" onclick="answer('l2q4',this,false)">Confirming presidential nominees without a filibuster</button>
+            <button class="quiz-option" onclick="answer('l2q4',this,true)">Passing budget-related legislation with only 51 Senate votes</button>
+            <button class="quiz-option" onclick="answer('l2q4',this,false)">Overriding a presidential veto</button>
+          </div>
+        </div>
+
+        <div class="quiz-q" id="l2q5">
+          <p>5. After cloture is invoked, what restriction applies to Senate amendments?</p>
+          <div class="quiz-options">
+            <button class="quiz-option" onclick="answer('l2q5',this,false)">No amendments are permitted at all</button>
+            <button class="quiz-option" onclick="answer('l2q5',this,true)">Amendments must be germane (directly relevant) to the bill</button>
+            <button class="quiz-option" onclick="answer('l2q5',this,false)">Only the majority leader may offer amendments</button>
+            <button class="quiz-option" onclick="answer('l2q5',this,false)">Amendments require a two-thirds majority to be adopted</button>
+          </div>
+        </div>
+
+        <button class="quiz-btn" onclick="submitQuiz('l2', ['l2q1','l2q2','l2q3','l2q4','l2q5'])">Check my answers</button>
+        <div class="quiz-score" id="l2-score"></div>
+      </div>
+
+      <div class="lesson-nav-arrows">
+        <button class="lesson-arrow-btn" onclick="showLessonByIndex(0)">← Previous</button>
+        <button class="lesson-arrow-btn" onclick="showLessonByIndex(2)">Next lesson →</button>
+      </div>
+    </div>
+
+    <!-- ── LESSON 3: ELECTIONS ── -->
+    <div class="lesson-block" id="lesson-2">
+      <div class="lesson-header">
+        <p class="lesson-number">Lesson 3 of 4</p>
+        <h2>The Election Process</h2>
+        <p>How does a candidate go from announcement to the Oval Office — or a congressional seat? The American election system is a layered, state-by-state process that rewards organization, fundraising, and endurance. Here's how it actually works.</p>
+      </div>
+      <div class="lesson-body">
+
+        <h3>Who Can Run?</h3>
+        <p>The Constitution sets minimum requirements for federal office. These are hard floors — states cannot add additional requirements beyond what the Constitution specifies.</p>
+
+        <div class="comparison-grid">
+          <div class="comparison-card">
+            <h4>House of Representatives</h4>
+            <ul>
+              <li>At least 25 years old</li>
+              <li>U.S. citizen for at least 7 years</li>
+              <li>Resident of the state they represent</li>
+              <li>No requirement to live in the specific district</li>
+            </ul>
+          </div>
+          <div class="comparison-card">
+            <h4>Senate</h4>
+            <ul>
+              <li>At least 30 years old</li>
+              <li>U.S. citizen for at least 9 years</li>
+              <li>Resident of the state they represent</li>
+              <li>Each state elects 2 senators regardless of population</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="comparison-grid">
+          <div class="comparison-card">
+            <h4>President</h4>
+            <ul>
+              <li>At least 35 years old</li>
+              <li>Natural-born U.S. citizen</li>
+              <li>Resident of the U.S. for at least 14 years</li>
+              <li>Cannot have served two full terms previously</li>
+            </ul>
+          </div>
+          <div class="comparison-card">
+            <h4>Filing Requirements</h4>
+            <ul>
+              <li>Must meet state ballot access laws</li>
+              <li>Typically requires signatures or filing fees</li>
+              <li>Must file with the FEC if raising/spending over $5,000</li>
+              <li>Deadlines vary by state — some as early as January</li>
+            </ul>
+          </div>
+        </div>
+
+        <h3>Primary Elections</h3>
+        <p>Before the general election, each party typically holds a primary to determine its nominee. Primaries come in several forms, and the rules vary significantly by state:</p>
+        <p><strong>Closed primaries</strong> — Only registered members of a party can vote in that party's primary. If you're registered as an independent, you typically cannot participate. Common in states like New York and Pennsylvania.</p>
+        <p><strong>Open primaries</strong> — Any registered voter can participate in either party's primary, regardless of their own registration. Common in states like Michigan and Wisconsin.</p>
+        <p><strong>Top-two primaries</strong> — All candidates from all parties appear on a single ballot, and the top two vote-getters advance to the general election regardless of party. Used in California and Washington state — it's possible for two Democrats or two Republicans to face each other in November.</p>
+        <p><strong>Caucuses</strong> — Rather than secret ballots, caucuses involve voters publicly gathering and deliberating before declaring their preference. Iowa famously held the first presidential caucus for decades. Following controversy over delays in the 2020 results, Iowa Democrats switched to a mail-in primary in 2024.</p>
+
+        <h3>Presidential Primaries and the Delegate System</h3>
+        <p>Presidential primaries are more complex than congressional primaries because they're not directly electing a nominee — they're selecting <strong>delegates</strong> who will vote at the party's national convention. Each state is allocated a certain number of delegates based on population and party rules.</p>
+        <p>Democratic primaries generally allocate delegates <strong>proportionally</strong> — if a candidate wins 40% of the vote in a state, they get roughly 40% of that state's delegates. Republican primaries vary more by state — some are winner-take-all, some are proportional, some are hybrid.</p>
+        <p>A candidate who wins enough delegates before the convention to secure the nomination (a majority of all delegates) is called the <strong>presumptive nominee</strong>. If no candidate reaches that threshold, the convention becomes contested — delegates may be free to vote for any candidate after the first ballot.</p>
+
+        <h3>The Electoral College</h3>
+        <p>Americans don't directly elect the President. They vote for <strong>electors</strong> who are pledged to a candidate. This system — the Electoral College — was established in Article II of the Constitution and has been a source of controversy throughout American history.</p>
+        <p>Each state receives a number of electors equal to its total congressional representation (House seats + 2 senators). California has 54 electoral votes; Wyoming has 3. Washington D.C. receives 3 electoral votes under the 23rd Amendment. There are <strong>538 total electoral votes</strong>, and a candidate needs <strong>270</strong> to win.</p>
+        <p>In 48 states and D.C., the presidential candidate who wins the popular vote in that state receives <strong>all</strong> of that state's electoral votes (winner-take-all). Maine and Nebraska use a congressional district method that can split their electoral votes.</p>
+
+        <div class="callout">
+          <p class="callout-label">When No One Reaches 270</p>
+          <p>If no candidate reaches 270 electoral votes, the House of Representatives selects the President — but with a twist. Each <strong>state delegation</strong> gets one vote, not each individual House member. So Wyoming's single representative has the same weight as California's 52. The Senate separately selects the Vice President. This has only happened twice: 1800 and 1824.</p>
+        </div>
+
+        <h3>The General Election Calendar</h3>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-num">1</div>
+            <div class="timeline-content">
+              <strong>Primary season (January–June of election year)</strong>
+              <p>States hold primaries and caucuses on different dates. "Super Tuesday" — typically in early March — is when the largest number of states vote simultaneously, often effectively deciding the nomination.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-num">2</div>
+            <div class="timeline-content">
+              <strong>National conventions (July–September)</strong>
+              <p>Each party holds a convention where delegates formally nominate their presidential and vice-presidential candidates and adopt the party platform.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-num">3</div>
+            <div class="timeline-content">
+              <strong>General election campaign (September–November)</strong>
+              <p>Candidates focus resources on competitive "battleground" states where the outcome is uncertain. Safe states for either party receive less attention.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-num">4</div>
+            <div class="timeline-content">
+              <strong>Election Day (first Tuesday after November 1st)</strong>
+              <p>Voters cast ballots. Results are reported throughout the night as states close polls. Media organizations project winners based on vote counts and exit polling.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-num">5</div>
+            <div class="timeline-content">
+              <strong>Electoral College vote (mid-December)</strong>
+              <p>Electors meet in their state capitals and cast formal electoral votes. Most states require electors to vote for the candidate they're pledged to.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-num">6</div>
+            <div class="timeline-content">
+              <strong>Congressional certification (January 6th)</strong>
+              <p>A joint session of Congress formally counts and certifies the electoral votes. The Vice President presides.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-num">7</div>
+            <div class="timeline-content">
+              <strong>Inauguration (January 20th)</strong>
+              <p>The new President is sworn in. If January 20th falls on a Sunday, the public ceremony is held January 21st.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- QUIZ 3 -->
+      <div class="quiz-section">
+        <h3>📝 Quiz — The Election Process</h3>
+        <p>Five questions on primaries, the Electoral College, and election mechanics.</p>
+
+        <div class="quiz-q" id="l3q1">
+          <p>1. How many electoral votes are needed to win the presidency?</p>
+          <div class="quiz-options">
+            <button class="quiz-option" onclick="answer('l3q1',this,false)">269</button>
+            <button class="quiz-option" onclick="answer('l3q1',this,true)">270</button>
+            <button class="quiz-option" onclick="answer('l3q1',this,false)">300</button>
+            <button class="quiz-option" onclick="answer('l3q1',this,false)">435</button>
+          </div>
+        </div>
+
+        <div class="quiz-q" id="l3q2">
+          <p>2. In a closed primary, who is allowed to vote?</p>
+          <div class="quiz-options">
+            <button class="quiz-option" onclick="answer('l3q2',this,false)">Any registered voter regardless of party affiliation</button>
+            <button class="quiz-option" onclick="answer('l3q2',this,true)">Only registered members of that political party</button>
+            <button class="quiz-option" onclick="answer('l3q2',this,false)">Only voters who are registered as independents</button>
+            <button class="quiz-option" onclick="answer('l3q2',this,false)">All citizens including non-registered voters</button>
+          </div>
+        </div>
+
+        <div class="quiz-q" id="l3q3">
+          <p>3. If no presidential candidate wins 270 electoral votes, who selects the President?</p>
+          <div class="quiz-options">
+            <button class="quiz-option" onclick="answer('l3q3',this,false)">The Senate, with each senator getting one vote</button>
+            <button class="quiz-option" onclick="answer('l3q3',this,false)">The Supreme Court</button>
+            <button class="quiz-option" onclick="answer('l3q3',this,true)">The House of Representatives, with each state delegation getting one vote</button>
+            <button class="quiz-option" onclick="answer('l3q3',this,false)">A new election is held within 30 days</button>
+          </div>
+        </div>
+
+        <div class="quiz-q" id="l3q4">
+          <p>4. What is the minimum age requirement to run for the U.S. Senate?</p>
+          <div class="quiz-options">
+            <button class="quiz-option" onclick="answer('l3q4',this,false)">25 years old</button>
+            <button class="quiz-option" onclick="answer('l3q4',this,false)">35 years old</button>
+            <button class="quiz-option" onclick="answer('l3q4',this,true)">30 years old</button>
+            <button class="quiz-option" onclick="answer('l3q4',this,false)">21 years old</button>
+          </div>
+        </div>
+
+        <div class="quiz-q" id="l3q5">
+          <p>5. Which two states use a congressional district method that can split their electoral votes?</p>
+          <div class="quiz-options">
+            <button class="quiz-option" onclick="answer('l3q5',this,false)">Florida and Ohio</button>
+            <button class="quiz-option" onclick="answer('l3q5',this,false)">California and Texas</button>
+            <button class="quiz-option" onclick="answer('l3q5',this,true)">Maine and Nebraska</button>
+            <button class="quiz-option" onclick="answer('l3q5',this,false)">Pennsylvania and Michigan</button>
+          </div>
+        </div>
+
+        <button class="quiz-btn" onclick="submitQuiz('l3', ['l3q1','l3q2','l3q3','l3q4','l3q5'])">Check my answers</button>
+        <div class="quiz-score" id="l3-score"></div>
+      </div>
+
+      <div class="lesson-nav-arrows">
+        <button class="lesson-arrow-btn" onclick="showLessonByIndex(1)">← Previous</button>
+        <button class="lesson-arrow-btn" onclick="showLessonByIndex(3)">Next lesson →</button>
+      </div>
+    </div>
+
+    <!-- ── LESSON 4: SUPREME COURT CASES ── -->
+    <div class="lesson-block" id="lesson-3">
+      <div class="lesson-header">
+        <p class="lesson-number">Lesson 4 of 4</p>
+        <h2>Landmark Supreme Court Cases</h2>
+        <p>The Supreme Court doesn't just apply the law — it shapes it. These landmark decisions redefined the relationship between citizens and their government, and many remain flashpoints in American politics today.</p>
+      </div>
+      <div class="lesson-body">
+
+        <h3>How the Supreme Court Works</h3>
+        <p>The Supreme Court has nine justices — one Chief Justice and eight Associate Justices — all appointed by the President and confirmed by the Senate for life. The Court receives thousands of petitions each year but agrees to hear only about 60–80 cases (through a process called granting <strong>certiorari</strong>). Cases typically involve a question of federal or constitutional law where lower courts have disagreed.</p>
+        <p>Decisions are issued as written opinions. The majority opinion becomes binding precedent — lower courts must follow it. Justices who agree with the outcome but for different reasons may write <strong>concurring opinions</strong>. Those who disagree write <strong>dissenting opinions</strong>, which have no legal force but often shape future arguments and, occasionally, future majorities.</p>
+
+        <h3>The Foundation Cases</h3>
+
+        <div class="scotus-case" id="branches">
+          <p class="scotus-case-name">Marbury v. Madison</p>
+          <p class="scotus-case-year">1803 · Chief Justice John Marshall</p>
+          <p>William Marbury had been appointed as a federal judge in the final hours of John Adams's presidency but never received his commission. He sued Secretary of State James Madison to deliver it. Chief Justice Marshall ruled that while Marbury was entitled to his commission, the law Marbury used to bring his case was unconstitutional — and the Supreme Court had the power to say so. This established <strong>judicial review</strong>: the authority of the Court to invalidate laws that violate the Constitution.</p>
+          <p class="scotus-case-significance">Why it matters: Every time the Supreme Court strikes down a law — from gun regulations to campaign finance rules — it's exercising the power first claimed in this case.</p>
+        </div>
+
+        <div class="scotus-case">
+          <p class="scotus-case-name">McCulloch v. Maryland</p>
+          <p class="scotus-case-year">1819 · Chief Justice John Marshall</p>
+          <p>Maryland tried to tax the federally chartered Bank of the United States. The case raised two questions: could Congress establish a national bank, and could a state tax it? Marshall ruled that Congress had implied powers beyond those explicitly listed in the Constitution ("necessary and proper" clause), and that states could not tax federal institutions because "the power to tax involves the power to destroy."</p>
+          <p class="scotus-case-significance">Why it matters: Established that the federal government's powers are broad and that federal law is supreme over state law — the foundation of modern federal power.</p>
+        </div>
+
+        <h3>Civil Rights and Equal Protection</h3>
+
+        <div class="scotus-case">
+          <p class="scotus-case-name">Plessy v. Ferguson</p>
+          <p class="scotus-case-year">1896</p>
+          <p>Homer Plessy, who was one-eighth Black, sat in a whites-only railroad car in Louisiana and was arrested. The Court ruled 7-1 that "separate but equal" facilities did not violate the 14th Amendment's equal protection clause. Justice John Marshall Harlan wrote a famous lone dissent: "Our Constitution is color-blind."</p>
+          <p class="scotus-case-significance">Why it matters: Provided the constitutional basis for Jim Crow segregation laws for nearly 60 years until Brown v. Board overturned it.</p>
+        </div>
+
+        <div class="scotus-case">
+          <p class="scotus-case-name">Brown v. Board of Education</p>
+          <p class="scotus-case-year">1954 · Chief Justice Earl Warren</p>
+          <p>Linda Brown, a Black student in Topeka, Kansas, was denied admission to a whites-only school near her home. In a unanimous decision, the Court held that "separate educational facilities are inherently unequal" and that segregated public schools violated the Equal Protection Clause of the 14th Amendment. Chief Justice Warren worked to achieve unanimity, believing a divided court would undermine the decision's authority.</p>
+          <p class="scotus-case-significance">Why it matters: Overturned Plessy v. Ferguson and began the legal dismantling of state-sanctioned segregation. One of the most consequential decisions in American history.</p>
+        </div>
+
+        <h3>Presidential Power and Its Limits</h3>
+
+        <div class="scotus-case">
+          <p class="scotus-case-name">Youngstown Sheet & Tube Co. v. Sawyer</p>
+          <p class="scotus-case-year">1952</p>
+          <p>During the Korean War, President Truman seized the nation's steel mills to prevent a strike that he said would harm the war effort. The Court ruled 6-3 that Truman had exceeded his constitutional authority — Congress had not authorized the seizure. Justice Robert Jackson's concurring opinion created a three-part framework for analyzing presidential power that courts still use today.</p>
+          <p class="scotus-case-significance">Why it matters: Established that the President cannot act in defiance of Congress's will, even during wartime. Jackson's framework remains the standard for presidential power cases.</p>
+        </div>
+
+        <div class="scotus-case">
+          <p class="scotus-case-name">United States v. Nixon</p>
+          <p class="scotus-case-year">1974 · Chief Justice Warren Burger</p>
+          <p>During the Watergate investigation, President Nixon claimed executive privilege and refused to turn over White House tape recordings to a special prosecutor. The unanimous Court ruled that while executive privilege exists, it is not absolute — it must yield to the specific need for evidence in a criminal trial.</p>
+          <p class="scotus-case-significance">Why it matters: Established that no one — including the President — is above the law. Nixon resigned 16 days after the ruling.</p>
+        </div>
+
+        <h3>First Amendment and Free Speech</h3>
+
+        <div class="scotus-case">
+          <p class="scotus-case-name">Citizens United v. FEC</p>
+          <p class="scotus-case-year">2010</p>
+          <p>A nonprofit corporation wanted to air a critical documentary about Hillary Clinton close to a presidential primary. The Court ruled 5-4 that the government cannot restrict independent political expenditures by corporations, associations, or labor unions. The majority held that political speech does not lose First Amendment protection simply because its source is a corporation.</p>
+          <p class="scotus-case-significance">Why it matters: Fundamentally changed campaign finance law, leading to the rise of "Super PACs" and dramatically increasing the role of outside money in elections. Among the most controversial decisions of the modern era.</p>
+        </div>
+
+        <h3>Recent Landmark Decisions</h3>
+
+        <div class="scotus-case">
+          <p class="scotus-case-name">Dobbs v. Jackson Women's Health Organization</p>
+          <p class="scotus-case-year">2022</p>
+          <p>Mississippi passed a law banning most abortions after 15 weeks. The case directly challenged Roe v. Wade (1973), which had established a constitutional right to abortion, and Planned Parenthood v. Casey (1992), which reaffirmed it. The Court ruled 6-3 to overturn both precedents, holding that the Constitution does not confer a right to abortion and returning the question to individual states.</p>
+          <p class="scotus-case-significance">Why it matters: One of the most significant reversals of precedent in modern history. As of 2024, roughly half of U.S. states have enacted significant abortion restrictions while others have enshrined abortion access in law or state constitutions.</p>
+        </div>
+
+        <div class="callout">
+          <p class="callout-label">A Note on Nonpartisanship</p>
+          <p>Supreme Court decisions are presented here as legal and historical facts, not political endorsements. Every case listed has proponents and critics across the political spectrum. Capitol Source presents these decisions to inform, not to advocate for any particular outcome.</p>
+        </div>
+
+      </div>
+
+      <!-- QUIZ 4 -->
+      <div class="quiz-section">
+        <h3>📝 Quiz — Landmark Supreme Court Cases</h3>
+        <p>Five questions on the Court's most consequential decisions.</p>
+
+        <div class="quiz-q" id="l4q1">
+          <p>1. Which case established the Supreme Court's power of judicial review?</p>
+          <div class="quiz-options">
+            <button class="quiz-option" onclick="answer('l4q1',this,false)">McCulloch v. Maryland (1819)</button>
+            <button class="quiz-option" onclick="answer('l4q1',this,true)">Marbury v. Madison (1803)</button>
+            <button class="quiz-option" onclick="answer('l4q1',this,false)">United States v. Nixon (1974)</button>
+            <button class="quiz-option" onclick="answer('l4q1',this,false)">Brown v. Board of Education (1954)</button>
+          </div>
+        </div>
+
+        <div class="quiz-q" id="l4q2">
+          <p>2. The "separate but equal" doctrine from Plessy v. Ferguson was overturned by which case?</p>
+          <div class="quiz-options">
+            <button class="quiz-option" onclick="answer('l4q2',this,false)">Youngstown Sheet & Tube Co. v. Sawyer</button>
+            <button class="quiz-option" onclick="answer('l4q2',this,true)">Brown v. Board of Education</button>
+            <button class="quiz-option" onclick="answer('l4q2',this,false)">Citizens United v. FEC</button>
+            <button class="quiz-option" onclick="answer('l4q2',this,false)">Dobbs v. Jackson Women's Health</button>
+          </div>
+        </div>
+
+        <div class="quiz-q" id="l4q3">
+          <p>3. In United States v. Nixon, what did the Court rule about executive privilege?</p>
+          <div class="quiz-options">
+            <button class="quiz-option" onclick="answer('l4q3',this,false)">Executive privilege is absolute and cannot be overridden</button>
+            <button class="quiz-option" onclick="answer('l4q3',this,false)">Executive privilege does not exist in the Constitution</button>
+            <button class="quiz-option" onclick="answer('l4q3',this,true)">Executive privilege exists but is not absolute and must yield to criminal evidence needs</button>
+            <button class="quiz-option" onclick="answer('l4q3',this,false)">Only Congress can waive executive privilege</button>
+          </div>
+        </div>
+
+        <div class="quiz-q" id="l4q4">
+          <p>4. What did Citizens United v. FEC primarily establish?</p>
+          <div class="quiz-options">
+            <button class="quiz-option" onclick="answer('l4q4',this,false)">That corporations cannot donate directly to candidates</button>
+            <button class="quiz-option" onclick="answer('l4q4',this,true)">That the government cannot restrict independent political expenditures by corporations and unions</button>
+            <button class="quiz-option" onclick="answer('l4q4',this,false)">That campaign finance limits are constitutional</button>
+            <button class="quiz-option" onclick="answer('l4q4',this,false)">That political speech by nonprofits is not protected</button>
+          </div>
+        </div>
+
+        <div class="quiz-q" id="l4q5">
+          <p>5. What did the Supreme Court rule in Dobbs v. Jackson Women's Health (2022)?</p>
+          <div class="quiz-options">
+            <button class="quiz-option" onclick="answer('l4q5',this,false)">Abortion restrictions are unconstitutional under the 14th Amendment</button>
+            <button class="quiz-option" onclick="answer('l4q5',this,false)">States may not ban abortion before fetal viability</button>
+            <button class="quiz-option" onclick="answer('l4q5',this,true)">The Constitution does not confer a right to abortion, returning the issue to states</button>
+            <button class="quiz-option" onclick="answer('l4q5',this,false)">Congress must pass a federal law governing abortion access</button>
+          </div>
+        </div>
+
+        <button class="quiz-btn" onclick="submitQuiz('l4', ['l4q1','l4q2','l4q3','l4q4','l4q5'])">Check my answers</button>
+        <div class="quiz-score" id="l4-score"></div>
+      </div>
+
+      <div class="lesson-nav-arrows">
+        <button class="lesson-arrow-btn" onclick="showLessonByIndex(2)">← Previous</button>
+        <button class="lesson-arrow-btn" disabled>All lessons complete ✓</button>
+      </div>
+    </div>
+
+  </div>
+
   <footer class="site-footer">
     <div class="footer-inner">
-      <div class="footer-brand"><span class="footer-title">Informed Republic</span><p>Politics · Policy · Procedure</p></div>
-      <div class="footer-links"><a href="learn.html">All Lessons</a><a href="index.html">Home</a><a href="privacy.html">Privacy Policy</a></div>
+      <div class="footer-brand"><span class="footer-title">Capitol Source</span><p>Politics · Policy · Procedure</p></div>
+      <div class="footer-links">
+        <a href="learn.html">All Lessons</a>
+        <a href="index.html">Home</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="disclaimer.html">Disclaimer</a>
+      </div>
     </div>
-    <div class="footer-bottom"><p>© <span id="footerYear"></span> Informed Republic. All rights reserved.</p></div>
+    <div class="footer-bottom"><p>© <span id="footerYear"></span> Capitol Source. All rights reserved.</p></div>
   </footer>
-  <script>document.getElementById('footerYear').textContent = new Date().getFullYear();</script>
+
+  <script>
+    document.getElementById('footerYear').textContent = new Date().getFullYear();
+
+    function showLesson(index, btn) {
+      document.querySelectorAll('.lesson-block').forEach((b, i) => {
+        b.classList.toggle('active', i === index);
+      });
+      document.querySelectorAll('.lesson-nav-btn').forEach((b, i) => {
+        b.classList.toggle('active', i === index);
+      });
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function showLessonByIndex(index) {
+      const btns = document.querySelectorAll('.lesson-nav-btn');
+      showLesson(index, btns[index]);
+    }
+
+    const quizAnswers = {};
+
+    function answer(qid, btn, correct) {
+      const q = document.getElementById(qid);
+      if (q.dataset.answered) return;
+      q.dataset.answered = 'true';
+      quizAnswers[qid] = correct;
+      q.querySelectorAll('.quiz-option').forEach(o => {
+        o.disabled = true;
+        if (o === btn) o.classList.add(correct ? 'correct' : 'wrong');
+      });
+      if (!correct) {
+        q.querySelectorAll('.quiz-option').forEach(o => {
+          if (o.getAttribute('onclick') && o.getAttribute('onclick').includes(',true)')) {
+            o.classList.add('correct');
+          }
+        });
+      }
+    }
+
+    function submitQuiz(prefix, qids) {
+      qids.forEach(qid => {
+        if (!document.getElementById(qid).dataset.answered) {
+          quizAnswers[qid] = false;
+        }
+      });
+      const score = qids.filter(q => quizAnswers[q]).length;
+      const scoreEl = document.getElementById(prefix + '-score');
+      const msgs = [
+        'Keep studying — review the lesson and try again.',
+        'Good start — a few more reviews and you\'ll have it.',
+        'Not bad! One more read-through should do it.',
+        'Strong work — you clearly understand the material.',
+        'Perfect score! Outstanding civics knowledge.'
+      ];
+      scoreEl.style.display = 'block';
+      scoreEl.textContent = `${score} out of 5 correct. ${msgs[Math.min(score, 4)]}`;
+    }
+  </script>
+
 </body>
 </html>
