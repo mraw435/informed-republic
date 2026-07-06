@@ -1,7 +1,37 @@
 {
-  "last_updated": "2026-07-05T11:00:55Z",
-  "story_count": 30,
+  "last_updated": "2026-07-06T11:01:04Z",
+  "story_count": 41,
   "stories": [
+    {
+      "title": "Hegseth goes quiet on Iran as Trump pursues diplomacy",
+      "url": "https://thehill.com/policy/defense/5953404-hegseth-trump-iran-war-quiet/",
+      "source": "thehill.com",
+      "paywalled": false,
+      "topic": "Defense",
+      "published": "2026-07-05T16:01:17+00:00",
+      "is_today": true,
+      "summary": "Defense Secretary Hegseth has remained silent on Iran policy as the Trump administration pursues diplomatic negotiations with the country."
+    },
+    {
+      "title": "Washington\u2019s orders to troops after July 4: You\u2019re fighting for a new nation",
+      "url": "https://www.militarytimes.com/military-honor/2026/07/05/washingtons-orders-to-troops-after-july-4-youre-fighting-for-a-new-nation/",
+      "source": "militarytimes.com",
+      "paywalled": false,
+      "topic": "Defense",
+      "published": "2026-07-05T17:21:14+00:00",
+      "is_today": true,
+      "summary": "The Washington military command issued new orders to troops following July 4 reframing their mission as fighting for a new nation."
+    },
+    {
+      "title": "Retired general: US has 'got to stop' Iran from maintaining control of Strait of Hormuz",
+      "url": "https://thehill.com/policy/defense/5954242-iran-strait-hormuz-negotiations-us-force/",
+      "source": "thehill.com",
+      "paywalled": false,
+      "topic": "Defense",
+      "published": "2026-07-05T20:23:10+00:00",
+      "is_today": true,
+      "summary": "A retired general argues the U.S. must use force to prevent Iran from maintaining control of the strategically critical Strait of Hormuz."
+    },
     {
       "title": "Iran's new leader remains unseen as nation mourns Khamenei",
       "url": "https://thehill.com/policy/international/5953355-motjaba-khamenei-iran-funeral-ayatollah-us-strikes/",
@@ -33,24 +63,34 @@
       "summary": "President and Vice President address nation celebrating America's 250th birthday anniversary."
     },
     {
-      "title": "Iran threatens response without 'full implementation' of US deal",
-      "url": "https://thehill.com/policy/international/5952638-iran-us-israel-mou-ghalibaf/",
-      "source": "thehill.com",
+      "title": "Residents in Congo cling to hope as Ebola treatment trial begins",
+      "url": "https://www.politico.com/news/2026/07/05/residents-in-congo-cling-to-hope-as-ebola-treatment-trial-begins-00987135",
+      "source": "rss.politico.com",
       "paywalled": false,
-      "topic": "Defense",
-      "published": "2026-07-03T12:28:21+00:00",
+      "topic": "Healthcare",
+      "published": "2026-07-05T08:55:00-04:00",
       "is_today": true,
-      "summary": "Iran threatened retaliation unless the US fully implements the nuclear agreement, citing concerns over compliance."
+      "summary": "A clinical trial for an Ebola treatment begins in Congo, offering potential therapeutic options for managing the infectious disease outbreak."
     },
     {
-      "title": "Taiwan needs a \u2018hornet\u2019s nest\u2019 of drones to deter conflict, US diplomat says",
-      "url": "https://www.defensenews.com/industry/techwatch/2026/07/03/taiwan-needs-a-hornets-nest-of-drones-to-deter-conflict-us-diplomat-says/",
-      "source": "defensenews.com",
+      "title": "RFK Jr. wants you to get more preventive care. Some experts say that's a bad idea.",
+      "url": "https://www.politico.com/news/2026/07/05/rfk-preventive-kidney-alzheimers-colon-cancer-00986644",
+      "source": "rss.politico.com",
       "paywalled": false,
-      "topic": "Defense",
-      "published": "2026-07-03T12:30:00+00:00",
+      "topic": "Healthcare",
+      "published": "2026-07-05T13:00:00-04:00",
       "is_today": true,
-      "summary": "A US diplomat recommended Taiwan deploy numerous drones as a deterrent strategy against potential military aggression."
+      "summary": "RFK Jr. advocates expanding preventive care access, though some medical experts question the effectiveness of certain preventive screening programs."
+    },
+    {
+      "title": "Former CDC chief medical officer says RFK Jr. caused \u2018irreparable harm\u2019",
+      "url": "https://thehill.com/policy/healthcare/5954352-cdc-robert-f-kennedy-debra-houry-hhs/",
+      "source": "thehill.com",
+      "paywalled": false,
+      "topic": "Healthcare",
+      "published": "2026-07-05T22:05:00+00:00",
+      "is_today": true,
+      "summary": "A former CDC official alleges RFK Jr. caused significant damage to public health policy and agency credibility."
     },
     {
       "title": "Conservatives rage over re-funding of Planned Parenthood",
@@ -63,24 +103,34 @@
       "summary": "Congress re-funded Planned Parenthood through Medicaid, drawing criticism from conservative lawmakers over the organization's abortion services."
     },
     {
-      "title": "Kean's depression disclosure prompts questions about mental health stigma",
-      "url": "https://thehill.com/policy/healthcare/5950576-rep-tom-kean-jr-depression-disclosure/",
-      "source": "thehill.com",
-      "paywalled": false,
-      "topic": "Healthcare",
-      "published": "2026-07-04T10:00:00+00:00",
-      "is_today": false,
-      "summary": "Rep. Tom Kean Jr.'s public disclosure of depression raises questions about mental health stigma in politics and policy discussions."
-    },
-    {
-      "title": "China's military promotes 2 new generals after anti-corruption purge thins ranks",
-      "url": "https://www.npr.org/2026/07/04/g-s1-131994/chinas-military-promotes-2-new-generals-after-anti-corruption-purge-thins-ranks",
+      "title": "Super Typhoon Bavi brings destruction to Guam and surrounding Pacific islands",
+      "url": "https://www.npr.org/2026/07/05/g-s1-132052/guam-pacific-islands-brace-super-typhoon-bavi",
       "source": "feeds.npr.org",
       "paywalled": false,
       "topic": "Foreign Policy",
-      "published": "2026-07-04T10:07:57-04:00",
+      "published": "2026-07-05T13:22:55-04:00",
       "is_today": true,
-      "summary": "China promoted two new generals following an anti-corruption purge that reduced military leadership ranks."
+      "summary": "Super Typhoon Bavi threatens Guam and Pacific islands, raising federal disaster response and climate resilience concerns."
+    },
+    {
+      "title": "Folarin Balogun's ban is lifted by FIFA, allowing U.S. striker to play Belgium",
+      "url": "https://www.npr.org/2026/07/05/g-s1-132061/folarin-balogun-soccer-reinstated-ban-suspended-fifa-belgium",
+      "source": "feeds.npr.org",
+      "paywalled": false,
+      "topic": "Foreign Policy",
+      "published": "2026-07-05T14:37:19-04:00",
+      "is_today": true,
+      "summary": "FIFA lifted a ban on striker Folarin Balogun, allowing him to play for the U.S. against Belgium."
+    },
+    {
+      "title": "Hegseth goes quiet on Iran as Trump pursues diplomacy",
+      "url": "https://thehill.com/policy/defense/5953404-hegseth-trump-iran-war-quiet/",
+      "source": "thehill.com",
+      "paywalled": false,
+      "topic": "Foreign Policy",
+      "published": "2026-07-05T16:01:17+00:00",
+      "is_today": true,
+      "summary": "Defense Secretary Hegseth remains silent on Iran policy as Trump administration pursues diplomatic negotiations."
     },
     {
       "title": "Iran's new leader remains unseen as nation mourns Khamenei",
@@ -103,24 +153,34 @@
       "summary": "World leaders celebrated America's 250th birthday with international messages and toasts."
     },
     {
-      "title": "Venezuela\u2019s Bungled Earthquake Response",
-      "url": "https://foreignpolicy.com/2026/07/03/venezuela-earthquakes-rodriguez-machado-politics/",
-      "source": "foreignpolicy.com",
+      "title": "Burgum doubles down on blaming vandals for reflecting pool woes",
+      "url": "https://www.politico.com/news/2026/07/05/burgum-vandals-reflecting-pool-00987197",
+      "source": "rss.politico.com",
       "paywalled": false,
-      "topic": "Foreign Policy",
-      "published": "2026-07-03T12:00:53+00:00",
+      "topic": "Energy",
+      "published": "2026-07-05T09:45:09-04:00",
       "is_today": true,
-      "summary": "Venezuela's government faced criticism for inadequate earthquake response and disaster management."
+      "summary": "Governor Burgum attributes reflecting pool maintenance issues to vandalism rather than infrastructure problems."
     },
     {
-      "title": "Iran threatens response without 'full implementation' of US deal",
-      "url": "https://thehill.com/policy/international/5952638-iran-us-israel-mou-ghalibaf/",
-      "source": "thehill.com",
+      "title": "PJM\u2019s rate increase is here. What\u2019s your strategy?",
+      "url": "https://www.utilitydive.com/spons/pjms-rate-increase-is-here-whats-your-strategy/824052/",
+      "source": "utilitydive.com",
       "paywalled": false,
-      "topic": "Foreign Policy",
-      "published": "2026-07-03T12:28:21+00:00",
+      "topic": "Energy",
+      "published": "2026-07-06T05:00:00-04:00",
       "is_today": true,
-      "summary": "Iran warns it will retaliate unless the United States fully implements the nuclear agreement."
+      "summary": "PJM Interconnection implements rate increases affecting electricity costs across its regional transmission organization."
+    },
+    {
+      "title": "6 ways to get digital upgrades right for your customers",
+      "url": "https://www.utilitydive.com/spons/6-ways-to-get-digital-upgrades-right-for-your-customers/823943/",
+      "source": "utilitydive.com",
+      "paywalled": false,
+      "topic": "Energy",
+      "published": "2026-07-06T05:00:00-04:00",
+      "is_today": true,
+      "summary": "Utility companies develop strategies to implement digital infrastructure upgrades for customer service improvements."
     },
     {
       "title": "Live updates: Trump delivers speech marking America's 250th anniversary after weather delay",
@@ -133,24 +193,34 @@
       "summary": "President Trump delivered a speech marking America's 250th anniversary after weather delays on July Fourth."
     },
     {
-      "title": "How extreme heat is changing DC's July Fourth weekend event plans",
-      "url": "https://thehill.com/homenews/state-watch/5952009-extreme-heat-washington-dc-july-fourth-events-impact/",
-      "source": "thehill.com",
+      "title": "NCAA president sees path forward for reform legislation",
+      "url": "https://www.politico.com/news/2026/07/05/charlie-baker-ncaa-legislation-00987366",
+      "source": "rss.politico.com",
       "paywalled": false,
-      "topic": "Energy",
-      "published": "2026-07-03T18:10:57+00:00",
-      "is_today": false,
-      "summary": "Extreme heat forced changes to Washington, DC's July Fourth weekend event plans."
+      "topic": "Education",
+      "published": "2026-07-05T13:54:00-04:00",
+      "is_today": true,
+      "summary": "NCAA President Charlie Baker identifies potential pathway for federal legislation to reform college sports governance and athlete compensation policies."
     },
     {
-      "title": "Justice Department urges states to probe possible gas price gouging",
-      "url": "https://thehill.com/homenews/administration/5953013-justice-dept-urges-gas-price-probe/",
-      "source": "thehill.com",
+      "title": "PRINCIPAL VOICE: Our off-track high school students weren\u2019t terribly interested in school until we dug into hands-on learning",
+      "url": "https://hechingerreport.org/principal-voice-our-off-track-high-school-students-werent-terribly-interested-in-school-until-we-dug-into-hands-on-learning/",
+      "source": "hechingerreport.org",
       "paywalled": false,
-      "topic": "Energy",
-      "published": "2026-07-03T19:36:14+00:00",
-      "is_today": false,
-      "summary": "The Justice Department urged states to investigate potential gas price gouging by retailers."
+      "topic": "Education",
+      "published": "2026-07-06T05:00:00+00:00",
+      "is_today": true,
+      "summary": "High school principal reports improved student engagement when switching disengaged students from traditional instruction to hands-on, applied learning approaches."
+    },
+    {
+      "title": "Can this city succeed in having all eighth graders take algebra where others have failed?",
+      "url": "https://hechingerreport.org/can-this-city-succeed-in-having-all-eighth-graders-take-algebra-where-others-have-failed/",
+      "source": "hechingerreport.org",
+      "paywalled": false,
+      "topic": "Education",
+      "published": "2026-07-06T05:00:00+00:00",
+      "is_today": true,
+      "summary": "City attempts universal algebra enrollment for eighth graders, an academic goal other districts have struggled to achieve successfully."
     },
     {
       "title": "Threats of more closings have colleges and students worrying about how to save themselves",
@@ -163,14 +233,34 @@
       "summary": "Colleges face potential closures, raising concerns about student outcomes and federal oversight of higher education institutions' financial stability."
     },
     {
-      "title": "Week in Politics: U.S. turns 250 under record heat; worries over the future",
-      "url": "https://www.npr.org/2026/07/04/nx-s1-5879352/week-in-politics-u-s-turns-250-under-record-heat-worries-over-the-future",
+      "title": "Politics chat: Trump's July 4 speech, financial disclosures; Supreme Court rulings",
+      "url": "https://www.npr.org/2026/07/05/nx-s1-5877426/politics-chat-trumps-july-4-speech-financial-disclosures-supreme-court-rulings",
       "source": "feeds.npr.org",
       "paywalled": false,
       "topic": "Immigration",
-      "published": "2026-07-04T07:43:48-04:00",
+      "published": "2026-07-05T08:04:23-04:00",
       "is_today": true,
-      "summary": "The U.S. celebrated its 250th anniversary amid record heat, raising concerns about climate impacts on the nation's future."
+      "summary": "Trump delivered July 4th speech while financial disclosures and Supreme Court rulings shaped political landscape discussions."
+    },
+    {
+      "title": "Trump won spending promises from NATO last year. This week, he'll try to enforce them",
+      "url": "https://www.npr.org/2026/07/06/g-s1-132082/trump-nato-turkey-spending",
+      "source": "feeds.npr.org",
+      "paywalled": false,
+      "topic": "Immigration",
+      "published": "2026-07-06T02:06:17-04:00",
+      "is_today": true,
+      "summary": "Trump seeks to enforce NATO spending commitments member nations pledged last year during current week negotiations."
+    },
+    {
+      "title": "Netanyahu wants meeting with Trump as Israel continues Lebanon strikes",
+      "url": "https://www.npr.org/2026/07/06/nx-s1-5882858/netanyahu-wants-meeting-with-trump-as-israel-continues-lebanon-strikes",
+      "source": "feeds.npr.org",
+      "paywalled": false,
+      "topic": "Immigration",
+      "published": "2026-07-06T04:17:06-04:00",
+      "is_today": true,
+      "summary": "Netanyahu requests Trump meeting as Israel continues military operations in Lebanon."
     },
     {
       "title": "In Mount Rushmore speech, Trump veers from U.S. exceptionalism to warnings about communism",
@@ -193,24 +283,34 @@
       "summary": "Paul Pelosi was involved in a hit-and-run accident in California that left his vehicle significantly damaged."
     },
     {
-      "title": "Federal Court Delivers Major Blow to Trump Detention Policy of Jailing Immigrants With No Hearing, No Explanation",
-      "url": "https://www.americanimmigrationcouncil.org/press-release/federal-court-blocks-trump-immigration-detention-policy-fifth-circuit/",
-      "source": "immigrationimpact.com",
+      "title": "Mike Johnson on democratic socialist candidates: 'There are many Mamdanis popping up'",
+      "url": "https://thehill.com/homenews/campaign/5954015-speaker-johnson-warns-communism-threat/",
+      "source": "thehill.com",
       "paywalled": false,
-      "topic": "Immigration",
-      "published": "2026-07-03T12:16:29+00:00",
+      "topic": "Elections",
+      "published": "2026-07-05T15:59:09+00:00",
       "is_today": true,
-      "summary": "A federal court blocked a Trump administration policy allowing immigrant detention without hearings or explanations, affecting immigration enforcement procedures."
+      "summary": "Speaker Johnson warns that democratic socialist candidates are increasingly appearing in races, framing it as a threat to policy."
     },
     {
-      "title": "'Cautiously optimistic':  Swing voters describe their view of America at 250",
-      "url": "https://www.npr.org/2026/07/04/nx-s1-5877727/swing-voters-america-250-midterms",
-      "source": "feeds.npr.org",
+      "title": "Wes Moore distances from democratic socialist ideas: 'I do not prescribe to an ideology'",
+      "url": "https://thehill.com/homenews/campaign/5954083-maryland-gov-wes-moore-democratic-socialists/",
+      "source": "thehill.com",
       "paywalled": false,
-      "topic": "Immigration",
-      "published": "2026-07-04T05:00:00-04:00",
+      "topic": "Elections",
+      "published": "2026-07-05T17:26:32+00:00",
       "is_today": true,
-      "summary": "Swing voters express cautious optimism about America's future as the nation approaches its 250th anniversary."
+      "summary": "Maryland Governor Wes Moore distances himself from democratic socialist ideology amid campaign discussions about political positioning."
+    },
+    {
+      "title": "McMorrow suspends campaign for Michigan Senate seat",
+      "url": "https://thehill.com/homenews/campaign/5954188-mcmorrow-drops-out-senate-race/",
+      "source": "thehill.com",
+      "paywalled": false,
+      "topic": "Elections",
+      "published": "2026-07-05T18:28:30+00:00",
+      "is_today": true,
+      "summary": "McMorrow suspends campaign for Michigan Senate seat, removing herself from the midterm race."
     },
     {
       "title": "5 governor\u2019s seats most likely to flip",
@@ -243,54 +343,64 @@
       "summary": "Senator Joe Manchin attributes Democratic divisions to a lack of party leadership."
     },
     {
-      "title": "Christie: GOP headed for 'monumental defeat' in midterms",
-      "url": "https://thehill.com/homenews/campaign/5952716-chris-christie-midterm-elections-republicans-defeat/",
-      "source": "thehill.com",
-      "paywalled": false,
-      "topic": "Elections",
-      "published": "2026-07-03T14:39:18+00:00",
-      "is_today": true,
-      "summary": "Former Gov. Christie warns Republicans face significant midterm losses, raising concerns about GOP electoral prospects."
-    },
-    {
-      "title": "Wes Moore on democratic socialist gains: Voters want 'someone who is going to fight for them'",
-      "url": "https://thehill.com/homenews/campaign/5952990-wes-moore-on-democratic-socialist-gains-voters-want-someone-who-is-going-to-fight-for-them/",
-      "source": "thehill.com",
-      "paywalled": false,
-      "topic": "Elections",
-      "published": "2026-07-03T19:14:12+00:00",
-      "is_today": true,
-      "summary": "Gov. Moore attributes democratic socialist primary victories to voter demand for aggressive representation on economic issues."
-    },
-    {
-      "title": "FOR INSIDERS | Democrats grapple with left-wing primary wins",
-      "url": "https://thehill.com/homenews/campaign/5952255-democratic-party-dsa-midterm-primaries/",
-      "source": "thehill.com",
-      "paywalled": false,
-      "topic": "Elections",
-      "published": "2026-07-04T10:00:00+00:00",
-      "is_today": true,
-      "summary": "Democratic Party leadership confronts strategic implications of leftist candidates winning primary elections nationwide."
-    },
-    {
       "title": "What to know about DCA flights and July 4th ground stops",
       "url": "https://thehill.com/policy/transportation/5953325-dca-flights-grounded-july-4-what-to-know/",
       "source": "thehill.com",
       "paywalled": false,
       "topic": "Transportation",
       "published": "2026-07-04T12:46:53+00:00",
-      "is_today": true,
-      "summary": "Reagan National Airport implemented ground stops on July 4th due to airspace congestion from holiday travel, affecting flight operations at the major Washington hub."
+      "is_today": false,
+      "summary": "Ronald Reagan Washington National Airport implemented ground stops on July 4th due to air traffic congestion, affecting flight operations at the major D.C. airport."
     },
     {
-      "title": "Bipartisan coalition of state AGs take on tech over age verification",
-      "url": "https://www.politico.com/news/2026/07/04/bipartisan-coalition-of-state-ags-take-on-tech-over-age-verification-00986548",
-      "source": "rss.politico.com",
+      "title": "USDA to Fund $500 Million Expansion of Domestic Fertilizer Production",
+      "url": "https://farmpolicynews.illinois.edu/2026/07/usda-to-fund-500-million-expansion-of-domestic-fertilizer-production/",
+      "source": "farmpolicynews.illinois.edu",
+      "paywalled": false,
+      "topic": "Agriculture",
+      "published": "2026-07-06T00:22:02+00:00",
+      "is_today": true,
+      "summary": "USDA allocated $500 million to expand domestic fertilizer production capacity to reduce agricultural supply chain dependence on imports."
+    },
+    {
+      "title": "Finding vulnerabilities was never the hard part",
+      "url": "https://cyberscoop.com/ai-cybersecurity-vulnerability-prioritization-op-ed/",
+      "source": "cyberscoop.com",
+      "paywalled": false,
+      "topic": "Cybersecurity",
+      "published": "2026-07-06T09:00:00+00:00",
+      "is_today": true,
+      "summary": "AI tools can identify cybersecurity vulnerabilities, but federal policy must address prioritizing response to the most critical threats."
+    },
+    {
+      "title": "Wes Moore: There is 'something fundamentally wrong' with Trump making $1B in crypto money",
+      "url": "https://thehill.com/homenews/administration/5954124-maryland-gov-trump-crypto-profits/",
+      "source": "thehill.com",
       "paywalled": false,
       "topic": "Technology",
-      "published": "2026-07-04T11:00:00-04:00",
+      "published": "2026-07-05T18:02:15+00:00",
       "is_today": true,
-      "summary": "State attorneys general from both parties are pressuring technology companies to implement age verification systems, raising federal policy questions about online user protections."
+      "summary": "Maryland Governor Wes Moore criticized President Trump for profiting approximately $1 billion from cryptocurrency ventures, raising ethics concerns about presidential financial conflicts."
+    },
+    {
+      "title": "Trump restrictions on private AI models turn attention to open source",
+      "url": "https://thehill.com/policy/technology/5952253-trump-administration-ai-restrictions-opens/",
+      "source": "thehill.com",
+      "paywalled": false,
+      "topic": "Technology",
+      "published": "2026-07-05T21:00:00+00:00",
+      "is_today": true,
+      "summary": "Trump administration restrictions on private AI model development are shifting focus toward open-source alternatives in the artificial intelligence sector."
+    },
+    {
+      "title": "FOR INSIDERS | How the AI boom is making MacBooks, Xboxes more expensive",
+      "url": "https://thehill.com/policy/technology/5952057-ai-boom-memory-chip-demand/",
+      "source": "thehill.com",
+      "paywalled": false,
+      "topic": "Technology",
+      "published": "2026-07-06T10:00:00+00:00",
+      "is_today": true,
+      "summary": "Increased demand for memory chips driven by AI development is raising production costs for consumer electronics including MacBooks and gaming consoles."
     },
     {
       "title": "Shapiro: Trump \u2018corruption has been enabled\u2019 by Supreme Court",
