@@ -110,13 +110,14 @@
     </div>
   </header>
 
-  <nav class="site-nav">
+    <nav class="site-nav">
     <div class="nav-inner">
-      <a href="index.html" class="nav-link">Home</a>
-      <a href="learn.html" class="nav-link active">Learn</a>
-      <a href="officials.html" class="nav-link">Officials</a>
+      <a href="/" class="nav-link">Home</a>
+      <a href="briefs.html" class="nav-link">Daily Brief</a>
       <a href="news.html" class="nav-link">In the News</a>
+      <a href="learn.html" class="nav-link active">Learn</a>
       <a href="elections.html" class="nav-link">Elections</a>
+      <a href="officials.html" class="nav-link">Officials</a>
     </div>
   </nav>
 
@@ -822,6 +823,14 @@
 
   <script>
     document.getElementById('footerYear').textContent = new Date().getFullYear();
+    // Auto-show lesson from URL hash e.g. #lesson-1
+    const hash = window.location.hash.replace('#', '');
+    if (hash.startsWith('lesson-')) {
+      const idx = parseInt(hash.replace('lesson-', ''));
+      if (!isNaN(idx) && idx >= 0 && idx <= 3) {
+        showLessonByIndex(idx);
+      }
+    }
 
     function showLesson(index, btn) {
       document.querySelectorAll('.lesson-block').forEach((b, i) => {

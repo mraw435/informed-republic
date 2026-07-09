@@ -66,14 +66,26 @@ img { display: block; max-width: 100%; }
   padding: 28px 24px;
 }
 .header-inner {
-  max-width: var(--max-w);
-  margin: 0 auto;
+  position: relative;
+  padding: 0;
+  min-height: 100px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 32px;
 }
-.masthead { text-align: center; flex: 1; }
+.masthead {
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  pointer-events: none;
+}
+.masthead a, .masthead h1 { pointer-events: auto; }
+.header-left { display: none; }
+.header-subscribe {
+  margin-left: auto;
+  position: relative;
+  z-index: 1;
+}
 .masthead-eyebrow {
   font-family: var(--mono);
   font-size: 11px;
@@ -167,6 +179,7 @@ img { display: block; max-width: 100%; }
   display: flex;
   padding: 0 24px;
   gap: 0;
+  justify-content: center;
 }
 .nav-link {
   display: inline-block;

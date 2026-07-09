@@ -80,14 +80,14 @@
     </div>
   </header>
 
-  <nav class="site-nav">
+    <nav class="site-nav">
     <div class="nav-inner">
-      <a href="index.html" class="nav-link">Home</a>
-      <a href="index.html#briefs" class="nav-link">Daily Brief</a>
+      <a href="/" class="nav-link">Home</a>
+      <a href="briefs.html" class="nav-link">Daily Brief</a>
       <a href="news.html" class="nav-link active">In the News</a>
-      <a href="index.html#education" class="nav-link">Learn</a>
+      <a href="learn.html" class="nav-link">Learn</a>
+      <a href="elections.html" class="nav-link">Elections</a>
       <a href="officials.html" class="nav-link">Officials</a>
-      <a href="index.html#about" class="nav-link">About</a>
     </div>
   </nav>
 
@@ -169,6 +169,7 @@
   }
 
   async function loadNews() {
+  return new Promise(async (resolve) => {
     try {
       const res = await fetch(NEWS_URL + '?t=' + Date.now());
       if (!res.ok) throw new Error('Could not load news');
@@ -212,10 +213,13 @@
 
       renderAllTopics(presentTopics);
 
+    resolve();
     } catch (err) {
       document.getElementById('newsLoading').innerHTML =
         '<p class="news-empty">Unable to load news at this time. Please check back shortly.</p>';
+      resolve();
     }
+  }); // end Promise
   }
 
   function renderAllTopics(topics) {
@@ -288,7 +292,19 @@
   document.addEventListener('DOMContentLoaded', () => {
     setTopbarDate();
     document.getElementById('footerYear').textContent = new Date().getFullYear();
-    loadNews();
+    loadNews().then(() => {
+      // Auto-filter if ?topic= param is in URL
+      const params = new URLSearchParams(window.location.search);
+      const topic = params.get('topic');
+      if (topic) {
+        const btn = [...document.querySelectorAll('.filter-btn')]
+          .find(b => b.dataset.topic === topic);
+        if (btn) {
+          filterTopic(topic, btn);
+          document.querySelector('.news-filter-wrap').scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }
+    });
   });
   </script>
 
