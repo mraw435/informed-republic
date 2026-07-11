@@ -1,7 +1,37 @@
 {
-  "last_updated": "2026-07-10T11:01:00Z",
-  "story_count": 58,
+  "last_updated": "2026-07-11T11:00:57Z",
+  "story_count": 57,
   "stories": [
+    {
+      "title": "Rahm Emanuel attacks Trump\u2019s negotiations with Iran",
+      "url": "https://www.politico.com/news/2026/07/10/rahm-emanuel-attacks-trumps-iran-negotiations-00993254",
+      "source": "rss.politico.com",
+      "paywalled": false,
+      "topic": "Defense",
+      "published": "2026-07-10T12:00:19-04:00",
+      "is_today": true,
+      "summary": "Former Chicago Mayor Rahm Emanuel criticized Trump administration's Iran negotiations over policy disagreements."
+    },
+    {
+      "title": "Inside the Pentagon\u2019s new handbook on countering drones",
+      "url": "https://www.militarytimes.com/industry/techwatch/2026/07/10/inside-the-pentagons-new-handbook-on-countering-drones/",
+      "source": "militarytimes.com",
+      "paywalled": false,
+      "topic": "Defense",
+      "published": "2026-07-10T12:30:06+00:00",
+      "is_today": true,
+      "summary": "Pentagon released new guidance handbook for military personnel on countering drone threats."
+    },
+    {
+      "title": "Suspension lifted for Apache helicopter pilots who flew over beaches on July 4",
+      "url": "https://thehill.com/homenews/state-watch/5962279-south-carolina-apache-pilots-suspension-lifted/",
+      "source": "thehill.com",
+      "paywalled": false,
+      "topic": "Defense",
+      "published": "2026-07-10T13:17:34+00:00",
+      "is_today": true,
+      "summary": "Pentagon lifted suspension of South Carolina Apache helicopter pilots following July 4 beach flyover incident."
+    },
     {
       "title": "US, Iran strikes intensify after Trump labels interim deal 'over'",
       "url": "https://thehill.com/policy/defense/5960413-us-iran-strikes-intensify-donald-trump-ceasefire-over/",
@@ -33,14 +63,14 @@
       "summary": "Ukrainian defense manufacturer doubled robotic weapons production and seeks international partnerships to expand wartime capabilities."
     },
     {
-      "title": "Trump turns on Spain and demands Greenland as NATO summit exposes cracks",
-      "url": "https://www.defensenews.com/global/europe/2026/07/08/trump-turns-on-spain-and-demands-greenland-as-nato-summit-exposes-cracks/",
-      "source": "defensenews.com",
+      "title": "Journalists Discuss Raw-Milk Marketing, Extreme Heat, Opioid Settlement Spending",
+      "url": "https://kffhealthnews.org/on-air/on-air-july-11-2026-raw-milk-formula-recall-extreme-heat-opioid-settlements/",
+      "source": "kffhealthnews.org",
       "paywalled": false,
-      "topic": "Defense",
-      "published": "2026-07-08T12:40:31+00:00",
+      "topic": "Healthcare",
+      "published": "2026-07-11T09:00:00+00:00",
       "is_today": true,
-      "summary": "Trump criticized Spain and expressed interest in acquiring Greenland, revealing divisions at the NATO summit."
+      "summary": "Journalists discussed raw milk marketing, extreme heat impacts, and opioid settlement spending allocation policies."
     },
     {
       "title": "Millions of eye drops recalled nationwide due to potential foreign substance",
@@ -49,8 +79,8 @@
       "paywalled": false,
       "topic": "Healthcare",
       "published": "2026-07-09T11:38:51+00:00",
-      "is_today": true,
-      "summary": "FDA recalled millions of eye drops nationwide due to potential foreign substance contamination, raising product safety concerns."
+      "is_today": false,
+      "summary": "Millions of eye drops were recalled nationwide due to potential foreign substance contamination."
     },
     {
       "title": "Lawmakers tell HHS to crack down on discrimination in medically assisted suicide",
@@ -59,8 +89,8 @@
       "paywalled": false,
       "topic": "Healthcare",
       "published": "2026-07-09T14:56:18+00:00",
-      "is_today": true,
-      "summary": "Lawmakers requested HHS enforce anti-discrimination rules in medically assisted suicide procedures at hospices and medical facilities."
+      "is_today": false,
+      "summary": "Lawmakers requested HHS enforce anti-discrimination rules in medically assisted suicide practices at hospices."
     },
     {
       "title": "Massie: Might as well call ObamaCare 'Trumpcare'",
@@ -73,34 +103,34 @@
       "summary": "Rep. Massie argued Republicans have effectively expanded the Affordable Care Act, suggesting rebranding it as Trumpcare."
     },
     {
-      "title": "ObamaCare premiums poised for another big hike",
-      "url": "https://thehill.com/policy/healthcare/5958559-obamacare-premiums-rise-again/",
-      "source": "thehill.com",
+      "title": "IRS missed hiring goals for 2026 tax season, which watchdog says impacted service performance",
+      "url": "https://www.govexec.com/oversight/2026/07/irs-missed-hiring-goals-2026-tax-season-which-watchdog-says-impacted-service-performance/414665/",
+      "source": "govexec.com",
       "paywalled": false,
-      "topic": "Healthcare",
-      "published": "2026-07-08T12:04:19+00:00",
+      "topic": "Appropriations",
+      "published": "2026-07-10T08:00:00-04:00",
       "is_today": true,
-      "summary": "Affordable Care Act premiums are expected to increase significantly, affecting healthcare costs for millions of enrollees."
+      "summary": "IRS failed to meet 2026 hiring targets, reducing staffing and degrading taxpayer service performance."
     },
     {
-      "title": "Gene therapy for children with sickle cell disease approved by FDA",
-      "url": "https://thehill.com/policy/healthcare/5958574-fda-approves-gene-therapy-sickle-cell-disease/",
-      "source": "thehill.com",
+      "title": "Fired EPA dissenters sue for reinstatement, alleging First Amendment violations",
+      "url": "https://www.govexec.com/workforce/2026/07/fired-epa-dissenters-sue-reinstatement-alleging-first-amendment-violations/414687/",
+      "source": "govexec.com",
       "paywalled": false,
-      "topic": "Healthcare",
-      "published": "2026-07-08T14:31:09+00:00",
+      "topic": "Appropriations",
+      "published": "2026-07-10T09:00:00-04:00",
       "is_today": true,
-      "summary": "FDA approves first gene therapy for children with sickle cell disease, expanding treatment options for genetic blood disorder."
+      "summary": "Fired EPA employees sued for reinstatement, claiming government retaliation for protected speech violated First Amendment rights."
     },
     {
-      "title": "Idaho mom charged with murder after blaming vaccines in death of her twins",
-      "url": "https://thehill.com/homenews/state-watch/5955066-idaho-mom-vaccines-deaths/",
-      "source": "thehill.com",
+      "title": "Trump empties out election commission leadership just months before midterms",
+      "url": "https://www.govexec.com/management/2026/07/trump-empties-out-election-commission-leadership-just-months-midterms/414708/",
+      "source": "govexec.com",
       "paywalled": false,
-      "topic": "Healthcare",
-      "published": "2026-07-08T14:59:00+00:00",
+      "topic": "Appropriations",
+      "published": "2026-07-10T16:05:21-04:00",
       "is_today": true,
-      "summary": "Idaho mother charged with murder after falsely attributing her twins' deaths to vaccines raises questions about vaccine misinformation."
+      "summary": "Trump administration removed election commission leadership months before midterm elections, raising questions about agency stability."
     },
     {
       "title": "Judges block Trump effort to narrow public service loan forgiveness",
@@ -133,34 +163,34 @@
       "summary": "HUD's chief technology officer is transitioning to the Interior Department in a senior technology role."
     },
     {
-      "title": "DOD's CIO says it's time to rethink the Pentagon's technology playbook",
-      "url": "https://www.govexec.com/defense/2026/07/dods-cio-rethink-pentagons-technology-playbook/414649/",
-      "source": "govexec.com",
-      "paywalled": false,
-      "topic": "Appropriations",
-      "published": "2026-07-08T14:55:58-04:00",
-      "is_today": true,
-      "summary": "The Pentagon's CIO calls for reassessing the Department of Defense's technology strategy."
-    },
-    {
-      "title": "GSA taps White House design team to revamp Login.gov",
-      "url": "https://www.govexec.com/technology/2026/07/gsa-taps-white-house-design-team-rethink-logingov/414652/",
-      "source": "govexec.com",
-      "paywalled": false,
-      "topic": "Appropriations",
-      "published": "2026-07-08T15:45:04-04:00",
-      "is_today": true,
-      "summary": "GSA enlisted White House design experts to redesign the Login.gov authentication platform."
-    },
-    {
-      "title": "Graham Platner ends Senate bid. And, why Nolan Wells' death captured national attention",
-      "url": "https://www.npr.org/2026/07/09/g-s1-132694/up-first-newsletter-graham-platner-trump-iran-israel-nolan-wells",
+      "title": "U.S.-Iran fighting appears to pause. And, life inside Israel's military zones in Gaza",
+      "url": "https://www.npr.org/2026/07/10/g-s1-132943/up-first-newsletter-iran-us-tps-haitians-syrians-eac-gaza-israel-hamas",
       "source": "feeds.npr.org",
       "paywalled": false,
       "topic": "Foreign Policy",
-      "published": "2026-07-09T07:22:04-04:00",
+      "published": "2026-07-10T07:43:38-04:00",
       "is_today": true,
-      "summary": "Senate candidate Graham Platner ended his bid while the death of Nolan Wells drew national attention for unspecified reasons."
+      "summary": "U.S.-Iran military tensions show signs of de-escalation while Israel maintains military operations in Gaza."
+    },
+    {
+      "title": "What the World Cup Meant to Mexico",
+      "url": "https://foreignpolicy.com/2026/07/10/mexico-world-cup-legacy-host-quinones-jimenez-sheinbaum/",
+      "source": "foreignpolicy.com",
+      "paywalled": false,
+      "topic": "Foreign Policy",
+      "published": "2026-07-10T12:00:53+00:00",
+      "is_today": true,
+      "summary": "Mexico's World Cup hosting shaped national identity and political discourse under President Sheinbaum's administration."
+    },
+    {
+      "title": "Former Trump staffer: Vance 'set up' as 'fall guy' for Iran deal",
+      "url": "https://thehill.com/homenews/administration/5962326-caroline-sunshine-donald-trump-jd-vance-iran-war-peace-talks/",
+      "source": "thehill.com",
+      "paywalled": false,
+      "topic": "Foreign Policy",
+      "published": "2026-07-10T13:39:00+00:00",
+      "is_today": true,
+      "summary": "Former Trump staffer claims Vice President Vance is being blamed for failed Iran negotiations."
     },
     {
       "title": "US, Iran strikes intensify after Trump labels interim deal 'over'",
@@ -183,54 +213,34 @@
       "summary": "Former Defense Secretary Esper assessed that Iran aims to gain concessions before U.S. midterm elections."
     },
     {
-      "title": "Greetings from a Syrian church, infused with a mix of sweet fruit and diverse faiths",
-      "url": "https://www.npr.org/2026/07/08/nx-s1-5884694/syria-church-interfaith-fruit",
-      "source": "feeds.npr.org",
-      "paywalled": false,
-      "topic": "Foreign Policy",
-      "published": "2026-07-08T11:05:34-04:00",
-      "is_today": true,
-      "summary": "A Syrian church blends interfaith traditions and local fruit culture in its religious practice."
-    },
-    {
-      "title": "The IOC clears the way for Russian athletes to return to Olympic competition",
-      "url": "https://www.npr.org/2026/07/08/g-s1-132480/russia-olympics-ioc-decision",
-      "source": "feeds.npr.org",
-      "paywalled": false,
-      "topic": "Foreign Policy",
-      "published": "2026-07-08T12:17:37-04:00",
-      "is_today": true,
-      "summary": "The IOC approved Russian athletes' return to Olympic competition ending their suspension."
-    },
-    {
-      "title": "DOE closes up to $3.26B loan to AEP Texas",
-      "url": "https://www.utilitydive.com/news/doe-closes-up-to-326b-loan-to-aep-texas/824802/",
+      "title": "What can best ease transmission bottlenecks? More transfer capacity, DOE says.",
+      "url": "https://www.utilitydive.com/news/transfer-capacity-transmission-needs-study-doe/824925/",
       "source": "utilitydive.com",
       "paywalled": false,
       "topic": "Energy",
-      "published": "2026-07-09T08:55:37-04:00",
+      "published": "2026-07-10T08:53:21-04:00",
+      "is_today": true,
+      "summary": "The Department of Energy identifies increased electrical transfer capacity as essential to addressing transmission bottlenecks in the nation's power grid."
+    },
+    {
+      "title": "Former FERC officials weigh in on Supreme Court ruling expanding president\u2019s power to fire regulators",
+      "url": "https://www.utilitydive.com/news/former-ferc-officials-supreme-court-slaughter-ruling-expanding-presidential-power-fire-regulators/824842/",
+      "source": "utilitydive.com",
+      "paywalled": false,
+      "topic": "Energy",
+      "published": "2026-07-10T10:35:13-04:00",
+      "is_today": true,
+      "summary": "Former FERC officials comment on Supreme Court ruling that expands presidential power to remove independent regulatory commissioners."
+    },
+    {
+      "title": "The gas is cheap. The Trump administration isn\u2019t saying who\u2019s paying for it.",
+      "url": "https://www.politico.com/news/2026/07/10/the-gas-is-cheap-the-trump-administration-isnt-saying-whos-paying-for-it-00992750",
+      "source": "rss.politico.com",
+      "paywalled": false,
+      "topic": "Energy",
+      "published": "2026-07-10T10:58:42-04:00",
       "is_today": true,
       "summary": ""
-    },
-    {
-      "title": "PJM status quo \u2018untenable\u2019: FERC Commissioner LaCerte",
-      "url": "https://www.utilitydive.com/news/pjm-interconnection-stakeholders-ferc-lacerte/824832/",
-      "source": "utilitydive.com",
-      "paywalled": false,
-      "topic": "Energy",
-      "published": "2026-07-09T10:51:31-04:00",
-      "is_today": true,
-      "summary": "FERC Commissioner LaCerte stated PJM's current structure is unsustainable, indicating potential regulatory intervention in regional electricity market operations."
-    },
-    {
-      "title": "Duke reduces rate hike request, still faces regulator pushback",
-      "url": "https://www.utilitydive.com/news/ncuc-questions-dukes-numbers-in-rate-case-hearing/824834/",
-      "source": "utilitydive.com",
-      "paywalled": false,
-      "topic": "Energy",
-      "published": "2026-07-09T10:59:49-04:00",
-      "is_today": true,
-      "summary": "Duke Energy reduced its rate hike request but still faces regulator scrutiny, affecting utility cost recovery and consumer electricity rates in regulated markets."
     },
     {
       "title": "Don\u2019t let AI raise your kids",
@@ -239,18 +249,18 @@
       "paywalled": false,
       "topic": "Education",
       "published": "2026-07-09T17:45:00+00:00",
-      "is_today": true,
-      "summary": "Article warns against relying on artificial intelligence systems for childcare and parenting roles."
+      "is_today": false,
+      "summary": "Opinion piece warns against relying on AI for child-rearing, raising concerns about developmental impacts that may influence education and child welfare policy discussions."
     },
     {
-      "title": "OPINION: The days of \u2018good guy\u2019 capitalists are over. College students are right to turn against the tech elites",
-      "url": "https://hechingerreport.org/opinion-capitalists-college-students-are-right-to-turn-against-the-tech-elites/",
-      "source": "hechingerreport.org",
+      "title": "Shy on the dance floor? Virtual reality 'partners' aim to help you find your groove",
+      "url": "https://www.npr.org/2026/07/11/nx-s1-5882228/dance-virtual-reality-vr-app-augmented-world-expo-weddings",
+      "source": "feeds.npr.org",
       "paywalled": false,
-      "topic": "Education",
-      "published": "2026-07-09T05:00:00+00:00",
-      "is_today": false,
-      "summary": "Opinion piece argues college students are justified in opposing technology industry leaders and capitalist practices."
+      "topic": "Criminal Justice",
+      "published": "2026-07-11T05:00:00-04:00",
+      "is_today": true,
+      "summary": "Virtual reality dancing partners help users practice dance skills in immersive digital environments."
     },
     {
       "title": "Class action suit against AI makers over deepfake child sexual abuse material expands",
@@ -259,8 +269,8 @@
       "paywalled": false,
       "topic": "Criminal Justice",
       "published": "2026-07-09T13:49:33-04:00",
-      "is_today": true,
-      "summary": "Class action lawsuit against AI companies expands for allegedly enabling creation of child sexual abuse material through deepfake technology."
+      "is_today": false,
+      "summary": "Class action lawsuit against AI companies expands, alleging their models enable creation of child sexual abuse material."
     },
     {
       "title": "Waymo called the cops on teen riders, raising privacy concerns",
@@ -269,28 +279,38 @@
       "paywalled": false,
       "topic": "Criminal Justice",
       "published": "2026-07-10T05:00:00-04:00",
-      "is_today": true,
-      "summary": "Waymo autonomous vehicles reported teen riders to police, raising questions about data privacy and law enforcement access in self-driving cars."
-    },
-    {
-      "title": "How South Korea's silicon belt is changing its society",
-      "url": "https://www.npr.org/2026/07/09/nx-s1-5872274/how-south-koreas-silicon-belt-is-changing-its-society",
-      "source": "feeds.npr.org",
-      "paywalled": false,
-      "topic": "Criminal Justice",
-      "published": "2026-07-09T04:59:23-04:00",
       "is_today": false,
-      "summary": "South Korea's semiconductor industry expansion significantly transforms the country's economy, workforce, and social structures."
+      "summary": "Waymo contacted police on teen passengers, raising questions about data sharing and privacy in autonomous vehicles."
     },
     {
-      "title": "Campaign staffers keep trying to bet on races despite push to curb insider trading",
-      "url": "https://www.npr.org/2026/07/09/nx-s1-5869569/kalshi-election-staffers-caught",
+      "title": "Largest housing affordability bill in decades becomes law without Trump's signature",
+      "url": "https://www.npr.org/2026/07/10/nx-s1-5885027/housing-bill-without-trump-signature",
       "source": "feeds.npr.org",
       "paywalled": false,
-      "topic": "Criminal Justice",
-      "published": "2026-07-09T05:00:00-04:00",
+      "topic": "Immigration",
+      "published": "2026-07-10T10:55:21-04:00",
       "is_today": true,
-      "summary": "Campaign staff continue wagering on election outcomes despite regulatory efforts to prevent insider trading in political prediction markets."
+      "summary": "Congress passed the largest housing affordability legislation in decades, which became law without President Trump's signature."
+    },
+    {
+      "title": "Do scandals still matter in politics?",
+      "url": "https://www.npr.org/2026/07/10/nx-s1-5853142/do-scandals-still-matter-in-politics",
+      "source": "feeds.npr.org",
+      "paywalled": false,
+      "topic": "Immigration",
+      "published": "2026-07-10T16:24:36-04:00",
+      "is_today": true,
+      "summary": "Political observers debate whether personal scandals continue to influence electoral outcomes and voter behavior in modern campaigns."
+    },
+    {
+      "title": "Graham Platner makes it official in Maine, submitting paperwork to leave Senate race",
+      "url": "https://www.npr.org/2026/07/10/nx-s1-5888709/graham-platner-maine-senate-susan-collins",
+      "source": "feeds.npr.org",
+      "paywalled": false,
+      "topic": "Immigration",
+      "published": "2026-07-10T17:22:01-04:00",
+      "is_today": true,
+      "summary": "Maine Democratic candidate Graham Platner officially withdrew from the Senate race against incumbent Susan Collins."
     },
     {
       "title": "With Platner announcement he's out of Senate race, Maine Democrats weigh what to do now",
@@ -323,34 +343,34 @@
       "summary": "President Trump removes members from the bipartisan Election Assistance Commission, shifting its leadership."
     },
     {
-      "title": "Inspiration for Trump's arch was sparked long before the design was first approved",
-      "url": "https://www.npr.org/2026/07/08/nx-s1-5869629/trump-arch-inspiration-long-before-design-approved",
-      "source": "feeds.npr.org",
+      "title": "IRS missed hiring goals for 2026 tax season, which watchdog says impacted service performance",
+      "url": "https://www.govexec.com/oversight/2026/07/irs-missed-hiring-goals-2026-tax-season-which-watchdog-says-impacted-service-performance/414665/",
+      "source": "govexec.com",
       "paywalled": false,
-      "topic": "Immigration",
-      "published": "2026-07-08T12:28:28-04:00",
+      "topic": "Tax & Finance",
+      "published": "2026-07-10T08:00:00-04:00",
       "is_today": true,
-      "summary": "Trump administration arch design drew inspiration from concepts developed before official approval process began."
+      "summary": "IRS failed to meet 2026 hiring targets, with a watchdog reporting the shortfall degraded taxpayer service performance."
     },
     {
-      "title": "New U.S. passports with Trump's image are available. Here's how to get (or avoid) one",
-      "url": "https://www.npr.org/2026/07/08/g-s1-132497/passports-trump-image",
-      "source": "feeds.npr.org",
+      "title": "Fired EPA dissenters sue for reinstatement, alleging First Amendment violations",
+      "url": "https://www.govexec.com/workforce/2026/07/fired-epa-dissenters-sue-reinstatement-alleging-first-amendment-violations/414687/",
+      "source": "govexec.com",
       "paywalled": false,
-      "topic": "Immigration",
-      "published": "2026-07-08T13:27:33-04:00",
+      "topic": "Tax & Finance",
+      "published": "2026-07-10T09:00:00-04:00",
       "is_today": true,
-      "summary": "New U.S. passports featuring Trump's image are now available for public issuance and renewal."
+      "summary": "Terminated EPA employees sued for reinstatement, claiming their dismissals violated First Amendment speech protections."
     },
     {
-      "title": "Supreme Court financial disclosures reveal how their books add to their income",
-      "url": "https://www.npr.org/2026/07/08/nx-s1-5886170/supreme-court-financial-disclosures-books-gifts-income",
-      "source": "feeds.npr.org",
+      "title": "Trump empties out election commission leadership just months before midterms",
+      "url": "https://www.govexec.com/management/2026/07/trump-empties-out-election-commission-leadership-just-months-midterms/414708/",
+      "source": "govexec.com",
       "paywalled": false,
-      "topic": "Immigration",
-      "published": "2026-07-08T14:03:30-04:00",
+      "topic": "Tax & Finance",
+      "published": "2026-07-10T16:05:21-04:00",
       "is_today": true,
-      "summary": "Supreme Court justices' financial disclosures show book royalties and gifts provide substantial supplemental income."
+      "summary": "Trump administration replaced election commission leadership months before midterm elections."
     },
     {
       "title": "Judges block Trump effort to narrow public service loan forgiveness",
@@ -383,34 +403,34 @@
       "summary": "HUD's chief information officer is expected to transition to a technology leadership role at Interior Department."
     },
     {
-      "title": "DOD's CIO says it's time to rethink the Pentagon's technology playbook",
-      "url": "https://www.govexec.com/defense/2026/07/dods-cio-rethink-pentagons-technology-playbook/414649/",
-      "source": "govexec.com",
-      "paywalled": false,
-      "topic": "Tax & Finance",
-      "published": "2026-07-08T14:55:58-04:00",
-      "is_today": true,
-      "summary": "Pentagon's Chief Information Officer calls for modernizing DOD's technology strategy to improve defense operations and capabilities."
-    },
-    {
-      "title": "GSA taps White House design team to revamp Login.gov",
-      "url": "https://www.govexec.com/technology/2026/07/gsa-taps-white-house-design-team-rethink-logingov/414652/",
-      "source": "govexec.com",
-      "paywalled": false,
-      "topic": "Tax & Finance",
-      "published": "2026-07-08T15:45:04-04:00",
-      "is_today": true,
-      "summary": "GSA engages White House design team to redesign Login.gov, the government's digital identity platform."
-    },
-    {
-      "title": "Jordan Wood joins crowded Maine Senate race",
-      "url": "https://www.politico.com/live-updates/2026/07/09/congress/jordan-wood-maine-senate-bid-00991537",
+      "title": "Trump refuses to sign landmark housing bill, taking aim at GOP",
+      "url": "https://www.politico.com/live-updates/2026/07/10/congress/trump-refuses-sign-housing-bill-00993024",
       "source": "rss.politico.com",
       "paywalled": false,
       "topic": "Elections",
-      "published": "2026-07-09T09:11:26-04:00",
+      "published": "2026-07-10T09:19:50-04:00",
       "is_today": true,
-      "summary": "Jordan Wood entered Maine's competitive 2026 Senate race, adding to the field of candidates seeking the seat."
+      "summary": "President Trump rejected a GOP-backed housing bill, creating intraparty conflict over major federal housing policy."
+    },
+    {
+      "title": "After Thursday night firings, election commission has no members",
+      "url": "https://rollcall.com/2026/07/10/after-thursday-night-firings-election-commission-has-no-members/",
+      "source": "rollcall.com",
+      "paywalled": false,
+      "topic": "Elections",
+      "published": "2026-07-10T11:09:22+00:00",
+      "is_today": true,
+      "summary": "Trump's firing of election commission members left the agency without any members, affecting federal election oversight."
+    },
+    {
+      "title": "Whole Hog Politics: As goes Maine, so goes \u2026",
+      "url": "https://thehill.com/newsletters/whole-hog-politics/5961630-platler-senate-candidacy-mainemaine/",
+      "source": "thehill.com",
+      "paywalled": false,
+      "topic": "Elections",
+      "published": "2026-07-10T12:00:00+00:00",
+      "is_today": true,
+      "summary": "A Maine political candidate's Senate race could signal broader trends affecting federal legislative elections."
     },
     {
       "title": "Chuck Grassley pushed for more transparency into Kash Patel\u2019s FBI spending in May, Democrats reveal",
@@ -433,54 +453,34 @@
       "summary": "Maine Secretary of State Shenna Bellows officially launched her 2026 Senate campaign."
     },
     {
-      "title": "Little clarity on Iran from Trump, but new help ahead for Ukraine",
-      "url": "https://rollcall.com/2026/07/08/little-clarity-on-iran-from-trump-but-new-help-ahead-for-ukraine/",
-      "source": "rollcall.com",
-      "paywalled": false,
-      "topic": "Elections",
-      "published": "2026-07-08T15:04:40+00:00",
-      "is_today": true,
-      "summary": "Trump provided limited details on Iran policy while announcing additional military assistance for Ukraine."
-    },
-    {
-      "title": "Jockeying to replace Platner on Maine ballot has already begun",
-      "url": "https://rollcall.com/2026/07/08/jockeying-to-replace-platner-on-maine-ballot-has-already-begun/",
-      "source": "rollcall.com",
-      "paywalled": false,
-      "topic": "Elections",
-      "published": "2026-07-08T16:25:48+00:00",
-      "is_today": true,
-      "summary": "Maine political figures are competing to replace a candidate on the ballot following recent developments."
-    },
-    {
-      "title": "GOP leaders tried to quell McConnell health questions. It\u2019s not working",
-      "url": "https://rollcall.com/2026/07/08/mcconnell-health-questions-transparency/",
-      "source": "rollcall.com",
-      "paywalled": false,
-      "topic": "Elections",
-      "published": "2026-07-08T16:45:44+00:00",
-      "is_today": true,
-      "summary": "Republican leadership's attempts to address public concerns about Senator McConnell's health have failed to resolve scrutiny."
-    },
-    {
       "title": "NCGA Study Finds Input Costs Higher for US Farmers Than Brazilian Counterparts",
       "url": "https://farmpolicynews.illinois.edu/2026/07/ncga-study-finds-input-costs-higher-for-us-farmers-than-brazilian-counterparts/",
       "source": "farmpolicynews.illinois.edu",
       "paywalled": false,
       "topic": "Agriculture",
       "published": "2026-07-09T15:40:44+00:00",
-      "is_today": true,
-      "summary": "NCGA study shows U.S. farmers face higher input costs than Brazilian farmers, potentially affecting agricultural competitiveness and trade policy."
+      "is_today": false,
+      "summary": "NCGA study shows US farmers face higher input costs than Brazilian farmers, potentially affecting agricultural competitiveness and farm policy decisions."
     },
     {
-      "title": "China Resumes Soybean Purchases as Trade Thaw Continues",
-      "url": "https://farmpolicynews.illinois.edu/2026/07/china-resumes-soybean-purchases-as-trade-thaw-continues/",
-      "source": "farmpolicynews.illinois.edu",
+      "title": "CISA looks to remedy ailments from big May credential leak",
+      "url": "https://cyberscoop.com/cisa-credential-leak-forensic-report/",
+      "source": "cyberscoop.com",
       "paywalled": false,
-      "topic": "Agriculture",
-      "published": "2026-07-08T14:45:39+00:00",
-      "is_today": false,
-      "summary": "China resumes soybean purchases, signaling trade tensions easing and potentially improving market conditions for U.S. agricultural exports."
+      "topic": "Cybersecurity",
+      "published": "2026-07-10T18:54:28+00:00",
+      "is_today": true,
+      "summary": "CISA released a forensic report on a May credential leak to identify vulnerabilities and prevent future similar incidents affecting federal cybersecurity."
+    },
+    {
+      "title": "Armenian national pleads guilty to Ryuk ransomware attacks",
+      "url": "https://cyberscoop.com/karen-vardanyan-armenian-ryuk-ransomware-guilty/",
+      "source": "cyberscoop.com",
+      "paywalled": false,
+      "topic": "Cybersecurity",
+      "published": "2026-07-10T20:13:27+00:00",
+      "is_today": true,
+      "summary": "Armenian national Karen Vardanyan pleaded guilty to conducting Ryuk ransomware attacks, resulting in significant criminal liability for international cyber operations."
     },
     {
       "title": "764 splinter group leader sentenced to 40 years in jail",
@@ -489,8 +489,8 @@
       "paywalled": false,
       "topic": "Cybersecurity",
       "published": "2026-07-09T14:34:31+00:00",
-      "is_today": true,
-      "summary": "A 764 splinter group leader received a 40-year prison sentence for crimes related to the organization's activities."
+      "is_today": false,
+      "summary": "Alexis Chavez, leader of a 764 splinter group, was sentenced to 40 years for criminal activities related to extremist organization operations."
     },
     {
       "title": "Interpol cybercrime crackdown nets 5,800 arrests across 97 countries",
@@ -513,24 +513,34 @@
       "summary": "A former DigitalMint ransomware negotiator was sentenced to 70 months for deceiving clients during ransom negotiations."
     },
     {
-      "title": "Felons, Fraudsters Flog Offensive Cybersecurity Startup",
-      "url": "https://krebsonsecurity.com/2026/07/felons-fraudsters-flog-offensive-cybersecurity-startup/",
-      "source": "krebsonsecurity.com",
+      "title": "Goldman Sachs bans employees from some prediction market contracts",
+      "url": "https://thehill.com/policy/technology/5962630-goldman-sachs-restricts-employee-trading/",
+      "source": "thehill.com",
       "paywalled": false,
-      "topic": "Cybersecurity",
-      "published": "2026-07-08T12:31:39+00:00",
+      "topic": "Technology",
+      "published": "2026-07-10T15:59:58+00:00",
       "is_today": true,
-      "summary": "Criminals are promoting an offensive cybersecurity startup, raising concerns about illicit actors operating in the legitimate cybersecurity industry."
+      "summary": "Goldman Sachs banned employees from trading certain prediction market contracts, raising questions about financial regulatory oversight of emerging betting markets."
     },
     {
-      "title": "French nonprofit starts global intelligence and research hub for AI cyber threats",
-      "url": "https://cyberscoop.com/paris-peace-forum-intaic-ai-cyber-threats/",
-      "source": "cyberscoop.com",
+      "title": "Top Democrats bash Trump over cryptocurrency income",
+      "url": "https://thehill.com/homenews/senate/5962664-senate-dems-elizabeth-warren-richard-blumenthal-dick-durbin-gary-peters-donald-trump-crypto-criticism/",
+      "source": "thehill.com",
       "paywalled": false,
-      "topic": "Cybersecurity",
-      "published": "2026-07-08T18:15:29+00:00",
+      "topic": "Technology",
+      "published": "2026-07-10T16:02:22+00:00",
       "is_today": true,
-      "summary": "A French nonprofit established a global intelligence hub to research AI-related cyber threats, addressing emerging security risks from artificial intelligence."
+      "summary": "Senate Democrats criticized Trump for cryptocurrency income, highlighting ongoing debate over presidential financial disclosures and cryptocurrency regulation."
+    },
+    {
+      "title": "Firmware update bricks Hue Bridge Pro devices; Philips gives free replacements",
+      "url": "https://arstechnica.com/gadgets/2026/07/firmware-update-bricks-hue-bridge-pro-devices-philips-gives-free-replacements/",
+      "source": "arstechnica.com",
+      "paywalled": false,
+      "topic": "Technology",
+      "published": "2026-07-10T16:36:09+00:00",
+      "is_today": true,
+      "summary": "A Philips Hue Bridge Pro firmware update rendered devices inoperable; Philips offered free replacements, raising consumer protection concerns."
     },
     {
       "title": "Class action suit against AI makers over deepfake child sexual abuse material expands",
@@ -561,26 +571,6 @@
       "published": "2026-07-09T18:08:23+00:00",
       "is_today": true,
       "summary": "Bipartisan lawmakers urge federal agencies to address AI-generated election threats ahead of 2026 midterms, seeking policy coordination on AI-enabled disinformation."
-    },
-    {
-      "title": "OpenAI will publicly release advanced GPT model after government-requested delay",
-      "url": "https://thehill.com/policy/technology/5958647-openai-releases-gpt56-trump/",
-      "source": "thehill.com",
-      "paywalled": false,
-      "topic": "Technology",
-      "published": "2026-07-08T13:55:28+00:00",
-      "is_today": true,
-      "summary": "OpenAI publicly releases advanced GPT model following government-requested delay, impacting federal AI governance and policy framework."
-    },
-    {
-      "title": "Sam Eckholm grants rare access to military ops with YouTube docuseries",
-      "url": "https://thehill.com/policy/defense/5957793-sam-eckholm-military-storyteller/",
-      "source": "thehill.com",
-      "paywalled": false,
-      "topic": "Technology",
-      "published": "2026-07-08T16:00:00+00:00",
-      "is_today": true,
-      "summary": "Sam Eckholm grants rare public access to military operations through YouTube docuseries, raising transparency and national security concerns."
     }
   ]
 }
