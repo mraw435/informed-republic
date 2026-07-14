@@ -1,7 +1,37 @@
 {
-  "last_updated": "2026-07-13T11:00:56Z",
-  "story_count": 43,
+  "last_updated": "2026-07-14T11:00:59Z",
+  "story_count": 57,
   "stories": [
+    {
+      "title": "DHS network intrusion was twice ruled a false positive before breach confirmed",
+      "url": "https://www.defenseone.com/threats/2026/07/dhs-network-intrusion-was-twice-ruled-false-positive-breach-confirmed/414748/",
+      "source": "defenseone.com",
+      "paywalled": false,
+      "topic": "Defense",
+      "published": "2026-07-13T11:24:00-04:00",
+      "is_today": true,
+      "summary": "A DHS network breach was initially dismissed twice as false alarms before being confirmed as an actual intrusion, raising cybersecurity detection concerns."
+    },
+    {
+      "title": "Centcom Completes Another Wave of Strikes Against Iran",
+      "url": "https://www.war.gov/News/News-Stories/Article/Article/4541171/centcom-completes-another-wave-of-strikes-against-iran/",
+      "source": "defense.gov",
+      "paywalled": false,
+      "topic": "Defense",
+      "published": "2026-07-13T13:03:00+00:00",
+      "is_today": true,
+      "summary": "U.S. Central Command conducted another military strike operation against Iran as part of ongoing military operations in the region."
+    },
+    {
+      "title": "Trump notifies Congress of new war against Iran",
+      "url": "https://www.politico.com/news/2026/07/13/trump-notifies-congress-of-new-war-against-iran-00995170",
+      "source": "rss.politico.com",
+      "paywalled": false,
+      "topic": "Defense",
+      "published": "2026-07-13T14:39:18-04:00",
+      "is_today": true,
+      "summary": "President Trump notified Congress of military action against Iran, fulfilling the constitutional requirement to report new military operations."
+    },
     {
       "title": "Sen. Lindsey Graham dies, leaving Senate seat vacant",
       "url": "https://www.defenseone.com/policy/2026/07/sen-lindsey-graham-dies-leaving-senate-seat-vacant/414719/",
@@ -33,34 +63,34 @@
       "summary": "US NATO ambassador characterizes Iranian leadership as unstable, escalating diplomatic rhetoric amid tensions."
     },
     {
-      "title": "Trump warns Iran of 'complete decimation' if assassination threat carried out",
-      "url": "https://thehill.com/policy/international/5963738-donald-trump-iran-war-assassination-threats/",
+      "title": "Second US citizen diagnosed with Ebola transferred to Germany for treatment: WHO",
+      "url": "https://thehill.com/policy/healthcare/5965532-ebola-outbreak-congo-response/",
       "source": "thehill.com",
       "paywalled": false,
-      "topic": "Defense",
-      "published": "2026-07-11T12:05:40+00:00",
+      "topic": "Healthcare",
+      "published": "2026-07-13T15:27:57+00:00",
       "is_today": true,
-      "summary": "Trump threatened Iran with 'complete decimation' if it carries out an assassination threat, escalating US-Iran tensions."
+      "summary": "A second US citizen diagnosed with Ebola was transferred to Germany for treatment amid ongoing outbreak response efforts."
     },
     {
-      "title": "Huckabee warns Iran not to \u2018test\u2019 Trump as tensions simmer",
-      "url": "https://thehill.com/policy/international/5964030-mike-huckabee-donald-trump-iran-war-threats/",
+      "title": "States sue over planned cuts to school mental health grants",
+      "url": "https://thehill.com/policy/healthcare/5965570-lawsuit-education-department-mental-health/",
       "source": "thehill.com",
       "paywalled": false,
-      "topic": "Defense",
-      "published": "2026-07-11T18:09:40+00:00",
+      "topic": "Healthcare",
+      "published": "2026-07-13T15:58:23+00:00",
       "is_today": true,
-      "summary": "Secretary of State Huckabee warned Iran not to 'test' Trump administration as US-Iran tensions escalate."
+      "summary": "States are suing the Education Department over planned reductions to federal school mental health grant funding."
     },
     {
-      "title": "Cost of Iran war grows, as Trump throws its end into question",
-      "url": "https://thehill.com/policy/defense/5963663-iran-war-cost-rising/",
+      "title": "What is aortic dissection, the medical emergency linked to Graham's death?",
+      "url": "https://thehill.com/policy/healthcare/5966375-lindsey-graham-death-aortic-dissection/",
       "source": "thehill.com",
       "paywalled": false,
-      "topic": "Defense",
-      "published": "2026-07-11T20:00:00+00:00",
+      "topic": "Healthcare",
+      "published": "2026-07-13T20:02:45+00:00",
       "is_today": true,
-      "summary": "Military costs for Iran operations are rising while Trump administration's commitment to ending conflict remains uncertain."
+      "summary": "Aortic dissection is a life-threatening emergency condition involving separation of the aorta's inner layers."
     },
     {
       "title": "You got the 'explosive' diarrhea parasite. Now what?",
@@ -93,14 +123,34 @@
       "summary": "California Governor Newsom expands Medicaid coverage for housing and food assistance while Republicans question program costs."
     },
     {
-      "title": "RFK Jr.\u2019s focus on preventive health panel provokes new fears",
-      "url": "https://thehill.com/policy/healthcare/5963488-kennedy-remakes-preventive-panel/",
-      "source": "thehill.com",
+      "title": "The biggest story in the federal workforce cuts isn't how many left, it's who wasn't replaced",
+      "url": "https://www.govexec.com/workforce/2026/07/biggest-story-federal-workforce-cuts-who-wasnt-replaced/414726/",
+      "source": "govexec.com",
       "paywalled": false,
-      "topic": "Healthcare",
-      "published": "2026-07-12T10:00:00+00:00",
+      "topic": "Appropriations",
+      "published": "2026-07-13T13:31:40-04:00",
       "is_today": true,
-      "summary": "RFK Jr. is restructuring a federal preventive health panel, raising concerns about potential policy changes affecting public health recommendations."
+      "summary": "Federal workforce cuts' impact depends on which positions remain unfilled rather than total headcount reduction."
+    },
+    {
+      "title": "DHS network intrusion was twice ruled a false positive before breach confirmed",
+      "url": "https://www.govexec.com/technology/2026/07/dhs-network-intrusion-was-twice-ruled-false-positive-breach-confirmed/414742/",
+      "source": "govexec.com",
+      "paywalled": false,
+      "topic": "Appropriations",
+      "published": "2026-07-13T17:15:50-04:00",
+      "is_today": true,
+      "summary": "DHS network breach was twice incorrectly classified as false positive before confirmation, raising detection protocol concerns."
+    },
+    {
+      "title": "Duffy faces new ethics complaint over official social media post promoting wife\u2019s book",
+      "url": "https://www.govexec.com/oversight/2026/07/duffy-faces-new-ethics-complaint-over-official-social-media-post-promoting-wifes-book/414741/",
+      "source": "govexec.com",
+      "paywalled": false,
+      "topic": "Appropriations",
+      "published": "2026-07-13T17:25:00-04:00",
+      "is_today": true,
+      "summary": "Official ethics complaint filed against Duffy for using official social media to promote wife's book."
     },
     {
       "title": "Sen. Lindsey Graham dies, leaving Senate seat vacant",
@@ -123,14 +173,34 @@
       "summary": "Senator Graham's death and McConnell's recovery create leadership uncertainty affecting Senate operations and legislative priorities."
     },
     {
-      "title": "Lindsey Graham, defense hawk and four-term senator, dead at 71",
-      "url": "https://rollcall.com/2026/07/12/lindsey-graham-defense-hawk-and-four-term-senator-dead-at-71/",
-      "source": "rollcall.com",
+      "title": "The U.S.-Iran ceasefire grows more distant. And, Congress faces a consequential week",
+      "url": "https://www.npr.org/2026/07/13/g-s1-133269/up-first-newsletter-us-iran-war-congress-lindsey-graham-gaza-israel-hussam-abu-safiya",
+      "source": "feeds.npr.org",
       "paywalled": false,
-      "topic": "Appropriations",
-      "published": "2026-07-12T04:03:00+00:00",
-      "is_today": false,
-      "summary": "Four-term Senator Lindsey Graham, a defense policy advocate, died at 71, leaving his Senate seat vacant."
+      "topic": "Foreign Policy",
+      "published": "2026-07-13T08:02:33-04:00",
+      "is_today": true,
+      "summary": "U.S.-Iran ceasefire prospects diminish as Congress addresses Middle East conflicts involving Gaza and Israel."
+    },
+    {
+      "title": "Will Lula Win the Century?",
+      "url": "https://foreignpolicy.com/2026/07/13/brazil-lula-bolsonaro-election-history-pagliarini-book-review/",
+      "source": "foreignpolicy.com",
+      "paywalled": false,
+      "topic": "Foreign Policy",
+      "published": "2026-07-13T11:00:50+00:00",
+      "is_today": true,
+      "summary": "Analysis examines whether Brazilian President Lula will achieve historic electoral victory over Bolsonaro."
+    },
+    {
+      "title": "The U.S. strikes Iran after Trump announces a renewed blockade and tolls in Hormuz",
+      "url": "https://www.npr.org/2026/07/13/nx-s1-5891746/us-iran-strait-of-hormuz-updates",
+      "source": "feeds.npr.org",
+      "paywalled": false,
+      "topic": "Foreign Policy",
+      "published": "2026-07-13T12:53:40-04:00",
+      "is_today": true,
+      "summary": "U.S. strikes Iran following Trump's announcement of renewed Strait of Hormuz blockade and tolls."
     },
     {
       "title": "Iranian official warns US after strikes: 'Keep your word or pay the price'",
@@ -163,24 +233,34 @@
       "summary": "US NATO ambassador characterizes Iran's leadership as unstable, heightening US-Iran diplomatic tensions."
     },
     {
-      "title": "Trump warns Iran of 'complete decimation' if assassination threat carried out",
-      "url": "https://thehill.com/policy/international/5963738-donald-trump-iran-war-assassination-threats/",
-      "source": "thehill.com",
+      "title": "PG&E faces $22M penalty for Mosquito Fire under proposed agreement",
+      "url": "https://www.utilitydive.com/news/pge-wildfire-california-puc-penalty-mosquito-fire/825041/",
+      "source": "utilitydive.com",
       "paywalled": false,
-      "topic": "Foreign Policy",
-      "published": "2026-07-11T12:05:40+00:00",
+      "topic": "Energy",
+      "published": "2026-07-13T09:43:07-04:00",
       "is_today": true,
-      "summary": "Trump threatens Iran with complete military destruction if it carries out alleged assassination threats against U.S. officials."
+      "summary": "PG&E faces $22 million penalty from California regulators for the Mosquito Fire, addressing utility liability for wildfire damages."
     },
     {
-      "title": "Trump claims US got \u2018much better deal\u2019 as delayed bridge with Canada set to open",
-      "url": "https://thehill.com/homenews/administration/5963874-donald-trump-us-canada-gordie-howe-international-bridge/",
+      "title": "Texas PUC approves \u2018ride-through\u2019 rules for data centers",
+      "url": "https://www.utilitydive.com/news/texas-puc-approves-ride-through-rules-data-centers/825051/",
+      "source": "utilitydive.com",
+      "paywalled": false,
+      "topic": "Energy",
+      "published": "2026-07-13T10:25:32-04:00",
+      "is_today": true,
+      "summary": "Texas PUC approves ride-through rules allowing data centers to maintain operations during grid disruptions, affecting grid stability requirements."
+    },
+    {
+      "title": "Trump: US to become 'the guardian' of the Strait of Hormuz",
+      "url": "https://thehill.com/homenews/administration/5965399-donald-trump-guardian-strait-hormuz/",
       "source": "thehill.com",
       "paywalled": false,
-      "topic": "Foreign Policy",
-      "published": "2026-07-11T14:40:41+00:00",
+      "topic": "Energy",
+      "published": "2026-07-13T13:19:50+00:00",
       "is_today": true,
-      "summary": "Trump claims the U.S. negotiated better terms for the newly opening Gordie Howe International Bridge with Canada."
+      "summary": "Trump announces US commitment to safeguard the Strait of Hormuz, a critical global oil shipping chokepoint affecting energy security."
     },
     {
       "title": "Progressives look to recharge the Green New Deal for the AI era",
@@ -219,8 +299,8 @@
       "paywalled": false,
       "topic": "Education",
       "published": "2026-07-13T05:00:00+00:00",
-      "is_today": true,
-      "summary": "Southern public universities could expand efforts to retain graduates and address regional brain drain affecting economic development."
+      "is_today": false,
+      "summary": "Southern public universities could better address regional brain drain by retaining educated graduates through improved economic opportunities and community engagement."
     },
     {
       "title": "Teachers save time with AI. Their students may pay the price",
@@ -229,48 +309,48 @@
       "paywalled": false,
       "topic": "Education",
       "published": "2026-07-13T10:00:00+00:00",
-      "is_today": true,
-      "summary": "Teachers using AI tools save time on administrative tasks, raising concerns about potential impacts on student learning outcomes."
-    },
-    {
-      "title": "As college graduates fret over finding jobs, a record shortage of workers is projected",
-      "url": "https://hechingerreport.org/as-college-graduates-fret-over-jobs-a-record-shortage-of-workers-is-projected/",
-      "source": "hechingerreport.org",
-      "paywalled": false,
-      "topic": "Education",
-      "published": "2026-07-12T05:00:00+00:00",
       "is_today": false,
-      "summary": "Despite graduate job concerns, projections show record worker shortages, creating potential labor market policy challenges."
+      "summary": "Teachers using AI tools save time on administrative tasks, but potential impacts on student learning outcomes and educational quality require further study."
     },
     {
-      "title": "Campaign text messages could soon get more effective \u2014 and annoying",
-      "url": "https://www.npr.org/2026/07/12/nx-s1-5867763/ai-artificial-intelligence-data-texts-bots-voters-campaigns",
+      "title": "'The Trojan Teddy Bear': The promise and peril of childhood in the age of AI",
+      "url": "https://www.npr.org/sections/planet-money/2026/07/14/g-s1-133066/the-trojan-teddy-bear-the-promise-and-peril-of-childhood-in-the-age-of-ai",
       "source": "feeds.npr.org",
       "paywalled": false,
       "topic": "Criminal Justice",
-      "published": "2026-07-12T05:00:00-04:00",
-      "is_today": false,
-      "summary": "Political campaigns are using AI to improve text message targeting and personalization, raising questions about regulation of campaign communications."
+      "published": "2026-07-14T06:30:00-04:00",
+      "is_today": true,
+      "summary": "AI-enabled children's toys offer educational benefits but raise privacy and developmental concerns, prompting potential regulatory scrutiny."
     },
     {
-      "title": "Politics chat: Lindsey Graham dies at 71, Congress back in session, U.S. strikes Iran",
-      "url": "https://www.npr.org/2026/07/12/nx-s1-5887274/politics-chat-lindsey-graham-dies-at-71-congress-back-in-session-u-s-strikes-iran",
+      "title": "Sen. Richard Blumenthal talks about Lindsey Graham's legacy",
+      "url": "https://www.npr.org/2026/07/13/nx-s1-5890884/sen-richard-blumenthal-talks-about-lindsey-grahams-legacy",
       "source": "feeds.npr.org",
       "paywalled": false,
       "topic": "Immigration",
-      "published": "2026-07-12T07:57:11-04:00",
+      "published": "2026-07-13T07:08:53-04:00",
       "is_today": true,
-      "summary": "Republican Senator Lindsey Graham died at 71; Congress reconvened and the U.S. conducted military strikes against Iran."
+      "summary": "Sen. Blumenthal discusses former Sen. Lindsey Graham's Senate career and legislative impact."
     },
     {
-      "title": "How longtime GOP Senator Lindsey Graham went from critic to ally of President Trump",
-      "url": "https://www.npr.org/2026/07/12/nx-s1-5890821/how-longtime-gop-senator-lindsey-graham-went-from-critic-to-ally-of-president-trump",
+      "title": "How Lindsey Graham tried to stay 'relevant'",
+      "url": "https://www.npr.org/2026/07/13/nx-s1-5891751/how-lindsey-graham-tried-to-stay-relevant",
       "source": "feeds.npr.org",
       "paywalled": false,
       "topic": "Immigration",
-      "published": "2026-07-12T07:57:18-04:00",
+      "published": "2026-07-13T15:57:12-04:00",
       "is_today": true,
-      "summary": "Senator Lindsey Graham shifted from Trump critic to close ally during his Senate tenure."
+      "summary": "Report examines strategies Sen. Lindsey Graham employed to maintain political influence throughout his career."
+    },
+    {
+      "title": "On foreign policy, Graham's influence may have been felt the most",
+      "url": "https://www.npr.org/2026/07/13/nx-s1-5890936/on-foreign-policy-grahams-influence-may-have-been-felt-the-most",
+      "source": "feeds.npr.org",
+      "paywalled": false,
+      "topic": "Immigration",
+      "published": "2026-07-13T16:05:24-04:00",
+      "is_today": true,
+      "summary": "Sen. Graham's foreign policy positions significantly shaped federal defense and international relations decisions."
     },
     {
       "title": "Former Senator Jeff Flake remembers his colleague and friend Lindsay Graham",
@@ -283,6 +363,36 @@
       "summary": "Former Senator Jeff Flake eulogized deceased colleague Senator Lindsey Graham."
     },
     {
+      "title": "The biggest story in the federal workforce cuts isn't how many left, it's who wasn't replaced",
+      "url": "https://www.govexec.com/workforce/2026/07/biggest-story-federal-workforce-cuts-who-wasnt-replaced/414726/",
+      "source": "govexec.com",
+      "paywalled": false,
+      "topic": "Tax & Finance",
+      "published": "2026-07-13T13:31:40-04:00",
+      "is_today": true,
+      "summary": "Federal workforce reductions focused on not replacing departing employees rather than direct layoffs, affecting agency capacity and policy implementation."
+    },
+    {
+      "title": "DHS network intrusion was twice ruled a false positive before breach confirmed",
+      "url": "https://www.govexec.com/technology/2026/07/dhs-network-intrusion-was-twice-ruled-false-positive-breach-confirmed/414742/",
+      "source": "govexec.com",
+      "paywalled": false,
+      "topic": "Tax & Finance",
+      "published": "2026-07-13T17:15:50-04:00",
+      "is_today": true,
+      "summary": "DHS security breach was initially dismissed twice as false alarms before confirmation, raising concerns about intrusion detection protocols and response procedures."
+    },
+    {
+      "title": "Duffy faces new ethics complaint over official social media post promoting wife\u2019s book",
+      "url": "https://www.govexec.com/oversight/2026/07/duffy-faces-new-ethics-complaint-over-official-social-media-post-promoting-wifes-book/414741/",
+      "source": "govexec.com",
+      "paywalled": false,
+      "topic": "Tax & Finance",
+      "published": "2026-07-13T17:25:00-04:00",
+      "is_today": true,
+      "summary": "Federal official faces ethics complaint for using official social media account to promote wife's book, raising questions about proper use of government channels."
+    },
+    {
       "title": "Sen. Lindsey Graham dies, leaving Senate seat vacant",
       "url": "https://www.govexec.com/federal-news/2026/07/sen-lindsey-graham-dies-leaving-senate-seat-vacant/414718/",
       "source": "govexec.com",
@@ -293,14 +403,34 @@
       "summary": "Senator Lindsey Graham's death creates a vacant Senate seat, requiring South Carolina's governor to appoint a successor or trigger a special election."
     },
     {
-      "title": "Graham\u2019s death leaves Senate agenda in limbo",
-      "url": "https://www.politico.com/news/2026/07/12/lindsey-graham-death-senate-agenda-00994116",
+      "title": "How to serve up a year-old bill",
+      "url": "https://rollcall.com/2026/07/13/how-to-serve-year-old-bill-obbb/",
+      "source": "rollcall.com",
+      "paywalled": false,
+      "topic": "Elections",
+      "published": "2026-07-13T12:01:00+00:00",
+      "is_today": true,
+      "summary": "Congress explores procedural options for advancing a year-old bill through the legislative process."
+    },
+    {
+      "title": "Gary Peters endorses Haley Stevens for his seat",
+      "url": "https://www.politico.com/live-updates/2026/07/13/congress/gary-peters-michigan-senate-endorsement-00994823",
       "source": "rss.politico.com",
       "paywalled": false,
       "topic": "Elections",
-      "published": "2026-07-12T08:30:25-04:00",
+      "published": "2026-07-13T12:02:16-04:00",
       "is_today": true,
-      "summary": "Senator Lindsey Graham's death creates uncertainty about pending Senate legislative priorities and committee leadership."
+      "summary": "Senator Gary Peters endorses Representative Haley Stevens as his successor in Michigan's 2026 Senate race."
+    },
+    {
+      "title": "House Republicans to huddle with CBO chief amid reconciliation talks",
+      "url": "https://www.politico.com/live-updates/2026/07/13/congress/cbo-chief-to-rsc-00994848",
+      "source": "rss.politico.com",
+      "paywalled": false,
+      "topic": "Elections",
+      "published": "2026-07-13T12:08:32-04:00",
+      "is_today": true,
+      "summary": "House Republicans meet with Congressional Budget Office chief to discuss reconciliation bill cost estimates."
     },
     {
       "title": "Graham\u2019s death upends primary season further",
@@ -323,44 +453,14 @@
       "summary": "Senator Ron Johnson indicates readiness to assume leadership of the Senate Budget Committee following Graham's death."
     },
     {
-      "title": "Ex-White House lawyer: Trump 'stacking every card in the deck' ahead of midterms",
-      "url": "https://thehill.com/homenews/campaign/5963898-ty-cobb-donald-trump-midterm-influence/",
-      "source": "thehill.com",
+      "title": "USDA Revises Beef Export Data, Lowers Sales by 90%",
+      "url": "https://farmpolicynews.illinois.edu/2026/07/usda-revises-beef-export-data-lowers-sales-by-90/",
+      "source": "farmpolicynews.illinois.edu",
       "paywalled": false,
-      "topic": "Elections",
-      "published": "2026-07-11T15:18:11+00:00",
+      "topic": "Agriculture",
+      "published": "2026-07-13T19:01:41+00:00",
       "is_today": true,
-      "summary": "Former White House lawyer Ty Cobb alleges Trump is manipulating electoral processes ahead of midterm elections."
-    },
-    {
-      "title": "Carville unloads on far-left Democrats over party infighting ahead of midterms",
-      "url": "https://thehill.com/homenews/campaign/5963954-james-carville-leftist-democrats-midterms-criticism/",
-      "source": "thehill.com",
-      "paywalled": false,
-      "topic": "Elections",
-      "published": "2026-07-11T16:22:50+00:00",
-      "is_today": true,
-      "summary": "Democratic strategist James Carville criticizes progressive Democrats for internal party conflict before midterms."
-    },
-    {
-      "title": "Progressive House candidate responds to criticism over past comments about Black Dems",
-      "url": "https://thehill.com/homenews/campaign/5964228-progressive-house-candidate-responds-to-criticism-over-past-comments-about-black-dems/",
-      "source": "thehill.com",
-      "paywalled": false,
-      "topic": "Elections",
-      "published": "2026-07-11T23:08:39+00:00",
-      "is_today": true,
-      "summary": "Progressive House candidate addresses backlash over previous statements regarding Black Democratic colleagues."
-    },
-    {
-      "title": "Trump claims US got \u2018much better deal\u2019 as delayed bridge with Canada set to open",
-      "url": "https://thehill.com/homenews/administration/5963874-donald-trump-us-canada-gordie-howe-international-bridge/",
-      "source": "thehill.com",
-      "paywalled": false,
-      "topic": "Transportation",
-      "published": "2026-07-11T14:40:41+00:00",
-      "is_today": false,
-      "summary": "The Gordie Howe International Bridge between the US and Canada is set to open after delays, with Trump claiming the US negotiated favorable terms."
+      "summary": "USDA significantly downward-revised beef export sales figures by 90 percent, affecting trade policy assessments and agricultural economic forecasts."
     },
     {
       "title": "FTC Settlement Secures Right to Repair for Farmers",
@@ -369,8 +469,38 @@
       "paywalled": false,
       "topic": "Agriculture",
       "published": "2026-07-13T00:41:20+00:00",
+      "is_today": false,
+      "summary": "FTC settlement grants farmers legal right to repair equipment, addressing agricultural equipment accessibility and competition policy concerns."
+    },
+    {
+      "title": "Lessons Learned from CISA\u2019s Recent GitHub Leak",
+      "url": "https://krebsonsecurity.com/2026/07/lessons-learned-from-cisas-recent-github-leak/",
+      "source": "krebsonsecurity.com",
+      "paywalled": false,
+      "topic": "Cybersecurity",
+      "published": "2026-07-13T15:03:28+00:00",
       "is_today": true,
-      "summary": "FTC settlement requires equipment manufacturers to provide farmers access to repair manuals and parts, enabling independent repairs and reducing maintenance costs."
+      "summary": "CISA's GitHub leak exposed security vulnerabilities, highlighting the need for improved federal cybersecurity practices and incident response protocols."
+    },
+    {
+      "title": "Officials once again warn defenders that Russian hackers are targeting network devices",
+      "url": "https://cyberscoop.com/russian-fsb-cisco-joint-cybersecurity-advisory/",
+      "source": "cyberscoop.com",
+      "paywalled": false,
+      "topic": "Cybersecurity",
+      "published": "2026-07-13T15:23:46+00:00",
+      "is_today": true,
+      "summary": "U.S. officials warned that Russian FSB hackers are actively targeting network devices, prompting coordinated cybersecurity defense recommendations."
+    },
+    {
+      "title": "Europe strikes out against Russia\u2019s Turla over espionage, \u2018destructive attacks\u2019",
+      "url": "https://cyberscoop.com/eu-uk-russian-cyberespionage-sanctions/",
+      "source": "cyberscoop.com",
+      "paywalled": false,
+      "topic": "Cybersecurity",
+      "published": "2026-07-13T16:28:10+00:00",
+      "is_today": true,
+      "summary": "Europe and UK imposed sanctions on Russia's Turla hacking group for espionage and destructive cyberattacks against critical infrastructure."
     },
     {
       "title": "AI-generated code has made security debt a governance problem",
@@ -381,6 +511,36 @@
       "published": "2026-07-13T09:00:00+00:00",
       "is_today": true,
       "summary": "AI-generated code's security vulnerabilities are creating governance challenges that require federal policy attention to manage systemic cybersecurity risks."
+    },
+    {
+      "title": "Warren rips Senate leaders over crypto bill's lack of ethics restrictions",
+      "url": "https://thehill.com/policy/technology/5965748-warren-slams-crypto-bill-senate-leaders/",
+      "source": "thehill.com",
+      "paywalled": false,
+      "topic": "Technology",
+      "published": "2026-07-13T15:26:32+00:00",
+      "is_today": true,
+      "summary": "Senator Warren criticized Senate leaders for advancing a crypto bill without including ethics restrictions on financial industry conduct."
+    },
+    {
+      "title": "Elon Musk, Sam Altman bicker on X after Apple files OpenAI lawsuit",
+      "url": "https://thehill.com/policy/technology/5965640-apple-openai-trade-secret-lawsuit/",
+      "source": "thehill.com",
+      "paywalled": false,
+      "topic": "Technology",
+      "published": "2026-07-13T15:41:20+00:00",
+      "is_today": true,
+      "summary": "Apple filed a lawsuit against OpenAI over alleged trade secret misappropriation, prompting public disagreement between Elon Musk and Sam Altman."
+    },
+    {
+      "title": "Trump urges Senate to pass crypto bill in honor of Graham",
+      "url": "https://thehill.com/policy/technology/5965846-trump-senate-clarity-act-graham/",
+      "source": "thehill.com",
+      "paywalled": false,
+      "topic": "Technology",
+      "published": "2026-07-13T15:56:21+00:00",
+      "is_today": true,
+      "summary": "Trump called on the Senate to pass a crypto clarity bill in tribute to deceased Senator Lindsey Graham."
     },
     {
       "title": "Data centers become flash point in gubernatorial races",
@@ -411,26 +571,6 @@
       "published": "2026-07-13T02:31:09+00:00",
       "is_today": true,
       "summary": "Prediction market platforms facilitated nearly $200 million in midterm election bets, highlighting growing use of such platforms for political wagering."
-    },
-    {
-      "title": "Crypto bill faces make-or-break moment ahead of August recess",
-      "url": "https://thehill.com/policy/technology/5963428-crypto-bill-clarity-act-make-or-break-congress/",
-      "source": "thehill.com",
-      "paywalled": false,
-      "topic": "Technology",
-      "published": "2026-07-11T21:00:00+00:00",
-      "is_today": true,
-      "summary": "Congress faces critical deadline to advance cryptocurrency regulatory clarity legislation before August recess."
-    },
-    {
-      "title": "Meta u-turns on AI feature amid privacy backlash",
-      "url": "https://thehill.com/policy/technology/5964282-privacy-concerns-instagram-ai/",
-      "source": "thehill.com",
-      "paywalled": false,
-      "topic": "Technology",
-      "published": "2026-07-12T01:35:11+00:00",
-      "is_today": true,
-      "summary": "Meta reversed an AI feature for Instagram following user privacy concerns and backlash."
     }
   ]
 }
