@@ -1,7 +1,37 @@
 {
-  "last_updated": "2026-07-14T11:00:59Z",
-  "story_count": 57,
+  "last_updated": "2026-07-15T11:01:30Z",
+  "story_count": 61,
   "stories": [
+    {
+      "title": "Schumer rips Senate defense bill as Dems are poised to block it",
+      "url": "https://www.politico.com/live-updates/2026/07/14/congress/schumer-rips-senate-defense-bill-as-dems-are-poised-to-block-it-00996638",
+      "source": "rss.politico.com",
+      "paywalled": false,
+      "topic": "Defense",
+      "published": "2026-07-14T10:54:21-04:00",
+      "is_today": true,
+      "summary": "Senate Majority Leader Schumer criticized a Senate defense bill that Democrats planned to block."
+    },
+    {
+      "title": "US, Iran trade strikes after Trump blockade threat",
+      "url": "https://thehill.com/policy/defense/5967055-trump-us-iran-trade-strikes-naval-blockade-threat/",
+      "source": "thehill.com",
+      "paywalled": false,
+      "topic": "Defense",
+      "published": "2026-07-14T11:44:37+00:00",
+      "is_today": true,
+      "summary": "The US and Iran exchanged military strikes amid Trump's threat of a naval blockade."
+    },
+    {
+      "title": "Europe\u2019s defense build-up is delivering for NATO \u2014 and America",
+      "url": "https://www.defensenews.com/opinion/2026/07/14/europes-defense-build-up-is-delivering-for-nato-and-america/",
+      "source": "defensenews.com",
+      "paywalled": false,
+      "topic": "Defense",
+      "published": "2026-07-14T12:22:25+00:00",
+      "is_today": true,
+      "summary": "European military spending increases are strengthening NATO capabilities and supporting US defense interests."
+    },
     {
       "title": "DHS network intrusion was twice ruled a false positive before breach confirmed",
       "url": "https://www.defenseone.com/threats/2026/07/dhs-network-intrusion-was-twice-ruled-false-positive-breach-confirmed/414748/",
@@ -33,34 +63,34 @@
       "summary": "President Trump notified Congress of military action against Iran, fulfilling the constitutional requirement to report new military operations."
     },
     {
-      "title": "Sen. Lindsey Graham dies, leaving Senate seat vacant",
-      "url": "https://www.defenseone.com/policy/2026/07/sen-lindsey-graham-dies-leaving-senate-seat-vacant/414719/",
-      "source": "defenseone.com",
-      "paywalled": false,
-      "topic": "Defense",
-      "published": "2026-07-12T12:37:23-04:00",
-      "is_today": true,
-      "summary": "Senator Lindsey Graham's death creates a vacant Senate seat, affecting legislative composition and balance of power."
-    },
-    {
-      "title": "Iranian official warns US after strikes: 'Keep your word or pay the price'",
-      "url": "https://thehill.com/policy/international/5964481-ghalibaf-warns-us-peace/",
+      "title": "The foods most likely to carry diarrhea-causing parasite cyclospora (and which are safe)",
+      "url": "https://thehill.com/policy/healthcare/5966336-foods-most-likely-to-carry-parasite-cyclospora-which-are-safe/",
       "source": "thehill.com",
       "paywalled": false,
-      "topic": "Defense",
-      "published": "2026-07-12T12:51:10+00:00",
+      "topic": "Healthcare",
+      "published": "2026-07-14T12:34:00+00:00",
       "is_today": true,
-      "summary": "Iranian official warns US to honor agreements or face consequences following military strikes."
+      "summary": "CDC identifies foods most likely to carry cyclospora parasite to inform public health guidance and food safety protocols."
     },
     {
-      "title": "US ambassador to NATO says Iran \u2018controlled by a bunch of crazy people\u2019",
-      "url": "https://thehill.com/policy/defense/5964623-iran-us-nato-tensions/",
+      "title": "Americans in Congo barred from immediately returning home amidst Ebola outbreak",
+      "url": "https://www.politico.com/news/2026/07/14/american-ebola-relief-workers-barred-from-returning-home-immediately-00997100",
+      "source": "rss.politico.com",
+      "paywalled": false,
+      "topic": "Healthcare",
+      "published": "2026-07-14T14:12:52-04:00",
+      "is_today": true,
+      "summary": "U.S. relief workers in Congo face travel restrictions during Ebola outbreak, raising questions about evacuation policy during health emergencies."
+    },
+    {
+      "title": "Senate Democrat requests investigation into whether RFK Jr. broke Hatch Act",
+      "url": "https://thehill.com/homenews/campaign/5967360-senate-democrat-requests-investigation-into-whether-rfk-jr-broke-hatch-act/",
       "source": "thehill.com",
       "paywalled": false,
-      "topic": "Defense",
-      "published": "2026-07-12T15:03:27+00:00",
+      "topic": "Healthcare",
+      "published": "2026-07-14T16:44:46+00:00",
       "is_today": true,
-      "summary": "US NATO ambassador characterizes Iranian leadership as unstable, escalating diplomatic rhetoric amid tensions."
+      "summary": "Senate Democrat requests investigation into RFK Jr. for potential Hatch Act violations during his federal role."
     },
     {
       "title": "Second US citizen diagnosed with Ebola transferred to Germany for treatment: WHO",
@@ -93,34 +123,34 @@
       "summary": "Aortic dissection is a life-threatening emergency condition involving separation of the aorta's inner layers."
     },
     {
-      "title": "You got the 'explosive' diarrhea parasite. Now what?",
-      "url": "https://thehill.com/policy/healthcare/5961707-you-got-the-explosive-diarrhea-parasite-now-what/",
-      "source": "thehill.com",
+      "title": "AI won\u2019t replace human claims processors, VA officials say, as Democrats worry over staffing levels",
+      "url": "https://www.govexec.com/technology/2026/07/ai-wont-replace-human-claims-processors-va-officials-say-democrats-worry-over-staffing-levels/414755/",
+      "source": "govexec.com",
       "paywalled": false,
-      "topic": "Healthcare",
-      "published": "2026-07-12T17:00:00+00:00",
+      "topic": "Appropriations",
+      "published": "2026-07-14T12:57:18-04:00",
       "is_today": true,
-      "summary": "Health authorities address treatment options for a parasitic infection causing severe diarrhea, raising public health concerns."
+      "summary": "VA officials assert AI will not replace human claims processors, while Democrats express concerns about staffing levels."
     },
     {
-      "title": "Preliminary findings reveal Graham died of \"aortic dissection\": Medical examiner",
-      "url": "https://thehill.com/homenews/senate/5964972-sen-lindsey-graham-death-cause/",
-      "source": "thehill.com",
+      "title": "Former civil servants and union request IG investigation into transfer of Education program to Labor",
+      "url": "https://www.govexec.com/oversight/2026/07/former-civil-servants-union-request-ig-investigation-transfer-education-program-labor/414757/",
+      "source": "govexec.com",
       "paywalled": false,
-      "topic": "Healthcare",
-      "published": "2026-07-12T22:00:06+00:00",
+      "topic": "Appropriations",
+      "published": "2026-07-14T14:40:47-04:00",
       "is_today": true,
-      "summary": "Medical examiner determines Senator Lindsey Graham died from aortic dissection, a serious cardiovascular condition."
+      "summary": "Former civil servants and unions request Inspector General investigation into Education Department program transfer to Labor Department."
     },
     {
-      "title": "As GOP Cries Fraud, Newsom Backs Medicaid Spending on Housing and Food",
-      "url": "https://kffhealthnews.org/medicaid/medicaid-social-services-gavin-newsom-california-republican-criticism/",
-      "source": "kffhealthnews.org",
+      "title": "ICE is pulling back on vehicle stops after 2 fatal shootings",
+      "url": "https://www.govexec.com/management/2026/07/ice-pulling-back-vehicle-stops-after-2-fatal-shootings/414759/",
+      "source": "govexec.com",
       "paywalled": false,
-      "topic": "Healthcare",
-      "published": "2026-07-13T09:00:00+00:00",
+      "topic": "Appropriations",
+      "published": "2026-07-14T15:43:24-04:00",
       "is_today": true,
-      "summary": "California Governor Newsom expands Medicaid coverage for housing and food assistance while Republicans question program costs."
+      "summary": "ICE reduces vehicle stop operations following two fatal shootings."
     },
     {
       "title": "The biggest story in the federal workforce cuts isn't how many left, it's who wasn't replaced",
@@ -153,34 +183,34 @@
       "summary": "Official ethics complaint filed against Duffy for using official social media to promote wife's book."
     },
     {
-      "title": "Sen. Lindsey Graham dies, leaving Senate seat vacant",
-      "url": "https://www.govexec.com/federal-news/2026/07/sen-lindsey-graham-dies-leaving-senate-seat-vacant/414718/",
-      "source": "govexec.com",
-      "paywalled": false,
-      "topic": "Appropriations",
-      "published": "2026-07-12T12:37:23-04:00",
-      "is_today": true,
-      "summary": "Senator Lindsey Graham died, creating a vacant South Carolina Senate seat that will require a replacement through state succession procedures."
-    },
-    {
-      "title": "This week: Graham\u2019s death, McConnell\u2019s recovery add to drama",
-      "url": "https://rollcall.com/2026/07/13/this-week-do-over-time/",
-      "source": "rollcall.com",
-      "paywalled": false,
-      "topic": "Appropriations",
-      "published": "2026-07-13T05:30:00+00:00",
-      "is_today": true,
-      "summary": "Senator Graham's death and McConnell's recovery create leadership uncertainty affecting Senate operations and legislative priorities."
-    },
-    {
-      "title": "The U.S.-Iran ceasefire grows more distant. And, Congress faces a consequential week",
-      "url": "https://www.npr.org/2026/07/13/g-s1-133269/up-first-newsletter-us-iran-war-congress-lindsey-graham-gaza-israel-hussam-abu-safiya",
+      "title": "U.S. to reinstate Hormuz blockade. And, states sue over Paramount-Warner deal",
+      "url": "https://www.npr.org/2026/07/14/g-s1-133443/up-first-newsletter-iran-strait-hormuz-maine-ice-shooting-paramount-warner-bros-merger",
       "source": "feeds.npr.org",
       "paywalled": false,
       "topic": "Foreign Policy",
-      "published": "2026-07-13T08:02:33-04:00",
+      "published": "2026-07-14T08:18:58-04:00",
       "is_today": true,
-      "summary": "U.S.-Iran ceasefire prospects diminish as Congress addresses Middle East conflicts involving Gaza and Israel."
+      "summary": "U.S. plans to reinstate blockade in Strait of Hormuz while states challenge Paramount-Warner Bros. merger."
+    },
+    {
+      "title": "US, Iran trade strikes after Trump blockade threat",
+      "url": "https://thehill.com/policy/defense/5967055-trump-us-iran-trade-strikes-naval-blockade-threat/",
+      "source": "thehill.com",
+      "paywalled": false,
+      "topic": "Foreign Policy",
+      "published": "2026-07-14T11:44:37+00:00",
+      "is_today": true,
+      "summary": "U.S. and Iran exchange strikes following Trump administration's threat of naval blockade."
+    },
+    {
+      "title": "The Pentagon Needs $1.5 Trillion",
+      "url": "https://foreignpolicy.com/2026/07/14/pentagon-defense-budget-trillion-congress-china-russia/",
+      "source": "foreignpolicy.com",
+      "paywalled": false,
+      "topic": "Foreign Policy",
+      "published": "2026-07-14T13:29:39+00:00",
+      "is_today": true,
+      "summary": "Pentagon requests $1.5 trillion budget to counter threats from China and Russia."
     },
     {
       "title": "Will Lula Win the Century?",
@@ -203,54 +233,34 @@
       "summary": "U.S. strikes Iran following Trump's announcement of renewed Strait of Hormuz blockade and tolls."
     },
     {
-      "title": "Iranian official warns US after strikes: 'Keep your word or pay the price'",
-      "url": "https://thehill.com/policy/international/5964481-ghalibaf-warns-us-peace/",
-      "source": "thehill.com",
-      "paywalled": false,
-      "topic": "Foreign Policy",
-      "published": "2026-07-12T12:51:10+00:00",
-      "is_today": true,
-      "summary": "Iranian official warns US to honor commitments or face consequences, escalating tensions over nuclear negotiations."
-    },
-    {
-      "title": "Toronto police looking for suspects after deadly shooting at festival",
-      "url": "https://www.npr.org/2026/07/12/g-s1-133229/toronto-shooting-salsa-festival",
-      "source": "feeds.npr.org",
-      "paywalled": false,
-      "topic": "Foreign Policy",
-      "published": "2026-07-12T13:22:29-04:00",
-      "is_today": true,
-      "summary": "Toronto police search for suspects following a deadly shooting at a salsa festival."
-    },
-    {
-      "title": "US ambassador to NATO says Iran \u2018controlled by a bunch of crazy people\u2019",
-      "url": "https://thehill.com/policy/defense/5964623-iran-us-nato-tensions/",
-      "source": "thehill.com",
-      "paywalled": false,
-      "topic": "Foreign Policy",
-      "published": "2026-07-12T15:03:27+00:00",
-      "is_today": true,
-      "summary": "US NATO ambassador characterizes Iran's leadership as unstable, heightening US-Iran diplomatic tensions."
-    },
-    {
-      "title": "PG&E faces $22M penalty for Mosquito Fire under proposed agreement",
-      "url": "https://www.utilitydive.com/news/pge-wildfire-california-puc-penalty-mosquito-fire/825041/",
+      "title": "Illinois governor signs laws on utility bill transparency, financial assistance",
+      "url": "https://www.utilitydive.com/news/illinois-governor-signs-laws-utility-bill-transparency-financial-aid/825150/",
       "source": "utilitydive.com",
       "paywalled": false,
       "topic": "Energy",
-      "published": "2026-07-13T09:43:07-04:00",
+      "published": "2026-07-14T08:59:12-04:00",
       "is_today": true,
-      "summary": "PG&E faces $22 million penalty from California regulators for the Mosquito Fire, addressing utility liability for wildfire damages."
+      "summary": "Illinois governor signed laws requiring utility bill transparency and establishing financial assistance programs for utility customers."
     },
     {
-      "title": "Texas PUC approves \u2018ride-through\u2019 rules for data centers",
-      "url": "https://www.utilitydive.com/news/texas-puc-approves-ride-through-rules-data-centers/825051/",
+      "title": "DHS proposes new critical infrastructure security framework",
+      "url": "https://www.utilitydive.com/news/dhs-proposes-new-critical-infrastructure-security-framework/825197/",
       "source": "utilitydive.com",
       "paywalled": false,
       "topic": "Energy",
-      "published": "2026-07-13T10:25:32-04:00",
+      "published": "2026-07-14T10:07:02-04:00",
       "is_today": true,
-      "summary": "Texas PUC approves ride-through rules allowing data centers to maintain operations during grid disruptions, affecting grid stability requirements."
+      "summary": "DHS proposed a new security framework to protect critical infrastructure from cyber and physical threats."
+    },
+    {
+      "title": "Utilities requested $9.2B in rate hikes in Q2: PowerLines",
+      "url": "https://www.utilitydive.com/news/utility-rate-hike-proposals-affordability-powerlines/825167/",
+      "source": "utilitydive.com",
+      "paywalled": false,
+      "topic": "Energy",
+      "published": "2026-07-14T10:11:06-04:00",
+      "is_today": true,
+      "summary": "Utilities requested $9.2 billion in rate increases during the second quarter, raising affordability concerns."
     },
     {
       "title": "Trump: US to become 'the guardian' of the Strait of Hormuz",
@@ -263,54 +273,24 @@
       "summary": "Trump announces US commitment to safeguard the Strait of Hormuz, a critical global oil shipping chokepoint affecting energy security."
     },
     {
-      "title": "Progressives look to recharge the Green New Deal for the AI era",
-      "url": "https://www.politico.com/news/2026/07/12/progressive-democrats-green-new-deal-00989390",
-      "source": "rss.politico.com",
+      "title": "How do young people feel about AI? 7 teens weigh in",
+      "url": "https://www.npr.org/2026/07/14/nx-s1-5863025/teens-artificial-intelligence-ai-school",
+      "source": "feeds.npr.org",
       "paywalled": false,
-      "topic": "Energy",
-      "published": "2026-07-12T13:00:00-04:00",
+      "topic": "Criminal Justice",
+      "published": "2026-07-14T16:00:00-04:00",
       "is_today": true,
-      "summary": "Progressive Democrats are updating the Green New Deal framework to address artificial intelligence's energy demands and climate impacts."
+      "summary": "Seven teenagers discuss their perspectives on artificial intelligence and its impact on education and daily life."
     },
     {
-      "title": "Hochul: \u2018Do not question my credentials\u2019 on climate, clean energy",
-      "url": "https://www.politico.com/news/2026/07/13/hochul-climate-change-clean-energy-goals-00994234",
-      "source": "rss.politico.com",
+      "title": "American AI is expensive. Some startups are turning to cheap Chinese models",
+      "url": "https://www.npr.org/2026/07/15/nx-s1-5886476/startups-cheap-chinese-ai-models",
+      "source": "feeds.npr.org",
       "paywalled": false,
-      "topic": "Energy",
-      "published": "2026-07-13T04:01:00-04:00",
+      "topic": "Criminal Justice",
+      "published": "2026-07-15T05:00:00-04:00",
       "is_today": true,
-      "summary": "New York Governor Hochul defended her administration's record on climate and clean energy policy amid Democratic criticism."
-    },
-    {
-      "title": "Every customer you can\u2019t enroll is a kilowatt you can\u2019t dispatch",
-      "url": "https://www.utilitydive.com/spons/every-customer-you-cant-enroll-is-a-kilowatt-you-cant-dispatch/824174/",
-      "source": "utilitydive.com",
-      "paywalled": false,
-      "topic": "Energy",
-      "published": "2026-07-13T05:00:00-04:00",
-      "is_today": true,
-      "summary": "Utility customer enrollment rates directly impact grid capacity and energy dispatch capabilities for power systems."
-    },
-    {
-      "title": "OPINION: Poor Southern states have a brain drain problem. Public universities can and should be doing more to help",
-      "url": "https://hechingerreport.org/opinion-southern-states-have-a-brain-drain-problem-public-universities-can-and-should-be-doing-more-to-help/",
-      "source": "hechingerreport.org",
-      "paywalled": false,
-      "topic": "Education",
-      "published": "2026-07-13T05:00:00+00:00",
-      "is_today": false,
-      "summary": "Southern public universities could better address regional brain drain by retaining educated graduates through improved economic opportunities and community engagement."
-    },
-    {
-      "title": "Teachers save time with AI. Their students may pay the price",
-      "url": "https://hechingerreport.org/proof-points-ai-in-teaching/",
-      "source": "hechingerreport.org",
-      "paywalled": false,
-      "topic": "Education",
-      "published": "2026-07-13T10:00:00+00:00",
-      "is_today": false,
-      "summary": "Teachers using AI tools save time on administrative tasks, but potential impacts on student learning outcomes and educational quality require further study."
+      "summary": "U.S. startups are adopting lower-cost Chinese artificial intelligence models to reduce expenses amid high domestic AI development costs."
     },
     {
       "title": "'The Trojan Teddy Bear': The promise and peril of childhood in the age of AI",
@@ -319,18 +299,38 @@
       "paywalled": false,
       "topic": "Criminal Justice",
       "published": "2026-07-14T06:30:00-04:00",
-      "is_today": true,
-      "summary": "AI-enabled children's toys offer educational benefits but raise privacy and developmental concerns, prompting potential regulatory scrutiny."
+      "is_today": false,
+      "summary": "AI-enabled children's products offer educational benefits while raising privacy and developmental concerns requiring policy consideration."
     },
     {
-      "title": "Sen. Richard Blumenthal talks about Lindsey Graham's legacy",
-      "url": "https://www.npr.org/2026/07/13/nx-s1-5890884/sen-richard-blumenthal-talks-about-lindsey-grahams-legacy",
+      "title": "Investigative journalist reports on the abuse inside ICE's largest detention facility",
+      "url": "https://www.npr.org/2026/07/14/nx-s1-5893335/investigative-journalist-reports-on-the-abuse-inside-ices-largest-detention-facility",
       "source": "feeds.npr.org",
       "paywalled": false,
       "topic": "Immigration",
-      "published": "2026-07-13T07:08:53-04:00",
+      "published": "2026-07-14T11:41:07-04:00",
       "is_today": true,
-      "summary": "Sen. Blumenthal discusses former Sen. Lindsey Graham's Senate career and legislative impact."
+      "summary": "An investigative journalist documented abuse allegations at ICE's largest detention facility, raising concerns about detainee treatment and federal oversight."
+    },
+    {
+      "title": "In the aftermath of deadly shootings, ICE pauses most traffic stops",
+      "url": "https://www.npr.org/2026/07/14/nx-s1-5893456/ice-vehicle-biddeford-houston",
+      "source": "feeds.npr.org",
+      "paywalled": false,
+      "topic": "Immigration",
+      "published": "2026-07-14T15:54:53-04:00",
+      "is_today": true,
+      "summary": "ICE suspended most traffic stops following deadly shootings, signaling a shift in enforcement priorities and operational procedures."
+    },
+    {
+      "title": "Gov. Hochul orders a pause on data centers in New York for up to a year",
+      "url": "https://www.npr.org/2026/07/14/nx-s1-5893396/gov-hochul-orders-a-pause-on-data-centers-in-new-york-for-up-to-a-year",
+      "source": "feeds.npr.org",
+      "paywalled": false,
+      "topic": "Immigration",
+      "published": "2026-07-14T16:24:20-04:00",
+      "is_today": true,
+      "summary": "New York Governor Hochul imposed a one-year moratorium on new data centers, citing concerns about energy consumption and environmental impact."
     },
     {
       "title": "How Lindsey Graham tried to stay 'relevant'",
@@ -353,14 +353,34 @@
       "summary": "Sen. Graham's foreign policy positions significantly shaped federal defense and international relations decisions."
     },
     {
-      "title": "Former Senator Jeff Flake remembers his colleague and friend Lindsay Graham",
-      "url": "https://www.npr.org/2026/07/12/nx-s1-5890923/former-senator-jeff-flake-remembers-his-colleague-and-friend-lindsay-graham",
-      "source": "feeds.npr.org",
+      "title": "AI won\u2019t replace human claims processors, VA officials say, as Democrats worry over staffing levels",
+      "url": "https://www.govexec.com/technology/2026/07/ai-wont-replace-human-claims-processors-va-officials-say-democrats-worry-over-staffing-levels/414755/",
+      "source": "govexec.com",
       "paywalled": false,
-      "topic": "Immigration",
-      "published": "2026-07-12T17:08:19-04:00",
+      "topic": "Tax & Finance",
+      "published": "2026-07-14T12:57:18-04:00",
       "is_today": true,
-      "summary": "Former Senator Jeff Flake eulogized deceased colleague Senator Lindsey Graham."
+      "summary": "VA officials state AI will not replace human claims processors, while Democrats express concerns about staffing adequacy."
+    },
+    {
+      "title": "Former civil servants and union request IG investigation into transfer of Education program to Labor",
+      "url": "https://www.govexec.com/oversight/2026/07/former-civil-servants-union-request-ig-investigation-transfer-education-program-labor/414757/",
+      "source": "govexec.com",
+      "paywalled": false,
+      "topic": "Tax & Finance",
+      "published": "2026-07-14T14:40:47-04:00",
+      "is_today": true,
+      "summary": "Former civil servants and unions request Inspector General investigation into Education Department program transfer to Labor Department."
+    },
+    {
+      "title": "ICE is pulling back on vehicle stops after 2 fatal shootings",
+      "url": "https://www.govexec.com/management/2026/07/ice-pulling-back-vehicle-stops-after-2-fatal-shootings/414759/",
+      "source": "govexec.com",
+      "paywalled": false,
+      "topic": "Tax & Finance",
+      "published": "2026-07-14T15:43:24-04:00",
+      "is_today": true,
+      "summary": "ICE reduces vehicle stop operations following two fatal shooting incidents involving law enforcement."
     },
     {
       "title": "The biggest story in the federal workforce cuts isn't how many left, it's who wasn't replaced",
@@ -393,14 +413,34 @@
       "summary": "Federal official faces ethics complaint for using official social media account to promote wife's book, raising questions about proper use of government channels."
     },
     {
-      "title": "Sen. Lindsey Graham dies, leaving Senate seat vacant",
-      "url": "https://www.govexec.com/federal-news/2026/07/sen-lindsey-graham-dies-leaving-senate-seat-vacant/414718/",
-      "source": "govexec.com",
+      "title": "What to expect when you\u2019re not expecting a clear Senate winner",
+      "url": "https://rollcall.com/2026/07/14/what-to-expect-when-youre-not-expecting-a-clear-senate-winner/",
+      "source": "rollcall.com",
       "paywalled": false,
-      "topic": "Tax & Finance",
-      "published": "2026-07-12T12:37:23-04:00",
+      "topic": "Elections",
+      "published": "2026-07-14T12:20:11+00:00",
       "is_today": true,
-      "summary": "Senator Lindsey Graham's death creates a vacant Senate seat, requiring South Carolina's governor to appoint a successor or trigger a special election."
+      "summary": "Unclear frontrunner in Senate race creates uncertainty about chamber control and legislative priorities."
+    },
+    {
+      "title": "Mace says split with Trump 'may have ended my political career'",
+      "url": "https://thehill.com/homenews/house/5967111-nancy-mace-donald-trump-influence-political-career/",
+      "source": "thehill.com",
+      "paywalled": false,
+      "topic": "Elections",
+      "published": "2026-07-14T13:17:09+00:00",
+      "is_today": true,
+      "summary": "Rep. Nancy Mace says her public disagreement with Trump may damage her political career."
+    },
+    {
+      "title": "Amie Parnes ranks the GOP White House contenders",
+      "url": "https://thehill.com/homenews/campaign/fight-for-2028/5967142-gop-contenders-2028-rankings/",
+      "source": "thehill.com",
+      "paywalled": false,
+      "topic": "Elections",
+      "published": "2026-07-14T13:22:03+00:00",
+      "is_today": true,
+      "summary": "Analyst ranks Republican 2028 presidential candidates based on viability and support."
     },
     {
       "title": "How to serve up a year-old bill",
@@ -433,24 +473,14 @@
       "summary": "House Republicans meet with Congressional Budget Office chief to discuss reconciliation bill cost estimates."
     },
     {
-      "title": "Graham\u2019s death upends primary season further",
-      "url": "https://rollcall.com/2026/07/12/grahams-death-upends-primary-season-further/",
-      "source": "rollcall.com",
+      "title": "Mike Johnson Pushes Reconciliation Bill to Fund Defense, Agriculture",
+      "url": "https://farmpolicynews.illinois.edu/2026/07/mike-johnson-pushes-reconciliation-bill-to-fund-defense-agriculture/",
+      "source": "farmpolicynews.illinois.edu",
       "paywalled": false,
-      "topic": "Elections",
-      "published": "2026-07-12T11:15:24+00:00",
+      "topic": "Agriculture",
+      "published": "2026-07-14T22:11:32+00:00",
       "is_today": true,
-      "summary": "Graham's death disrupts Senate primary races and creates complications for candidate recruitment in the affected seat."
-    },
-    {
-      "title": "Ron Johnson \u2018prepared\u2019 to take over Senate Budget Committee after Graham\u2019s death",
-      "url": "https://www.politico.com/news/2026/07/12/ron-johnson-prepared-to-take-over-senate-budget-committee-after-grahams-death-00994167",
-      "source": "rss.politico.com",
-      "paywalled": false,
-      "topic": "Elections",
-      "published": "2026-07-12T11:49:38-04:00",
-      "is_today": true,
-      "summary": "Senator Ron Johnson indicates readiness to assume leadership of the Senate Budget Committee following Graham's death."
+      "summary": "House Speaker Mike Johnson advances a reconciliation bill to fund defense and agriculture spending through the budget process."
     },
     {
       "title": "USDA Revises Beef Export Data, Lowers Sales by 90%",
@@ -459,18 +489,38 @@
       "paywalled": false,
       "topic": "Agriculture",
       "published": "2026-07-13T19:01:41+00:00",
-      "is_today": true,
-      "summary": "USDA significantly downward-revised beef export sales figures by 90 percent, affecting trade policy assessments and agricultural economic forecasts."
+      "is_today": false,
+      "summary": "The USDA revised beef export data downward by 90%, significantly lowering previously reported sales figures."
     },
     {
-      "title": "FTC Settlement Secures Right to Repair for Farmers",
-      "url": "https://farmpolicynews.illinois.edu/2026/07/ftc-settlement-secures-right-to-repair-for-farmers/",
-      "source": "farmpolicynews.illinois.edu",
+      "title": "Treasury sanctions First VPN Service, others for abetting ransomware gangs",
+      "url": "https://cyberscoop.com/us-sanctions-first-vpn-ransomware/",
+      "source": "cyberscoop.com",
       "paywalled": false,
-      "topic": "Agriculture",
-      "published": "2026-07-13T00:41:20+00:00",
-      "is_today": false,
-      "summary": "FTC settlement grants farmers legal right to repair equipment, addressing agricultural equipment accessibility and competition policy concerns."
+      "topic": "Cybersecurity",
+      "published": "2026-07-14T15:41:19+00:00",
+      "is_today": true,
+      "summary": "Treasury imposed sanctions on a VPN service for facilitating ransomware operations, marking the first VPN provider targeted under such penalties."
+    },
+    {
+      "title": "Microsoft Patches a Record 570 Security Flaws",
+      "url": "https://krebsonsecurity.com/2026/07/microsoft-patches-a-record-570-security-flaws/",
+      "source": "krebsonsecurity.com",
+      "paywalled": false,
+      "topic": "Cybersecurity",
+      "published": "2026-07-14T19:22:42+00:00",
+      "is_today": true,
+      "summary": "Microsoft released patches for 570 security vulnerabilities in a single update, setting a new record for the company's patch releases."
+    },
+    {
+      "title": "Microsoft discloses \u2018the mother of all\u2019 vulnerability loads, tripling June\u2019s previous record",
+      "url": "https://cyberscoop.com/microsoft-patch-tuesday-july-2026/",
+      "source": "cyberscoop.com",
+      "paywalled": false,
+      "topic": "Cybersecurity",
+      "published": "2026-07-14T20:05:46+00:00",
+      "is_today": true,
+      "summary": "Microsoft disclosed a record number of vulnerabilities in July 2026, tripling the previous monthly record from June."
     },
     {
       "title": "Lessons Learned from CISA\u2019s Recent GitHub Leak",
@@ -503,14 +553,34 @@
       "summary": "Europe and UK imposed sanctions on Russia's Turla hacking group for espionage and destructive cyberattacks against critical infrastructure."
     },
     {
-      "title": "AI-generated code has made security debt a governance problem",
-      "url": "https://cyberscoop.com/governing-ai-code-security-risks-op-ed/",
-      "source": "cyberscoop.com",
+      "title": "Sen. Andy Kim floats tech-backed alternative to app store age checks",
+      "url": "https://www.politico.com/live-updates/2026/07/14/congress/sen-andy-kim-floats-tech-backed-alternative-to-app-store-age-checks-00997007",
+      "source": "rss.politico.com",
       "paywalled": false,
-      "topic": "Cybersecurity",
-      "published": "2026-07-13T09:00:00+00:00",
+      "topic": "Technology",
+      "published": "2026-07-14T13:51:34-04:00",
       "is_today": true,
-      "summary": "AI-generated code's security vulnerabilities are creating governance challenges that require federal policy attention to manage systemic cybersecurity risks."
+      "summary": "Sen. Andy Kim proposed a technology-based alternative to app store age verification requirements for children's online safety."
+    },
+    {
+      "title": "Flaunt power banks recalled after 2 burn injuries, fire risk",
+      "url": "https://thehill.com/policy/technology/5966789-flaunt-power-banks-recalled-fire-risk-injuries/",
+      "source": "thehill.com",
+      "paywalled": false,
+      "topic": "Technology",
+      "published": "2026-07-14T15:34:32+00:00",
+      "is_today": true,
+      "summary": "Flaunt power banks were recalled after causing two burn injuries and fire hazards, triggering consumer safety action."
+    },
+    {
+      "title": "AI could lead to large-scale job displacement, say Nobel laureates",
+      "url": "https://thehill.com/policy/technology/5967512-ai-transformation-job-displacement/",
+      "source": "thehill.com",
+      "paywalled": false,
+      "topic": "Technology",
+      "published": "2026-07-14T15:37:07+00:00",
+      "is_today": true,
+      "summary": "Nobel laureates warn that artificial intelligence could cause large-scale job displacement, raising concerns for workforce policy."
     },
     {
       "title": "Warren rips Senate leaders over crypto bill's lack of ethics restrictions",
@@ -541,36 +611,6 @@
       "published": "2026-07-13T15:56:21+00:00",
       "is_today": true,
       "summary": "Trump called on the Senate to pass a crypto clarity bill in tribute to deceased Senator Lindsey Graham."
-    },
-    {
-      "title": "Data centers become flash point in gubernatorial races",
-      "url": "https://thehill.com/policy/technology/5963542-data-centers-become-flashpoint-in-gubernatorial-races/",
-      "source": "thehill.com",
-      "paywalled": false,
-      "topic": "Technology",
-      "published": "2026-07-12T16:00:00+00:00",
-      "is_today": true,
-      "summary": "Data center development has become a key campaign issue in gubernatorial elections due to concerns about energy consumption and local infrastructure."
-    },
-    {
-      "title": "Russia goes to Japan for tech in Ukraine war: Report",
-      "url": "https://thehill.com/policy/technology/5964924-russia-japan-tech-spying-ukraine/",
-      "source": "thehill.com",
-      "paywalled": false,
-      "topic": "Technology",
-      "published": "2026-07-12T20:59:49+00:00",
-      "is_today": true,
-      "summary": "Russia has reportedly acquired Japanese technology for use in its Ukraine military operations, raising concerns about technology transfer to adversaries."
-    },
-    {
-      "title": "Prediction market users spend nearly $200 million on midterm election bets: Report",
-      "url": "https://thehill.com/policy/technology/5965133-kalshi-polymarket-midterm-predictions/",
-      "source": "thehill.com",
-      "paywalled": false,
-      "topic": "Technology",
-      "published": "2026-07-13T02:31:09+00:00",
-      "is_today": true,
-      "summary": "Prediction market platforms facilitated nearly $200 million in midterm election bets, highlighting growing use of such platforms for political wagering."
     }
   ]
 }
