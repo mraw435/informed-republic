@@ -1,7 +1,37 @@
 {
-  "last_updated": "2026-07-18T11:01:06Z",
-  "story_count": 60,
+  "last_updated": "2026-07-19T11:01:04Z",
+  "story_count": 47,
   "stories": [
+    {
+      "title": "Iran threatens wider war if US strikes persist: 'No political border' will be safe",
+      "url": "https://thehill.com/policy/international/5976071-iran-new-threats-us-strikes-infrastructure-energy/",
+      "source": "thehill.com",
+      "paywalled": false,
+      "topic": "Defense",
+      "published": "2026-07-18T14:18:42+00:00",
+      "is_today": true,
+      "summary": "Iran threatened to expand military operations against US targets if American strikes continue, escalating regional tensions."
+    },
+    {
+      "title": "Soldier, girlfriend allegedly starved child and dogs to death",
+      "url": "https://www.militarytimes.com/news/your-army/2026/07/18/soldier-girlfriend-allegedly-starved-child-and-dogs-to-death/",
+      "source": "militarytimes.com",
+      "paywalled": false,
+      "topic": "Defense",
+      "published": "2026-07-18T15:06:59+00:00",
+      "is_today": true,
+      "summary": "A soldier and his girlfriend face charges for allegedly starving a child and dogs to death."
+    },
+    {
+      "title": "CENTCOM confirms 2 US service members killed in Jordan, another missing",
+      "url": "https://thehill.com/policy/defense/5976260-us-military-2-killed-jordan-iran-war/",
+      "source": "thehill.com",
+      "paywalled": false,
+      "topic": "Defense",
+      "published": "2026-07-18T18:00:44+00:00",
+      "is_today": true,
+      "summary": "Two US service members were killed and one is missing in Jordan following Iranian military attacks."
+    },
     {
       "title": "Wars shift focus from jets to weapons at giant Farnborough Airshow",
       "url": "https://www.defensenews.com/global/europe/2026/07/17/wars-shift-focus-from-jets-to-weapons-at-giant-farnborough-airshow/",
@@ -33,24 +63,34 @@
       "summary": "Trump administration launches global campaign against domestic 'radical left terrorism' through national security directive."
     },
     {
-      "title": "Hegseth Hosts Iraqi Prime Minister at Pentagon",
-      "url": "https://www.war.gov/News/News-Stories/Article/Article/4545548/hegseth-hosts-iraqi-prime-minister-at-pentagon/",
-      "source": "defense.gov",
+      "title": "GLP-1 insurance change impacts millions of Americans: What to know, how to tell if you're covered",
+      "url": "https://thehill.com/policy/healthcare/5972729-glp-1-insurance-change-impacts-millions-of-americans-what-to-know-how-to-tell-if-youre-covered/",
+      "source": "thehill.com",
       "paywalled": false,
-      "topic": "Defense",
-      "published": "2026-07-16T11:30:00+00:00",
+      "topic": "Healthcare",
+      "published": "2026-07-18T12:50:00+00:00",
       "is_today": true,
-      "summary": "Defense Secretary Hegseth met with Iraq's Prime Minister at the Pentagon to discuss bilateral military cooperation."
+      "summary": "Insurance coverage changes for GLP-1 weight-loss and diabetes drugs affect millions of Americans' access and out-of-pocket costs."
     },
     {
-      "title": "Space Force can\u2019t figure out what personnel it needs for its missions, GAO says",
-      "url": "https://www.defenseone.com/threats/2026/07/space-force-cant-figure-out-what-personnel-it-needs-its-missions-gao-says/414814/",
-      "source": "defenseone.com",
+      "title": "Could the 'explosive diarrhea' parasite affect grocery prices?",
+      "url": "https://thehill.com/business/5975926-explosive-diarrhea-parasite-cyclospora-outbreak-grocery-prices/",
+      "source": "thehill.com",
       "paywalled": false,
-      "topic": "Defense",
-      "published": "2026-07-16T12:30:28-04:00",
+      "topic": "Healthcare",
+      "published": "2026-07-18T14:41:48+00:00",
       "is_today": true,
-      "summary": "GAO reports Space Force lacks clear personnel requirements planning for its operational missions."
+      "summary": "Cyclospora parasite outbreak in produce could increase grocery prices and food safety costs for consumers and retailers."
+    },
+    {
+      "title": "Red states reject Trump\u2019s shift on overdose prevention",
+      "url": "https://www.politico.com/news/2026/07/18/overdose-drugs-kennedy-trumps-harm-reduction-overdose-01004038",
+      "source": "rss.politico.com",
+      "paywalled": false,
+      "topic": "Healthcare",
+      "published": "2026-07-18T15:00:00-04:00",
+      "is_today": true,
+      "summary": "Republican-led states resist Trump administration's harm reduction approach to overdose prevention, creating federal-state policy conflict."
     },
     {
       "title": "Americans who responded to Ebola outbreak are quarantined in Kenya, despite court order",
@@ -83,44 +123,14 @@
       "summary": ""
     },
     {
-      "title": "Can vinegar kill cyclospora? How to wash produce amid parasite outbreak",
-      "url": "https://thehill.com/policy/healthcare/5970504-can-vinegar-kill-cyclospora-how-to-wash-produce-amid-parasite-outbreak/",
-      "source": "thehill.com",
-      "paywalled": false,
-      "topic": "Healthcare",
-      "published": "2026-07-16T11:35:00+00:00",
-      "is_today": true,
-      "summary": "Cyclospora parasite outbreak prompts FDA guidance on produce washing methods to prevent foodborne illness transmission."
-    },
-    {
-      "title": "FDA approves first daily pill to drastically lower cholesterol levels",
-      "url": "https://thehill.com/policy/healthcare/5972394-fda-cholesterol-pill-lipfendra/",
-      "source": "thehill.com",
-      "paywalled": false,
-      "topic": "Healthcare",
-      "published": "2026-07-16T18:56:50+00:00",
-      "is_today": true,
-      "summary": "FDA approved first daily oral medication significantly reducing cholesterol levels, expanding treatment options for cardiovascular disease prevention."
-    },
-    {
-      "title": "Trump\u2019s CDC Nominee Praises Vaccines, Without Vowing Independence From Kennedy",
-      "url": "https://kffhealthnews.org/public-health/cdc-director-nominee-erica-schwartz-confirmation-hearing-vaccines-rfk-kennedy/",
-      "source": "kffhealthnews.org",
-      "paywalled": false,
-      "topic": "Healthcare",
-      "published": "2026-07-16T20:22:23+00:00",
-      "is_today": true,
-      "summary": "Trump's CDC nominee expressed support for vaccines during confirmation but did not commit to independence from RFK Jr.'s influence."
-    },
-    {
       "title": "Trump stretches declassified China intelligence into broader 2020 election claims",
       "url": "https://www.govexec.com/management/2026/07/trump-stretches-declassified-china-intelligence-broader-2020-election-claims/414842/",
       "source": "govexec.com",
       "paywalled": false,
       "topic": "Appropriations",
       "published": "2026-07-17T09:20:00-04:00",
-      "is_today": true,
-      "summary": "Trump expanded declassified China intelligence into broader 2020 election claims, affecting national security classification policy."
+      "is_today": false,
+      "summary": "Trump used declassified China intelligence regarding 2020 election interference to support broader election-related claims."
     },
     {
       "title": "Pentagon closes cyber apprenticeship applications early after receiving over 15,000",
@@ -129,8 +139,8 @@
       "paywalled": false,
       "topic": "Appropriations",
       "published": "2026-07-17T09:22:46-04:00",
-      "is_today": true,
-      "summary": "Pentagon closed cyber apprenticeship applications early after exceeding 15,000 submissions, indicating strong federal tech workforce demand."
+      "is_today": false,
+      "summary": "Pentagon closed cyber apprenticeship applications early after exceeding capacity with over 15,000 applications received."
     },
     {
       "title": "Labor nominee defends administration\u2019s strategy for shifting Education Department work",
@@ -139,58 +149,38 @@
       "paywalled": false,
       "topic": "Appropriations",
       "published": "2026-07-17T09:38:08-04:00",
-      "is_today": true,
-      "summary": "Labor nominee defended transferring Education Department functions to other agencies as part of administration restructuring."
+      "is_today": false,
+      "summary": "Labor nominee defended the administration's plan to transfer Education Department responsibilities to other agencies."
     },
     {
-      "title": "DHS plans \u2018all-out war\u2019 on immigration scammers as fraud complaints double",
-      "url": "https://www.govexec.com/management/2026/07/dhs-plans-all-out-war-immigration-scammers-fraud-complaints-double/414818/",
-      "source": "govexec.com",
-      "paywalled": false,
-      "topic": "Appropriations",
-      "published": "2026-07-16T12:51:35-04:00",
-      "is_today": true,
-      "summary": "DHS escalates enforcement against immigration scammers as fraud complaints double, addressing increasing exploitation of immigration system."
-    },
-    {
-      "title": "Why Social Security's uncertainty is becoming a federal workforce issue",
-      "url": "https://www.govexec.com/pay-benefits/2026/07/why-social-securitys-uncertainty-becoming-federal-workforce-issue/414812/",
-      "source": "govexec.com",
-      "paywalled": false,
-      "topic": "Appropriations",
-      "published": "2026-07-16T15:00:00-04:00",
-      "is_today": true,
-      "summary": "Social Security's financial uncertainty is affecting federal workforce recruitment and retention as employees worry about retirement benefits."
-    },
-    {
-      "title": "A year after State layoffs, ex-feds say U.S. is paying the price in Iran and Ebola crises",
-      "url": "https://www.govexec.com/workforce/2026/07/year-after-state-layoffs-exfeds-iran-ebola-crises/414822/",
-      "source": "govexec.com",
-      "paywalled": false,
-      "topic": "Appropriations",
-      "published": "2026-07-16T15:35:33-04:00",
-      "is_today": true,
-      "summary": "Former State Department employees cite staffing cuts as contributing factor to U.S. policy challenges amid Iran and Ebola crises."
-    },
-    {
-      "title": "U.S. strikes bridges in Iran; Tehran targets U.S. bases in the Gulf",
-      "url": "https://www.npr.org/2026/07/17/g-s1-134158/us-iran-war-updates",
+      "title": "Why is it so hard for the U.S. to win wars?",
+      "url": "https://www.npr.org/2026/07/18/g-s1-134037/why-is-it-so-hard-for-the-u-s-to-win-wars",
       "source": "feeds.npr.org",
       "paywalled": false,
       "topic": "Foreign Policy",
-      "published": "2026-07-17T07:13:58-04:00",
+      "published": "2026-07-18T08:45:13-04:00",
       "is_today": true,
-      "summary": "U.S. military strikes Iranian bridges while Iran retaliates by targeting U.S. bases in the Gulf, escalating direct military confrontation."
+      "summary": "Analysis examines structural challenges affecting U.S. military effectiveness in recent conflicts, with implications for defense policy."
     },
     {
-      "title": "Pakistani forces kill 24 militants in border raids near Afghanistan",
-      "url": "https://www.npr.org/2026/07/17/g-s1-134175/pakistani-forces-kill-24-militants-in-border-raids-near-afghanistan",
+      "title": "Trump amplifies China interference claim: 'Unprecedented election security nightmare'",
+      "url": "https://thehill.com/homenews/administration/5975954-donald-trump-china-interference-election-claims/",
+      "source": "thehill.com",
+      "paywalled": false,
+      "topic": "Foreign Policy",
+      "published": "2026-07-18T12:05:09+00:00",
+      "is_today": true,
+      "summary": "Trump claims China interference represents unprecedented election security threat, raising national security policy concerns."
+    },
+    {
+      "title": "U.S. launches new airstrikes to 'punish' Iran for troop deaths",
+      "url": "https://www.npr.org/2026/07/18/nx-s1-5899039/us-troops-killed-missing-iran-jordan",
       "source": "feeds.npr.org",
       "paywalled": false,
       "topic": "Foreign Policy",
-      "published": "2026-07-17T09:15:49-04:00",
+      "published": "2026-07-18T14:14:11-04:00",
       "is_today": true,
-      "summary": "Pakistani military killed 24 militants in border operations near Afghanistan as part of ongoing counterterrorism efforts."
+      "summary": "U.S. launches airstrikes against Iran following deaths of American service members in Jordan, escalating regional conflict."
     },
     {
       "title": "China dismisses \u2018groundless\u2019 Trump election interference claim",
@@ -203,24 +193,34 @@
       "summary": "China denies Trump's allegations of election interference, rejecting the claims as unfounded."
     },
     {
+      "title": "Lake Mead expected to drop nearly 33 feet by June 2028, and that's not even the worst-case scenario",
+      "url": "https://thehill.com/policy/energy-environment/5976049-lake-mead-water-supply-shrinkage-june-2028-climate-change/",
+      "source": "thehill.com",
+      "paywalled": false,
+      "topic": "Energy",
+      "published": "2026-07-18T14:47:05+00:00",
+      "is_today": true,
+      "summary": "Lake Mead water levels are projected to drop 33 feet by June 2028, threatening water supply reliability across the Southwest."
+    },
+    {
+      "title": "Canadian wildfire smoke triggers air quality alerts for millions: What to know",
+      "url": "https://thehill.com/policy/energy-environment/5976386-wildfire-smoke-air-quality-alerts/",
+      "source": "thehill.com",
+      "paywalled": false,
+      "topic": "Energy",
+      "published": "2026-07-18T21:26:38+00:00",
+      "is_today": true,
+      "summary": "Canadian wildfires are triggering air quality alerts affecting millions in the U.S., raising cross-border environmental policy concerns."
+    },
+    {
       "title": "PJM capacity auction results compound \u2018alarm bells\u2019: FERC Chairman Swett",
       "url": "https://www.utilitydive.com/news/pjm-capacity-auction-governance-ferc-swett/825508/",
       "source": "utilitydive.com",
       "paywalled": false,
       "topic": "Energy",
       "published": "2026-07-17T08:44:15-04:00",
-      "is_today": true,
-      "summary": "PJM capacity auction results raised concerns for FERC Chairman Swett, signaling potential governance issues affecting federal electricity market policy."
-    },
-    {
-      "title": "AI data center growth could force US utilities to rethink generation plans, BofA says",
-      "url": "https://www.utilitydive.com/news/ai-data-center-growth-utilities-generation-plans/825541/",
-      "source": "utilitydive.com",
-      "paywalled": false,
-      "topic": "Energy",
-      "published": "2026-07-17T10:45:39-04:00",
-      "is_today": true,
-      "summary": "Rapid AI data center expansion could require U.S. utilities to substantially increase generation capacity, affecting federal energy infrastructure planning."
+      "is_today": false,
+      "summary": "PJM's capacity auction results have prompted FERC Chairman concerns about electricity market adequacy and governance in the Mid-Atlantic region."
     },
     {
       "title": "Texas flash floods leave at least 2 dead in region devastated a year ago",
@@ -233,34 +233,14 @@
       "summary": "Texas flash flooding killed at least two people in an area hit by severe weather the previous year."
     },
     {
-      "title": "What data center developers need to know about FERC\u2019s large load directives",
-      "url": "https://www.utilitydive.com/news/data-center-interconnection-ferc-large-load-show-cause/824501/",
-      "source": "utilitydive.com",
+      "title": "Engineers develop a bird-scale flapping robot for aerial-aquatic travel",
+      "url": "https://www.npr.org/2026/07/18/nx-s1-5885040-e1/engineers-develop-a-bird-scale-flapping-robot-for-aerial-aquatic-travel",
+      "source": "feeds.npr.org",
       "paywalled": false,
-      "topic": "Energy",
-      "published": "2026-07-16T12:30:45-04:00",
+      "topic": "Criminal Justice",
+      "published": "2026-07-18T07:42:13-04:00",
       "is_today": true,
-      "summary": "FERC issued directives requiring data center developers to address interconnection challenges, shaping federal standards for large power consumers connecting to the grid."
-    },
-    {
-      "title": "Trump officials pitch new solution to student debt problem",
-      "url": "https://www.politico.com/news/2026/07/16/student-loans-small-business-administration-00995063",
-      "source": "rss.politico.com",
-      "paywalled": false,
-      "topic": "Education",
-      "published": "2026-07-16T09:00:00-04:00",
-      "is_today": false,
-      "summary": "Trump administration officials propose using Small Business Administration programs to address student debt, potentially affecting federal education finance policy."
-    },
-    {
-      "title": "Why are so many kindergartners chronically absent?",
-      "url": "https://hechingerreport.org/why-are-so-many-kindergartners-chronically-absent/",
-      "source": "hechingerreport.org",
-      "paywalled": false,
-      "topic": "Education",
-      "published": "2026-07-17T05:00:00+00:00",
-      "is_today": false,
-      "summary": "Rising chronic absenteeism among kindergarteners raises concerns about early education access and potential impacts on federal education funding formulas."
+      "summary": "Engineers created a bird-sized flapping robot capable of both aerial and aquatic movement, advancing robotics technology for potential surveillance and research applications."
     },
     {
       "title": "ICE shared Medicaid data it wasn't supposed to have with Palantir",
@@ -269,38 +249,28 @@
       "paywalled": false,
       "topic": "Criminal Justice",
       "published": "2026-07-17T19:32:02-04:00",
-      "is_today": true,
-      "summary": "ICE improperly shared Medicaid beneficiary data with Palantir, raising concerns about unauthorized access to sensitive health information."
-    },
-    {
-      "title": "Officials probe whether White House teleprompter operator profited off Trump's words",
-      "url": "https://www.npr.org/2026/07/16/nx-s1-5896223/kalshi-trump-white-house-teleprompter-operator-bet",
-      "source": "feeds.npr.org",
-      "paywalled": false,
-      "topic": "Criminal Justice",
-      "published": "2026-07-16T13:10:29-04:00",
       "is_today": false,
-      "summary": "Officials investigate whether a White House teleprompter operator profited from betting on Trump's public statements."
+      "summary": "Immigration and Customs Enforcement shared Medicaid beneficiary data with Palantir without authorization, raising privacy concerns and prompting questions about federal data-sharing protocols."
     },
     {
-      "title": "China's Xi calls for step up of global effort in AI, as US curbs squeeze China's tech access",
-      "url": "https://www.npr.org/2026/07/17/nx-s1-5897285/chinas-xi-calls-for-step-up-of-global-effort-in-ai-as-us-curbs-squeeze-chinas-tech-access",
+      "title": "Week in Politics: Trump's speech; midterm elections; Todd Blanche and Jay Clayton",
+      "url": "https://www.npr.org/2026/07/18/nx-s1-5894907/week-in-politics-trumps-speech-midterm-elections-todd-blanche-and-jay-clayton",
       "source": "feeds.npr.org",
       "paywalled": false,
-      "topic": "Criminal Justice",
-      "published": "2026-07-17T03:17:04-04:00",
-      "is_today": false,
-      "summary": "China's Xi advocates for global AI cooperation as US export restrictions limit Chinese technology companies' access."
-    },
-    {
-      "title": "Kalshi says it's not a sportsbook even as World Cup bets surge",
-      "url": "https://www.npr.org/2026/07/17/nx-s1-5884848/kalshi-sports-betting-prediction-markets-draftkings-fanduel-world-cup",
-      "source": "feeds.npr.org",
-      "paywalled": false,
-      "topic": "Criminal Justice",
-      "published": "2026-07-17T05:00:00-04:00",
+      "topic": "Immigration",
+      "published": "2026-07-18T07:42:09-04:00",
       "is_today": true,
-      "summary": "Prediction market platform Kalshi distinguishes itself from sportsbooks while expanding World Cup betting offerings."
+      "summary": "Trump delivered a speech while midterm elections approach and personnel changes occur in his political orbit."
+    },
+    {
+      "title": "Cuban artist and dissident exiled from country after 5 years in prison arrives in US",
+      "url": "https://www.npr.org/2026/07/19/nx-s1-5899494/cuban-artist-exile-us",
+      "source": "feeds.npr.org",
+      "paywalled": false,
+      "topic": "Immigration",
+      "published": "2026-07-19T03:27:59-04:00",
+      "is_today": true,
+      "summary": "A Cuban artist and dissident imprisoned for five years arrived in the US after being exiled from Cuba."
     },
     {
       "title": "Takeaways from Trump's primetime speech. And, at least 2 dead in major Texas flooding",
@@ -309,8 +279,8 @@
       "paywalled": false,
       "topic": "Immigration",
       "published": "2026-07-17T07:27:01-04:00",
-      "is_today": true,
-      "summary": "Trump delivered a primetime speech on illegal voting while Texas experienced major flooding with at least two deaths."
+      "is_today": false,
+      "summary": "Trump delivered a primetime speech while Texas experienced major flooding that caused at least two deaths."
     },
     {
       "title": "The new $1 Trump coin doesn't just buck norms. Experts say it also breaks laws",
@@ -333,44 +303,14 @@
       "summary": "Trump promised evidence of election fraud, but experts found no substantive proof of widespread fraud."
     },
     {
-      "title": "Officials probe whether White House teleprompter operator profited off Trump's words",
-      "url": "https://www.npr.org/2026/07/16/nx-s1-5896223/kalshi-trump-white-house-teleprompter-operator-bet",
-      "source": "feeds.npr.org",
-      "paywalled": false,
-      "topic": "Immigration",
-      "published": "2026-07-16T13:10:29-04:00",
-      "is_today": true,
-      "summary": "Officials investigate whether a White House teleprompter operator placed bets on Trump's statements, raising ethics concerns."
-    },
-    {
-      "title": "President Trump to deliver prime time address on elections, though details are slim",
-      "url": "https://www.npr.org/2026/07/16/nx-s1-5896195/president-trump-to-deliver-prime-time-address-on-elections-though-details-are-slim",
-      "source": "feeds.npr.org",
-      "paywalled": false,
-      "topic": "Immigration",
-      "published": "2026-07-16T16:12:37-04:00",
-      "is_today": true,
-      "summary": "President Trump scheduled a prime-time address on elections with limited advance details about content."
-    },
-    {
-      "title": "In primetime speech, Trump doesn't provide evidence for illegal voting",
-      "url": "https://www.npr.org/2026/07/16/nx-s1-5896448/trump-election-address",
-      "source": "feeds.npr.org",
-      "paywalled": false,
-      "topic": "Immigration",
-      "published": "2026-07-16T16:50:26-04:00",
-      "is_today": true,
-      "summary": "Trump's primetime speech on elections contained claims about illegal voting without supporting evidence."
-    },
-    {
       "title": "Trump stretches declassified China intelligence into broader 2020 election claims",
       "url": "https://www.govexec.com/management/2026/07/trump-stretches-declassified-china-intelligence-broader-2020-election-claims/414842/",
       "source": "govexec.com",
       "paywalled": false,
       "topic": "Tax & Finance",
       "published": "2026-07-17T09:20:00-04:00",
-      "is_today": true,
-      "summary": "Trump used declassified China intelligence regarding 2020 election interference to support broader election fraud claims."
+      "is_today": false,
+      "summary": "Trump used declassified China intelligence to support broader 2020 election claims, raising questions about classified information usage."
     },
     {
       "title": "Pentagon closes cyber apprenticeship applications early after receiving over 15,000",
@@ -379,8 +319,8 @@
       "paywalled": false,
       "topic": "Tax & Finance",
       "published": "2026-07-17T09:22:46-04:00",
-      "is_today": true,
-      "summary": "Pentagon closed its cyber apprenticeship program applications early after exceeding capacity with over 15,000 submissions."
+      "is_today": false,
+      "summary": "Pentagon closed cyber apprenticeship applications early after exceeding 15,000 submissions, demonstrating high demand for federal cybersecurity training."
     },
     {
       "title": "Labor nominee defends administration\u2019s strategy for shifting Education Department work",
@@ -389,58 +329,38 @@
       "paywalled": false,
       "topic": "Tax & Finance",
       "published": "2026-07-17T09:38:08-04:00",
-      "is_today": true,
-      "summary": "Labor nominee defended the administration's plan to shift Education Department functions to other federal agencies."
+      "is_today": false,
+      "summary": "Labor nominee defended transferring Education Department functions, reflecting administrative restructuring priorities."
     },
     {
-      "title": "DHS plans \u2018all-out war\u2019 on immigration scammers as fraud complaints double",
-      "url": "https://www.govexec.com/management/2026/07/dhs-plans-all-out-war-immigration-scammers-fraud-complaints-double/414818/",
-      "source": "govexec.com",
-      "paywalled": false,
-      "topic": "Tax & Finance",
-      "published": "2026-07-16T12:51:35-04:00",
-      "is_today": true,
-      "summary": "DHS is launching an enforcement initiative against immigration fraud as complaints from victims have doubled."
-    },
-    {
-      "title": "Why Social Security's uncertainty is becoming a federal workforce issue",
-      "url": "https://www.govexec.com/pay-benefits/2026/07/why-social-securitys-uncertainty-becoming-federal-workforce-issue/414812/",
-      "source": "govexec.com",
-      "paywalled": false,
-      "topic": "Tax & Finance",
-      "published": "2026-07-16T15:00:00-04:00",
-      "is_today": true,
-      "summary": "Social Security's financial uncertainty is affecting federal workforce recruitment and retention due to benefit concerns."
-    },
-    {
-      "title": "A year after State layoffs, ex-feds say U.S. is paying the price in Iran and Ebola crises",
-      "url": "https://www.govexec.com/workforce/2026/07/year-after-state-layoffs-exfeds-iran-ebola-crises/414822/",
-      "source": "govexec.com",
-      "paywalled": false,
-      "topic": "Tax & Finance",
-      "published": "2026-07-16T15:35:33-04:00",
-      "is_today": true,
-      "summary": "Former State Department officials attribute U.S. challenges in Iran and Ebola responses to staffing losses from recent layoffs."
-    },
-    {
-      "title": "Parent advocates urge Senate panel to subpoena Zuckerberg, Google CEO",
-      "url": "https://www.politico.com/live-updates/2026/07/17/congress/subpoena-zuckerberg-and-google-ceo-parent-advocates-tell-senate-panel-01002743",
-      "source": "rss.politico.com",
+      "title": "Trump amplifies China interference claim: 'Unprecedented election security nightmare'",
+      "url": "https://thehill.com/homenews/administration/5975954-donald-trump-china-interference-election-claims/",
+      "source": "thehill.com",
       "paywalled": false,
       "topic": "Elections",
-      "published": "2026-07-17T10:21:33-04:00",
+      "published": "2026-07-18T12:05:09+00:00",
       "is_today": true,
-      "summary": "Parent advocates urged a Senate panel to subpoena Mark Zuckerberg and Google's CEO to address concerns about social media's impact on children."
+      "summary": "Trump claimed China interfered in U.S. elections, calling it an 'unprecedented election security nightmare' with implications for federal election security policy."
     },
     {
-      "title": "Darline Graham is considering running for her brother's Senate seat in South Carolina",
-      "url": "https://www.politico.com/live-updates/2026/07/17/congress/darline-graham-might-run-for-lindsey-graham-seat-01002821",
-      "source": "rss.politico.com",
+      "title": "Democrats cling to slim House advantage in new poll",
+      "url": "https://thehill.com/homenews/campaign/5976160-democrats-house-advantage-poll/",
+      "source": "thehill.com",
       "paywalled": false,
       "topic": "Elections",
-      "published": "2026-07-17T10:38:15-04:00",
+      "published": "2026-07-18T15:55:40+00:00",
       "is_today": true,
-      "summary": "Darline Graham is considering a Senate run for her brother Lindsey Graham's South Carolina seat."
+      "summary": "A new poll shows Democrats maintaining a slim advantage in House preference, relevant to 2024 legislative control predictions."
+    },
+    {
+      "title": "Appeals court narrows setback for Trump USPS mail-in ballot policy",
+      "url": "https://thehill.com/regulation/court-battles/5976171-appeals-court-trump-administration-usps-mail-in-ballots/",
+      "source": "thehill.com",
+      "paywalled": false,
+      "topic": "Elections",
+      "published": "2026-07-18T16:18:17+00:00",
+      "is_today": true,
+      "summary": "An appeals court partially reversed a setback to Trump administration policy restricting USPS mail-in ballot handling."
     },
     {
       "title": "Trump\u2019s questionable claims cast doubt over midterms as Dems fret",
@@ -459,8 +379,8 @@
       "paywalled": false,
       "topic": "Transportation",
       "published": "2026-07-17T16:57:03+00:00",
-      "is_today": true,
-      "summary": "Airline industry group opposes year-round daylight saving time, citing operational and safety concerns for federal policy consideration."
+      "is_today": false,
+      "summary": "Airlines oppose permanent daylight saving time, citing operational and safety concerns that could affect federal transportation policy decisions."
     },
     {
       "title": "United denies offering free flight changes over Trump airport name",
@@ -469,38 +389,8 @@
       "paywalled": false,
       "topic": "Transportation",
       "published": "2026-07-17T21:45:10+00:00",
-      "is_today": true,
-      "summary": "United Airlines denies offering customers free flight changes in response to airport renaming, addressing public speculation."
-    },
-    {
-      "title": "Uber eyes Delivery Hero in $15B acquisition bid",
-      "url": "https://thehill.com/policy/technology/5971443-uber-eats-delivery-hero-deal/",
-      "source": "thehill.com",
-      "paywalled": false,
-      "topic": "Transportation",
-      "published": "2026-07-16T14:33:54+00:00",
       "is_today": false,
-      "summary": "Uber pursues $15 billion acquisition of Delivery Hero, potentially consolidating food delivery market competition."
-    },
-    {
-      "title": "Railroad, airline labor mediator fired by Trump drops legal fight",
-      "url": "https://thehill.com/regulation/court-battles/5972904-trump-firing-power-scotus-ruling/",
-      "source": "thehill.com",
-      "paywalled": false,
-      "topic": "Transportation",
-      "published": "2026-07-16T21:33:50+00:00",
-      "is_today": true,
-      "summary": "A fired railroad and airline labor mediator abandoned legal challenges after Trump's removal, following a Supreme Court ruling expanding presidential firing authority."
-    },
-    {
-      "title": "New 25% Tariff on Brazil Spares Beef, Other Key Agricultural Imports",
-      "url": "https://farmpolicynews.illinois.edu/2026/07/new-25-tariff-on-brazil-spares-beef-other-key-agricultural-imports/",
-      "source": "farmpolicynews.illinois.edu",
-      "paywalled": false,
-      "topic": "Agriculture",
-      "published": "2026-07-16T15:26:09+00:00",
-      "is_today": false,
-      "summary": "The U.S. imposed a 25% tariff on Brazilian imports while exempting beef and other key agricultural products, affecting trade policy and domestic agricultural markets."
+      "summary": "United Airlines denies offering free flight changes in response to a Florida airport's proposed name change to Trump International Airport."
     },
     {
       "title": "Leading members of Scattered Spider sentenced in UK to 66 months in jail",
@@ -509,8 +399,8 @@
       "paywalled": false,
       "topic": "Cybersecurity",
       "published": "2026-07-17T14:12:59+00:00",
-      "is_today": true,
-      "summary": "UK sentenced leading Scattered Spider members to 66 months in prison for cybercriminal activities."
+      "is_today": false,
+      "summary": "Two leaders of the Scattered Spider cybercriminal group were sentenced to 66 months in prison in the UK for conducting cyberattacks affecting federal cybersecurity policy."
     },
     {
       "title": "State officials, election experts pan Trump speech: \u2018This is what desperation looks like\u2019",
@@ -519,28 +409,38 @@
       "paywalled": false,
       "topic": "Cybersecurity",
       "published": "2026-07-17T15:37:29+00:00",
-      "is_today": true,
-      "summary": "State officials and election experts criticized Trump's voter fraud claims as unfounded and baseless."
-    },
-    {
-      "title": "Russian trio indicted for allegedly running bulletproof hosting providers that spurred cybercrime",
-      "url": "https://cyberscoop.com/russian-nationals-medialand-mlcloud-indicted-bulletproof-hosting/",
-      "source": "cyberscoop.com",
-      "paywalled": false,
-      "topic": "Cybersecurity",
-      "published": "2026-07-16T17:24:04+00:00",
       "is_today": false,
-      "summary": "U.S. indicted three Russians for operating bulletproof hosting services facilitating international cybercrime operations."
+      "summary": "State officials and election experts criticized Trump's speech about voter fraud, raising concerns about election integrity claims affecting federal election policy."
     },
     {
-      "title": "Program to rotate cyber personnel through federal agencies saw little use",
-      "url": "https://cyberscoop.com/opm-federal-rotational-cyber-workforce-program-gao/",
-      "source": "cyberscoop.com",
+      "title": "Engineers develop a bird-scale flapping robot for aerial-aquatic travel",
+      "url": "https://www.npr.org/2026/07/18/nx-s1-5885040-e1/engineers-develop-a-bird-scale-flapping-robot-for-aerial-aquatic-travel",
+      "source": "feeds.npr.org",
       "paywalled": false,
-      "topic": "Cybersecurity",
-      "published": "2026-07-16T19:18:19+00:00",
+      "topic": "Technology",
+      "published": "2026-07-18T07:42:13-04:00",
       "is_today": true,
-      "summary": "A federal program designed to rotate cybersecurity personnel across agencies achieved minimal participation, highlighting workforce development challenges."
+      "summary": "Engineers developed a bird-sized robot capable of flying and swimming, advancing autonomous technology for potential surveillance and research applications."
+    },
+    {
+      "title": "TSA's new CT scanners may pose a problem for some carry-on bags: What to know",
+      "url": "https://thehill.com/policy/technology/5969843-tsas-new-ct-scanners-may-pose-a-problem-for-some-carry-on-bags-what-to-know/",
+      "source": "thehill.com",
+      "paywalled": false,
+      "topic": "Technology",
+      "published": "2026-07-18T15:00:00+00:00",
+      "is_today": true,
+      "summary": "TSA's new CT scanners for airport security may reject certain carry-on bags, requiring travelers to adjust packing procedures."
+    },
+    {
+      "title": "Divide grows between AI employees and executives over policy battles",
+      "url": "https://thehill.com/policy/technology/5975760-openai-employees-fund-guardrails-alliance/",
+      "source": "thehill.com",
+      "paywalled": false,
+      "topic": "Technology",
+      "published": "2026-07-19T10:00:00+00:00",
+      "is_today": true,
+      "summary": "AI company employees are funding independent policy advocacy groups, creating conflict with executives over artificial intelligence regulation."
     },
     {
       "title": "China dismisses \u2018groundless\u2019 Trump election interference claim",
@@ -571,36 +471,6 @@
       "published": "2026-07-17T16:24:21+00:00",
       "is_today": true,
       "summary": "Fubo increased subscription prices by $15 after restoring NBCUniversal channels, affecting streaming service competition and consumer costs."
-    },
-    {
-      "title": "Officials probe whether White House teleprompter operator profited off Trump's words",
-      "url": "https://www.npr.org/2026/07/16/nx-s1-5896223/kalshi-trump-white-house-teleprompter-operator-bet",
-      "source": "feeds.npr.org",
-      "paywalled": false,
-      "topic": "Technology",
-      "published": "2026-07-16T13:10:29-04:00",
-      "is_today": true,
-      "summary": "Federal officials are investigating whether a White House teleprompter operator profited from betting on Trump's speech outcomes."
-    },
-    {
-      "title": "Uber eyes Delivery Hero in $15B acquisition bid",
-      "url": "https://thehill.com/policy/technology/5971443-uber-eats-delivery-hero-deal/",
-      "source": "thehill.com",
-      "paywalled": false,
-      "topic": "Technology",
-      "published": "2026-07-16T14:33:54+00:00",
-      "is_today": true,
-      "summary": "Uber is pursuing a $15 billion acquisition of Delivery Hero to expand its food delivery operations globally."
-    },
-    {
-      "title": "Musk's xAI sues man accused of using Grok to create explicit material",
-      "url": "https://thehill.com/policy/technology/5971425-musk-xai-sues-over-grok-misuse/",
-      "source": "thehill.com",
-      "paywalled": false,
-      "topic": "Technology",
-      "published": "2026-07-16T14:42:58+00:00",
-      "is_today": true,
-      "summary": "Musk's xAI company is suing an individual accused of using its Grok AI to generate explicit material."
     }
   ]
 }
