@@ -1,7 +1,37 @@
 {
-  "last_updated": "2026-07-20T11:01:11Z",
-  "story_count": 44,
+  "last_updated": "2026-07-21T11:01:15Z",
+  "story_count": 55,
   "stories": [
+    {
+      "title": "Anduril pitches a robot wingman for US Army helicopters",
+      "url": "https://www.defenseone.com/defense-systems/2026/07/anduril-pitches-robot-wingman-us-army-helicopters/414868/",
+      "source": "defenseone.com",
+      "paywalled": false,
+      "topic": "Defense",
+      "published": "2026-07-20T07:30:00-04:00",
+      "is_today": true,
+      "summary": "Defense contractor Anduril proposed autonomous drone technology to accompany U.S. Army helicopters in combat operations."
+    },
+    {
+      "title": "US expands attacks on Iran after death of another American service member",
+      "url": "https://thehill.com/policy/defense/5977663-us-completes-iran-strikes/",
+      "source": "thehill.com",
+      "paywalled": false,
+      "topic": "Defense",
+      "published": "2026-07-20T11:36:32+00:00",
+      "is_today": true,
+      "summary": "U.S. military expanded strikes against Iran following the death of an American service member in the region."
+    },
+    {
+      "title": "Trump: New Air Force One to be 'maxed out' with upgrades amid questions about security features",
+      "url": "https://thehill.com/homenews/administration/5977697-donald-trump-air-force-one-upgrades/",
+      "source": "thehill.com",
+      "paywalled": false,
+      "topic": "Defense",
+      "published": "2026-07-20T12:28:32+00:00",
+      "is_today": true,
+      "summary": "President Trump announced extensive security and technology upgrades for the new Air Force One aircraft."
+    },
     {
       "title": "Trump on US service members killed in Jordan: 'It\u2019s a very sad thing'",
       "url": "https://thehill.com/homenews/administration/5976615-trump-reacts-jordan-deaths-iran-strikes/",
@@ -33,34 +63,34 @@
       "summary": "A retired Navy admiral warned that Iran's actions threaten the strategically critical Suez Canal shipping route."
     },
     {
-      "title": "Iran threatens wider war if US strikes persist: 'No political border' will be safe",
-      "url": "https://thehill.com/policy/international/5976071-iran-new-threats-us-strikes-infrastructure-energy/",
+      "title": "Ohio residents sue Taco Bell, say they got cyclospora after eating at restaurants",
+      "url": "https://thehill.com/homenews/state-watch/5977259-cyclospora-outbreak-taco-bell-lawsuit/",
       "source": "thehill.com",
       "paywalled": false,
-      "topic": "Defense",
-      "published": "2026-07-18T14:18:42+00:00",
+      "topic": "Healthcare",
+      "published": "2026-07-20T11:16:48+00:00",
       "is_today": true,
-      "summary": "Iran threatened to expand military operations against US targets if American strikes continue, escalating regional tensions."
+      "summary": "Ohio residents sued Taco Bell after contracting cyclospora, raising questions about food safety protocols and restaurant accountability in foodborne illness outbreaks."
     },
     {
-      "title": "Soldier, girlfriend allegedly starved child and dogs to death",
-      "url": "https://www.militarytimes.com/news/your-army/2026/07/18/soldier-girlfriend-allegedly-starved-child-and-dogs-to-death/",
-      "source": "militarytimes.com",
-      "paywalled": false,
-      "topic": "Defense",
-      "published": "2026-07-18T15:06:59+00:00",
-      "is_today": true,
-      "summary": "A soldier and his girlfriend face charges for allegedly starving a child and dogs to death."
-    },
-    {
-      "title": "CENTCOM confirms 2 US service members killed in Jordan, another missing",
-      "url": "https://thehill.com/policy/defense/5976260-us-military-2-killed-jordan-iran-war/",
+      "title": "Sweeteners may slow down growth of gut bacteria",
+      "url": "https://thehill.com/policy/healthcare/5977005-sweeteners-interfere-gut-bacteria/",
       "source": "thehill.com",
       "paywalled": false,
-      "topic": "Defense",
-      "published": "2026-07-18T18:00:44+00:00",
+      "topic": "Healthcare",
+      "published": "2026-07-20T11:17:00+00:00",
       "is_today": true,
-      "summary": "Two US service members were killed and one is missing in Jordan following Iranian military attacks."
+      "summary": "Research suggests artificial sweeteners may inhibit gut bacteria growth, prompting potential FDA review of sweetener regulations and food safety standards."
+    },
+    {
+      "title": "Does the 'pink salt trick' help you lose weight?",
+      "url": "https://thehill.com/policy/healthcare/5976927-tiktok-pink-salt-trick/",
+      "source": "thehill.com",
+      "paywalled": false,
+      "topic": "Healthcare",
+      "published": "2026-07-20T11:17:26+00:00",
+      "is_today": true,
+      "summary": "Social media promotes unproven 'pink salt trick' for weight loss, raising FDA concerns about health claims on dietary supplements and consumer protection."
     },
     {
       "title": "Violence Repeatedly Erupts at Dementia Care Facilities Despite Warnings, Inspections Show",
@@ -93,34 +123,34 @@
       "summary": "Pregnant woman's death due to hospital closure spurs efforts to reopen rural Mississippi facility and address healthcare desert."
     },
     {
-      "title": "GLP-1 insurance change impacts millions of Americans: What to know, how to tell if you're covered",
-      "url": "https://thehill.com/policy/healthcare/5972729-glp-1-insurance-change-impacts-millions-of-americans-what-to-know-how-to-tell-if-youre-covered/",
-      "source": "thehill.com",
+      "title": "Trump administration puts kibosh on HIV prevention funding",
+      "url": "https://rollcall.com/2026/07/20/trump-administration-puts-kibosh-on-hiv-prevention-funding/",
+      "source": "rollcall.com",
       "paywalled": false,
-      "topic": "Healthcare",
-      "published": "2026-07-18T12:50:00+00:00",
+      "topic": "Appropriations",
+      "published": "2026-07-20T12:00:37+00:00",
       "is_today": true,
-      "summary": "Insurance coverage changes for GLP-1 weight-loss and diabetes drugs affect millions of Americans' access and out-of-pocket costs."
+      "summary": "Trump administration eliminated HIV prevention funding, affecting federal public health policy and disease prevention programs."
     },
     {
-      "title": "Could the 'explosive diarrhea' parasite affect grocery prices?",
-      "url": "https://thehill.com/business/5975926-explosive-diarrhea-parasite-cyclospora-outbreak-grocery-prices/",
-      "source": "thehill.com",
+      "title": "Energy Department removes more than 1,600 webpages from public website",
+      "url": "https://www.govexec.com/management/2026/07/energy-department-removes-more-1600-webpages-public-website/414879/",
+      "source": "govexec.com",
       "paywalled": false,
-      "topic": "Healthcare",
-      "published": "2026-07-18T14:41:48+00:00",
+      "topic": "Appropriations",
+      "published": "2026-07-20T13:04:55-04:00",
       "is_today": true,
-      "summary": "Cyclospora parasite outbreak in produce could increase grocery prices and food safety costs for consumers and retailers."
+      "summary": "Energy Department removed over 1,600 webpages from its public website, reducing public access to government information."
     },
     {
-      "title": "Red states reject Trump\u2019s shift on overdose prevention",
-      "url": "https://www.politico.com/news/2026/07/18/overdose-drugs-kennedy-trumps-harm-reduction-overdose-01004038",
-      "source": "rss.politico.com",
+      "title": "Traffic stops become a flashpoint in ICE shootings",
+      "url": "https://www.govexec.com/management/2026/07/traffic-stops-flashpoint-ice-shootings/414882/",
+      "source": "govexec.com",
       "paywalled": false,
-      "topic": "Healthcare",
-      "published": "2026-07-18T15:00:00-04:00",
+      "topic": "Appropriations",
+      "published": "2026-07-20T14:35:42-04:00",
       "is_today": true,
-      "summary": "Republican-led states resist Trump administration's harm reduction approach to overdose prevention, creating federal-state policy conflict."
+      "summary": "Traffic stops involving ICE agents have become a recurring context for shooting incidents, raising policy concerns."
     },
     {
       "title": "How a little-known Trump directive reshaped the government's counterterrorism approach",
@@ -153,6 +183,36 @@
       "summary": "Congress faces challenges managing its legislative processes and decision-making procedures."
     },
     {
+      "title": "3 U.S. personnel killed in Iran conflict. And, Hunter Biden opens up to NPR",
+      "url": "https://www.npr.org/2026/07/20/g-s1-134553/up-first-newsletter-iran-us-service-members-hunter-biden",
+      "source": "feeds.npr.org",
+      "paywalled": false,
+      "topic": "Foreign Policy",
+      "published": "2026-07-20T07:40:28-04:00",
+      "is_today": true,
+      "summary": "Three U.S. military personnel were killed in an Iran-related conflict, raising concerns about escalating regional tensions."
+    },
+    {
+      "title": "Putin meets North Korean foreign minister in diplomatic push",
+      "url": "https://www.npr.org/2026/07/20/g-s1-134555/putin-meets-north-korean-foreign-minister-in-diplomatic-push",
+      "source": "feeds.npr.org",
+      "paywalled": false,
+      "topic": "Foreign Policy",
+      "published": "2026-07-20T09:18:51-04:00",
+      "is_today": true,
+      "summary": "Putin met with North Korea's foreign minister, signaling strengthened diplomatic and potential military coordination between the nations."
+    },
+    {
+      "title": "India's Gen Z 'Cockroach People's Party' started as satire but is serious about change",
+      "url": "https://www.npr.org/2026/07/20/nx-s1-5889515/india-gen-z-cockroach-party-protests",
+      "source": "feeds.npr.org",
+      "paywalled": false,
+      "topic": "Foreign Policy",
+      "published": "2026-07-20T12:36:04-04:00",
+      "is_today": true,
+      "summary": "India's Gen Z activist movement evolved from satire into a serious political force advocating for social and governmental change."
+    },
+    {
       "title": "Who is Andy Burnham, the U.K.'s new prime minister?",
       "url": "https://www.npr.org/2026/07/19/g-s1-134001/andy-burnham-new-british-prime-minister",
       "source": "feeds.npr.org",
@@ -183,34 +243,34 @@
       "summary": "Senator Shaheen affirmed Israel as the strongest U.S. ally in the Middle East during a House vote on Israeli military aid."
     },
     {
-      "title": "Trump amplifies China interference claim: 'Unprecedented election security nightmare'",
-      "url": "https://thehill.com/homenews/administration/5975954-donald-trump-china-interference-election-claims/",
-      "source": "thehill.com",
-      "paywalled": false,
-      "topic": "Foreign Policy",
-      "published": "2026-07-18T12:05:09+00:00",
-      "is_today": true,
-      "summary": "Trump claims China interference represents unprecedented election security threat, raising national security policy concerns."
-    },
-    {
-      "title": "U.S. launches new airstrikes to 'punish' Iran for troop deaths",
-      "url": "https://www.npr.org/2026/07/18/nx-s1-5899039/us-troops-killed-missing-iran-jordan",
-      "source": "feeds.npr.org",
-      "paywalled": false,
-      "topic": "Foreign Policy",
-      "published": "2026-07-18T14:14:11-04:00",
-      "is_today": true,
-      "summary": "U.S. launches airstrikes against Iran following deaths of American service members in Jordan, escalating regional conflict."
-    },
-    {
-      "title": "Ships continue to move through Strait of Hormuz, Chris Wright says",
-      "url": "https://www.politico.com/news/2026/07/19/chris-wright-strait-hormuz-iran-01004359",
-      "source": "rss.politico.com",
+      "title": "Best Buy adds more solar generation to portfolio",
+      "url": "https://www.utilitydive.com/news/best-buy-adds-more-solar-generation-to-portfolio/825634/",
+      "source": "utilitydive.com",
       "paywalled": false,
       "topic": "Energy",
-      "published": "2026-07-19T09:40:00-04:00",
+      "published": "2026-07-20T10:10:51-04:00",
       "is_today": true,
-      "summary": "Energy Secretary Chris Wright stated that maritime traffic continues through the Strait of Hormuz despite Iran tensions."
+      "summary": "Best Buy expanded its solar energy portfolio, advancing corporate renewable energy adoption and clean energy transition goals."
+    },
+    {
+      "title": "'Rare' La Ni\u00f1a may form in the Atlantic at the same time as this year's 'super' El Ni\u00f1o",
+      "url": "https://thehill.com/policy/energy-environment/5976956-pacific-super-el-nino-impacts/",
+      "source": "thehill.com",
+      "paywalled": false,
+      "topic": "Energy",
+      "published": "2026-07-20T11:17:16+00:00",
+      "is_today": true,
+      "summary": "Simultaneous rare La Ni\u00f1a and super El Ni\u00f1o conditions may occur, potentially creating significant climate and weather impacts requiring federal preparedness."
+    },
+    {
+      "title": "Trump calls for review after climate manual for judges withdrawn",
+      "url": "https://thehill.com/regulation/court-battles/5977751-trump-federal-judiciary-manual-review/",
+      "source": "thehill.com",
+      "paywalled": false,
+      "topic": "Energy",
+      "published": "2026-07-20T13:02:44+00:00",
+      "is_today": true,
+      "summary": "Trump ordered review of withdrawn federal judiciary climate manual, signaling potential changes to judicial guidance on environmental policy."
     },
     {
       "title": "'Rare' La Ni\u00f1a may form in the Atlantic at the same time as this year's 'super' El Ni\u00f1o",
@@ -233,34 +293,14 @@
       "summary": "Environmental groups are opposing data center expansion as a strategy to increase political relevance and influence."
     },
     {
-      "title": "Lake Mead expected to drop nearly 33 feet by June 2028, and that's not even the worst-case scenario",
-      "url": "https://thehill.com/policy/energy-environment/5976049-lake-mead-water-supply-shrinkage-june-2028-climate-change/",
-      "source": "thehill.com",
-      "paywalled": false,
-      "topic": "Energy",
-      "published": "2026-07-18T14:47:05+00:00",
-      "is_today": true,
-      "summary": "Lake Mead water levels are projected to drop 33 feet by June 2028, threatening water supply reliability across the Southwest."
-    },
-    {
-      "title": "Canadian wildfire smoke triggers air quality alerts for millions: What to know",
-      "url": "https://thehill.com/policy/energy-environment/5976386-wildfire-smoke-air-quality-alerts/",
-      "source": "thehill.com",
-      "paywalled": false,
-      "topic": "Energy",
-      "published": "2026-07-18T21:26:38+00:00",
-      "is_today": true,
-      "summary": "Canadian wildfires are triggering air quality alerts affecting millions in the U.S., raising cross-border environmental policy concerns."
-    },
-    {
       "title": "OPINION: How a small town in rural Maine built a public school that serves a whole community, including infants and toddlers",
       "url": "https://hechingerreport.org/opinion-how-a-small-town-in-rural-maine-built-a-public-school-that-serves-a-whole-community-including-infants-and-toddlers/",
       "source": "hechingerreport.org",
       "paywalled": false,
       "topic": "Education",
       "published": "2026-07-20T05:00:00+00:00",
-      "is_today": true,
-      "summary": "A rural Maine town established a public school serving infants through older students, demonstrating an integrated community education model."
+      "is_today": false,
+      "summary": "Rural Maine school expanded services to include infant and toddler care, demonstrating a community-centered education model."
     },
     {
       "title": "Education researchers warn political review of federal grants could reshape what gets studied",
@@ -269,58 +309,78 @@
       "paywalled": false,
       "topic": "Education",
       "published": "2026-07-20T10:00:00+00:00",
-      "is_today": true,
-      "summary": "Education researchers express concern that political review of federal grants could influence research priorities and reshape funded studies."
+      "is_today": false,
+      "summary": "Education researchers caution that political review of federal grants may influence research priorities and funding decisions."
     },
     {
-      "title": "Engineers develop a bird-scale flapping robot for aerial-aquatic travel",
-      "url": "https://www.npr.org/2026/07/18/nx-s1-5885040-e1/engineers-develop-a-bird-scale-flapping-robot-for-aerial-aquatic-travel",
+      "title": "Who should regulate global AI? China makes a play for leadership",
+      "url": "https://www.npr.org/2026/07/20/nx-s1-5886477/who-should-regulate-global-ai-china-makes-a-play-for-leadership",
       "source": "feeds.npr.org",
       "paywalled": false,
       "topic": "Criminal Justice",
-      "published": "2026-07-18T07:42:13-04:00",
-      "is_today": false,
-      "summary": "Engineers developed a bird-sized flapping robot capable of traveling through both air and water, advancing research in biomimetic robotics for potential surveillance or environmental monitoring applications."
+      "published": "2026-07-20T16:09:27-04:00",
+      "is_today": true,
+      "summary": "China seeks leadership role in establishing global AI regulations, affecting U.S. influence over international technology standards and governance frameworks."
     },
     {
-      "title": "Politics chat: How much faith can you have in the country's election systems?",
-      "url": "https://www.npr.org/2026/07/19/nx-s1-5890938/politics-chat-how-much-faith-can-you-have-in-the-countrys-election-systems",
+      "title": "New Air Force One going out of commission to get safety upgrades",
+      "url": "https://www.npr.org/2026/07/21/nx-s1-5901113/new-air-force-one-going-out-of-commission-to-get-safety-upgrades",
       "source": "feeds.npr.org",
       "paywalled": false,
       "topic": "Immigration",
-      "published": "2026-07-19T08:04:18-04:00",
+      "published": "2026-07-21T04:44:35-04:00",
       "is_today": true,
-      "summary": "Public confidence in U.S. election systems faces scrutiny as voters express varying levels of trust in election administration."
+      "summary": "Air Force One is being temporarily decommissioned for safety upgrades to the presidential aircraft."
     },
     {
-      "title": "$600,000 for a presidential pardon? Inside the growing industry of clemency lobbying",
-      "url": "https://www.npr.org/2026/07/19/nx-s1-5896394/600-000-for-a-presidential-pardon-inside-the-growing-industry-of-clemency-lobbying",
+      "title": "Arizona primaries set the stage for contested fall races in a swing state",
+      "url": "https://www.npr.org/2026/07/21/nx-s1-5901065/midterms-primaries-arizona-elections",
       "source": "feeds.npr.org",
       "paywalled": false,
       "topic": "Immigration",
-      "published": "2026-07-19T08:13:23-04:00",
+      "published": "2026-07-21T05:00:00-04:00",
       "is_today": true,
-      "summary": "Presidential clemency lobbying has become a lucrative industry with high fees charged for securing pardons and commutations."
+      "summary": "Arizona primary elections are shaping competitive fall races in the swing state."
     },
     {
-      "title": "Trump said the election system is broken. What do swing voters make of the claim?",
-      "url": "https://www.npr.org/2026/07/19/nx-s1-5898445/trump-said-the-election-system-is-broken-what-do-swing-voters-make-of-the-claim",
+      "title": "Trump imposes 50% tariffs on Canadian goods",
+      "url": "https://www.npr.org/2026/07/21/nx-s1-5901905/trump-imposes-tariffs-canadian-goods",
       "source": "feeds.npr.org",
       "paywalled": false,
       "topic": "Immigration",
-      "published": "2026-07-19T08:13:24-04:00",
+      "published": "2026-07-21T06:31:34-04:00",
       "is_today": true,
-      "summary": "Swing voters express mixed reactions to claims that the U.S. election system is fundamentally broken."
+      "summary": "President Trump imposed 50% tariffs on Canadian goods, affecting U.S.-Canada trade relations."
     },
     {
-      "title": "Cuban artist and dissident exiled from country after 5 years in prison arrives in US",
-      "url": "https://www.npr.org/2026/07/19/nx-s1-5899494/cuban-artist-exile-us",
-      "source": "feeds.npr.org",
+      "title": "Energy Department removes more than 1,600 webpages from public website",
+      "url": "https://www.govexec.com/management/2026/07/energy-department-removes-more-1600-webpages-public-website/414879/",
+      "source": "govexec.com",
       "paywalled": false,
-      "topic": "Immigration",
-      "published": "2026-07-19T03:27:59-04:00",
+      "topic": "Tax & Finance",
+      "published": "2026-07-20T13:04:55-04:00",
       "is_today": true,
-      "summary": "A Cuban artist and dissident imprisoned for five years arrived in the US after being exiled from Cuba."
+      "summary": "Energy Department removed over 1,600 webpages from its public website, affecting public access to federal energy information and policy documents."
+    },
+    {
+      "title": "Traffic stops become a flashpoint in ICE shootings",
+      "url": "https://www.govexec.com/management/2026/07/traffic-stops-flashpoint-ice-shootings/414882/",
+      "source": "govexec.com",
+      "paywalled": false,
+      "topic": "Tax & Finance",
+      "published": "2026-07-20T14:35:42-04:00",
+      "is_today": true,
+      "summary": "Traffic stops have become a significant location for ICE shooting incidents, raising policy questions about law enforcement procedures and training protocols."
+    },
+    {
+      "title": "Taxing Data Processing Doesn\u2019t Just Tax Big Tech",
+      "url": "https://taxfoundation.org/blog/digital-services-tax-data-processing/",
+      "source": "taxfoundation.org",
+      "paywalled": false,
+      "topic": "Tax & Finance",
+      "published": "2026-07-20T14:48:09+00:00",
+      "is_today": true,
+      "summary": "Digital services taxes targeting data processing affect broader industries beyond big tech, impacting economic policy and business taxation."
     },
     {
       "title": "How a little-known Trump directive reshaped the government's counterterrorism approach",
@@ -341,6 +401,36 @@
       "published": "2026-07-19T11:59:52-04:00",
       "is_today": true,
       "summary": "GSA encourages federal agencies to adopt and share successful technology practices across government."
+    },
+    {
+      "title": "Elizabeth Warren endorses Abdul El-Sayed in Michigan Senate race",
+      "url": "https://www.politico.com/live-updates/2026/07/20/congress/elizabeth-warren-endorses-abdul-el-sayed-michigan-01004814",
+      "source": "rss.politico.com",
+      "paywalled": false,
+      "topic": "Elections",
+      "published": "2026-07-20T08:56:51-04:00",
+      "is_today": true,
+      "summary": "Senator Elizabeth Warren endorsed Abdul El-Sayed in the Michigan Senate race."
+    },
+    {
+      "title": "Trump administration puts kibosh on HIV prevention funding",
+      "url": "https://rollcall.com/2026/07/20/trump-administration-puts-kibosh-on-hiv-prevention-funding/",
+      "source": "rollcall.com",
+      "paywalled": false,
+      "topic": "Elections",
+      "published": "2026-07-20T12:00:37+00:00",
+      "is_today": true,
+      "summary": "The Trump administration halted federal HIV prevention funding."
+    },
+    {
+      "title": "House GOP leaders scrambling to set up a briefing on Iran war developments",
+      "url": "https://www.politico.com/live-updates/2026/07/20/congress/house-gop-leaders-seek-iran-briefing-01004998",
+      "source": "rss.politico.com",
+      "paywalled": false,
+      "topic": "Elections",
+      "published": "2026-07-20T13:48:00-04:00",
+      "is_today": true,
+      "summary": "House GOP leaders requested a briefing on developments in Iran military operations."
     },
     {
       "title": "Fetterman rips Sanders over Platner, El-Sayed endorsements",
@@ -373,34 +463,24 @@
       "summary": "Commentator Bill Maher criticized Democrats and expressed openness to voting for JD Vance in 2028 presidential race."
     },
     {
-      "title": "Trump amplifies China interference claim: 'Unprecedented election security nightmare'",
-      "url": "https://thehill.com/homenews/administration/5975954-donald-trump-china-interference-election-claims/",
+      "title": "Fighter jets intercept planes over Bedminster, East Rutherford airspace",
+      "url": "https://thehill.com/homenews/administration/5978124-norad-intercepts-planes-new-jersey/",
       "source": "thehill.com",
       "paywalled": false,
-      "topic": "Elections",
-      "published": "2026-07-18T12:05:09+00:00",
+      "topic": "Transportation",
+      "published": "2026-07-20T14:35:54+00:00",
       "is_today": true,
-      "summary": "Trump claimed China interfered in U.S. elections, calling it an 'unprecedented election security nightmare' with implications for federal election security policy."
+      "summary": "NORAD fighter jets intercepted unidentified aircraft over New Jersey airspace near Bedminster and East Rutherford, raising questions about national airspace security procedures."
     },
     {
-      "title": "Democrats cling to slim House advantage in new poll",
-      "url": "https://thehill.com/homenews/campaign/5976160-democrats-house-advantage-poll/",
-      "source": "thehill.com",
+      "title": "American Farmers May See Deeper Losses in 2027",
+      "url": "https://farmpolicynews.illinois.edu/2026/07/american-farmers-may-see-deeper-losses-in-2027/",
+      "source": "farmpolicynews.illinois.edu",
       "paywalled": false,
-      "topic": "Elections",
-      "published": "2026-07-18T15:55:40+00:00",
+      "topic": "Agriculture",
+      "published": "2026-07-21T00:38:03+00:00",
       "is_today": true,
-      "summary": "A new poll shows Democrats maintaining a slim advantage in House preference, relevant to 2024 legislative control predictions."
-    },
-    {
-      "title": "Appeals court narrows setback for Trump USPS mail-in ballot policy",
-      "url": "https://thehill.com/regulation/court-battles/5976171-appeals-court-trump-administration-usps-mail-in-ballots/",
-      "source": "thehill.com",
-      "paywalled": false,
-      "topic": "Elections",
-      "published": "2026-07-18T16:18:17+00:00",
-      "is_today": true,
-      "summary": "An appeals court partially reversed a setback to Trump administration policy restricting USPS mail-in ballot handling."
+      "summary": "American farmers face projections of increased financial losses in 2027, affecting agricultural policy decisions and subsidy considerations."
     },
     {
       "title": "Product of USA Label Gains Momentum with Meat and Poultry Companies",
@@ -409,38 +489,68 @@
       "paywalled": false,
       "topic": "Agriculture",
       "published": "2026-07-19T21:10:18+00:00",
-      "is_today": true,
-      "summary": "Meat and poultry companies are increasingly adopting 'Product of USA' labeling, which affects country-of-origin requirements and agricultural trade policies."
+      "is_today": false,
+      "summary": "Meat and poultry companies increasingly adopt \"Product of USA\" labeling, potentially influencing agricultural trade and domestic sourcing policies."
     },
     {
-      "title": "Engineers develop a bird-scale flapping robot for aerial-aquatic travel",
-      "url": "https://www.npr.org/2026/07/18/nx-s1-5885040-e1/engineers-develop-a-bird-scale-flapping-robot-for-aerial-aquatic-travel",
+      "title": "Why blocking AI models won\u2019t stop the cyber threats they create",
+      "url": "https://cyberscoop.com/why-blocking-ai-models-wont-stop-cyber-threats-op-ed/",
+      "source": "cyberscoop.com",
+      "paywalled": false,
+      "topic": "Cybersecurity",
+      "published": "2026-07-20T14:12:47+00:00",
+      "is_today": true,
+      "summary": "Restricting AI model access alone cannot prevent cyber threats, requiring broader security approaches beyond blocking technology."
+    },
+    {
+      "title": "Director of Commerce AI standards office out after three months",
+      "url": "https://cyberscoop.com/director-of-commerce-ai-standards-office-out-after-three-months/",
+      "source": "cyberscoop.com",
+      "paywalled": false,
+      "topic": "Cybersecurity",
+      "published": "2026-07-20T18:10:03+00:00",
+      "is_today": true,
+      "summary": "The Commerce Department's AI standards office director departed after three months, affecting federal AI governance coordination."
+    },
+    {
+      "title": "What the World Cup can teach us about cybersecurity resilience",
+      "url": "https://cyberscoop.com/world-cup-2026-major-event-cybersecurity-resilience-op-ed/",
+      "source": "cyberscoop.com",
+      "paywalled": false,
+      "topic": "Cybersecurity",
+      "published": "2026-07-21T10:00:00+00:00",
+      "is_today": true,
+      "summary": "Major sporting events like the World Cup demonstrate critical infrastructure cybersecurity resilience principles applicable to federal policy."
+    },
+    {
+      "title": "Commerce seeks new AI safety director after top official departs",
+      "url": "https://www.politico.com/news/2026/07/20/top-trump-ai-safety-official-abruptly-leaves-post-01004847",
+      "source": "rss.politico.com",
+      "paywalled": false,
+      "topic": "Technology",
+      "published": "2026-07-20T11:46:38-04:00",
+      "is_today": true,
+      "summary": "Commerce Department seeks new AI safety director after top official's departure, affecting federal AI governance."
+    },
+    {
+      "title": "Cruz and Blackburn meet Trump to discuss tech policy",
+      "url": "https://www.politico.com/live-updates/2026/07/20/congress/cruz-and-blackburn-to-discuss-kids-online-safety-with-trump-01005091",
+      "source": "rss.politico.com",
+      "paywalled": false,
+      "topic": "Technology",
+      "published": "2026-07-20T15:10:23-04:00",
+      "is_today": true,
+      "summary": "Senators Cruz and Blackburn meet Trump to discuss children's online safety policy and tech regulation."
+    },
+    {
+      "title": "Who should regulate global AI? China makes a play for leadership",
+      "url": "https://www.npr.org/2026/07/20/nx-s1-5886477/who-should-regulate-global-ai-china-makes-a-play-for-leadership",
       "source": "feeds.npr.org",
       "paywalled": false,
       "topic": "Technology",
-      "published": "2026-07-18T07:42:13-04:00",
-      "is_today": false,
-      "summary": "Engineers created a small flapping robot capable of both flying and swimming, advancing robotics research with potential applications in surveillance and environmental monitoring."
-    },
-    {
-      "title": "TSA's new CT scanners may pose a problem for some carry-on bags: What to know",
-      "url": "https://thehill.com/policy/technology/5969843-tsas-new-ct-scanners-may-pose-a-problem-for-some-carry-on-bags-what-to-know/",
-      "source": "thehill.com",
-      "paywalled": false,
-      "topic": "Technology",
-      "published": "2026-07-18T15:00:00+00:00",
-      "is_today": false,
-      "summary": "TSA's new computed tomography scanners may reject certain carry-on bags, affecting airport security procedures and passenger travel standards."
-    },
-    {
-      "title": "Divide grows between AI employees and executives over policy battles",
-      "url": "https://thehill.com/policy/technology/5975760-openai-employees-fund-guardrails-alliance/",
-      "source": "thehill.com",
-      "paywalled": false,
-      "topic": "Technology",
-      "published": "2026-07-19T10:00:00+00:00",
-      "is_today": false,
-      "summary": "OpenAI employees are funding advocacy efforts on AI safety policy, creating internal disagreement with executives over regulatory approaches to artificial intelligence."
+      "published": "2026-07-20T16:09:27-04:00",
+      "is_today": true,
+      "summary": "China seeks leadership role in global AI regulation, challenging U.S. influence over international AI governance standards."
     }
   ]
 }
