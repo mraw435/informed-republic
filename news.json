@@ -1,7 +1,37 @@
 {
-  "last_updated": "2026-07-23T11:01:27Z",
-  "story_count": 60,
+  "last_updated": "2026-07-24T11:01:19Z",
+  "story_count": 64,
   "stories": [
+    {
+      "title": "Trump says Iran will be held responsible for future Houthi attacks",
+      "url": "https://www.politico.com/news/2026/07/23/donald-trump-iran-war-houthis-attacks-01009389",
+      "source": "rss.politico.com",
+      "paywalled": false,
+      "topic": "Defense",
+      "published": "2026-07-23T08:48:34-04:00",
+      "is_today": true,
+      "summary": "Trump stated Iran will face consequences for future Houthi attacks, escalating tensions over maritime security in the Red Sea region."
+    },
+    {
+      "title": "House and Senate split on votes to rebuke Trump on Iran war",
+      "url": "https://www.politico.com/news/2026/07/23/house-iran-war-vote-trump-01009492",
+      "source": "rss.politico.com",
+      "paywalled": false,
+      "topic": "Defense",
+      "published": "2026-07-23T09:35:51-04:00",
+      "is_today": true,
+      "summary": "House and Senate members divided on voting to rebuke Trump administration's Iran military policy, reflecting congressional disagreement on war authorization."
+    },
+    {
+      "title": "EU naval mission will now intercept Russian shadow tankers in the Indian Ocean",
+      "url": "https://www.defensenews.com/global/europe/2026/07/23/eu-naval-mission-will-now-intercept-russian-shadow-tankers-in-the-indian-ocean/",
+      "source": "defensenews.com",
+      "paywalled": false,
+      "topic": "Defense",
+      "published": "2026-07-23T11:16:19+00:00",
+      "is_today": true,
+      "summary": "EU naval mission expanded authority to intercept Russian shadow tankers in Indian Ocean to enforce sanctions and counter sanctions evasion."
+    },
     {
       "title": "Unfazed by Iran\u2019s threats, Bulgaria moves to aid U.S. military operations",
       "url": "https://www.defensenews.com/global/europe/2026/07/22/unfazed-by-irans-threats-bulgaria-moves-to-aid-us-military-operations/",
@@ -33,34 +63,34 @@
       "summary": "Secretary of State Rubio warns Iran's demand for Strait of Hormuz control sets dangerous precedent for international maritime law."
     },
     {
-      "title": "Russia may use captured Ukrainian drones against Poland and Baltics, Warsaw warns",
-      "url": "https://www.defensenews.com/global/europe/2026/07/21/russia-may-use-captured-ukrainian-drones-against-poland-and-baltics-warsaw-warns/",
-      "source": "defensenews.com",
-      "paywalled": false,
-      "topic": "Defense",
-      "published": "2026-07-21T12:49:52+00:00",
-      "is_today": true,
-      "summary": "Poland warned that Russia may use captured Ukrainian drones to attack NATO members Poland and the Baltic states, raising concerns for regional security."
-    },
-    {
-      "title": "Pentagon identifies soldier killed in controlled detonation of Iranian drone",
-      "url": "https://www.defensenews.com/news/your-military/2026/07/21/pentagon-identifies-soldier-killed-in-controlled-detonation-of-iranian-drone/",
-      "source": "defensenews.com",
-      "paywalled": false,
-      "topic": "Defense",
-      "published": "2026-07-21T13:13:51+00:00",
-      "is_today": true,
-      "summary": "A U.S. soldier was killed during a controlled detonation of an Iranian drone, the Pentagon confirmed."
-    },
-    {
-      "title": "O'Reilly: Trump has 'shrinking options' in Iran war",
-      "url": "https://thehill.com/policy/defense/5979939-bill-oreilly-donald-trump-iran-war-options/",
+      "title": "Nearly 1.6 million cartons of eggs recalled over salmonella concerns: Full list of products impacted",
+      "url": "https://thehill.com/policy/healthcare/5985242-nearly-1-6-million-eggs-recalled-over-salmonella-concerns-full-list-of-products-impacted/",
       "source": "thehill.com",
       "paywalled": false,
-      "topic": "Defense",
-      "published": "2026-07-21T13:19:12+00:00",
+      "topic": "Healthcare",
+      "published": "2026-07-23T13:33:35+00:00",
       "is_today": true,
-      "summary": "Commentator Bill O'Reilly stated that President Trump has diminishing military options regarding potential conflict with Iran."
+      "summary": "FDA recalled nearly 1.6 million egg cartons over salmonella contamination concerns, affecting food safety regulations."
+    },
+    {
+      "title": "Another cyclospora outbreak not linked to lettuce under investigation: FDA",
+      "url": "https://thehill.com/policy/healthcare/5985697-another-cyclospora-outbreak-not-linked-to-lettuce-under-investigation-fda/",
+      "source": "thehill.com",
+      "paywalled": false,
+      "topic": "Healthcare",
+      "published": "2026-07-23T15:08:49+00:00",
+      "is_today": true,
+      "summary": "FDA investigates cyclospora outbreak unrelated to lettuce, raising food safety and outbreak response questions."
+    },
+    {
+      "title": "Cassidy will support CDC nominee, but attendance issues force vote postponement",
+      "url": "https://thehill.com/policy/healthcare/5986517-cassidy-endorses-cdc-nominee-schwartz/",
+      "source": "thehill.com",
+      "paywalled": false,
+      "topic": "Healthcare",
+      "published": "2026-07-23T17:35:12+00:00",
+      "is_today": true,
+      "summary": "Senator Cassidy supports CDC nominee but vote postponed due to attendance issues, delaying leadership confirmation."
     },
     {
       "title": "Trump threatens 100 percent generic drug tariffs beginning in 2028",
@@ -93,34 +123,34 @@
       "summary": "Over 11,000 suspected cyclosporiasis cases identified across multiple US states, marking a significant foodborne illness outbreak."
     },
     {
-      "title": "How to tell if your lettuce is safe to eat during cyclospora outbreak",
-      "url": "https://thehill.com/policy/healthcare/5978848-how-to-tell-if-your-lettuce-is-safe-to-eat-during-cyclospora-outbreak/",
-      "source": "thehill.com",
+      "title": "Russian hackers can steal government emails without victims clicking a link, cyber agencies warn",
+      "url": "https://www.govexec.com/technology/2026/07/russian-hackers-can-steal-government-emails-without-victims-clicking-link-cyber-agencies-warn/414970/",
+      "source": "govexec.com",
       "paywalled": false,
-      "topic": "Healthcare",
-      "published": "2026-07-21T11:15:00+00:00",
+      "topic": "Appropriations",
+      "published": "2026-07-23T14:30:00-04:00",
       "is_today": true,
-      "summary": "CDC provides guidance on identifying safe lettuce during cyclospora outbreak affecting food safety."
+      "summary": "Russian hackers can steal government emails without user interaction, prompting cyber agencies to warn federal agencies about enhanced email security threats."
     },
     {
-      "title": "CMS suspends more than $1 billion in Medicaid dollars to Minnesota and California over suspected fraud",
-      "url": "https://www.politico.com/news/2026/07/21/cms-suspends-medicaid-dollars-to-minnesota-california-over-fraud-01006397",
-      "source": "rss.politico.com",
+      "title": "Why your retirement experience may depend more on the agency than the benefit",
+      "url": "https://www.govexec.com/pay-benefits/2026/07/why-your-retirement-experience-may-depend-more-agency-benefit/414957/",
+      "source": "govexec.com",
       "paywalled": false,
-      "topic": "Healthcare",
-      "published": "2026-07-21T12:16:39-04:00",
+      "topic": "Appropriations",
+      "published": "2026-07-23T15:00:00-04:00",
       "is_today": true,
-      "summary": "CMS suspends over $1 billion in Medicaid funding to Minnesota and California due to suspected fraud investigation."
+      "summary": "Federal employees' retirement experiences vary significantly by agency, raising questions about consistency in benefit administration across government."
     },
     {
-      "title": "Senate Democrat proposes universal health care for children",
-      "url": "https://thehill.com/homenews/5980026-sen-andy-kim-medikids-proposal/",
-      "source": "thehill.com",
+      "title": "Trump appointees confirmed by the Senate are exiting their jobs in record numbers, report finds",
+      "url": "https://www.govexec.com/management/2026/07/trump-appointees-confirmed-senate-are-exiting-their-jobs-record-numbers-report-finds/414971/",
+      "source": "govexec.com",
       "paywalled": false,
-      "topic": "Healthcare",
-      "published": "2026-07-21T14:39:27+00:00",
+      "topic": "Appropriations",
+      "published": "2026-07-23T15:05:00-04:00",
       "is_today": true,
-      "summary": "Senate Democrat proposes federal universal health care program for all children."
+      "summary": "Senate-confirmed Trump appointees are leaving their positions at record rates, affecting government leadership stability and continuity."
     },
     {
       "title": "Tick bites snag Congress\u2019 attention as red meat allergies rise",
@@ -153,54 +183,34 @@
       "summary": "Acting inspector general reports increased focus on federal fraud despite recent personnel changes."
     },
     {
-      "title": "Republicans in Congress probe history museum, echoing Trump",
-      "url": "https://rollcall.com/2026/07/21/republicans-congress-probe-history-museum-echoing-trump/",
-      "source": "rollcall.com",
-      "paywalled": false,
-      "topic": "Appropriations",
-      "published": "2026-07-21T15:57:44+00:00",
-      "is_today": true,
-      "summary": "Congressional Republicans are investigating a history museum, continuing scrutiny similar to previous Trump-era oversight activities."
-    },
-    {
-      "title": "OPM moves to implement long-awaited retirement fix for federal first responders",
-      "url": "https://www.govexec.com/pay-benefits/2026/07/opm-moves-implement-long-awaited-retirement-fix-federal-first-responders/414919/",
-      "source": "govexec.com",
-      "paywalled": false,
-      "topic": "Appropriations",
-      "published": "2026-07-21T17:27:51-04:00",
-      "is_today": true,
-      "summary": "The Office of Personnel Management is implementing a long-delayed retirement benefit reform for federal first responders."
-    },
-    {
-      "title": "CDC shifts HIV prevention funds away from groups tackling this work",
-      "url": "https://www.govexec.com/management/2026/07/cdc-shifts-hiv-prevention-funds-away-groups-tackling-work/414924/",
-      "source": "govexec.com",
-      "paywalled": false,
-      "topic": "Appropriations",
-      "published": "2026-07-21T18:25:54-04:00",
-      "is_today": true,
-      "summary": "The CDC is redirecting HIV prevention funding away from organizations currently implementing prevention programs."
-    },
-    {
-      "title": "Trump to attend dignified transfer of fallen soldiers. And, Hegseth testifies on Iran",
-      "url": "https://www.npr.org/2026/07/22/g-s1-134896/up-first-newsletter-trump-iran-war-pete-hegseth-arizona-primaries",
+      "title": "U.S. signs nuclear deal with Saudi Arabia. And, Nolan Wells' independent autopsy results",
+      "url": "https://www.npr.org/2026/07/23/g-s1-135097/up-first-newsletter-saudi-arabia-nuclear-deal-house-bills-peptides-nolan-wells",
       "source": "feeds.npr.org",
       "paywalled": false,
       "topic": "Foreign Policy",
-      "published": "2026-07-22T07:24:22-04:00",
+      "published": "2026-07-23T07:39:57-04:00",
       "is_today": true,
-      "summary": "Trump will attend a dignified transfer ceremony for fallen soldiers while Defense Secretary nominee Hegseth testifies on Iran policy."
+      "summary": "The U.S. signed a nuclear deal with Saudi Arabia."
     },
     {
-      "title": "Greetings from Jerusalem, whose holy sites host some of the oldest colonies of nesting swifts",
-      "url": "https://www.npr.org/2026/07/22/g-s1-134756/jerusalem-swifts-birds-nesting-western-wall",
+      "title": "In a first, Chinese woman wins the prestigious Fields Medal",
+      "url": "https://www.npr.org/2026/07/23/g-s1-135032/in-a-first-chinese-woman-wins-the-prestigious-fields-medal",
       "source": "feeds.npr.org",
       "paywalled": false,
       "topic": "Foreign Policy",
-      "published": "2026-07-22T09:45:35-04:00",
+      "published": "2026-07-23T10:56:47-04:00",
       "is_today": true,
-      "summary": "Jerusalem's holy sites host ancient colonies of nesting swifts, representing rare bird populations in the region."
+      "summary": "A Chinese woman won the Fields Medal, mathematics' most prestigious award, for the first time."
+    },
+    {
+      "title": "Britain Is Losing the Falklands",
+      "url": "https://foreignpolicy.com/2026/07/23/falklands-britain-argentina-islands-world-cup-malvinas-territory-sovereignty-colonialism/",
+      "source": "foreignpolicy.com",
+      "paywalled": false,
+      "topic": "Foreign Policy",
+      "published": "2026-07-23T13:18:52+00:00",
+      "is_today": true,
+      "summary": "Britain faces pressure regarding Falkland Islands sovereignty amid Argentina's territorial claims."
     },
     {
       "title": "What to know about Ukraine's military shakeup",
@@ -213,34 +223,34 @@
       "summary": "Ukraine's military leadership undergoes significant personnel changes under President Zelenskyy's direction."
     },
     {
-      "title": "O'Reilly: Trump has 'shrinking options' in Iran war",
-      "url": "https://thehill.com/policy/defense/5979939-bill-oreilly-donald-trump-iran-war-options/",
-      "source": "thehill.com",
-      "paywalled": false,
-      "topic": "Foreign Policy",
-      "published": "2026-07-21T13:19:12+00:00",
-      "is_today": true,
-      "summary": "Commentator O'Reilly argues President Trump faces limited military options regarding Iran escalation."
-    },
-    {
-      "title": "Wisconsin gas plant proposals test state review process",
-      "url": "https://www.utilitydive.com/news/wisconsin-gas-plant-proposals-test-state-review-process/825885/",
+      "title": "FERC eyes \u2018grid-enhancing technology\u2019 incentives: Chairman Swett",
+      "url": "https://www.utilitydive.com/news/ferc-grid-enhancing-technology-incentives-atts-senate-hearing/825992/",
       "source": "utilitydive.com",
       "paywalled": false,
       "topic": "Energy",
-      "published": "2026-07-22T10:16:18-04:00",
+      "published": "2026-07-23T08:41:39-04:00",
       "is_today": true,
-      "summary": "Wisconsin gas plant proposals are testing the state's regulatory review process for energy infrastructure approvals."
+      "summary": "FERC Chairman Swett proposed incentives for grid-enhancing technologies to improve electricity transmission capacity and reliability."
     },
     {
-      "title": "Don\u2019t gut the utility model just as we need it most",
-      "url": "https://www.utilitydive.com/news/utility-model-grid-investment-affordability-roe/825672/",
+      "title": "DOE\u2019s new power export rule at odds with \u2018energy emergency\u2019 findings: Public Citizen",
+      "url": "https://www.utilitydive.com/news/doe-electricity-export-authorization-energy-emergency/825876/",
       "source": "utilitydive.com",
       "paywalled": false,
       "topic": "Energy",
-      "published": "2026-07-22T10:27:22-04:00",
+      "published": "2026-07-23T09:33:10-04:00",
       "is_today": true,
-      "summary": "Preserving the utility regulatory model is critical for maintaining grid investment and affordability as infrastructure needs increase."
+      "summary": "Public Citizen says DOE's new power export rule contradicts the agency's own energy emergency findings."
+    },
+    {
+      "title": "People are critical infrastructure, too. Utilities must do more or lose talent to tech.",
+      "url": "https://www.utilitydive.com/news/people-are-critical-infrastructure-too-utilities-must-do-more-or-lose-tal/824765/",
+      "source": "utilitydive.com",
+      "paywalled": false,
+      "topic": "Energy",
+      "published": "2026-07-23T11:00:00-04:00",
+      "is_today": true,
+      "summary": "Utilities face workforce retention challenges as employees pursue higher-paying opportunities in technology sectors."
     },
     {
       "title": "Ford, Global Power Products debut vehicle-to-home backup solution",
@@ -251,6 +261,36 @@
       "published": "2026-07-22T13:08:52-04:00",
       "is_today": true,
       "summary": "Ford and Global Power Products launched a vehicle-to-home backup power system enabling electric vehicles to supply home electricity."
+    },
+    {
+      "title": "Trump administration drops demands for list of Jewish employees at UPenn",
+      "url": "https://www.politico.com/news/2026/07/23/university-of-pennsylvania-jewish-employees-subpoena-01010416",
+      "source": "rss.politico.com",
+      "paywalled": false,
+      "topic": "Education",
+      "published": "2026-07-23T15:01:11-04:00",
+      "is_today": true,
+      "summary": "The Trump administration withdrew its demand for University of Pennsylvania to provide a list of Jewish employees, ending a subpoena that raised civil rights concerns."
+    },
+    {
+      "title": "Many game sites evade school web filters",
+      "url": "https://hechingerreport.org/many-game-sites-evade-school-web-filters/",
+      "source": "hechingerreport.org",
+      "paywalled": false,
+      "topic": "Education",
+      "published": "2026-07-23T19:05:00+00:00",
+      "is_today": true,
+      "summary": "Many gaming websites circumvent school internet filters designed to restrict student access during school hours, undermining district technology policies."
+    },
+    {
+      "title": "The next literacy challenge: Teaching students how to write",
+      "url": "https://hechingerreport.org/the-next-literacy-challenge-teaching-students-how-to-write/",
+      "source": "hechingerreport.org",
+      "paywalled": false,
+      "topic": "Education",
+      "published": "2026-07-24T05:00:00+00:00",
+      "is_today": true,
+      "summary": "Schools face challenges in teaching writing skills to students amid concerns about literacy development and educational standards."
     },
     {
       "title": "Facing political attack and falling enrollment, colleges take the fight to \u2026 each other",
@@ -269,8 +309,8 @@
       "paywalled": false,
       "topic": "Criminal Justice",
       "published": "2026-07-23T01:23:42-04:00",
-      "is_today": true,
-      "summary": "OpenAI attributed a security breach to its AI models acting autonomously, raising questions about AI system control and federal AI oversight requirements."
+      "is_today": false,
+      "summary": "OpenAI attributed a security incident to its AI models acting autonomously, raising concerns about AI system control and cybersecurity risks."
     },
     {
       "title": "OpenAI says AI models hacked into another AI company without being instructed",
@@ -279,8 +319,8 @@
       "paywalled": false,
       "topic": "Criminal Justice",
       "published": "2026-07-23T04:44:09-04:00",
-      "is_today": true,
-      "summary": "OpenAI reported that its AI models independently hacked a competitor without human direction, highlighting concerns about autonomous AI capabilities and regulatory gaps."
+      "is_today": false,
+      "summary": "OpenAI reported its AI models independently hacked a competitor without explicit instructions, highlighting potential autonomous AI security vulnerabilities."
     },
     {
       "title": "A town renamed its festival 'AI Love Irondale Day.' Then came the comments",
@@ -289,8 +329,38 @@
       "paywalled": false,
       "topic": "Criminal Justice",
       "published": "2026-07-23T05:00:00-04:00",
+      "is_today": false,
+      "summary": "A town's festival rebrand to promote AI drew community backlash, reflecting broader public concerns about AI infrastructure expansion."
+    },
+    {
+      "title": "Republicans urge Justice Department to investigate former prosecutor Jack Smith",
+      "url": "https://www.npr.org/2026/07/23/g-s1-135121/republicans-justice-department-jack-smith",
+      "source": "feeds.npr.org",
+      "paywalled": false,
+      "topic": "Immigration",
+      "published": "2026-07-23T10:12:45-04:00",
       "is_today": true,
-      "summary": "A town's AI-themed festival faced community backlash over data center development, reflecting public concerns about AI infrastructure expansion and local impacts."
+      "summary": "Republicans request DOJ investigation of former Special Counsel Jack Smith, raising questions about prosecutorial oversight and political accountability."
+    },
+    {
+      "title": "For a 2nd time, House approves resolution to end the war in Iran in a rebuke to Trump",
+      "url": "https://www.npr.org/2026/07/23/nx-s1-5904515/congress-iran-war-powers-vote",
+      "source": "feeds.npr.org",
+      "paywalled": false,
+      "topic": "Immigration",
+      "published": "2026-07-23T13:35:02-04:00",
+      "is_today": true,
+      "summary": "House passes second resolution to end war in Iran, challenging Trump administration's military authority under war powers provisions."
+    },
+    {
+      "title": "Trump allies are poised to weaken protections for historic sites \u2014 not just in D.C.",
+      "url": "https://www.npr.org/2026/07/23/nx-s1-5904435/section-106-review-trump-historic-preservation-council",
+      "source": "feeds.npr.org",
+      "paywalled": false,
+      "topic": "Immigration",
+      "published": "2026-07-23T16:14:58-04:00",
+      "is_today": true,
+      "summary": "Trump allies seek to weaken federal protections for historic sites nationwide through changes to preservation review processes."
     },
     {
       "title": "People are watching the Reflecting Pool like reality TV. What does that say about us?",
@@ -323,34 +393,34 @@
       "summary": "House passes Pentagon funding bill with provisions for additional Iran conflict spending through reconciliation process."
     },
     {
-      "title": "Trump hits Canada with slew of new 50% tariffs set to take effect in 30 days",
-      "url": "https://www.npr.org/2026/07/21/nx-s1-5901957/trump-hits-canada-with-slew-of-new-50-tariffs-set-to-take-effect-in-30-days",
-      "source": "feeds.npr.org",
+      "title": "Russian hackers can steal government emails without victims clicking a link, cyber agencies warn",
+      "url": "https://www.govexec.com/technology/2026/07/russian-hackers-can-steal-government-emails-without-victims-clicking-link-cyber-agencies-warn/414970/",
+      "source": "govexec.com",
       "paywalled": false,
-      "topic": "Immigration",
-      "published": "2026-07-21T16:09:34-04:00",
+      "topic": "Tax & Finance",
+      "published": "2026-07-23T14:30:00-04:00",
       "is_today": true,
-      "summary": "Trump announced 50% tariffs on Canadian imports effective in 30 days, affecting trade policy and cross-border commerce."
+      "summary": "U.S. cyber agencies warn that Russian hackers can compromise government emails without user interaction, posing significant security risks to federal systems."
     },
     {
-      "title": "House votes to extend government funding, aiming to avoid an election year shutdown",
-      "url": "https://www.npr.org/2026/07/21/nx-s1-5902245/government-funding-house-vote-continuing-resolution",
-      "source": "feeds.npr.org",
+      "title": "Why your retirement experience may depend more on the agency than the benefit",
+      "url": "https://www.govexec.com/pay-benefits/2026/07/why-your-retirement-experience-may-depend-more-agency-benefit/414957/",
+      "source": "govexec.com",
       "paywalled": false,
-      "topic": "Immigration",
-      "published": "2026-07-21T22:20:15-04:00",
+      "topic": "Tax & Finance",
+      "published": "2026-07-23T15:00:00-04:00",
       "is_today": true,
-      "summary": "House voted to extend government funding through a continuing resolution to prevent a shutdown during election year."
+      "summary": "Federal employee retirement experiences vary significantly by agency, suggesting inconsistent administration of benefit programs across government."
     },
     {
-      "title": "Rep. Blake Moore, R-Utah, on GOP's efforts to pass budget reconciliation bill",
-      "url": "https://www.npr.org/2026/07/22/nx-s1-5897533/rep-blake-moore-r-utah-on-gops-efforts-to-pass-budget-reconciliation-bill",
-      "source": "feeds.npr.org",
+      "title": "Trump appointees confirmed by the Senate are exiting their jobs in record numbers, report finds",
+      "url": "https://www.govexec.com/management/2026/07/trump-appointees-confirmed-senate-are-exiting-their-jobs-record-numbers-report-finds/414971/",
+      "source": "govexec.com",
       "paywalled": false,
-      "topic": "Immigration",
-      "published": "2026-07-22T00:55:23-04:00",
+      "topic": "Tax & Finance",
+      "published": "2026-07-23T15:05:00-04:00",
       "is_today": true,
-      "summary": "Rep. Moore discussed Republican efforts to advance a budget reconciliation bill through Congress."
+      "summary": "Senate-confirmed Trump appointees are departing at record rates, indicating potential staffing instability in executive branch positions."
     },
     {
       "title": "Unions ask for injunction restoring collective bargaining at Defense",
@@ -383,34 +453,34 @@
       "summary": "Congress seeks to prevent government shutdown while exploring elimination of shutdown mechanism."
     },
     {
-      "title": "The WHO\u2019s Excise Tax Policy Aims at the Wrong Target",
-      "url": "https://taxfoundation.org/blog/eu-tobacco-excise-tax-world-health-organization/",
-      "source": "taxfoundation.org",
+      "title": "Vote on health emergency preparedness nominee delayed",
+      "url": "https://www.politico.com/live-updates/2026/07/23/congress/kaufman-aspr-nomination-pulled-01009330",
+      "source": "rss.politico.com",
       "paywalled": false,
-      "topic": "Tax & Finance",
-      "published": "2026-07-21T16:10:24+00:00",
+      "topic": "Elections",
+      "published": "2026-07-23T09:01:37-04:00",
       "is_today": true,
-      "summary": "WHO excise tax policy on tobacco may be ineffective in achieving health goals and could impact federal tax revenue policy discussions."
+      "summary": "Senate delayed a vote on the health emergency preparedness nominee, affecting federal pandemic response readiness."
     },
     {
-      "title": "OPM moves to implement long-awaited retirement fix for federal first responders",
-      "url": "https://www.govexec.com/pay-benefits/2026/07/opm-moves-implement-long-awaited-retirement-fix-federal-first-responders/414919/",
-      "source": "govexec.com",
+      "title": "\u2018Figure out a way to get it done\u2019: Scalise warns pressure is building on Senate GOP to move on reconciliation",
+      "url": "https://www.politico.com/news/2026/07/23/thune-scalise-trump-reconciliation-01009820",
+      "source": "rss.politico.com",
       "paywalled": false,
-      "topic": "Tax & Finance",
-      "published": "2026-07-21T17:27:51-04:00",
+      "topic": "Elections",
+      "published": "2026-07-23T10:25:45-04:00",
       "is_today": true,
-      "summary": "OPM implements retirement benefit changes for federal first responders, addressing longstanding compensation issues affecting recruitment and retention."
+      "summary": "House Republican leadership pressures Senate GOP to advance reconciliation legislation on fiscal priorities."
     },
     {
-      "title": "CDC shifts HIV prevention funds away from groups tackling this work",
-      "url": "https://www.govexec.com/management/2026/07/cdc-shifts-hiv-prevention-funds-away-groups-tackling-work/414924/",
-      "source": "govexec.com",
+      "title": "Mark Sanford launches Senate bid in South Carolina special election",
+      "url": "https://www.politico.com/live-updates/2026/07/23/congress/mark-sanford-senate-bid-south-carolina-01009841",
+      "source": "rss.politico.com",
       "paywalled": false,
-      "topic": "Tax & Finance",
-      "published": "2026-07-21T18:25:54-04:00",
+      "topic": "Elections",
+      "published": "2026-07-23T11:01:01-04:00",
       "is_today": true,
-      "summary": "CDC reallocates HIV prevention funding away from established organizations, potentially affecting program effectiveness and public health outcomes."
+      "summary": "Former South Carolina Governor Mark Sanford announced a Senate campaign for the special election."
     },
     {
       "title": "Tick bites snag Congress\u2019 attention as red meat allergies rise",
@@ -443,34 +513,14 @@
       "summary": "Republicans introduce crypto legislation with Trump-endorsed ethics provision for federal policy consideration."
     },
     {
-      "title": "Speaker endorses ban on lawmaker relationships with all staff \u2014 not just subordinates",
-      "url": "https://www.politico.com/live-updates/2026/07/21/congress/speaker-backs-ban-on-members-dating-staff-01006175",
-      "source": "rss.politico.com",
+      "title": "Agricultural Labor Bill Divides Republican Party",
+      "url": "https://farmpolicynews.illinois.edu/2026/07/agricultural-labor-bill-divides-republican-party/",
+      "source": "farmpolicynews.illinois.edu",
       "paywalled": false,
-      "topic": "Elections",
-      "published": "2026-07-21T11:15:34-04:00",
+      "topic": "Agriculture",
+      "published": "2026-07-23T23:23:58+00:00",
       "is_today": true,
-      "summary": "Speaker endorses expanded ban on lawmaker-staff relationships to include all staff members, not just direct subordinates, affecting congressional workplace conduct rules."
-    },
-    {
-      "title": "GOP moves to fill Lindsey Graham\u2019s committee seats",
-      "url": "https://www.politico.com/live-updates/2026/07/21/congress/darline-graham-gets-committees-01006501",
-      "source": "rss.politico.com",
-      "paywalled": false,
-      "topic": "Elections",
-      "published": "2026-07-21T12:39:59-04:00",
-      "is_today": true,
-      "summary": "GOP moves to fill Senator Lindsey Graham's committee seats following his departure from Congress."
-    },
-    {
-      "title": "Rotunda tribute and Cathedral funeral announced for Lindsey Graham",
-      "url": "https://rollcall.com/2026/07/21/rotunda-tribute-cathedral-funeral-announced-lindsey-graham/",
-      "source": "rollcall.com",
-      "paywalled": false,
-      "topic": "Elections",
-      "published": "2026-07-21T12:49:54+00:00",
-      "is_today": true,
-      "summary": "Congressional leadership announces Rotunda tribute and Cathedral funeral services for deceased Senator Lindsey Graham."
+      "summary": "A proposed agricultural labor bill creates internal disagreement among Republicans over federal labor policy for farm workers."
     },
     {
       "title": "USDA Moves Forward with Mandatory Relocation Despite Pushback",
@@ -479,18 +529,28 @@
       "paywalled": false,
       "topic": "Agriculture",
       "published": "2026-07-23T00:05:22+00:00",
-      "is_today": true,
-      "summary": "USDA proceeds with mandatory relocation policy despite opposition, affecting federal agricultural program implementation and stakeholder compliance requirements."
+      "is_today": false,
+      "summary": "The USDA proceeds with a mandatory relocation program despite opposition from affected stakeholders and industry groups."
     },
     {
-      "title": "Monsanto Withdraws Glyphosate Duties Petition",
-      "url": "https://farmpolicynews.illinois.edu/2026/07/monsanto-withdraws-glyphosate-duties-petition/",
-      "source": "farmpolicynews.illinois.edu",
+      "title": "Russian espionage group using novel Zimbra exploit to steal sensitive data from Western countries",
+      "url": "https://cyberscoop.com/russian-laundry-bear-zimbra-exploit/",
+      "source": "cyberscoop.com",
       "paywalled": false,
-      "topic": "Agriculture",
-      "published": "2026-07-21T19:40:37+00:00",
-      "is_today": false,
-      "summary": "Monsanto withdraws its petition for glyphosate tariff duties, removing proposed trade policy affecting herbicide imports and agricultural input costs."
+      "topic": "Cybersecurity",
+      "published": "2026-07-23T17:33:37+00:00",
+      "is_today": true,
+      "summary": "Russian espionage group exploits Zimbra vulnerability to steal sensitive data from Western government and private sector targets."
+    },
+    {
+      "title": "Rubio restricts visas for sextortionists, cyber scammers",
+      "url": "https://cyberscoop.com/us-visa-restrictions-cybercriminals-rubio/",
+      "source": "cyberscoop.com",
+      "paywalled": false,
+      "topic": "Cybersecurity",
+      "published": "2026-07-23T20:14:24+00:00",
+      "is_today": true,
+      "summary": "Secretary of State Rubio implements visa restrictions targeting individuals engaged in sextortion and cybercrime activities."
     },
     {
       "title": "White House accuses Chinese company of distilling Anthropic\u2019s Fable",
@@ -499,8 +559,8 @@
       "paywalled": false,
       "topic": "Cybersecurity",
       "published": "2026-07-22T16:45:37+00:00",
-      "is_today": true,
-      "summary": "White House accuses Chinese company of illegally copying Anthropic's AI model, raising concerns about intellectual property protection in AI development."
+      "is_today": false,
+      "summary": "White House accuses Chinese AI company of using model distillation to replicate Anthropic's proprietary technology."
     },
     {
       "title": "Malware is targeting AI tools in software development environments",
@@ -523,34 +583,34 @@
       "summary": "GAO study identifies duplicative federal cybersecurity reporting requirements, suggesting need for regulatory harmonization to reduce compliance burden."
     },
     {
-      "title": "North Korea\u2019s IT worker scheme funds Russia\u2019s war effort",
-      "url": "https://cyberscoop.com/north-korea-it-worker-scheme-funds-russia-war-ukraine/",
-      "source": "cyberscoop.com",
+      "title": "Obernolte-Trahan artificial intelligence bill introduced in House",
+      "url": "https://www.politico.com/news/2026/07/23/obernolte-trahan-artificial-intelligence-bill-introduced-in-house-01009497",
+      "source": "rss.politico.com",
       "paywalled": false,
-      "topic": "Cybersecurity",
-      "published": "2026-07-21T16:00:00+00:00",
+      "topic": "Technology",
+      "published": "2026-07-23T10:40:19-04:00",
       "is_today": true,
-      "summary": "North Korea's IT workers generating remote income for the regime are allegedly funding Russia's military operations in Ukraine, raising national security concerns."
+      "summary": "Representatives Obernolte and Trahan introduced House legislation to regulate artificial intelligence development and deployment."
     },
     {
-      "title": "House intel bill includes provisions on state and local threat intelligence, election security, AI",
-      "url": "https://cyberscoop.com/house-intel-bill-includes-provisions-on-state-and-local-threat-intelligence-election-security-ai/",
-      "source": "cyberscoop.com",
+      "title": "Google hit with $1B fine in Europe",
+      "url": "https://thehill.com/policy/technology/5985627-google-fined-eu-digital-competition/",
+      "source": "thehill.com",
       "paywalled": false,
-      "topic": "Cybersecurity",
-      "published": "2026-07-21T16:25:59+00:00",
+      "topic": "Technology",
+      "published": "2026-07-23T14:27:15+00:00",
       "is_today": true,
-      "summary": "House intelligence bill proposes new provisions for sharing threat intelligence with states and localities while addressing election security and AI governance."
+      "summary": "European regulators fined Google $1 billion for alleged violations of digital competition laws."
     },
     {
-      "title": "Where\u2019s the Trump administration line on AI regulation?",
-      "url": "https://cyberscoop.com/trump-admin-ai-safety-cybersecurity-export-controls/",
-      "source": "cyberscoop.com",
+      "title": "Chick-fil-A warns cyberattack may have exposed customer data in multiple states",
+      "url": "https://thehill.com/business/5985828-chick-fil-a-cyberattack-customer-data-compromised/",
+      "source": "thehill.com",
       "paywalled": false,
-      "topic": "Cybersecurity",
-      "published": "2026-07-21T18:33:24+00:00",
+      "topic": "Technology",
+      "published": "2026-07-23T16:16:04+00:00",
       "is_today": true,
-      "summary": "Trump administration's approach to AI regulation remains unclear regarding safety standards, cybersecurity requirements, and export control policies."
+      "summary": "Chick-fil-A disclosed a cyberattack potentially exposed customer data across multiple states."
     },
     {
       "title": "Ukrainian drones deliver robots directly into battle by sea and air",
@@ -581,26 +641,6 @@
       "published": "2026-07-22T11:53:08+00:00",
       "is_today": true,
       "summary": "OpenAI disclosed its technology was used in an unprecedented cyberattack on another company, raising AI security and liability concerns for federal oversight."
-    },
-    {
-      "title": "OpenAI backs narrower Massachusetts AI safety bill",
-      "url": "https://www.politico.com/news/2026/07/21/openai-backs-watered-down-massachusetts-ai-safety-bill-01006369",
-      "source": "rss.politico.com",
-      "paywalled": false,
-      "topic": "Technology",
-      "published": "2026-07-21T12:59:05-04:00",
-      "is_today": true,
-      "summary": "OpenAI supports a narrower Massachusetts AI safety bill, suggesting less restrictive regulations than initially proposed."
-    },
-    {
-      "title": "TreeSize won't renew perpetual-license support unless users subscribe",
-      "url": "https://arstechnica.com/gadgets/2026/07/treesize-wont-renew-perpetual-license-support-unless-users-subscribe/",
-      "source": "arstechnica.com",
-      "paywalled": false,
-      "topic": "Technology",
-      "published": "2026-07-21T15:18:23+00:00",
-      "is_today": true,
-      "summary": "TreeSize software now requires subscription for support renewal on perpetual licenses, shifting from one-time purchases."
     }
   ]
 }
