@@ -37,7 +37,7 @@
     .lesson-header h2 { font-family: var(--display); font-size: clamp(1.5rem,3vw,2.2rem); font-weight: 900; color: #f0ece6; margin-bottom: 10px; }
     .lesson-header p { color: #9a9690; font-size: 15px; line-height: 1.65; }
 
-    .lesson-body h3 { font-family: var(--display); font-size: 1.15rem; font-weight: 700; color: #f0ece6; margin: 36px 0 12px; }
+    .lesson-body h3 { font-family: var(--display); font-size: 1.15rem; font-weight: 700; color: #f0ece6; margin: 36px 0 12px; scroll-margin-top: 80px; }
     .lesson-body p { color: #9a9690; font-size: 15px; line-height: 1.8; margin-bottom: 16px; }
     .lesson-body strong { color: #d0ccc6; }
     .lesson-body em { color: #a09888; }
@@ -158,7 +158,7 @@
 
       <div class="lesson-body">
 
-        <h3>The gap between the textbook and the building</h3>
+        <h3 id="lesson-top">The gap between the textbook and the building</h3>
         <p>When I walked into my first congressional office in 2015, I had a political science degree and a reasonably solid understanding of how a bill becomes a law. What I didn't understand was how little of the actual legislative process happens on the floor, how much of it happens in hallways, in leadership offices, in conversations between chiefs of staff, and in the logistical back-and-forth known as the hotline.</p>
         <p>Most Americans who follow Washington closely — journalists, advocates, researchers — understand the formal process well. What this lesson covers is the layer beneath it: the informal rules, the leadership dynamics, and the procedural tools that experienced staff and members use to move legislation, slow it down, or kill it entirely.</p>
 
@@ -167,7 +167,7 @@
           <p>Everything in this lesson draws on firsthand experience working in both chambers of Congress. Where procedures differ between the House and Senate, both are covered. The Senate gets more attention here because its procedures are genuinely more complex and less well understood — even by people who work there.</p>
         </div>
 
-        <h3>The motion to proceed: the vote before the vote</h3>
+        <h3 id="mtp">The motion to proceed: the vote before the vote</h3>
         <p>Before the Senate can debate a bill, it must first vote to <strong>proceed to consideration</strong> of that bill. This is called the motion to proceed, and it is itself fully debatable — meaning it can be filibustered. What this means in practice is that getting a bill to the Senate floor often requires not one cloture vote but two: one on the motion to proceed, and one on the bill itself.</p>
         <p>This is something that rarely gets explained in coverage of Senate procedure, yet it's fundamental to understanding why legislation moves slowly. By the time a bill reaches final passage, the majority leader may have spent days — and burned through two full 60-vote thresholds, two intervening days, and up to 60 hours of post-cloture time — just to get to the vote that everyone was watching.</p>
 
@@ -176,7 +176,7 @@
           <p>When you read that "the Senate failed to advance" a bill, it usually means the motion to proceed failed to get 60 votes — not that the bill itself was rejected on the merits. The bill never got to a vote on the merits. This distinction matters enormously for understanding what actually happened legislatively.</p>
         </div>
 
-        <h3>Unanimous consent: the engine of the Senate</h3>
+        <h3 id="uc">Unanimous consent: the engine of the Senate</h3>
         <p>For all the attention given to cloture and filibusters, the truth is that the vast majority of Senate business is conducted by unanimous consent — abbreviated UC or UCA (Unanimous Consent Agreement). A UC agreement allows the Senate to do anything that would otherwise require a formal vote, as long as no senator objects.</p>
         <p>Setting debate time, limiting amendments, waiving procedural requirements, moving votes to specific times — all of this happens through UC. The majority leader's floor staff spend enormous amounts of time negotiating UC agreements with their minority counterparts. When you watch C-SPAN and see a senator say "Mr. President, I ask unanimous consent that..." they are using the mechanism that actually keeps the Senate functional.</p>
         <p>The flip side is that any single senator can object to any UC request. This power is used strategically. A senator who wants to slow down a bill they oppose can simply be present on the floor and ready to object whenever the majority attempts to move by UC. This is one reason Senate floor scheduling is so unpredictable — a single objection can collapse an entire day's schedule.</p>
@@ -186,7 +186,7 @@
           <p>The UC negotiation process involves a lot of phone calls between leadership offices that never appear in any public record. The agreement you see read on the Senate floor was typically the product of hours of back-and-forth, often driven by staff rather than members themselves.</p>
         </div>
 
-        <h3>The hotline: how bills actually move</h3>
+        <h3 id="hotline">The hotline: how bills actually move</h3>
         <p>For non-controversial legislation — bills with broad support that don't need floor debate — the Senate uses a process informally called <strong>hotlining</strong>. The majority leader's office sends a message to every Senate office via email (historically via a dedicated phone line, hence the name) asking whether any senator objects to passing a particular bill by unanimous consent.</p>
         <p>If no office responds with an objection within the allotted time, the bill is cleared for floor passage by UC without debate, often late at night when only the presiding officer and a handful of staff are present. Hundreds of bills pass the Senate this way each Congress — nominations, commemorative legislation, extensions of expiring programs, and bipartisan measures with no opposition.</p>
         <p>The hotline process is invisible to the public and rarely covered in the press, but it is one of the primary mechanisms through which Congress actually legislates. Understanding it is essential for anyone working in advocacy or government relations — because getting your bill hotlined is often the difference between passing and waiting another two years.</p>
@@ -196,17 +196,17 @@
           <p>If you work in advocacy and your priority bill has broad bipartisan support but isn't controversial enough to merit floor time, the hotline is your primary path. The goal is to get leadership staff comfortable enough with the bill that they'll include it in a UC package. This means making sure no senator has a hold — which leads us to the next topic.</p>
         </div>
 
-        <h3>Holds: the invisible veto</h3>
+        <h3 id="holds">Holds: the invisible veto</h3>
         <p>Any senator can place a <strong>hold</strong> on a nomination or a piece of legislation, signaling to leadership that they will object to UC if the matter is brought to the floor. Holds are informal — they're not a formal Senate rule, just a courtesy that leadership has historically honored.</p>
         <p>Holds can be placed for any reason: policy disagreement, a desire for more information, leverage in an unrelated negotiation, or simple delay. They can be placed anonymously, though Senate rules have been modified over the years to limit secret holds. In practice, many holds are known to leadership even when not publicly disclosed.</p>
         <p>From a practical standpoint, holds are one of the most powerful tools available to individual senators. A single hold can prevent a nomination from being confirmed for months. Understanding who has placed holds and why is a core function of legislative affairs staff — and clearing those holds is often the primary challenge in moving legislation or nominations forward.</p>
 
-        <h3>Leadership scheduling and the floor schedule</h3>
+        <h3 id="scheduling">Leadership scheduling and the floor schedule</h3>
         <p>In the House, the majority party controls the floor schedule almost entirely through the Rules Committee, which sets the terms for debate on every significant piece of legislation. The minority has limited ability to interfere with floor scheduling — if the majority has the votes, they can bring almost anything to the floor under a rule that limits debate and amendments.</p>
         <p>The Senate is fundamentally different. The majority leader has significant scheduling power but cannot unilaterally determine what happens on the floor without either 60 votes for cloture or unanimous consent from all 100 senators. This means the Senate floor schedule is genuinely negotiated — and frequently unstable. Plans made Monday morning often don't survive to Monday afternoon.</p>
         <p>Leadership staff — particularly the floor staff of both the majority and minority — spend their days managing this uncertainty, communicating with member offices, flagging potential objections, and constructing the delicate agreements that keep the floor moving. This is unglamorous, largely invisible work that has an outsized impact on what gets done.</p>
 
-        <h3>The role of staff</h3>
+        <h3 id="staff">The role of staff</h3>
         <p>Congressional staff are underappreciated in most public discussions of how legislation gets made. The reality is that on most policy issues, staff are driving the substantive work — drafting legislative text, negotiating with counterparts in other offices, building coalitions, attending markups, and preparing members for votes.</p>
         <p>Members of Congress are generalists managing hundreds of issues simultaneously. Their staff are the specialists. A strong legislative director or senior legislative assistant often knows more about their assigned policy areas than the member does, and plays a significant role in shaping the member's positions, priorities, and voting record.</p>
         <p>This isn't a criticism — it's how the institution functions. The member sets the direction and makes the final calls. Staff execute. Understanding this dynamic is essential for anyone trying to influence legislation, because in most cases, the most effective point of contact is not the member but the relevant staff person.</p>
@@ -216,12 +216,12 @@
           <p>If you want to influence a bill's substance, talk to the legislative assistant covering that issue. If you want to understand a member's political position, talk to the chief of staff or legislative director. If you want to know whether a bill has a path to the floor, talk to leadership staff. Each layer has different information and different decision-making authority.</p>
         </div>
 
-        <h3>Conference committees and resolving differences</h3>
+        <h3 id="conference">Conference committees and resolving differences</h3>
         <p>When the House and Senate pass different versions of the same bill — which is virtually always — those differences must be resolved before the legislation can go to the President. The formal mechanism for this is a <strong>conference committee</strong>: a joint group of House and Senate members appointed to negotiate a final version.</p>
         <p>True conference committees have become relatively rare in recent decades. More commonly, differences are resolved through informal staff-level negotiations, with leadership offices driving the process and a final "conference report" produced without formal conference proceedings. This informal process is faster but less transparent — the public often doesn't know what changed between the House-passed bill and the final version until after the fact.</p>
         <p>The most significant modern example of this dynamic is the annual <strong>National Defense Authorization Act (NDAA)</strong>, which authorizes Defense Department programs and policy. The House and Senate each pass their own versions, typically with hundreds of differences. Conference negotiations on the NDAA involve hundreds of staff from both chambers, both Armed Services Committees, and the Pentagon, working through provisions over weeks or months before producing a final bill.</p>
 
-        <h3>What "bipartisan" actually means on the Hill</h3>
+        <h3 id="bipartisan">What "bipartisan" actually means on the Hill</h3>
         <p>In public discourse, "bipartisan" is often used as a synonym for good or necessary. Inside Congress, bipartisanship is a strategic calculation as much as an ideological one. There are several reasons a majority might seek minority support beyond simply wanting to work across the aisle:</p>
         <p><strong>Senate math.</strong> Most significant legislation needs 60 votes to invoke cloture. In a closely divided Senate, that means the majority needs somewhere between 7 and 10 minority votes. Bipartisanship in the Senate is frequently less about idealism and more about the mathematical reality of the cloture threshold.</p>
         <p><strong>Political cover.</strong> A bill that passes with significant minority support is harder for the minority to campaign against. Members of both parties sometimes seek bipartisan agreements specifically to take an issue off the table politically.</p>
@@ -232,7 +232,7 @@
           <p>Some of the most productive legislative relationships I observed were between staff from opposite parties who had worked together long enough to trust each other's word. That trust — built over years of negotiations, phone calls, and occasionally shared frustrations with their own leadership — is what makes bipartisan legislation actually happen. It starts with staff far more often than it starts with members.</p>
         </div>
 
-        <h3>The gap between authorization and appropriation</h3>
+        <h3 id="auth">The gap between authorization and appropriation</h3>
         <p>One of the most important and least understood distinctions in federal policy is the difference between <strong>authorization</strong> and <strong>appropriation</strong>. Authorization legislation establishes or continues a federal program and sets the parameters for how it should operate. Appropriations legislation provides the actual money to fund it.</p>
         <p>A program can be fully authorized and completely unfunded. Conversely, Congress can appropriate money for programs that haven't been formally reauthorized in years — and does so regularly. The Farm Bill, for example, is a major authorization bill that Congress struggles to pass on schedule; in the gaps, agriculture programs are often funded through continuing resolutions that simply extend existing funding levels.</p>
         <p>Understanding this distinction is essential for anyone working in federal policy. When an advocacy organization says they want to "authorize" a program, they mean one thing. When they say they want to "fund" it, they mean something quite different — and getting both done requires working two separate committees, on two separate legislative tracks, often on two separate timelines.</p>
@@ -245,60 +245,296 @@
       </div>
     </div>
 
-    <!-- ── LESSON 2: APPROPRIATIONS (COMING SOON) ── -->
+    <!-- ── LESSON 2: APPROPRIATIONS ── -->
     <div class="lesson-block" id="deep-lesson-1">
-      <div class="coming-soon-block">
-        <span class="coming-soon-badge">Coming Soon</span>
-        <h3>The Appropriations Process Explained</h3>
-        <p>How the federal government funds itself — authorizations vs. appropriations, the twelve subcommittee structure, continuing resolutions, omnibus bills, and why shutdowns happen. Drawing on firsthand experience supporting Pentagon budget requests through the congressional process.</p>
-        <div class="coming-soon-topics">
-          <div class="coming-soon-topic">The twelve appropriations subcommittees <span>Coming soon</span></div>
-          <div class="coming-soon-topic">Authorization vs. appropriation <span>Coming soon</span></div>
-          <div class="coming-soon-topic">Continuing resolutions and omnibus bills <span>Coming soon</span></div>
-          <div class="coming-soon-topic">Why government shutdowns happen <span>Coming soon</span></div>
-          <div class="coming-soon-topic">The President's budget request <span>Coming soon</span></div>
-        </div>
+      <div class="lesson-header">
+        <p class="lesson-number">Deep Dive · Lesson 2 of 4</p>
+        <h2>The Appropriations Process Explained</h2>
+        <p>The federal government cannot spend money that Congress has not appropriated. This single constitutional principle — the power of the purse — is the foundation of congressional authority over the executive branch. Understanding how appropriations actually work in practice explains a great deal about why government functions the way it does, and why it sometimes doesn't function at all.</p>
       </div>
+
+      <div class="lesson-body">
+
+        <h3 id="approp-intro" style="scroll-margin-top:80px">Authorization vs. appropriation: the distinction that matters</h3>
+        <p>The single most important thing to understand about federal spending is that authorization and appropriation are two entirely separate acts. <strong>Authorization</strong> legislation creates or continues a federal program and establishes the legal framework for how it operates. <strong>Appropriation</strong> legislation provides the actual money to fund it.</p>
+        <p>A program can be authorized at $500 million per year and appropriated at $300 million. A program can be authorized and receive zero appropriation. Conversely, Congress can appropriate money for programs operating on expired authorization — which happens regularly. The two tracks are drafted by different committees, move on different legislative timelines, and are frequently in tension with each other.</p>
+
+        <div class="deep-callout">
+          <p class="deep-callout-label">Why this matters in practice</p>
+          <p>When an advocacy organization wins authorization for a new program, they have won permission — not resources. The real fight begins when they go back to the Appropriations Committees to secure funding. Many authorized programs never receive a dollar of appropriation. Understanding this distinction is essential for anyone working in federal policy.</p>
+        </div>
+
+        <h3 id="twelve-bills" style="scroll-margin-top:80px">The twelve appropriations bills</h3>
+        <p>Congress is supposed to pass twelve separate appropriations bills each fiscal year, one for each of the twelve appropriations subcommittees. Each bill funds a different part of the federal government:</p>
+        <p><strong>Agriculture</strong> · <strong>Commerce, Justice, Science</strong> · <strong>Defense</strong> · <strong>Energy and Water</strong> · <strong>Financial Services</strong> · <strong>Homeland Security</strong> · <strong>Interior and Environment</strong> · <strong>Labor, HHS, Education</strong> · <strong>Legislative Branch</strong> · <strong>Military Construction and VA</strong> · <strong>State and Foreign Operations</strong> · <strong>Transportation and HUD</strong></p>
+        <p>In theory, all twelve are enacted before October 1 — the start of the new fiscal year. In practice, Congress almost never meets this deadline. The last time all twelve appropriations bills were enacted on time was fiscal year 1997. In most years, some combination of continuing resolutions, omnibus packages, and minibus bills fills the gap.</p>
+
+        <div class="insider-note">
+          <p class="insider-note-label">From experience</p>
+          <p>The Labor, HHS, Education bill is historically the hardest to pass because it funds the most politically contentious programs. It is almost never enacted on its own and usually gets folded into an omnibus at the end of the year. Defense appropriations, by contrast, tends to move more reliably — partly because of its must-fund status and partly because of the bipartisan coalitions that support defense spending.</p>
+        </div>
+
+        <h3 id="budget-process" style="scroll-margin-top:80px">How the appropriations process works</h3>
+        <p>The formal appropriations process begins with the President's budget request, submitted to Congress in early February. The budget request is the executive branch's opening bid — a detailed document running thousands of pages that outlines funding levels for every federal program.</p>
+        <p>Congress is not bound by the President's request. The Appropriations Committees use it as a starting point, but they exercise independent judgment about funding levels, often adding to some accounts, cutting others, and redirecting funds in ways the executive branch didn't request. The resulting appropriations bills reflect congressional priorities as much as executive ones.</p>
+
+        <div class="deep-timeline">
+          <div class="deep-timeline-item">
+            <div class="deep-timeline-num">1</div>
+            <div class="deep-timeline-content">
+              <strong>President's Budget Request (February)</strong>
+              <p>The administration submits its detailed budget request. Each agency's justification materials accompany the request, explaining the rationale for every line item.</p>
+            </div>
+          </div>
+          <div class="deep-timeline-item">
+            <div class="deep-timeline-num">2</div>
+            <div class="deep-timeline-content">
+              <strong>Budget resolution (spring)</strong>
+              <p>The House and Senate Budget Committees draft a concurrent budget resolution setting overall spending targets by function. This resolution allocates topline spending levels to each Appropriations subcommittee — called 302(b) allocations — which function as spending caps.</p>
+            </div>
+          </div>
+          <div class="deep-timeline-item">
+            <div class="deep-timeline-num">3</div>
+            <div class="deep-timeline-content">
+              <strong>Subcommittee markups (spring–summer)</strong>
+              <p>Each appropriations subcommittee drafts its bill, making decisions on hundreds of individual funding lines. This is where the detailed work happens — staff-driven, often invisible to the public, and enormously consequential.</p>
+            </div>
+          </div>
+          <div class="deep-timeline-item">
+            <div class="deep-timeline-num">4</div>
+            <div class="deep-timeline-content">
+              <strong>Full committee markup and floor votes (summer)</strong>
+              <p>Bills move from subcommittee to the full Appropriations Committee, then to the floor. House and Senate typically pass different versions with different funding levels and policy riders.</p>
+            </div>
+          </div>
+          <div class="deep-timeline-item">
+            <div class="deep-timeline-num">5</div>
+            <div class="deep-timeline-content">
+              <strong>Conference and enactment (ideally by October 1)</strong>
+              <p>Differences between House and Senate versions are resolved. In practice, this almost never happens by October 1 — the government typically starts the new fiscal year under a continuing resolution.</p>
+            </div>
+          </div>
+        </div>
+
+        <h3 id="cr-approp" style="scroll-margin-top:80px">Continuing resolutions: governing by extension</h3>
+        <p>A continuing resolution (CR) is a temporary funding measure that keeps the government operating when regular appropriations aren't enacted on time. CRs typically fund the government at the prior year's rate — a provision called "current rate" or "annualized CR rate" — until either a full-year appropriation is enacted or the CR expires.</p>
+        <p>CRs create real operational problems beyond just uncertainty. Under most CRs, federal agencies cannot start new programs, cannot increase activities above prior-year levels, and must manage to the prior year's funding even if needs have changed significantly. For agencies with growing workloads or new mandates, a long CR can mean doing more work with the same resources for months.</p>
+        <p>Short-term CRs — lasting weeks rather than months — are the most disruptive because they force agencies to plan conservatively and avoid commitments that might not be funded if the CR expires. A series of short CRs, each requiring renewal, creates a cycle of uncertainty that affects hiring, contracting, and long-term planning across the federal government.</p>
+
+        <h3 id="omnibus" style="scroll-margin-top:80px">Omnibus bills: governing by deadline</h3>
+        <p>When individual appropriations bills can't pass on their own — which is most years — Congress packages them into a single <strong>omnibus appropriations bill</strong> covering multiple or all twelve subcommittees. Omnibus bills are typically negotiated in December or January under deadline pressure, often running thousands of pages and containing provisions that individual members never read before voting on them.</p>
+        <p>The omnibus process has significant implications for transparency and accountability. Individual bills that go through regular order receive committee hearings, floor debate, and amendment votes. An omnibus bill negotiated by leadership behind closed doors and brought to the floor under a compressed timeline gives members little opportunity to review or modify its contents. It is governance by necessity rather than design.</p>
+
+        <div class="deep-example">
+          <p class="deep-example-label">The minibus alternative</p>
+          <p>In some years, Congress passes "minibus" packages — groupings of two to four appropriations bills that can move together without requiring the full omnibus. Minibuses allow some bills to move on a faster timeline while politically difficult bills continue to be negotiated. They're a compromise between regular order and the all-or-nothing omnibus approach.</p>
+        </div>
+
+        <h3 id="shutdown" style="scroll-margin-top:80px">Why government shutdowns happen</h3>
+        <p>A government shutdown occurs when appropriations lapse — when a CR expires or the fiscal year begins without any appropriations in place — and Congress and the President cannot agree on new funding. Under the Antideficiency Act, federal agencies generally cannot obligate funds without an appropriation, meaning most operations cease.</p>
+        <p>Not all of the government shuts down. <strong>Essential services</strong> — those involving the safety of human life or protection of property — continue operating. Military personnel continue to serve, though pay may be delayed. Border patrol, air traffic control, and emergency services continue. What stops are most administrative functions, national parks, visa processing, federal courts (eventually), regulatory activities, and a wide range of civilian agency work.</p>
+        <p>Shutdowns are not accidents. They are the result of political standoffs in which one or both sides calculate that the political cost of continuing the shutdown is lower than the cost of accepting the other side's terms. Understanding this dynamic is essential for predicting when shutdowns end — they end when that calculation changes.</p>
+
+        <div class="deep-callout">
+          <p class="deep-callout-label">The debt ceiling vs. government shutdown</p>
+          <p>These are frequently confused but are entirely different crises. A <strong>government shutdown</strong> results from failure to pass appropriations — the government can't spend money it hasn't been appropriated. A <strong>debt ceiling crisis</strong> results from failure to raise the statutory limit on federal borrowing — the government can't borrow money to pay obligations it has already incurred. Both are self-imposed constraints; neither is economically necessary. Both are leverage tools in political negotiations.</p>
+        </div>
+
+        <h3 id="riders" style="scroll-margin-top:80px">Policy riders: legislating through appropriations</h3>
+        <p>Appropriations bills frequently contain <strong>policy riders</strong> — legislative provisions that have nothing to do with funding levels but are attached to appropriations bills because of their must-pass status. Riders can prohibit agencies from using funds for specific purposes, mandate reports, override existing regulations, or change substantive law.</p>
+        <p>The use of riders is controversial. Supporters argue they're an efficient way to enact policy that might not pass as standalone legislation. Critics argue they circumvent the regular legislative process and allow significant policy changes to pass without proper scrutiny. Both are correct. Riders are a feature of the appropriations process that anyone working in federal policy needs to understand and monitor.</p>
+
+      </div>
+
       <div class="lesson-nav-arrows">
         <button class="deep-arrow-btn" onclick="showLessonByIndex(0)">← Previous</button>
         <button class="deep-arrow-btn" onclick="showLessonByIndex(2)">Next lesson →</button>
       </div>
     </div>
 
-    <!-- ── LESSON 3: DEFENSE BUDGET (COMING SOON) ── -->
+    <!-- ── LESSON 3: DEFENSE BUDGET ── -->
     <div class="lesson-block" id="deep-lesson-2">
-      <div class="coming-soon-block">
-        <span class="coming-soon-badge">Coming Soon</span>
-        <h3>The Defense Budget: How It Works</h3>
-        <p>From the President's budget request to the National Defense Authorization Act — how the Pentagon gets funded, what happens when it doesn't, and how the congressional defense committees shape national security policy. Written from the perspective of someone who has supported senior defense officials through the full legislative cycle.</p>
-        <div class="coming-soon-topics">
-          <div class="coming-soon-topic">The NDAA vs. defense appropriations <span>Coming soon</span></div>
-          <div class="coming-soon-topic">How the Pentagon builds its budget request <span>Coming soon</span></div>
-          <div class="coming-soon-topic">The role of the Armed Services Committees <span>Coming soon</span></div>
-          <div class="coming-soon-topic">Continuing resolutions and readiness <span>Coming soon</span></div>
-          <div class="coming-soon-topic">Legislative proposals and appeals <span>Coming soon</span></div>
-        </div>
+      <div class="lesson-header">
+        <p class="lesson-number">Deep Dive · Lesson 3 of 4</p>
+        <h2>The Defense Budget: How It Works</h2>
+        <p>The Pentagon is the largest single discretionary budget in the federal government — over $800 billion annually. How that money gets requested, authorized, appropriated, and ultimately spent involves a complex interplay between the executive branch and Congress that plays out over multiple years simultaneously. This lesson walks through the full cycle.</p>
       </div>
+
+      <div class="lesson-body">
+
+        <h3 id="two-tracks" style="scroll-margin-top:80px">Two separate tracks: authorization and appropriation</h3>
+        <p>Understanding the defense budget requires first understanding that Congress funds the Pentagon through two entirely separate legislative processes running on parallel tracks. <strong>Authorization</strong> establishes what the Department of Defense is allowed to do and sets programmatic parameters. <strong>Appropriation</strong> provides the actual money to do it. A program can be authorized and unfunded, or funded without current authorization. Both tracks must complete for the Pentagon to operate normally.</p>
+
+        <div class="deep-callout">
+          <p class="deep-callout-label">The two key vehicles</p>
+          <p>The <strong>National Defense Authorization Act (NDAA)</strong> is the authorization vehicle — it sets policy, establishes programs, and places conditions on how money can be spent. The <strong>Defense Appropriations Act</strong> (one of twelve annual appropriations bills) provides the actual funding. They are drafted by different committees, move on different timelines, and are frequently at odds with each other in their details.</p>
+        </div>
+
+        <h3 id="budget-cycle" style="scroll-margin-top:80px">The budget cycle: a multi-year process</h3>
+        <p>The defense budget cycle is famously long — by the time a budget is enacted, the planning that produced it may have started three or four years earlier. Understanding the cycle requires understanding that the Pentagon and Congress are always working on multiple fiscal years simultaneously.</p>
+
+        <div class="deep-timeline">
+          <div class="deep-timeline-item">
+            <div class="deep-timeline-num">1</div>
+            <div class="deep-timeline-content">
+              <strong>Internal DoD planning (2-3 years before enactment)</strong>
+              <p>The Office of the Secretary of Defense begins the Planning, Programming, Budgeting, and Execution (PPBE) process. Military departments submit program objective memoranda (POMs) outlining their priorities. OSD adjudicates competing requests across the services.</p>
+            </div>
+          </div>
+          <div class="deep-timeline-item">
+            <div class="deep-timeline-num">2</div>
+            <div class="deep-timeline-content">
+              <strong>President's Budget Request (first Monday in February)</strong>
+              <p>The President submits a budget request to Congress covering all federal agencies including DoD. The defense portion includes the base budget plus any Overseas Contingency Operations (OCO) or emergency supplemental requests. This submission triggers the congressional phase.</p>
+            </div>
+          </div>
+          <div class="deep-timeline-item">
+            <div class="deep-timeline-num">3</div>
+            <div class="deep-timeline-content">
+              <strong>Congressional hearings (February–May)</strong>
+              <p>The Armed Services Committees and Defense Appropriations Subcommittees hold dozens of hearings, calling Pentagon officials to justify the budget request. Service chiefs, combatant commanders, and program managers all testify. This is where congressional priorities begin to diverge from the President's request.</p>
+            </div>
+          </div>
+          <div class="deep-timeline-item">
+            <div class="deep-timeline-num">4</div>
+            <div class="deep-timeline-content">
+              <strong>Committee markups (spring–summer)</strong>
+              <p>The Armed Services Committees mark up the NDAA, making hundreds of changes to the President's request — adding programs, cutting others, imposing conditions, and inserting policy directives. The Appropriations Committees do the same on the funding side.</p>
+            </div>
+          </div>
+          <div class="deep-timeline-item">
+            <div class="deep-timeline-num">5</div>
+            <div class="deep-timeline-content">
+              <strong>Floor votes and conference (summer–fall)</strong>
+              <p>Both chambers pass their versions of the NDAA and defense appropriations. Differences are resolved in conference — a process that for the NDAA involves hundreds of provisions negotiated between House and Senate Armed Services Committee staff over weeks or months.</p>
+            </div>
+          </div>
+          <div class="deep-timeline-item">
+            <div class="deep-timeline-num">6</div>
+            <div class="deep-timeline-content">
+              <strong>Enactment (ideally by October 1)</strong>
+              <p>The fiscal year begins October 1. If appropriations aren't enacted by then — which is almost always the case — the government operates on a continuing resolution. The NDAA is typically signed in December, making it one of the few "must pass" pieces of annual legislation.</p>
+            </div>
+          </div>
+        </div>
+
+        <h3 id="ndaa" style="scroll-margin-top:80px">The NDAA: what it is and why it matters</h3>
+        <p>The National Defense Authorization Act has been enacted every year for over sixty consecutive years — making it one of the most reliable pieces of annual legislation in Congress. This consistency makes it a vehicle for significant policy changes beyond just defense programs. Non-defense provisions are sometimes attached to the NDAA precisely because of its must-pass status.</p>
+        <p>The NDAA authorizes programs and sets policy but <strong>does not appropriate money</strong>. It tells the Pentagon what it's allowed to do, sets end-strength levels for the military services, establishes pay rates, imposes conditions on specific programs, and directs studies and reports. But the actual dollars come from the defense appropriations bill, which is a separate piece of legislation entirely.</p>
+
+        <div class="insider-note">
+          <p class="insider-note-label">From experience</p>
+          <p>Congressional hearings on the NDAA are where the real substantive work happens. Staff from the Armed Services Committees review thousands of pages of budget justification materials and identify issues they want to address. By the time a hearing occurs, the committee staff often knows the budget materials better than many of the officials testifying about them.</p>
+        </div>
+
+        <h3 id="committees" style="scroll-margin-top:80px">The Armed Services Committees vs. the Appropriations Committees</h3>
+        <p>Two sets of committees have jurisdiction over defense funding, and they don't always agree. Understanding the difference between them is essential for anyone working in defense policy.</p>
+        <p>The <strong>Armed Services Committees</strong> (House Armed Services Committee and Senate Armed Services Committee) have authorization jurisdiction. They write the NDAA, set defense policy, and oversee DoD programs. Members of these committees are generally more policy-focused and have deep institutional knowledge of specific programs and platforms.</p>
+        <p>The <strong>Defense Appropriations Subcommittees</strong> (within the House and Senate Appropriations Committees) control the money. They can fund programs below authorized levels, add funding for programs the Pentagon didn't request, or cut programs entirely. Appropriators often have different priorities than authorizers, creating tension that plays out in conference negotiations.</p>
+
+        <div class="deep-callout">
+          <p class="deep-callout-label">A key tension</p>
+          <p>The Armed Services Committees can authorize a program at $500 million. The Appropriations Committees can appropriate $300 million. The lower number controls — authorization without appropriation is permission without resources. This is why defense contractors and program offices always track both committees simultaneously.</p>
+        </div>
+
+        <h3 id="cr" style="scroll-margin-top:80px">Continuing resolutions and what they mean for the Pentagon</h3>
+        <p>Congress almost never passes all twelve appropriations bills on time. When October 1 arrives without enacted appropriations, the government operates on a <strong>continuing resolution (CR)</strong> — a temporary funding measure that generally maintains spending at the prior year's rate.</p>
+        <p>For the Pentagon, CRs are operationally disruptive in ways that are not well understood outside the building. Under a CR, the DoD generally cannot:</p>
+        <p><strong>Start new programs</strong> — a program that wasn't funded in the prior year can't receive its first year of funding under a CR, even if Congress intends to fund it. This delays new starts by months.</p>
+        <p><strong>Increase production rates</strong> — production contracts can't be increased above prior-year levels, which creates inefficiencies in manufacturing and supply chains.</p>
+        <p><strong>Execute planned activities at full rate</strong> — training, maintenance, and exercises may be curtailed if their funding profile assumed a full-year appropriation.</p>
+        <p>A long CR — several months into the fiscal year — can cost the Pentagon hundreds of millions of dollars in inefficiencies and delayed capabilities, even if the final enacted appropriation equals what was requested.</p>
+
+        <h3 id="legislative-proposals" style="scroll-margin-top:80px">Legislative proposals and the appeals process</h3>
+        <p>One of the lesser-known aspects of the Pentagon's congressional engagement is the <strong>legislative proposal</strong> process — the formal mechanism by which the Department of Defense requests legislative changes from Congress. Legislative proposals are drafted internally, cleared through OSD, coordinated with OMB, and transmitted to the relevant congressional committees as part of the budget submission or in response to specific requests.</p>
+        <p>When Congress modifies or rejects a DoD legislative proposal — which is common — the Department has the option to <strong>appeal</strong> through the conference process, working with committee staff to restore or modify the provision. This back-and-forth between DoD staff and committee staff is the substantive core of defense legislative affairs work, and it happens almost entirely out of public view.</p>
+
+        <div class="insider-note">
+          <p class="insider-note-label">From experience</p>
+          <p>Managing the legislative proposal and appeals cycle requires tracking hundreds of individual provisions across both the NDAA and appropriations simultaneously — knowing which provisions are in the House bill, the Senate bill, which were dropped in committee, which are being conferenced, and what the Department's position is on each. This is detail-intensive work that demands both policy knowledge and procedural fluency.</p>
+        </div>
+
+        <h3 id="hearings-prep" style="scroll-margin-top:80px">Preparing senior officials for congressional hearings</h3>
+        <p>Congressional hearings are high-stakes events for Pentagon officials. A misstep in testimony — an inaccurate figure, an inconsistency with a prior statement, or an unprepared answer on a politically sensitive topic — can have significant consequences for both the official and the programs they oversee.</p>
+        <p>Hearing preparation is a major function of legislative affairs staff. The preparation process typically includes:</p>
+        <p><strong>Anticipated questions (AQs)</strong> — staff develop a list of questions the committee is likely to ask, based on their knowledge of member priorities, recent news, and ongoing oversight issues. Each AQ is paired with a drafted answer, coordinated across relevant offices, and reviewed for accuracy and policy consistency.</p>
+        <p><strong>Pre-brief sessions</strong> — officials are walked through anticipated questions by staff, often in a mock hearing format. This surfaces gaps in knowledge, inconsistencies in messaging, and areas where the official needs additional preparation.</p>
+        <p><strong>QFRs (Questions for the Record)</strong> — members frequently submit written questions after hearings that officials must answer formally. Managing the QFR process — collecting answers from across the Department, ensuring consistency, and meeting congressional deadlines — is an ongoing responsibility of legislative affairs staff long after the hearing itself is over.</p>
+
+      </div>
+
       <div class="lesson-nav-arrows">
         <button class="deep-arrow-btn" onclick="showLessonByIndex(1)">← Previous</button>
         <button class="deep-arrow-btn" onclick="showLessonByIndex(3)">Next lesson →</button>
       </div>
     </div>
 
-    <!-- ── LESSON 4: CAREERS (COMING SOON) ── -->
+    <!-- ── LESSON 4: CAREERS ── -->
     <div class="lesson-block" id="deep-lesson-3">
-      <div class="coming-soon-block">
-        <span class="coming-soon-badge">Coming Soon</span>
-        <h3>Careers in Government and Policy</h3>
-        <p>How to get a job on Capitol Hill, in a federal agency, or as a defense contractor — from someone who has done all three. Covering the application process, what different roles actually do day-to-day, how to build a career in federal policy, and what the path from entry-level to senior positions actually looks like.</p>
-        <div class="coming-soon-topics">
-          <div class="coming-soon-topic">Getting a job in a congressional office <span>Coming soon</span></div>
-          <div class="coming-soon-topic">The LC to LD career path <span>Coming soon</span></div>
-          <div class="coming-soon-topic">Federal agency vs. contractor roles <span>Coming soon</span></div>
-          <div class="coming-soon-topic">Legislative affairs in the executive branch <span>Coming soon</span></div>
-          <div class="coming-soon-topic">Building relationships that last <span>Coming soon</span></div>
-        </div>
+      <div class="lesson-header">
+        <p class="lesson-number">Deep Dive · Lesson 4 of 4</p>
+        <h2>Careers in Government and Policy</h2>
+        <p>A career in federal policy — whether on Capitol Hill, in a federal agency, or as a contractor supporting the executive branch — is one of the most intellectually demanding and genuinely meaningful career paths available. It is also one of the least well-explained. This lesson draws on over twelve years of firsthand experience across all three environments to give you an honest picture of what these careers look like and how to build one.</p>
       </div>
+
+      <div class="lesson-body">
+
+        <h3 id="hill-intro" style="scroll-margin-top:80px">Why a Hill career is different from everything else</h3>
+        <p>Working in a congressional office is unlike any other job in Washington. The pace is relentless, the scope is absurdly broad, the pay is modest relative to comparable private-sector roles, and the work is genuinely consequential. Staff in congressional offices are among the most hardworking and underrecognized people in federal policy — and many of them wouldn't trade it for anything.</p>
+        <p>What makes the Hill unique is the combination of breadth and speed. A legislative assistant covering defense policy might spend Monday morning on a subcommittee hearing about hypersonic missiles, Monday afternoon on a constituent call about a veterans benefits claim, and Monday evening reviewing a markup amendment on military housing. The range is enormous and the timelines are short. You learn to process information quickly, prioritize ruthlessly, and become comfortable with incomplete information.</p>
+
+        <div class="insider-note">
+          <p class="insider-note-label">From experience</p>
+          <p>The Hill builds a particular kind of analytical muscle that is hard to develop anywhere else — the ability to rapidly digest complex policy questions, identify the key stakeholders and their interests, and form a defensible position under time pressure. That skill transfers everywhere. Former Hill staff are sought after across government, law, lobbying, advocacy, and the private sector precisely because of it.</p>
+        </div>
+
+        <h3 id="hill-roles" style="scroll-margin-top:80px">Congressional office roles: the career ladder</h3>
+        <p>Congressional offices are small organizations — typically 15-20 staff for a House office, somewhat larger for Senate offices. The roles are relatively standardized across offices, though titles and responsibilities vary.</p>
+        <p><strong>Staff Assistant (SA)</strong> — the entry-level role in most offices. Responsibilities typically include answering phones, greeting visitors, managing constituent mail, and supporting the front office. This is where most Hill careers begin. The job is unglamorous but provides invaluable exposure to the full range of office operations and constituent concerns.</p>
+        <p><strong>Legislative Correspondent (LC)</strong> — responsible for researching and drafting responses to constituent mail on specific policy issues. LCs often have a portfolio of policy areas they cover, and the role is where staff develop their first substantive policy expertise. A good LC reads everything — committee reports, CRS analyses, advocacy group materials — and becomes a genuine subject matter resource for the office.</p>
+        <p><strong>Legislative Assistant (LA)</strong> — the core legislative role. LAs manage a policy portfolio, attend hearings and markups, draft memos and legislation, build relationships with outside stakeholders, and brief the member on votes. Most policy work in a congressional office flows through the LA staff.</p>
+        <p><strong>Senior Legislative Assistant / Legislative Counsel</strong> — a more senior LA role, often covering higher-priority or more complex policy areas. Some offices add "Senior" as a title to retain experienced LAs; others use "Legislative Counsel" for staff with legal backgrounds handling judiciary or constitutional issues.</p>
+        <p><strong>Legislative Director (LD)</strong> — manages the legislative operation, supervises LA staff, coordinates the member's committee work, and serves as the primary policy advisor. The LD is typically one of the most senior staff in the office and works closely with the Chief of Staff on strategy.</p>
+        <p><strong>Chief of Staff (CoS)</strong> — runs the overall office operation, manages staff, handles political and strategic decisions, and serves as the member's principal advisor. CoS roles are the senior-most staff positions and typically require significant prior Hill experience.</p>
+
+        <div class="deep-callout">
+          <p class="deep-callout-label">Realistic timeline</p>
+          <p>A typical Hill career path from SA to LD takes 6-10 years, though exceptional staff can move faster. Many people enter as LCs rather than SAs if they have relevant graduate degrees or prior experience. The path is not linear — lateral moves between offices, committee staff roles, and executive branch positions are common and often accelerate career development.</p>
+        </div>
+
+        <h3 id="getting-job" style="scroll-margin-top:80px">Getting a job on Capitol Hill</h3>
+        <p>The Hill hiring process is informal compared to most professional environments. There is no central job board that captures all openings, no standardized application process, and no fixed hiring timeline. Most positions are filled through networks — someone who knows someone who knows the chief of staff.</p>
+        <p>That said, there are resources. <strong>Legistorm</strong> tracks staff moves and can help identify which offices have recent turnover. <strong>House.gov</strong> and <strong>Senate.gov</strong> maintain job boards. Congressional member and committee websites sometimes post openings directly. But the most effective path is still informational interviews with current staff, attending Hill events, and building relationships before you need them.</p>
+        <p>A few practical observations about Hill hiring:</p>
+        <p><strong>Geographic connections matter.</strong> Most members prioritize hiring staff with ties to their district or state — people who understand the constituents and can speak credibly to local issues. If you're from the member's district, say so clearly.</p>
+        <p><strong>Committee staff is a different track.</strong> Committee staff roles are generally more specialized, better compensated, and harder to get than personal office roles. They typically require demonstrated policy expertise and often previous personal office experience. The Architect of the Capitol, the Sergeant at Arms, and the support offices (CRS, GAO, CBO) have their own separate hiring processes.</p>
+        <p><strong>Persistence matters.</strong> Turnover on the Hill is high, which means openings occur regularly. Staying in touch with contacts, following up on informational interviews, and continuing to build expertise are the things that eventually convert to a job offer.</p>
+
+        <h3 id="executive-branch" style="scroll-margin-top:80px">Legislative affairs in the executive branch</h3>
+        <p>Every significant federal department and agency has a legislative affairs office — the team responsible for managing the department's relationship with Congress. These offices serve as the primary point of contact between the executive branch and the Hill, and the work is substantively different from personal office work in important ways.</p>
+        <p>Executive branch legislative affairs staff spend their time tracking legislation that affects their department, preparing officials for congressional testimony, responding to congressional correspondence and oversight requests, and managing the department's legislative proposals through the congressional process. The work is more reactive than proactive — you are responding to congressional priorities rather than setting them.</p>
+        <p>The advantage of executive branch legislative affairs work is depth. You develop deep expertise in a specific policy area — defense acquisition, healthcare, environmental regulation — and become genuinely expert in how that policy area intersects with the appropriations and authorization processes. This expertise is valuable and transferable.</p>
+
+        <div class="insider-note">
+          <p class="insider-note-label">From experience</p>
+          <p>One underappreciated aspect of executive branch legislative affairs is the importance of relationships with committee staff. The most effective legislative affairs professionals I've worked with spent significant time building genuine working relationships with the Hill staff who cover their department — not just calling when they need something, but staying in touch, providing timely information, and being responsive when staff have questions. Those relationships determine how effectively the department can navigate the legislative process.</p>
+        </div>
+
+        <h3 id="contractor" style="scroll-margin-top:80px">The contractor path: supporting the executive branch</h3>
+        <p>A significant portion of federal policy work is done not by government employees but by contractors — private sector employees supporting federal agencies under contract. In the defense and national security space particularly, contractors perform a wide range of functions that would otherwise require government staff that agencies don't have the capacity to hire.</p>
+        <p>Contractor roles in legislative affairs typically involve the same substantive work as government positions — tracking legislation, preparing testimony, drafting correspondence, managing the appeals process — while working alongside government employees in agency offices. The key differences are compensation (typically higher than comparable GS positions), job security (tied to contract renewals rather than civil service protections), and the inherent tension of being a private employee doing inherently governmental work.</p>
+        <p>For people early in their careers, contractor roles can provide excellent experience in substantive policy work with faster entry than the federal hiring process typically allows. The federal hiring process — particularly for competitive service positions — can take months to years. Contractor hiring is generally faster and more responsive to immediate needs.</p>
+
+        <h3 id="relationships" style="scroll-margin-top:80px">Building a career that lasts</h3>
+        <p>Federal policy careers are built on relationships more than almost any other professional environment. The same people appear in different roles across different institutions over the course of a career — the Hill staffer becomes the agency official who becomes the lobbyist who becomes the think tank fellow who goes back to the Hill as a senior staff director. The community is genuinely small, and reputation travels.</p>
+        <p>A few principles that hold across all environments in this space:</p>
+        <p><strong>Be reliable.</strong> In a world of competing demands and short timelines, being the person who follows through on commitments — who delivers the memo on time, who calls back when they say they will, who doesn't drop the ball — is a genuine competitive advantage. Reputation for reliability opens doors that credentials alone do not.</p>
+        <p><strong>Know the process.</strong> Procedural knowledge — understanding how the NDAA conference works, how a bill actually gets to the floor, how the appropriations subcommittees make decisions — is more valuable and rarer than most people realize. Staff and officials who understand procedure can navigate situations that paralyze their colleagues.</p>
+        <p><strong>Stay nonpartisan where you can.</strong> Careers that depend entirely on one party's political fortunes are inherently fragile. Policy expertise, procedural knowledge, and professional relationships that cross party lines create resilience that purely partisan careers don't have.</p>
+        <p><strong>The Hill experience compounds.</strong> Every year on Capitol Hill builds understanding that is difficult to acquire anywhere else. The most valuable people in federal policy are those who have spent enough time on the Hill to understand how Congress actually thinks — and can translate that understanding for the agencies, contractors, and advocacy organizations that need to work with it.</p>
+
+      </div>
+
       <div class="lesson-nav-arrows">
         <button class="deep-arrow-btn" onclick="showLessonByIndex(2)">← Previous</button>
         <button class="deep-arrow-btn" disabled>All lessons complete ✓</button>
@@ -307,9 +543,9 @@
 
     <!-- SIDEBAR -->
     <div class="deep-sidebar">
-      <div class="deep-sidebar-card">
-        <p class="deep-sidebar-label">In this lesson</p>
-        <div class="deep-sidebar-item active" onclick="scrollTo('#lesson-top')">The gap between textbook and building</div>
+      <div class="deep-sidebar-card" id="sidebar-lesson-0">
+        <p class="deep-sidebar-label">Lesson 1 contents</p>
+        <div class="deep-sidebar-item active" onclick="scrollToSection('lesson-top')">The gap between textbook and building</div>
         <div class="deep-sidebar-item" onclick="scrollToSection('mtp')">The motion to proceed</div>
         <div class="deep-sidebar-item" onclick="scrollToSection('uc')">Unanimous consent</div>
         <div class="deep-sidebar-item" onclick="scrollToSection('hotline')">The hotline</div>
@@ -319,6 +555,35 @@
         <div class="deep-sidebar-item" onclick="scrollToSection('conference')">Conference committees</div>
         <div class="deep-sidebar-item" onclick="scrollToSection('bipartisan')">What bipartisan means</div>
         <div class="deep-sidebar-item" onclick="scrollToSection('auth')">Authorization vs. appropriation</div>
+      </div>
+      <div class="deep-sidebar-card" id="sidebar-lesson-1" style="display:none">
+        <p class="deep-sidebar-label">Lesson 2 contents</p>
+        <div class="deep-sidebar-item active" onclick="scrollToSection('approp-intro')">Authorization vs. appropriation</div>
+        <div class="deep-sidebar-item" onclick="scrollToSection('twelve-bills')">The twelve bills</div>
+        <div class="deep-sidebar-item" onclick="scrollToSection('budget-process')">How the process works</div>
+        <div class="deep-sidebar-item" onclick="scrollToSection('cr-approp')">Continuing resolutions</div>
+        <div class="deep-sidebar-item" onclick="scrollToSection('omnibus')">Omnibus bills</div>
+        <div class="deep-sidebar-item" onclick="scrollToSection('shutdown')">Why shutdowns happen</div>
+        <div class="deep-sidebar-item" onclick="scrollToSection('riders')">Policy riders</div>
+      </div>
+      <div class="deep-sidebar-card" id="sidebar-lesson-3" style="display:none">
+        <p class="deep-sidebar-label">Lesson 4 contents</p>
+        <div class="deep-sidebar-item active" onclick="scrollToSection('hill-intro')">Why Hill careers are different</div>
+        <div class="deep-sidebar-item" onclick="scrollToSection('hill-roles')">Congressional office roles</div>
+        <div class="deep-sidebar-item" onclick="scrollToSection('getting-job')">Getting a job on the Hill</div>
+        <div class="deep-sidebar-item" onclick="scrollToSection('executive-branch')">Legislative affairs in agencies</div>
+        <div class="deep-sidebar-item" onclick="scrollToSection('contractor')">The contractor path</div>
+        <div class="deep-sidebar-item" onclick="scrollToSection('relationships')">Building a lasting career</div>
+      </div>
+      <div class="deep-sidebar-card" id="sidebar-lesson-2" style="display:none">
+        <p class="deep-sidebar-label">Lesson 3 contents</p>
+        <div class="deep-sidebar-item active" onclick="scrollToSection('two-tracks')">Authorization vs. appropriation</div>
+        <div class="deep-sidebar-item" onclick="scrollToSection('budget-cycle')">The budget cycle</div>
+        <div class="deep-sidebar-item" onclick="scrollToSection('ndaa')">The NDAA</div>
+        <div class="deep-sidebar-item" onclick="scrollToSection('committees')">Armed Services vs. Appropriations</div>
+        <div class="deep-sidebar-item" onclick="scrollToSection('cr')">Continuing resolutions</div>
+        <div class="deep-sidebar-item" onclick="scrollToSection('legislative-proposals')">Legislative proposals</div>
+        <div class="deep-sidebar-item" onclick="scrollToSection('hearings-prep')">Hearing preparation</div>
       </div>
 
       <div class="deep-sidebar-card">
@@ -355,11 +620,28 @@
       document.querySelectorAll('.deep-nav-btn').forEach((b, i) => {
         b.classList.toggle('active', i === index);
       });
+      // Show relevant sidebar
+      [0,1,2,3].forEach(i => {
+        const s = document.getElementById('sidebar-lesson-' + i);
+        if (s) s.style.display = i === index ? 'block' : 'none';
+      });
     }
 
     function showLessonByIndex(index) {
       const btns = document.querySelectorAll('.deep-nav-btn');
       showLesson(index, btns[index]);
+    }
+
+    function scrollToSection(id) {
+      const el = document.getElementById(id);
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        // Update active state in sidebar
+        document.querySelectorAll('.deep-sidebar-item').forEach(item => {
+          item.classList.remove('active');
+        });
+        event.target.classList.add('active');
+      }
     }
 
     async function handleSubscribe(e) {
