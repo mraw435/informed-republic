@@ -10,46 +10,124 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Inter:wght@300;400;500;600&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
   <style>
-    body { background: var(--bg-dark); }
-    .deep-topbar { background: #111827; }
-    .deep-hero { background: #111827; border-bottom: 1px solid #2a3448; padding: 52px 24px 44px; }
-    .deep-hero-inner { max-width: 860px; margin: 0 auto; }
+    body { background: #111827; }
+
+    .deep-topbar { background: #0a0f1a; }
+    .deep-hero { background: #111827; border-bottom: 1px solid #2a3448; padding: 48px 24px 40px; }
+    .deep-hero-inner { max-width: 900px; margin: 0 auto; }
     .deep-hero h1 { font-family: var(--display); font-size: clamp(1.8rem,4vw,2.6rem); font-weight: 900; color: #f0ece6; margin-bottom: 10px; }
-    .deep-hero p { color: #9a9690; font-size: 16px; line-height: 1.65; max-width: 580px; }
-    .deep-back { font-family: var(--mono); font-size: 11px; color: #666; letter-spacing: 0.08em; margin-bottom: 14px; display: block; }
+    .deep-hero p { color: #9a9690; font-size: 15px; line-height: 1.65; max-width: 600px; }
+    .deep-back { font-family: var(--mono); font-size: 11px; color: #666; letter-spacing: 0.08em; margin-bottom: 14px; display: block; text-decoration: none; }
     .deep-back:hover { color: #aaa; }
-    .deep-body { max-width: 860px; margin: 0 auto; padding: 48px 24px 80px; }
-    .deep-coming { text-align: center; padding: 64px 24px; border: 1px dashed #3a4560; border-radius: var(--radius); }
-    .deep-coming h2 { font-family: var(--display); font-size: 1.4rem; font-weight: 700; color: #f0ece6; margin-bottom: 10px; }
-    .deep-coming p { color: #9a9690; font-size: 15px; max-width: 480px; margin: 0 auto 24px; line-height: 1.65; }
-    .deep-coming .badge { font-family: var(--mono); font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--accent); display: block; margin-bottom: 8px; }
-    .deep-preview { background: #1c2130; border: 1px solid #2a3448; border-radius: var(--radius); padding: 22px; margin-bottom: 12px; opacity: 0.7; }
-    .deep-preview h3 { font-family: var(--display); font-size: 1.05rem; font-weight: 700; color: #f0ece6; margin-bottom: 6px; }
-    .deep-preview p { font-size: 13px; color: #7a7a7a; margin: 0; }
-    .deep-footer { background: #111827; border-top: 1px solid #2a3448; }
+
+    .deep-lesson-nav { background: #0a0f1a; border-bottom: 1px solid #2a3448; position: sticky; top: 0; z-index: 90; }
+    .deep-lesson-nav-inner { max-width: 900px; margin: 0 auto; padding: 0 24px; display: flex; gap: 0; overflow-x: auto; scrollbar-width: none; }
+    .deep-lesson-nav-inner::-webkit-scrollbar { display: none; }
+    .deep-nav-btn { flex-shrink: 0; padding: 12px 16px; font-size: 12px; font-weight: 500; letter-spacing: 0.04em; color: #555; border: none; border-bottom: 2px solid transparent; background: none; cursor: pointer; white-space: nowrap; font-family: var(--body); transition: color 0.15s, border-color 0.15s; }
+    .deep-nav-btn:hover { color: #aaa; }
+    .deep-nav-btn.active { color: var(--accent); border-bottom-color: var(--accent); font-weight: 600; }
+
+    .deep-body { max-width: 900px; margin: 0 auto; padding: 48px 24px 80px; display: grid; grid-template-columns: 1fr 240px; gap: 48px; align-items: start; }
+
+    .lesson-block { display: none; }
+    .lesson-block.active { display: block; }
+
+    .lesson-header { margin-bottom: 36px; padding-bottom: 20px; border-bottom: 1px solid #2a3448; }
+    .lesson-number { font-family: var(--mono); font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent); margin-bottom: 8px; }
+    .lesson-header h2 { font-family: var(--display); font-size: clamp(1.5rem,3vw,2.2rem); font-weight: 900; color: #f0ece6; margin-bottom: 10px; }
+    .lesson-header p { color: #9a9690; font-size: 15px; line-height: 1.65; }
+
+    .lesson-body h3 { font-family: var(--display); font-size: 1.15rem; font-weight: 700; color: #f0ece6; margin: 36px 0 12px; }
+    .lesson-body p { color: #9a9690; font-size: 15px; line-height: 1.8; margin-bottom: 16px; }
+    .lesson-body strong { color: #d0ccc6; }
+    .lesson-body em { color: #a09888; }
+
+    .deep-callout { background: #1c2a40; border-left: 3px solid var(--accent); padding: 18px 22px; margin: 24px 0; border-radius: 0 4px 4px 0; }
+    .deep-callout-label { font-family: var(--mono); font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--accent); margin-bottom: 6px; }
+    .deep-callout p { color: #b0a898; font-size: 14px; line-height: 1.7; margin: 0; }
+    .deep-callout strong { color: #d0ccc6; }
+
+    .deep-example { background: #1a2030; border: 1px solid #2a3448; border-radius: 4px; padding: 20px 22px; margin: 24px 0; }
+    .deep-example-label { font-family: var(--mono); font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; color: #b8860b; margin-bottom: 8px; }
+    .deep-example p { color: #9a9690; font-size: 14px; line-height: 1.7; margin: 0; }
+
+    .deep-timeline { margin: 24px 0; }
+    .deep-timeline-item { display: flex; gap: 16px; margin-bottom: 20px; }
+    .deep-timeline-num { width: 28px; height: 28px; border-radius: 50%; background: #2a3448; border: 1px solid var(--accent); color: var(--accent); font-size: 12px; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; font-family: var(--mono); }
+    .deep-timeline-content strong { display: block; font-size: 14px; color: #d0ccc6; margin-bottom: 3px; }
+    .deep-timeline-content p { font-size: 13px; color: #7a7a7a; line-height: 1.65; margin: 0; }
+
+    .coming-soon-block { background: #1a2030; border: 1px dashed #2a3448; border-radius: 4px; padding: 48px 32px; text-align: center; }
+    .coming-soon-block h3 { font-family: var(--display); font-size: 1.3rem; font-weight: 700; color: #f0ece6; margin-bottom: 10px; }
+    .coming-soon-block p { color: #7a7a7a; font-size: 14px; line-height: 1.7; max-width: 440px; margin: 0 auto 20px; }
+    .coming-soon-badge { font-family: var(--mono); font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent); display: block; margin-bottom: 12px; }
+    .coming-soon-topics { display: flex; flex-direction: column; gap: 8px; max-width: 360px; margin: 0 auto; }
+    .coming-soon-topic { background: #111827; border: 1px solid #2a3448; border-radius: 4px; padding: 10px 16px; font-size: 13px; color: #7a7a7a; text-align: left; display: flex; justify-content: space-between; align-items: center; }
+    .coming-soon-topic span { font-family: var(--mono); font-size: 10px; color: #444; letter-spacing: 0.06em; }
+
+    .deep-sidebar { position: sticky; top: 80px; }
+    .deep-sidebar-card { background: #1a2030; border: 1px solid #2a3448; border-radius: 4px; padding: 20px; margin-bottom: 16px; }
+    .deep-sidebar-label { font-family: var(--mono); font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent); margin-bottom: 14px; display: flex; align-items: center; gap: 8px; }
+    .deep-sidebar-label::before { content: ''; display: inline-block; width: 12px; height: 1px; background: var(--accent); }
+    .deep-sidebar-item { font-size: 12px; color: #7a7a7a; padding: 6px 0; border-bottom: 1px solid #1e2a3a; cursor: pointer; transition: color 0.15s; line-height: 1.4; }
+    .deep-sidebar-item:last-child { border-bottom: none; }
+    .deep-sidebar-item:hover { color: #b0a898; }
+    .deep-sidebar-item.active { color: var(--accent); }
+
+    .insider-note { background: #0a1520; border: 1px solid #1a2a3a; border-left: 3px solid #b8860b; border-radius: 0 4px 4px 0; padding: 16px 20px; margin: 24px 0; }
+    .insider-note-label { font-family: var(--mono); font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; color: #b8860b; margin-bottom: 6px; }
+    .insider-note p { color: #8a8078; font-size: 13px; line-height: 1.7; margin: 0; font-style: italic; }
+
+    .deep-footer { background: #0a0f1a; border-top: 1px solid #2a3448; }
+
+    .lesson-nav-arrows { display: flex; justify-content: space-between; margin-top: 40px; padding-top: 24px; border-top: 1px solid #2a3448; }
+    .deep-arrow-btn { font-family: var(--mono); font-size: 11px; letter-spacing: 0.06em; color: var(--accent); border: 1px solid #2a3448; border-radius: 4px; padding: 10px 18px; background: none; cursor: pointer; transition: border-color 0.15s, background 0.15s; }
+    .deep-arrow-btn:hover { border-color: var(--accent); background: #1a2030; }
+    .deep-arrow-btn:disabled { color: #444; cursor: default; border-color: #1a2030; }
+
+    @media (max-width: 768px) {
+      .deep-body { grid-template-columns: 1fr; }
+      .deep-sidebar { position: static; }
+    }
   </style>
 </head>
 <body>
+
   <div class="topbar deep-topbar">
-    <span class="topbar-tagline" style="color:#666">Deep Dive · Capitol Source</span>
+    <span class="topbar-date" id="topbarDate"></span>
+    <span class="topbar-tagline" style="color:#555">Politics · Policy · Procedure</span>
+    <a href="admin.html" class="topbar-admin">Admin ›</a>
   </div>
-  <header class="site-header" style="background:#111827;border-bottom:1px solid #2a3448">
+
+  <header class="site-header" style="background:#111827;border-bottom:1px solid #2a3448;">
     <div class="header-inner">
       <div class="masthead">
-        <p class="masthead-eyebrow" style="color:#666">Est. 2024</p>
-        <h1 class="masthead-title" style="color:#f0ece6"><a href="index.html" style="color:inherit">Capitol Source</a></h1>
+        <p class="masthead-eyebrow" style="color:#555">Est. 2024</p>
+        <h1 class="masthead-title" style="color:#f0ece6"><a href="/" style="color:inherit">Capitol Source</a></h1>
         <p class="masthead-sub" style="color:#666">Washington, from the source</p>
+      </div>
+      <div class="header-subscribe">
+        <p style="color:#555">Get the Daily Brief in your inbox</p>
+        <form class="subscribe-form" onsubmit="handleSubscribe(event)">
+          <input type="email" placeholder="your@email.com" required />
+          <button type="submit">Subscribe</button>
+        </form>
       </div>
     </div>
   </header>
+
   <nav class="site-nav">
     <div class="nav-inner">
-      <a href="index.html" class="nav-link">Home</a>
-      <a href="learn.html" class="nav-link active">Learn</a>
-      <a href="officials.html" class="nav-link">Officials</a>
-      <a href="news.html" class="nav-link">In the News</a>
+      <a href="/" class="nav-link">Home</a>
+      <a href="/briefs.html" class="nav-link">Daily Brief</a>
+      <a href="/news.html" class="nav-link">In the News</a>
+      <a href="/learn.html" class="nav-link active">Learn</a>
+      <a href="/elections.html" class="nav-link">Elections</a>
+      <a href="/officials.html" class="nav-link">Officials</a>
+      <a href="/about.html" class="nav-link">About</a>
     </div>
   </nav>
+
   <div class="deep-hero">
     <div class="deep-hero-inner">
       <a href="learn.html" class="deep-back">← Back to all lessons</a>
@@ -58,38 +136,249 @@
       <p>In-depth analysis of how Washington actually works — drawing on firsthand experience from Capitol Hill and the Pentagon. For those who want to go beyond the textbook.</p>
     </div>
   </div>
-  <div class="deep-body">
-    <div class="deep-coming">
-      <span class="badge">Coming Soon</span>
-      <h2>Deep dives launching soon</h2>
-      <p>We're writing in-depth content based on real experience inside Congress and the Pentagon. Here's what's coming — subscribe to the Daily Brief to be notified when content launches.</p>
-    </div>
-    <div style="margin-top:32px">
-      <div class="deep-preview" id="congressional-process">
-        <h3>🏛️ How Congress Really Works</h3>
-        <p>The informal rules, leadership dynamics, and behind-the-scenes processes that determine what actually passes — and what doesn't.</p>
-      </div>
-      <div class="deep-preview" id="appropriations">
-        <h3>💰 The Appropriations Process Explained</h3>
-        <p>How the federal government funds itself — authorizations vs. appropriations, continuing resolutions, and why shutdowns happen.</p>
-      </div>
-      <div class="deep-preview" id="defense-budget">
-        <h3>🛡️ The Defense Budget: How It Works</h3>
-        <p>From the President's budget request to the NDAA — how the Pentagon gets funded and what happens when it doesn't.</p>
-      </div>
-      <div class="deep-preview" id="careers">
-        <h3>💼 Careers in Government and Policy</h3>
-        <p>How to get a job on Capitol Hill, in a federal agency, or as a defense contractor — from someone who has done all three.</p>
-      </div>
+
+  <div class="deep-lesson-nav">
+    <div class="deep-lesson-nav-inner">
+      <button class="deep-nav-btn active" onclick="showLesson(0, this)">1. How Congress Really Works</button>
+      <button class="deep-nav-btn" onclick="showLesson(1, this)">2. The Appropriations Process</button>
+      <button class="deep-nav-btn" onclick="showLesson(2, this)">3. The Defense Budget</button>
+      <button class="deep-nav-btn" onclick="showLesson(3, this)">4. Careers in Government</button>
     </div>
   </div>
-  <footer class="site-footer deep-footer">
+
+  <div class="deep-body">
+
+    <!-- ── LESSON 1: HOW CONGRESS REALLY WORKS ── -->
+    <div class="lesson-block active" id="deep-lesson-0">
+      <div class="lesson-header">
+        <p class="lesson-number">Deep Dive · Lesson 1 of 4</p>
+        <h2>How Congress Really Works</h2>
+        <p>The legislative process you learned in school is accurate. It's just incomplete. What the textbooks describe is the formal process — the committees, the floor votes, the presidential signature. What they don't describe is everything that happens before any of that, the informal architecture of power, relationships, and procedure that actually determines what passes and what doesn't.</p>
+      </div>
+
+      <div class="lesson-body">
+
+        <h3>The gap between the textbook and the building</h3>
+        <p>When I walked into my first congressional office in 2015, I had a political science degree and a reasonably solid understanding of how a bill becomes a law. What I didn't understand was how little of the actual legislative process happens on the floor, how much of it happens in hallways, in leadership offices, in conversations between chiefs of staff, and in the logistical back-and-forth known as the hotline.</p>
+        <p>Most Americans who follow Washington closely — journalists, advocates, researchers — understand the formal process well. What this lesson covers is the layer beneath it: the informal rules, the leadership dynamics, and the procedural tools that experienced staff and members use to move legislation, slow it down, or kill it entirely.</p>
+
+        <div class="insider-note">
+          <p class="insider-note-label">From experience</p>
+          <p>Everything in this lesson draws on firsthand experience working in both chambers of Congress. Where procedures differ between the House and Senate, both are covered. The Senate gets more attention here because its procedures are genuinely more complex and less well understood — even by people who work there.</p>
+        </div>
+
+        <h3>The motion to proceed: the vote before the vote</h3>
+        <p>Before the Senate can debate a bill, it must first vote to <strong>proceed to consideration</strong> of that bill. This is called the motion to proceed, and it is itself fully debatable — meaning it can be filibustered. What this means in practice is that getting a bill to the Senate floor often requires not one cloture vote but two: one on the motion to proceed, and one on the bill itself.</p>
+        <p>This is something that rarely gets explained in coverage of Senate procedure, yet it's fundamental to understanding why legislation moves slowly. By the time a bill reaches final passage, the majority leader may have spent days — and burned through two full 60-vote thresholds, two intervening days, and up to 60 hours of post-cloture time — just to get to the vote that everyone was watching.</p>
+
+        <div class="deep-callout">
+          <p class="deep-callout-label">Why this matters</p>
+          <p>When you read that "the Senate failed to advance" a bill, it usually means the motion to proceed failed to get 60 votes — not that the bill itself was rejected on the merits. The bill never got to a vote on the merits. This distinction matters enormously for understanding what actually happened legislatively.</p>
+        </div>
+
+        <h3>Unanimous consent: the engine of the Senate</h3>
+        <p>For all the attention given to cloture and filibusters, the truth is that the vast majority of Senate business is conducted by unanimous consent — abbreviated UC or UCA (Unanimous Consent Agreement). A UC agreement allows the Senate to do anything that would otherwise require a formal vote, as long as no senator objects.</p>
+        <p>Setting debate time, limiting amendments, waiving procedural requirements, moving votes to specific times — all of this happens through UC. The majority leader's floor staff spend enormous amounts of time negotiating UC agreements with their minority counterparts. When you watch C-SPAN and see a senator say "Mr. President, I ask unanimous consent that..." they are using the mechanism that actually keeps the Senate functional.</p>
+        <p>The flip side is that any single senator can object to any UC request. This power is used strategically. A senator who wants to slow down a bill they oppose can simply be present on the floor and ready to object whenever the majority attempts to move by UC. This is one reason Senate floor scheduling is so unpredictable — a single objection can collapse an entire day's schedule.</p>
+
+        <div class="insider-note">
+          <p class="insider-note-label">From experience</p>
+          <p>The UC negotiation process involves a lot of phone calls between leadership offices that never appear in any public record. The agreement you see read on the Senate floor was typically the product of hours of back-and-forth, often driven by staff rather than members themselves.</p>
+        </div>
+
+        <h3>The hotline: how bills actually move</h3>
+        <p>For non-controversial legislation — bills with broad support that don't need floor debate — the Senate uses a process informally called <strong>hotlining</strong>. The majority leader's office sends a message to every Senate office via email (historically via a dedicated phone line, hence the name) asking whether any senator objects to passing a particular bill by unanimous consent.</p>
+        <p>If no office responds with an objection within the allotted time, the bill is cleared for floor passage by UC without debate, often late at night when only the presiding officer and a handful of staff are present. Hundreds of bills pass the Senate this way each Congress — nominations, commemorative legislation, extensions of expiring programs, and bipartisan measures with no opposition.</p>
+        <p>The hotline process is invisible to the public and rarely covered in the press, but it is one of the primary mechanisms through which Congress actually legislates. Understanding it is essential for anyone working in advocacy or government relations — because getting your bill hotlined is often the difference between passing and waiting another two years.</p>
+
+        <div class="deep-example">
+          <p class="deep-example-label">Practical implication</p>
+          <p>If you work in advocacy and your priority bill has broad bipartisan support but isn't controversial enough to merit floor time, the hotline is your primary path. The goal is to get leadership staff comfortable enough with the bill that they'll include it in a UC package. This means making sure no senator has a hold — which leads us to the next topic.</p>
+        </div>
+
+        <h3>Holds: the invisible veto</h3>
+        <p>Any senator can place a <strong>hold</strong> on a nomination or a piece of legislation, signaling to leadership that they will object to UC if the matter is brought to the floor. Holds are informal — they're not a formal Senate rule, just a courtesy that leadership has historically honored.</p>
+        <p>Holds can be placed for any reason: policy disagreement, a desire for more information, leverage in an unrelated negotiation, or simple delay. They can be placed anonymously, though Senate rules have been modified over the years to limit secret holds. In practice, many holds are known to leadership even when not publicly disclosed.</p>
+        <p>From a practical standpoint, holds are one of the most powerful tools available to individual senators. A single hold can prevent a nomination from being confirmed for months. Understanding who has placed holds and why is a core function of legislative affairs staff — and clearing those holds is often the primary challenge in moving legislation or nominations forward.</p>
+
+        <h3>Leadership scheduling and the floor schedule</h3>
+        <p>In the House, the majority party controls the floor schedule almost entirely through the Rules Committee, which sets the terms for debate on every significant piece of legislation. The minority has limited ability to interfere with floor scheduling — if the majority has the votes, they can bring almost anything to the floor under a rule that limits debate and amendments.</p>
+        <p>The Senate is fundamentally different. The majority leader has significant scheduling power but cannot unilaterally determine what happens on the floor without either 60 votes for cloture or unanimous consent from all 100 senators. This means the Senate floor schedule is genuinely negotiated — and frequently unstable. Plans made Monday morning often don't survive to Monday afternoon.</p>
+        <p>Leadership staff — particularly the floor staff of both the majority and minority — spend their days managing this uncertainty, communicating with member offices, flagging potential objections, and constructing the delicate agreements that keep the floor moving. This is unglamorous, largely invisible work that has an outsized impact on what gets done.</p>
+
+        <h3>The role of staff</h3>
+        <p>Congressional staff are underappreciated in most public discussions of how legislation gets made. The reality is that on most policy issues, staff are driving the substantive work — drafting legislative text, negotiating with counterparts in other offices, building coalitions, attending markups, and preparing members for votes.</p>
+        <p>Members of Congress are generalists managing hundreds of issues simultaneously. Their staff are the specialists. A strong legislative director or senior legislative assistant often knows more about their assigned policy areas than the member does, and plays a significant role in shaping the member's positions, priorities, and voting record.</p>
+        <p>This isn't a criticism — it's how the institution functions. The member sets the direction and makes the final calls. Staff execute. Understanding this dynamic is essential for anyone trying to influence legislation, because in most cases, the most effective point of contact is not the member but the relevant staff person.</p>
+
+        <div class="deep-callout">
+          <p class="deep-callout-label">For advocates and lobbyists</p>
+          <p>If you want to influence a bill's substance, talk to the legislative assistant covering that issue. If you want to understand a member's political position, talk to the chief of staff or legislative director. If you want to know whether a bill has a path to the floor, talk to leadership staff. Each layer has different information and different decision-making authority.</p>
+        </div>
+
+        <h3>Conference committees and resolving differences</h3>
+        <p>When the House and Senate pass different versions of the same bill — which is virtually always — those differences must be resolved before the legislation can go to the President. The formal mechanism for this is a <strong>conference committee</strong>: a joint group of House and Senate members appointed to negotiate a final version.</p>
+        <p>True conference committees have become relatively rare in recent decades. More commonly, differences are resolved through informal staff-level negotiations, with leadership offices driving the process and a final "conference report" produced without formal conference proceedings. This informal process is faster but less transparent — the public often doesn't know what changed between the House-passed bill and the final version until after the fact.</p>
+        <p>The most significant modern example of this dynamic is the annual <strong>National Defense Authorization Act (NDAA)</strong>, which authorizes Defense Department programs and policy. The House and Senate each pass their own versions, typically with hundreds of differences. Conference negotiations on the NDAA involve hundreds of staff from both chambers, both Armed Services Committees, and the Pentagon, working through provisions over weeks or months before producing a final bill.</p>
+
+        <h3>What "bipartisan" actually means on the Hill</h3>
+        <p>In public discourse, "bipartisan" is often used as a synonym for good or necessary. Inside Congress, bipartisanship is a strategic calculation as much as an ideological one. There are several reasons a majority might seek minority support beyond simply wanting to work across the aisle:</p>
+        <p><strong>Senate math.</strong> Most significant legislation needs 60 votes to invoke cloture. In a closely divided Senate, that means the majority needs somewhere between 7 and 10 minority votes. Bipartisanship in the Senate is frequently less about idealism and more about the mathematical reality of the cloture threshold.</p>
+        <p><strong>Political cover.</strong> A bill that passes with significant minority support is harder for the minority to campaign against. Members of both parties sometimes seek bipartisan agreements specifically to take an issue off the table politically.</p>
+        <p><strong>Durability.</strong> Legislation passed on a purely partisan basis is more vulnerable to reversal when power changes hands. Some members and staff deliberately seek bipartisan buy-in to make a policy more durable across administrations.</p>
+
+        <div class="insider-note">
+          <p class="insider-note-label">From experience</p>
+          <p>Some of the most productive legislative relationships I observed were between staff from opposite parties who had worked together long enough to trust each other's word. That trust — built over years of negotiations, phone calls, and occasionally shared frustrations with their own leadership — is what makes bipartisan legislation actually happen. It starts with staff far more often than it starts with members.</p>
+        </div>
+
+        <h3>The gap between authorization and appropriation</h3>
+        <p>One of the most important and least understood distinctions in federal policy is the difference between <strong>authorization</strong> and <strong>appropriation</strong>. Authorization legislation establishes or continues a federal program and sets the parameters for how it should operate. Appropriations legislation provides the actual money to fund it.</p>
+        <p>A program can be fully authorized and completely unfunded. Conversely, Congress can appropriate money for programs that haven't been formally reauthorized in years — and does so regularly. The Farm Bill, for example, is a major authorization bill that Congress struggles to pass on schedule; in the gaps, agriculture programs are often funded through continuing resolutions that simply extend existing funding levels.</p>
+        <p>Understanding this distinction is essential for anyone working in federal policy. When an advocacy organization says they want to "authorize" a program, they mean one thing. When they say they want to "fund" it, they mean something quite different — and getting both done requires working two separate committees, on two separate legislative tracks, often on two separate timelines.</p>
+
+      </div>
+
+      <div class="lesson-nav-arrows">
+        <button class="deep-arrow-btn" disabled>← Previous</button>
+        <button class="deep-arrow-btn" onclick="showLessonByIndex(1)">Next lesson →</button>
+      </div>
+    </div>
+
+    <!-- ── LESSON 2: APPROPRIATIONS (COMING SOON) ── -->
+    <div class="lesson-block" id="deep-lesson-1">
+      <div class="coming-soon-block">
+        <span class="coming-soon-badge">Coming Soon</span>
+        <h3>The Appropriations Process Explained</h3>
+        <p>How the federal government funds itself — authorizations vs. appropriations, the twelve subcommittee structure, continuing resolutions, omnibus bills, and why shutdowns happen. Drawing on firsthand experience supporting Pentagon budget requests through the congressional process.</p>
+        <div class="coming-soon-topics">
+          <div class="coming-soon-topic">The twelve appropriations subcommittees <span>Coming soon</span></div>
+          <div class="coming-soon-topic">Authorization vs. appropriation <span>Coming soon</span></div>
+          <div class="coming-soon-topic">Continuing resolutions and omnibus bills <span>Coming soon</span></div>
+          <div class="coming-soon-topic">Why government shutdowns happen <span>Coming soon</span></div>
+          <div class="coming-soon-topic">The President's budget request <span>Coming soon</span></div>
+        </div>
+      </div>
+      <div class="lesson-nav-arrows">
+        <button class="deep-arrow-btn" onclick="showLessonByIndex(0)">← Previous</button>
+        <button class="deep-arrow-btn" onclick="showLessonByIndex(2)">Next lesson →</button>
+      </div>
+    </div>
+
+    <!-- ── LESSON 3: DEFENSE BUDGET (COMING SOON) ── -->
+    <div class="lesson-block" id="deep-lesson-2">
+      <div class="coming-soon-block">
+        <span class="coming-soon-badge">Coming Soon</span>
+        <h3>The Defense Budget: How It Works</h3>
+        <p>From the President's budget request to the National Defense Authorization Act — how the Pentagon gets funded, what happens when it doesn't, and how the congressional defense committees shape national security policy. Written from the perspective of someone who has supported senior defense officials through the full legislative cycle.</p>
+        <div class="coming-soon-topics">
+          <div class="coming-soon-topic">The NDAA vs. defense appropriations <span>Coming soon</span></div>
+          <div class="coming-soon-topic">How the Pentagon builds its budget request <span>Coming soon</span></div>
+          <div class="coming-soon-topic">The role of the Armed Services Committees <span>Coming soon</span></div>
+          <div class="coming-soon-topic">Continuing resolutions and readiness <span>Coming soon</span></div>
+          <div class="coming-soon-topic">Legislative proposals and appeals <span>Coming soon</span></div>
+        </div>
+      </div>
+      <div class="lesson-nav-arrows">
+        <button class="deep-arrow-btn" onclick="showLessonByIndex(1)">← Previous</button>
+        <button class="deep-arrow-btn" onclick="showLessonByIndex(3)">Next lesson →</button>
+      </div>
+    </div>
+
+    <!-- ── LESSON 4: CAREERS (COMING SOON) ── -->
+    <div class="lesson-block" id="deep-lesson-3">
+      <div class="coming-soon-block">
+        <span class="coming-soon-badge">Coming Soon</span>
+        <h3>Careers in Government and Policy</h3>
+        <p>How to get a job on Capitol Hill, in a federal agency, or as a defense contractor — from someone who has done all three. Covering the application process, what different roles actually do day-to-day, how to build a career in federal policy, and what the path from entry-level to senior positions actually looks like.</p>
+        <div class="coming-soon-topics">
+          <div class="coming-soon-topic">Getting a job in a congressional office <span>Coming soon</span></div>
+          <div class="coming-soon-topic">The LC to LD career path <span>Coming soon</span></div>
+          <div class="coming-soon-topic">Federal agency vs. contractor roles <span>Coming soon</span></div>
+          <div class="coming-soon-topic">Legislative affairs in the executive branch <span>Coming soon</span></div>
+          <div class="coming-soon-topic">Building relationships that last <span>Coming soon</span></div>
+        </div>
+      </div>
+      <div class="lesson-nav-arrows">
+        <button class="deep-arrow-btn" onclick="showLessonByIndex(2)">← Previous</button>
+        <button class="deep-arrow-btn" disabled>All lessons complete ✓</button>
+      </div>
+    </div>
+
+    <!-- SIDEBAR -->
+    <div class="deep-sidebar">
+      <div class="deep-sidebar-card">
+        <p class="deep-sidebar-label">In this lesson</p>
+        <div class="deep-sidebar-item active" onclick="scrollTo('#lesson-top')">The gap between textbook and building</div>
+        <div class="deep-sidebar-item" onclick="scrollToSection('mtp')">The motion to proceed</div>
+        <div class="deep-sidebar-item" onclick="scrollToSection('uc')">Unanimous consent</div>
+        <div class="deep-sidebar-item" onclick="scrollToSection('hotline')">The hotline</div>
+        <div class="deep-sidebar-item" onclick="scrollToSection('holds')">Holds</div>
+        <div class="deep-sidebar-item" onclick="scrollToSection('scheduling')">Leadership scheduling</div>
+        <div class="deep-sidebar-item" onclick="scrollToSection('staff')">The role of staff</div>
+        <div class="deep-sidebar-item" onclick="scrollToSection('conference')">Conference committees</div>
+        <div class="deep-sidebar-item" onclick="scrollToSection('bipartisan')">What bipartisan means</div>
+        <div class="deep-sidebar-item" onclick="scrollToSection('auth')">Authorization vs. appropriation</div>
+      </div>
+
+      <div class="deep-sidebar-card">
+        <p class="deep-sidebar-label">About this series</p>
+        <p style="font-size:12px;color:#666;line-height:1.65;">These lessons draw on over twelve years of firsthand experience on Capitol Hill and supporting senior Pentagon officials through the legislative process.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <footer class="site-footer deep-footer" style="background:#0a0f1a;border-top:1px solid #2a3448;">
     <div class="footer-inner">
-      <div class="footer-brand"><span class="footer-title">Capitol Source</span><p>Politics · Policy · Procedure</p></div>
-      <div class="footer-links"><a href="learn.html">All Lessons</a><a href="index.html">Home</a><a href="privacy.html">Privacy Policy</a></div>
+      <div class="footer-brand"><span class="footer-title" style="color:#f0ece6">Capitol Source</span><p style="color:#555">Washington, from the source</p></div>
+      <div class="footer-links">
+        <a href="/learn.html">All Lessons</a>
+        <a href="/">Home</a>
+        <a href="/privacy.html">Privacy Policy</a>
+        <a href="/about.html">About</a>
+      </div>
     </div>
     <div class="footer-bottom"><p>© <span id="footerYear"></span> Capitol Source. All rights reserved.</p></div>
   </footer>
-  <script>document.getElementById('footerYear').textContent = new Date().getFullYear();</script>
+
+  <script>
+    document.getElementById('topbarDate').textContent = new Date().toLocaleDateString('en-US', {
+      weekday: 'short', month: 'short', day: 'numeric', year: 'numeric'
+    });
+    document.getElementById('footerYear').textContent = new Date().getFullYear();
+
+    function showLesson(index, btn) {
+      document.querySelectorAll('.lesson-block').forEach((b, i) => {
+        b.classList.toggle('active', i === index);
+      });
+      document.querySelectorAll('.deep-nav-btn').forEach((b, i) => {
+        b.classList.toggle('active', i === index);
+      });
+    }
+
+    function showLessonByIndex(index) {
+      const btns = document.querySelectorAll('.deep-nav-btn');
+      showLesson(index, btns[index]);
+    }
+
+    async function handleSubscribe(e) {
+      e.preventDefault();
+      const email = e.target.querySelector('input[type="email"]').value.trim();
+      if (!email) return;
+      try {
+        const res = await fetch('/api/subscribe', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ email })
+        });
+        if (res.ok) {
+          alert('You\'re subscribed! Check your inbox to confirm.');
+          e.target.reset();
+        }
+      } catch {}
+    }
+  </script>
+
 </body>
 </html>
