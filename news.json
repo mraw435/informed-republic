@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-16T01:26:07Z",
+  "last_updated": "2026-08-16T01:28:17Z",
   "story_count": 32,
   "stories": [
     {
@@ -10,7 +10,7 @@
       "topic": "Defense",
       "published": "2026-08-15T19:25:33+00:00",
       "is_today": true,
-      "summary": "Representative Maher criticized living conditions aboard USS Abraham Lincoln, raising concerns about sailor welfare on the carrier."
+      "summary": "Rep. Maher criticized deteriorating conditions aboard USS Abraham Lincoln, expressing concern over sailor welfare and ship maintenance standards."
     },
     {
       "title": "The Army gave General Dynamics $533M to build an artillery plant that produced nothing",
@@ -20,7 +20,7 @@
       "topic": "Defense",
       "published": "2026-08-15T20:27:52-04:00",
       "is_today": true,
-      "summary": "The Army paid General Dynamics $533 million to build an artillery manufacturing plant that failed to produce any weapons."
+      "summary": "The Army spent $533 million with General Dynamics to build an artillery production facility that failed to produce operational equipment."
     },
     {
       "title": "House Democrats question acting Navy Secretary on conditions aboard USS Abraham Lincoln",
@@ -30,7 +30,7 @@
       "topic": "Defense",
       "published": "2026-08-15T22:16:12+00:00",
       "is_today": true,
-      "summary": "House Democrats questioned the acting Navy Secretary about deteriorating living conditions and crew welfare aboard USS Abraham Lincoln."
+      "summary": "House Democrats questioned the acting Navy Secretary regarding poor conditions aboard USS Abraham Lincoln and readiness implications."
     },
     {
       "title": "Gounder Brings Clarity to Egg Freezing, AI Virus Creation, and New Trump Vaccine Order",
@@ -40,7 +40,7 @@
       "topic": "Healthcare",
       "published": "2026-08-15T09:00:00+00:00",
       "is_today": true,
-      "summary": "Gounder discusses federal policy implications of egg freezing, AI-generated viruses, and new Trump administration vaccine orders."
+      "summary": "Gounder discusses egg freezing, AI virus creation, and Trump vaccine order policy implications."
     },
     {
       "title": "Trump Team\u2019s Use of Arcane Budget Rule Threatens Medicaid Coverage",
@@ -50,7 +50,7 @@
       "topic": "Healthcare",
       "published": "2026-08-14T09:00:00+00:00",
       "is_today": false,
-      "summary": "Trump administration uses budget reconciliation rules to potentially restrict Medicaid coverage through Section 1115 waivers."
+      "summary": "Trump administration uses budget reconciliation rules to restrict Medicaid expansion through 1115 waivers."
     },
     {
       "title": "My Husband Was Kicked Out of Hospice for Dying Too Slowly",
@@ -60,7 +60,7 @@
       "topic": "Healthcare",
       "published": "2026-08-14T09:00:00+00:00",
       "is_today": false,
-      "summary": "Hospice patients face discharge when health improves, raising questions about eligibility criteria and coverage policies."
+      "summary": "Hospice providers discharge patients with unexpected survival, raising questions about eligibility and discharge policies."
     },
     {
       "title": "Intel ops are underway at Space Command\u2019s nascent Alabama HQ",
@@ -70,7 +70,7 @@
       "topic": "Appropriations",
       "published": "2026-08-14T13:10:44-04:00",
       "is_today": false,
-      "summary": "Intelligence operations have begun at Space Command's new Alabama headquarters facility."
+      "summary": "Intelligence operations have begun at Space Command's new Alabama headquarters, expanding the command's operational capabilities."
     },
     {
       "title": "OPM finalizes expanded hazard pay for federal firefighters",
@@ -80,7 +80,7 @@
       "topic": "Appropriations",
       "published": "2026-08-14T15:20:47-04:00",
       "is_today": false,
-      "summary": "The Office of Personnel Management finalized expanded hazard pay provisions for federal firefighters."
+      "summary": "OPM finalized increased hazard pay for federal firefighters, improving compensation for high-risk roles."
     },
     {
       "title": "OneGov savings balloon to over $1.6B as agencies weigh future of AI in contracting",
@@ -90,7 +90,7 @@
       "topic": "Appropriations",
       "published": "2026-08-14T16:27:18-04:00",
       "is_today": false,
-      "summary": "OneGov platform savings exceeded $1.6 billion as federal agencies evaluate artificial intelligence's role in procurement."
+      "summary": "OneGov procurement initiative surpassed $1.6 billion in savings while agencies evaluate AI's role in future contracting."
     },
     {
       "title": "Magnitude 7.7 earthquake strikes off Indonesia's coast, killing at least 47",
@@ -100,7 +100,7 @@
       "topic": "Foreign Policy",
       "published": "2026-08-15T04:29:20-04:00",
       "is_today": true,
-      "summary": "A magnitude 7.7 earthquake off Indonesia's coast killed at least 47 people, raising concerns about disaster preparedness and international aid coordination."
+      "summary": "A 7.7 magnitude earthquake off Indonesia's coast killed at least 47 people, raising disaster preparedness concerns for the seismically active region."
     },
     {
       "title": "They fought for the U.S. in Afghanistan. Now they worry about losing their green cards",
@@ -110,7 +110,7 @@
       "topic": "Foreign Policy",
       "published": "2026-08-15T05:00:00-04:00",
       "is_today": true,
-      "summary": "Afghan interpreters and soldiers who aided U.S. forces face potential deportation despite green card status, raising questions about immigration policy and veteran support."
+      "summary": "Afghan allies who served with U.S. forces face potential deportation despite green card status, raising questions about veteran immigration policy."
     },
     {
       "title": "Iran rejects Trump's 'delusions' on making Strait of Hormuz a US territory",
@@ -120,7 +120,7 @@
       "topic": "Foreign Policy",
       "published": "2026-08-15T11:55:27+00:00",
       "is_today": true,
-      "summary": "Iran rejected claims about U.S. territorial control of the Strait of Hormuz, escalating tensions over one of the world's most critical shipping routes."
+      "summary": "Iran rejected claims about U.S. control of the Strait of Hormuz, escalating tensions over this critical international shipping route."
     },
     {
       "title": "How $600B of Biden\u2019s clean energy funding escaped Trump\u2019s cuts",
@@ -130,7 +130,7 @@
       "topic": "Energy",
       "published": "2026-08-15T06:00:00-04:00",
       "is_today": true,
-      "summary": "Biden administration's $600 billion clean energy investments from prior legislation largely survived Trump administration budget cuts."
+      "summary": "Biden administration's $600 billion in clean energy investments from prior legislation largely survived Trump administration budget cuts through statutory protections."
     },
     {
       "title": "WSP capitalizes on surging US power work",
@@ -140,7 +140,7 @@
       "topic": "Energy",
       "published": "2026-08-14T10:40:05-04:00",
       "is_today": false,
-      "summary": "Engineering firm WSP expands US operations capitalizing on increased demand for nuclear power and data center infrastructure."
+      "summary": "Engineering firm WSP expands US operations to meet growing demand for power infrastructure supporting nuclear energy and data center construction."
     },
     {
       "title": "Quantum computing is coming fast. Are utilities ready?",
@@ -150,7 +150,7 @@
       "topic": "Energy",
       "published": "2026-08-14T10:45:02-04:00",
       "is_today": false,
-      "summary": "Utilities assess preparedness for quantum computing technology advancement with support from Duke Energy, EPRI, and Schneider Electric."
+      "summary": "Utilities explore quantum computing capabilities amid concerns about workforce readiness and infrastructure adaptation for emerging technology demands."
     },
     {
       "title": "Trump administration wants to allow companies to hack foreign cybercriminals",
@@ -160,7 +160,7 @@
       "topic": "Criminal Justice",
       "published": "2026-08-15T13:25:34-04:00",
       "is_today": true,
-      "summary": "Trump administration proposes allowing U.S. companies to hack foreign cybercriminals, marking a significant shift in federal cyber policy."
+      "summary": "Trump administration proposes allowing U.S. companies to conduct hacking operations against foreign cybercriminals, raising cybersecurity policy questions."
     },
     {
       "title": "Are robotaxis finally here?",
@@ -170,7 +170,7 @@
       "topic": "Criminal Justice",
       "published": "2026-08-15T17:30:21-04:00",
       "is_today": true,
-      "summary": "Robotaxi services are expanding across U.S. cities, prompting questions about regulatory oversight and safety standards."
+      "summary": "Autonomous taxi services expand deployment, prompting federal regulatory questions about safety standards and transportation policy."
     },
     {
       "title": "Feds probe 'mention markets' amid White House Kalshi controversy",
@@ -180,7 +180,7 @@
       "topic": "Criminal Justice",
       "published": "2026-08-13T22:06:10-04:00",
       "is_today": false,
-      "summary": "Federal regulators investigate prediction markets, including Kalshi, following White House involvement concerns."
+      "summary": "Federal regulators investigate prediction markets amid White House controversy, raising questions about market regulation and oversight."
     },
     {
       "title": "They fought for the U.S. in Afghanistan. Now they worry about losing their green cards",
@@ -190,7 +190,7 @@
       "topic": "Immigration",
       "published": "2026-08-15T05:00:00-04:00",
       "is_today": true,
-      "summary": "Afghan interpreters who assisted U.S. forces face potential deportation despite green card status, raising immigration policy concerns."
+      "summary": "Afghan nationals who served with U.S. forces face potential deportation despite green cards, raising questions about immigration policy for military allies."
     },
     {
       "title": "Week in Politics: USS Lincoln; latest primaries and Democrats; White House ballroom",
@@ -200,7 +200,7 @@
       "topic": "Immigration",
       "published": "2026-08-15T07:40:15-04:00",
       "is_today": true,
-      "summary": "Weekly political developments include USS Lincoln conditions, primary elections, and Democratic Party activities."
+      "summary": "Weekly political developments include USS Lincoln updates, primary elections, Democratic activities, and White House events."
     },
     {
       "title": "Families of USS Lincoln crew say Trump should be 'ashamed' of conditions on board",
@@ -210,7 +210,7 @@
       "topic": "Immigration",
       "published": "2026-08-15T14:21:32-04:00",
       "is_today": true,
-      "summary": "USS Lincoln crew families report poor shipboard conditions, raising military readiness and personnel welfare questions."
+      "summary": "Families of USS Lincoln sailors report poor onboard conditions, criticizing Trump over military readiness and crew welfare standards."
     },
     {
       "title": "Electric Vehicle Tax Treatment by State, 2026",
@@ -220,7 +220,7 @@
       "topic": "Tax & Finance",
       "published": "2026-08-14T08:55:49+00:00",
       "is_today": false,
-      "summary": "States implement varying tax treatments for electric vehicles in 2026, affecting federal EV policy coordination and incentive effectiveness."
+      "summary": "States implement varying tax treatments for electric vehicles, affecting federal EV adoption policy and revenue considerations."
     },
     {
       "title": "Intel ops are underway at Space Command\u2019s nascent Alabama HQ",
@@ -230,7 +230,7 @@
       "topic": "Tax & Finance",
       "published": "2026-08-14T13:10:44-04:00",
       "is_today": false,
-      "summary": "Space Command begins intelligence operations at its new Alabama headquarters, advancing military command decentralization initiatives."
+      "summary": "Space Command begins intelligence operations at its new Alabama headquarters, expanding military infrastructure."
     },
     {
       "title": "OPM finalizes expanded hazard pay for federal firefighters",
@@ -240,7 +240,7 @@
       "topic": "Tax & Finance",
       "published": "2026-08-14T15:20:47-04:00",
       "is_today": false,
-      "summary": "OPM finalizes expanded hazard pay for federal firefighters, increasing compensation for high-risk federal workforce roles."
+      "summary": "OPM expands hazard pay for federal firefighters, increasing compensation for high-risk positions."
     },
     {
       "title": "Ocasio-Cortez's decision riles some on right, while also winning admiration",
@@ -250,7 +250,7 @@
       "topic": "Elections",
       "published": "2026-08-15T10:00:00+00:00",
       "is_today": true,
-      "summary": "Rep. Ocasio-Cortez's personal reproductive health decision generated mixed reactions across political spectrum."
+      "summary": "Rep. Ocasio-Cortez's decision on egg freezing generates mixed reactions across political spectrum."
     },
     {
       "title": "AIPAC takes center stage in last stretch of Democratic contests before November",
@@ -260,7 +260,7 @@
       "topic": "Elections",
       "published": "2026-08-15T14:14:02+00:00",
       "is_today": true,
-      "summary": "AIPAC is significantly increasing spending in Democratic primary races across multiple states before November."
+      "summary": "AIPAC increases spending in Democratic primary contests across California, Florida, and New Hampshire."
     },
     {
       "title": "Peltola distances herself from Kamala Harris endorsement ahead of Alaska primary",
@@ -270,7 +270,7 @@
       "topic": "Elections",
       "published": "2026-08-15T14:38:10+00:00",
       "is_today": true,
-      "summary": "Alaska Rep. Peltola is distancing herself from her endorsement of VP Harris ahead of primary."
+      "summary": "Alaska Rep. Peltola distances herself from Kamala Harris endorsement before state primary election."
     },
     {
       "title": "Tyson to Close or Sell Three Beef Facilities Amid Cattle Shortage",
@@ -280,7 +280,7 @@
       "topic": "Agriculture",
       "published": "2026-08-14T11:34:19+00:00",
       "is_today": false,
-      "summary": "Tyson Foods will close or divest three beef processing plants due to insufficient cattle supply, affecting meat industry capacity and livestock markets."
+      "summary": "Tyson Foods will close or sell three beef processing facilities due to declining cattle supplies, affecting meat industry capacity and agricultural markets."
     },
     {
       "title": "Who\u2019s Tracking You? Use This New Service to Find Out",
@@ -290,7 +290,7 @@
       "topic": "Cybersecurity",
       "published": "2026-08-14T11:24:35+00:00",
       "is_today": false,
-      "summary": "A new service enables individuals to identify who is tracking their online activity, relevant to federal data privacy and consumer protection policies."
+      "summary": "A new service enables individuals to identify who is tracking their personal data, relevant to federal privacy regulations and consumer protection policy."
     },
     {
       "title": "Trump administration wants to allow companies to hack foreign cybercriminals",
@@ -300,7 +300,7 @@
       "topic": "Technology",
       "published": "2026-08-15T13:25:34-04:00",
       "is_today": true,
-      "summary": "Trump administration proposes allowing U.S. companies to hack foreign cybercriminals, changing federal computer crime policy."
+      "summary": "Trump administration proposes policy allowing U.S. companies to conduct cyberattacks against foreign cybercriminals."
     },
     {
       "title": "Trump family crypto company receives approval for conditional banking charter",
@@ -310,7 +310,7 @@
       "topic": "Technology",
       "published": "2026-08-15T16:32:21+00:00",
       "is_today": true,
-      "summary": "Trump family crypto company receives conditional banking charter approval from regulators."
+      "summary": "Trump family cryptocurrency company receives conditional federal banking charter approval."
     },
     {
       "title": "Are robotaxis finally here?",
@@ -320,7 +320,7 @@
       "topic": "Technology",
       "published": "2026-08-15T17:30:21-04:00",
       "is_today": true,
-      "summary": "Autonomous taxi services advance toward commercial deployment, raising regulatory questions."
+      "summary": "Autonomous taxi services advance toward commercial deployment across major U.S. cities."
     }
   ]
 }
